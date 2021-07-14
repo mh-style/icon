@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./css/mh-style-icon.css">
+    <link rel="stylesheet" href="./css/mh-style.css">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mh-navbar-style-1 .mh-navbar-style-1-body {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .mh-navbar-style-1 .mh-navbar-style-1-body .mh-toggle-button {
+            margin-left: auto;
+            display: none;
+            border: 1px solid #f2f2f2;
+            color: rgb(0, 110, 255);
+            font-size: 1.6rem;
+            padding: .1rem .4rem;
+            border-radius: 5px;
+            box-shadow: 0px 0px 6px black;
+            cursor: pointer;
+            outline: none;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .mh-navbar-style-1 .mh-navbar-style-1-body .mh-toggle-button:hover {
+            color: gray;
+        }
+
+        .mh-navbar-style-1 .mh-navbar-nav {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .mh-navbar-style-1 .collapse {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .mh-navbar-style-1 .mh-navbar-nav .mh-nav-link {
+            padding: 0 20px;
+        }
+
+        .mh-navbar-style-1 .mh-navbar-nav .mh-nav-link .mh-link {
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .mh-navbar-style-1 .mh-navbar-nav .mh-nav-link .mh-link:hover {
+            color: rgb(0 220 255) !important;
+        }
+
+        .mh-navbar-style-1 .mh-navbar-style-1-body .mh-nav-brand {
+            font: normal 700 1.1rem sans-serif;
+        }
+
+        .mh-navbar-style-1 .mh-navbar-style-1-body .mh-nav-brand img {
+            width: 170px;
+        }
+        .mh-navbar-style-1 .mh-form-group {
+            background: #ffffff;
+            box-shadow: 0px 0px 5px #000;
+        }
+
+        .mh-navbar-style-1 .mh-input-control {
+            border: none;
+            padding: .4rem 1rem;
+            background: transparent;
+            font: normal 300 .9rem sans-serif;
+            outline: none;
+        }
+
+        .mh-navbar-style-1 button.mh-btn.mh-btn-submit {
+            border: none;
+            padding: .5rem .8rem;
+            font-size: larger;
+            cursor: pointer;
+            transition: background .5s ease;
+            outline: none;
+            border-radius: 0;
+        }
+
+        .mh-navbar-style-1 button.mh-btn.mh-btn-submit:hover {
+            background: rgb(66 194 255);
+        }
+
+        .mh-navbar-style-1.mh-nav-collapse {
+            height: 100% !important;
+        }
+
+        @media(max-width: 992px) {
+            .mh-navbar-style-1 .mh-navbar-style-1-body .mh-toggle-button {
+                display: flex !important;
+            }
+
+            .mh-navbar-style-1 .mh-navbar-style-1-body {
+                flex-wrap: wrap;
+                height: 40px;
+            }
+
+            nav.mh-navbar-style-1 .mh-navbar-style-1-body .collapse,
+            nav.mh-navbar-style-1 .mh-navbar-style-1-body .mh-navbar-nav {
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+            }
+
+            nav.mh-navbar-style-1 .mh-form-group {
+                display: inline-block;
+                margin: 2% 0;
+            }
+
+            nav.mh-navbar-style-1 .mh-nav-link {
+                padding: 10px 0 !important;
+            }
+
+            nav.mh-navbar-style-1 {
+                height: 70px;
+                /* background: black; */
+                transition: height .5s ease;
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="mh-navbar-style-1 mh-bg-gold">
+        <div class="mh-container">
+            <div class="mh-navbar-style-1-body">
+                <a href="#" class="mh-link mh-nav-brand">
+                    <img src="./img/logo-1.png" alt="logo">
+                </a>
+                <button class="mh-toggle-button">
+                    <span class="mh mh-menu-alt"></span>
+                </button>
+                <div class="collapse" id="toggle-collapse">
+                    <ul class="mh-navbar-nav mh-m-0-a">
+                        <li class="mh-nav-link">
+                            <a href="#" class="mh-link mh-color-white">Home</a>
+                        </li>
+                        <li class="mh-nav-link">
+                            <a href="#" class="mh-link mh-color-white">People</a>
+                        </li>
+                        <li class="mh-nav-link">
+                            <a href="#" class="mh-link mh-color-white">Design</a>
+                        </li>
+                        <li class="mh-nav-link">
+                            <a href="#" class="mh-link mh-color-white">Travel</a>
+                        </li>
+                        <li class="mh-nav-link">
+                            <a href="#" class="mh-link mh-color-white">About Us</a>
+                        </li>
+                    </ul>
+                    <div class="mh-search">
+                        <form class="mh-form-group">
+                            <input type="search" class="mh-input-control" placeholder="Search" />
+                            <button class="mh-btn mh-btn-submit" type="submit"><i class="mh mh-search2"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="./js/script.js"></script>
+    <!-- <script>
+        var mh_navbar_style_1_toggle_button = document.querySelector(".mh-navbar-style-1-body .mh-toggle-button");
+        var mh_navbar_style_1 = document.querySelector(".mh-navbar-style-1");
+        mh_navbar_style_1_toggle_button.onclick = function (e) {
+            mh_navbar_style_1.classList.toggle("mh-nav-collapse");
+        }
+    </script> -->
+</body>
+
+</html>

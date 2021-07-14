@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="./css/style.css" />
+	<style>
+		
+		/* .mh-range-body{
+			height: 100%;
+			width: 300px;
+			display: grid;
+			place-items: center;
+			border-radius: 5px;
+		}
+		.mh-range-style-1{
+			background: #fff;
+			padding: 20px 20px 20px 30px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+			display: flex;
+			align-items: center;
+		}
+		.mh-range-style-1 .mh-range-slider{
+			height: 40px;
+			width: 300px;
+			display: flex;
+			align-items: center;
+			margin-right: 15px;
+		}
+		.mh-range-style-1 .mh-range-slider input{
+			height: 10px;
+			width: 100%;
+			-webkit-appearance: none;
+			outline: none;
+			background: #f2f2f2;
+			box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+			border-radius: 25px;
+		}
+		.mh-range-style-1 .mh-range-value{
+			font-size: 30px;
+			font-weight: 600;
+			font-family: sans-serif;
+			color: #3498db;
+			width: 55px;
+			text-align: center;
+		}
+		.mh-range-style-1 .mh-range-slider input::-moz-range-progress{
+			height: 10px;
+			border-radius: 25px;
+			background: #3498db;
+		}
+		.mh-range-style-1 .mh-range-slider input::-moz-range-thumb{
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			border: 4px solid #3498db;
+			background: #fff;
+			-webkit-appearance: none;
+		} */
+	</style>
+</head>
+<body>
+	<div class="mh-range-body">
+		<div class="mh-range-style-1">
+			<div class="mh-range-slider">
+				<input type="range" min="0" max="100" value="20" />
+			</div>
+			<div class="mh-range-value">100</div>
+		</div>
+	</div>
+	<!-- <script>
+		const mh_range_slider = document.querySelector(".mh-range-slider input");
+		const value = document.querySelector(".mh-range-style-1 .mh-range-value");
+		value.textContent = mh_range_slider.value;
+		mh_range_slider.oninput = function(){
+			value.textContent = this.value;
+		}
+	</script> -->
+	<script src="./js/script.js"></script>
+</body>
+</html>

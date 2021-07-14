@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="../css/site-style.css">
+    <!-- <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+        body{
+            background: #fff;
+        }
+        .wrapper .header{
+            z-index: 1;
+            background: #22242a;
+            position: fixed;
+            width: calc(100% - 0%);
+            height: 70px;
+            display: flex;
+            top: 0;
+        }
+        .wrapper .header.header-header{
+            z-index: 1;
+            background: #494c53;
+            position: fixed;
+            width: calc(100% - 0%);
+            height: 70px;
+            display: flex;
+            top: 70px;
+        }
+        .wrapper .header .header-menu{
+            width: calc(100% - 0%);
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .wrapper .header .header-menu .header-main-menu{
+            margin-left: 20px ;
+        }
+        .wrapper .header .header-menu .header-main-menu ul,
+        .wrapper .header .header-menu .header-main-menu ul .dropdown-mobile{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .wrapper .header .header-menu .header-main-menu ul li{
+            cursor: pointer;
+            height: auto;
+            padding: 25px 20px;
+            color: #fff;
+        }
+        .wrapper .header .header-menu .header-main-menu ul li:hover{
+            background-color: #4ce866;
+        }
+        .wrapper .header .header-menu .title{
+            color: #fff;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+        .wrapper .header .header-menu .title span{
+            color: #4ccee8;
+        }
+        .mobile-more,#mobile-more{
+            display: none;
+        }
+        .dropdown-mobile{
+            clear:both;
+            max-height:0;
+            transition:max-height .2s ease-out;
+        }
+        #mobile-more:checked ~ .dropdown-mobile{
+            max-height: 1000px;
+        }
+        .wrapper .header.header-header .header-menu .sidebar-btn{
+            color: #fff;
+            position: absolute;
+            margin-left: 40px;
+            font-size: 22px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: 0.3s;
+            transition-property: color;
+        }
+        .wrapper .header .header-menu .sidebar-btn{
+            color: #fff;
+            position: absolute;
+            margin-left: 80px;
+            font-size: 22px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: 0.3s;
+            transition-property: color;
+            display: none;
+        }
+        .wrapper .header .header-menu .sidebar-btn:hover{
+            color: #4ccee8;
+        }
+        .wrapper .header .header-menu ul{
+            display: flex;
+        }
+        .wrapper .header .header-menu ul li a{
+            background: #fff;
+            color: #000;
+            display: block;
+            margin: 0 10px;
+            font-size: 18px;
+            width: 34px;
+            height: 34px;
+            line-height: 35px;
+            text-align: center;
+            border-radius: 50%;
+            transition: 0.3s;
+            transition-property: background, color;
+        }
+        .wrapper .header .header-menu ul li a:hover{
+            background: #4ccee8;
+            color: #fff;
+        }
+        .wrapper .sidebar{
+            z-index: 1;
+            background: #2f323a;
+            position: fixed;
+            top: 140px;
+            width: 220px;
+            height: calc(100% - 21%);
+            transition: 0.3s;
+            transition-property: width;
+            overflow-y: auto;
+        }
+        .wrapper .sidebar .sidebar-menu{
+            overflow: hidden;
+        }
+        
+        .wrapper .sidebar .sidebar-menu .active{
+            display: block;
+        }
+        .wrapper .sidebar .sidebar-menu .item{
+            width: 220px;
+            overflow: hidden;
+        }
+        .wrapper .sidebar .sidebar-menu .item .menu-btn{
+            display: block;
+            color: #fff;
+            position: relative;
+            padding: 10px 20px;
+            transition: 0.3s;
+            transition-property: color;
+        }
+        .wrapper .sidebar .sidebar-menu .item .menu-btn:hover{
+            color: #4ccee8;
+        }
+        .wrapper .sidebar .sidebar-menu .item .menu-btn i{
+            margin-right: 20px;
+        }
+        .wrapper .sidebar .sidebar-menu .item .menu-btn .drop-down{
+            float: right;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+        .wrapper .sidebar .sidebar-menu .item .sub-menu{
+            background: #3498db;
+            overflow: hidden;
+            max-height: 0;
+            transition: 0.3s;
+            transition-property: background, max-height;
+        }
+        .wrapper .sidebar .sidebar-menu .item .sub-menu a{
+            display: block;
+            position: relative;
+            color: #fff;
+            white-space: nowrap;
+            font-size: 15px;
+            padding: 10px 30px;
+            border-bottom: 1px solid #8fc5e9;
+            transition: 0.3s;
+            transition-property: background;
+        }
+        .wrapper .sidebar .sidebar-menu .item .sub-menu a:hover{
+            background: #55b1f0;
+        }
+        
+        .wrapper .sidebar .sidebar-menu .item:target .sub-menu{
+            max-height: 1000px;
+        }
+        .wrapper .main-container{
+            width: (100% - 220px);
+            margin-top: 140px;
+            margin-left: 220px;
+            padding: 15px;
+            background-size: cover;
+            height: 100%;
+            transition: 0.3s;
+        }
+        .wrapper.collapse .sidebar{
+            width: 70px;
+        }
+        
+        .wrapper.collapse .sidebar .sidebar-menu .item .menu-btn{
+            font-size: 23px;
+        }
+        .wrapper.collapse .sidebar .sidebar-menu .item .sub-menu{
+            font-size: 18px;
+            padding-left: 3px;
+        }
+        .wrapper.collapse .main-container{
+            width: (100% - 70px);
+            margin-left: 70px;
+        }
+        .sidebar::-webkit-scrollbar{
+            width: 5px;
+        }
+        .sidebar::-webkit-scrollbar-thumb{
+            background-color: #4ce866 ;
+        }
+        ::-webkit-scrollbar{
+            width: 5px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #f517b2 ;
+        }
+        @media (max-width: 768px) {
+            
+            .wrapper .header .header-menu .sidebar-btn{
+                display: block;
+                margin-left: 15px !important;
+            }
+            
+            .wrapper .sidebar{
+                display: none;
+                height: calc(100% - 24.5%);
+            }
+            .wrapper.collapse .sidebar{
+                display: block;
+            }
+            .wrapper.collapse .sidebar a span{
+                display: block;
+            }
+            .wrapper.collapse .sidebar{
+                width: 220px;
+            }
+            .wrapper .main-container{
+                margin-left: 10px;
+                width: (100% - 220px);
+            }
+            .wrapper.collapse .main-container{
+                width: (100% - 0px);
+                margin-left: 220px;
+            }
+        }
+        @media (max-width: 425px){
+            .dropdown-mobile{
+                display: none !important;
+                top: 60px;
+                background-color: #4ce866;
+                padding: 5px;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                left: 0;
+            }
+            .dropdown-mobile li{
+                margin: 10px 0px;
+            }
+            .mobile-more{
+                display: block;
+                height: 100%;
+                color: #fff;
+                padding: 0px 25px;
+            }
+            .mobile-more span{
+                font-size: 23px;
+            }
+            #mobile-more:checked ~ .dropdown-mobile{
+                display: inline-block !important;
+                position: absolute;
+                transition: 0.2s ease-in-out;
+            }
+            .wrapper .header .header-menu .header-main-menu ul{
+                align-items: center;
+            }
+            .wrapper .header .header-menu .header-main-menu ul li{
+                padding: 0px 0px 0px 0px;
+            }
+        }
+    </style> -->
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header-menu">
+                <div class="title">MH-<span>Style</span></div>
+                
+                <ul>
+                    <!-- https://github.com/md-jihan/initializr/archive/master.zip -->
+                    <!-- <input type="text" id="input"> -->
+                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                    <li><a href=""><i class="fas fa-bell"></i></a></li>
+                    <li><a href=""><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header header-header">
+            <div class="header-menu">
+                
+                <div class="header-main-menu">
+                    <ul>
+                        <a href="./home.html"><li><i class="fas fa-home"></i> Home</li></a>
+                        <input type="checkbox" id="mobile-more">
+                        <label for="mobile-more" class="mobile-more">More <span>&dtrif;</span></label>
+                        <div class="dropdown-mobile">
+                            <a href="./documentation.html"><li>Documentation</li></a>
+                            <a href="./sidebar2.html"><li>Icon</li></a>
+                            <a href="./sidebar2.html"><li>Theme</li></a>
+                            <a href="./sidebar2.html"><li>Blog</li></a>
+                        </div>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        <main class="main-container home">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            
+        </main>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/jquery-3.5.1.js"></script>
+    
+    
+        
+</body>
+</html>

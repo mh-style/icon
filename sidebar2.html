@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="./css/site-style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        body {
+            background: #fff;
+        }
+
+        .mh-sidebar-menu-style-2 .header {
+            z-index: 1;
+            background: #22242a;
+            position: fixed;
+            width: calc(100% - 0%);
+            height: 70px;
+            display: flex;
+            top: 0;
+        }
+
+        .mh-sidebar-menu-style-2 .header.header-header {
+            z-index: 1;
+            background: #494c53;
+            position: fixed;
+            width: calc(100% - 0%);
+            height: 70px;
+            display: flex;
+            top: 70px;
+        }
+
+        .mh-sidebar-menu-style-2 .header .header-menu {
+            width: calc(100% - 0%);
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .mh-sidebar-menu-style-2 .header .header-menu .header-main-menu {
+            margin-left: 20px;
+        }
+
+        .mh-sidebar-menu-style-2 .header .header-menu .header-main-menu ul li {
+            cursor: pointer;
+            height: 100%;
+            padding: 25px 20px;
+            color: #fff;
+        }
+
+        .mh-sidebar-menu-style-2 .header .header-menu .header-main-menu ul li:hover {
+            background-color: #4ce866;
+        }
+
+        .mh-sidebar-menu-style-2 .header .header-menu .title {
+            color: #fff;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .mh-sidebar-menu-style-2 .header .header-menu .title span {
+            color: #4ccee8;
+        }
+
+        .mh-sidebar-menu-style-2 .header.header-header .header-menu .sidebar-btn {
+            color: #fff;
+            position: absolute;
+            margin-left: 40px;
+            font-size: 22px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: 0.3s;
+            transition-property: color;
+        }
+
+        .mh-sidebar-menu-style-2 .header .header-menu .sidebar-btn {
+            color: #fff;
+            position: absolute;
+            margin-left: 80px;
+            font-size: 22px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: 0.3s;
+            transition-property: color;
+            display: none;
+        }
+
+        .mh-sidebar-menu-style-2 .header .header-menu .sidebar-btn:hover {
+            color: #4ccee8;
+        }
+
+        .mh-sidebar-menu-style-2 .header .header-menu ul {
+            display: flex;
+        }
+
+        .mh-sidebar-menu-style-2 .header .header-menu ul li a {
+            background: #fff;
+            color: #000;
+            display: block;
+            margin: 0 10px;
+            font-size: 18px;
+            width: 34px;
+            height: 34px;
+            line-height: 35px;
+            text-align: center;
+            border-radius: 50%;
+            transition: 0.3s;
+            transition-property: background, color;
+        }
+
+        .mh-sidebar-menu-style-2 .header .header-menu ul li a:hover {
+            background: #4ccee8;
+            color: #fff;
+        }
+
+        .mh-sidebar-menu-style-2 .sidebar {
+            z-index: 1;
+            background: #2f323a;
+            position: fixed;
+            top: 140px;
+            width: 220px;
+            height: calc(100% - 21%);
+            transition: 0.3s;
+            transition-property: width;
+            overflow-y: auto;
+        }
+
+        .mh-sidebar-menu-style-2 .sidebar .sidebar-menu {
+            overflow: hidden;
+        }
+
+        .mh-sidebar-menu-style-2 .sidebar .sidebar-menu .active {
+            display: block;
+        }
+
+        .mh-sidebar-menu-style-2 .sidebar .sidebar-menu .item {
+            width: 220px;
+            overflow: hidden;
+        }
+
+        .mh-sidebar-menu-style-2 .sidebar .sidebar-menu .item .menu-btn {
+            display: block;
+            color: #fff;
+            position: relative;
+            padding: 10px 20px;
+            transition: 0.3s;
+            transition-property: color;
+        }
+
+        .mh-sidebar-menu-style-2 .sidebar .sidebar-menu .item .menu-btn:hover {
+            color: #4ccee8;
+        }
+
+        .mh-sidebar-menu-style-2 .sidebar .sidebar-menu .item .menu-btn i {
+            margin-right: 20px;
+        }
+
+        .mh-sidebar-menu-style-2 .sidebar .sidebar-menu .item .menu-btn .drop-down {
+            float: right;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+
+        .mh-sidebar-menu-style-2 .sidebar .sidebar-menu .item .sub-menu {
+            background: #3498db;
+            overflow: hidden;
+            max-height: 0;
+            transition: 0.3s;
+            transition-property: background, max-height;
+        }
+
+        .mh-sidebar-menu-style-2 .sidebar .sidebar-menu .item .sub-menu a {
+            display: block;
+            position: relative;
+            color: #fff;
+            white-space: nowrap;
+            font-size: 15px;
+            padding: 10px 30px;
+            border-bottom: 1px solid #8fc5e9;
+            transition: 0.3s;
+            transition-property: background;
+        }
+
+        .mh-sidebar-menu-style-2 .sidebar .sidebar-menu .item .sub-menu a:hover {
+            background: #55b1f0;
+        }
+
+        .mh-sidebar-menu-style-2 .sidebar .sidebar-menu .item:target .sub-menu {
+            max-height: 1000px;
+        }
+
+        .mh-sidebar-menu-style-2 .main-container {
+            width: (100% - 220px);
+            margin-top: 140px;
+            margin-left: 220px;
+            padding: 15px;
+            background-size: cover;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .mh-sidebar-menu-style-2.collapse .sidebar {
+            width: 70px;
+        }
+
+        .mh-sidebar-menu-style-2.collapse .sidebar .sidebar-menu .item .menu-btn {
+            font-size: 23px;
+        }
+
+        .mh-sidebar-menu-style-2.collapse .sidebar .sidebar-menu .item .sub-menu {
+            font-size: 18px;
+            padding-left: 3px;
+        }
+
+        .mh-sidebar-menu-style-2.collapse .main-container {
+            width: (100% - 70px);
+            margin-left: 70px;
+        }
+
+        .sidebar::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background-color: #4ce866;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #f517b2;
+        }
+
+        @media (max-width: 768px) {
+
+            .mh-sidebar-menu-style-2 .header .header-menu .sidebar-btn {
+                display: block;
+                margin-left: 15px !important;
+            }
+
+            .mh-sidebar-menu-style-2 .header .header-menu .header-main-menu {
+                margin-left: 50px;
+            }
+
+            .mh-sidebar-menu-style-2 .sidebar {
+                display: none;
+                height: calc(100% - 24.5%);
+            }
+
+            .mh-sidebar-menu-style-2.collapse .sidebar {
+                display: block;
+            }
+
+            .mh-sidebar-menu-style-2.collapse .sidebar a span {
+                display: block;
+            }
+
+            .mh-sidebar-menu-style-2.collapse .sidebar {
+                width: 220px;
+            }
+
+            .mh-sidebar-menu-style-2 .main-container {
+                margin-left: 10px;
+                width: (100% - 220px);
+            }
+
+            .mh-sidebar-menu-style-2.collapse .main-container {
+                width: (100% - 0px);
+                margin-left: 220px;
+            }
+        }
+
+        .tab {
+            float: left;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            display: block;
+            background-color: inherit;
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: auto;
+            border-left: none;
+            height: auto;
+        }
+
+        body {
+            background-color: #2ec194;
+        }
+
+        .container {
+            background: #fff;
+            width: 800px;
+            margin-top: 30px;
+            padding: 30px 5px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            height: 50px;
+            margin-left: 50px;
+            font-size: 40px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+        }
+
+        .copy {
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: right;
+            background: #2ec194;
+            color: #fff;
+            margin-right: 50px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .copy:active {
+            background: #fff;
+            color: #2ec194;
+            border: 0.5px solid #2ec194;
+        }
+
+        .text {
+            width: 700px;
+            height: 400px;
+            font-size: 20px;
+            padding: 20px;
+            margin-top: 30px;
+            margin-left: 28px;
+            overflow: hidden;
+            border: none;
+            outline: none;
+            resize: none;
+            border-radius: 5px;
+            box-shadow: 0px 2px 10px #919191;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mh-Sidebar-manu-style-2">
+        <div class="header">
+            <div class="header-menu">
+                <div class="title">MH-<span>Style</span></div>
+
+                <ul>
+                    <!-- https://github.com/md-jihan/initializr/archive/master.zip -->
+                    <!-- <input type="text" id="input"> -->
+                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                    <li><a href=""><i class="fas fa-bell"></i></a></li>
+                    <li><a href=""><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header header-header">
+            <div class="header-menu">
+                <div class="sidebar-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="header-main-menu">
+                    <ul>
+                        <a href="./double-navbar.html">
+                            <li><i class="fas fa-home"></i> Home</li>
+                        </a>
+                        <input type="checkbox" id="mobile-more">
+                        <label for="mobile-more" class="mobile-more">More <span>&dtrif;</span></label>
+                        <div class="dropdown-mobile">
+                            <li>Documentation</li>
+                            <li>Blog</li>
+                            <li>Blog</li>
+                            <li>Blog</li>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-menu" id="mylist">
+
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="item" id="profile">
+                    <a href="#profile" class="menu-btn">
+                        <span>Profile <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><span>Picture</span></a>
+                        <a href="#"><span>Info</span></a>
+                    </div>
+                </li>
+                <li class="item active" id="messages">
+                    <a href="#messages" class="menu-btn">
+                        <span>Messages <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><span>New</span></a>
+                        <a href="#"><span>Sent</span></a>
+                        <a href="#"><span>Spam</span></a>
+                    </div>
+                </li>
+                <li class="item" id="messages1">
+                    <a href="#messages1" class="menu-btn">
+                        <span>Messages <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'London')"
+                                id="defaultOpen">London</button>
+                            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                            <button class="tablinks" onclick="openCity(event, 'Toky')">Toky</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="item" id="messages2">
+                    <a href="#messages2" class="menu-btn">
+                        <span>Messages <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'Border')">border</button>
+                            <button class="tablinks" onclick="openCity(event, 'Border1')">border1</button>
+                            <button class="tablinks" onclick="openCity(event, 'Border2')">border2</button>
+                            <button class="tablinks" onclick="openCity(event, 'Border3')">border3</button>
+                            <button class="tablinks" onclick="openCity(event, 'Border4')">border4</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="item" id="settings">
+                    <a href="#settings" class="menu-btn">
+                        <span>settings <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><span>Password</span></a>
+                        <a href="#"><span>Language</span></a>
+                    </div>
+                </li>
+            </div>
+        </div>
+        <div class="main-container">
+            <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <div id="Toky" class="tabcontent">
+                <h3>Toky</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <div id="Border" class="tabcontent">
+                <h3>Border</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <div id="Border1" class="tabcontent">
+                <h3>Border1</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <div id="Border2" class="tabcontent">
+                <h3>Border2</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <div id="Border3" class="tabcontent">
+                <h3>Border3</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <div id="Border4" class="tabcontent">
+                <h3>Border4</h3>
+
+                <div class="container">
+                    <div class="copy" onclick="copy()"><i class="far fa-clone"></i></div>
+                    <h1>Copy To Clipboard</h1>
+                    <form spellcheck="false">
+                        <textarea id="text" class="text" readonly>
+&lt;div class="container"&gt;
+    &lt;div class="copy" onclick="copy&lpar;&rpar;"&gt;&lt;i class="far fa-clone"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+<div class="container">
+    <div class="copy" onclick="copy()"><i class="far fa-clone"></i></div>
+</div>
+
+</textarea>
+                    </form>
+                </div>
+            </div>
+            <br><br>
+            <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p> -->
+            <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p> -->
+            <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p> -->
+            <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p> -->
+
+        </div>
+    </div>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".sidebar-btn").click(function () {
+                $(".mh-sidebar-menu-style-2").toggleClass("collapse");
+            });
+            $(".siderbar-menu li").click(function () {
+                $(".siderbar-menu li").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+    <script>
+        function copy() {
+            var text = document.getElementById("text");
+            text.select();
+            text.setSelectionRange(0, 9999);
+            document.execCommand("copy");
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $('#input').on('keyup', function () {
+                var value = $(this).val().toLowerCase();
+
+                $('#mylist li, #mylist sub-menu').filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

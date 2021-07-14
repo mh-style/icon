@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="./css/mh-style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+        body{
+            background: #fff;
+        }
+        .mh-sidebar-style-1 .header{
+            z-index: 1;
+            background: #22242a;
+            position: fixed;
+            width: calc(100% - 0%);
+            height: 70px;
+            display: flex;
+            top: 0;
+        }
+        .mh-sidebar-style-1 .header .header-menu{
+            width: calc(100% - 0%);
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .mh-sidebar-style-1 .header .header-menu .title{
+            color: #fff;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+        .mh-sidebar-style-1 .header .header-menu .title span{
+            color: #4ccee8;
+        }
+        .mh-sidebar-style-1 .header .header-menu .sidebar-btn{
+            color: #fff;
+            position: absolute;
+            margin-left: 140px;
+            font-size: 22px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: 0.3s;
+            transition-property: color;
+        }
+        .mh-sidebar-style-1 .header .header-menu .sidebar-btn:hover{
+            color: #4ccee8;
+        }
+        .mh-sidebar-style-1 .header .header-menu ul{
+            display: flex;
+        }
+        .mh-sidebar-style-1 .header .header-menu ul li a{
+            background: #fff;
+            color: #000;
+            display: block;
+            margin: 0 10px;
+            font-size: 18px;
+            width: 34px;
+            height: 34px;
+            line-height: 35px;
+            text-align: center;
+            border-radius: 50%;
+            transition: 0.3s;
+            transition-property: background, color;
+        }
+        .mh-sidebar-style-1 .header .header-menu ul li a:hover{
+            background: #4ccee8;
+            color: #fff;
+        }
+        .mh-sidebar-style-1 .sidebar{
+            z-index: 1;
+            background: #2f323a;
+            position: fixed;
+            top: 70px;
+            width: 250px;
+            height: calc(100% - 9%);
+            transition: 0.3s;
+            transition-property: width;
+            overflow-y: auto;
+        }
+        .mh-sidebar-style-1 .sidebar .sidebar-menu{
+            overflow: hidden;
+        }
+        .mh-sidebar-style-1 .sidebar .sidebar-menu .profile img{
+            margin: 20px 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .mh-sidebar-style-1 .sidebar .sidebar-menu .profile p{
+            color: #bbb;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .mh-sidebar-style-1 .sidebar .sidebar-menu .item{
+            width: 250px;
+            overflow: hidden;
+        }
+        .mh-sidebar-style-1 .sidebar .sidebar-menu .item .menu-btn{
+            display: block;
+            color: #fff;
+            position: relative;
+            padding: 25px 20px;
+            transition: 0.3s;
+            transition-property: color;
+        }
+        .mh-sidebar-style-1 .sidebar .sidebar-menu .item .menu-btn:hover{
+            color: #4ccee8;
+        }
+        .mh-sidebar-style-1 .sidebar .sidebar-menu .item .menu-btn i{
+            margin-right: 20px;
+        }
+        .mh-sidebar-style-1 .sidebar .sidebar-menu .item .menu-btn .drop-down{
+            float: right;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+        .mh-sidebar-style-1 .sidebar .sidebar-menu .item .sub-menu{
+            background: #3498db;
+            overflow: hidden;
+            max-height: 0;
+            transition: 0.3s;
+            transition-property: background, max-height;
+        }
+        .mh-sidebar-style-1 .sidebar .sidebar-menu .item .sub-menu a{
+            display: block;
+            position: relative;
+            color: #fff;
+            white-space: nowrap;
+            font-size: 15px;
+            padding: 20px;
+            border-bottom: 1px solid #8fc5e9;
+            transition: 0.3s;
+            transition-property: background;
+        }
+        .mh-sidebar-style-1 .sidebar .sidebar-menu .item .sub-menu a:hover{
+            background: #55b1f0;
+        }
+        .mh-sidebar-style-1 .sidebar .sidebar-menu .item .sub-menu i{
+            padding-right: 20px;
+            font-size: 10px;
+        }
+        .mh-sidebar-style-1 .sidebar .sidebar-menu .item:target .sub-menu{
+            max-height: 500px;
+        }
+        .mh-sidebar-style-1 .main-container{
+            width: (100% - 250px);
+            margin-top: 70px;
+            margin-left: 250px;
+            padding: 15px;
+            background: #4ccee8;
+            background-size: cover;
+            height: 100vh;
+            transition: 0.3s;
+        }
+        .mh-sidebar-style-1.collapse .sidebar{
+            width: 70px;
+        }
+        .mh-sidebar-style-1.collapse .sidebar .profile img,
+        .mh-sidebar-style-1.collapse .sidebar .profile p,
+        .mh-sidebar-style-1.collapse .sidebar a span{
+            display: none;
+        }
+        .mh-sidebar-style-1.collapse .sidebar .sidebar-menu .item .menu-btn{
+            font-size: 23px;
+        }
+        .mh-sidebar-style-1.collapse .sidebar .sidebar-menu .item .sub-menu i{
+            font-size: 18px;
+            padding-left: 3px;
+        }
+        .mh-sidebar-style-1.collapse .main-container{
+            width: (100% - 70px);
+            margin-left: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mh-sidebar-style-1">
+        <div class="header">
+            <div class="header-menu">
+                <div class="title">MH-<span>Style</span></div>
+                <div class="sidebar-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                    <li><a href=""><i class="fas fa-bell"></i></a></li>
+                    <li><a href=""><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header-menu">
+                <div class="title">MH-<span>Style</span></div>
+                <div class="sidebar-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                    <li><a href=""><i class="fas fa-bell"></i></a></li>
+                    <li><a href=""><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <center class="profile">
+                    <img src="./200-200.png" alt="">
+                    <p>Jihan</p>
+                </center>
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-desktop"></i><span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="item" id="profile">
+                    <a href="#profile" class="menu-btn">
+                        <i class="fas fa-user-circle"></i><span>Profile <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><i class="fas fa-image"></i><span>Picture</span></a>
+                        <a href="#"><i class="fas fa-address-card"></i><span>Info</span></a>
+                    </div>
+                </li>
+                <li class="item" id="messages">
+                    <a href="#messages" class="menu-btn">
+                        <i class="fas fa-envelope"></i><span>Messages <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><i class="fas fa-envelope"></i><span>New</span></a>
+                        <a href="#"><i class="fas fa-envelope-square"></i><span>Sent</span></a>
+                        <a href="#"><i class="fas fa-exclamation-circle"></i><span>Spam</span></a>
+                    </div>
+                </li>
+                <li class="item" id="settings">
+                    <a href="#settings" class="menu-btn">
+                        <i class="fas fa-cog"></i><span>settings <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#"><i class="fas fa-lock"></i><span>Password</span></a>
+                        <a href="#"><i class="fas fa-language"></i><span>Language</span></a>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-info-circle"></i><span>About</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="main-container"></div>
+    </div>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".sidebar-btn").click(function(){
+                $(".mh-sidebar-style-1").toggleClass("collapse");
+            });
+        });
+    </script>
+</body>
+</html>

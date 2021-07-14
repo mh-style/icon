@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .btn {
+      position: absolute;
+      top: 75px;
+      left: 20px;
+      height: 45px;
+      width: 45px;
+      text-align: center;
+      cursor: pointer;
+      transition: left 0.4s ease;
+      z-index: 999;
+      display: none;
+    }
+
+    /* .btn.click {
+      left: 200px;
+    } */
+
+    .btn span {
+      color: white;
+      font-size: 28px;
+      line-height: 45px;
+    }
+
+    .btn.click span:before {
+      content: '\f00d';
+    }
+
+    .sidebar {
+      position: fixed;
+      width: 220px;
+      height: calc(100% - 20%);
+      background: #1b1b1b;
+      transition: left 0.4s ease;
+      z-index: 995;
+      top: 125px;
+      overflow: auto;
+    }
+
+    .sidebar.show {
+      left: 0px;
+    }
+
+    .sidebar.sidebar .text {
+      color: white;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 65px;
+      text-align: center;
+      background: #1e1e1e;
+      letter-spacing: 1px;
+    }
+
+    nav.sidebar ul {
+      background: #1b1b1b;
+      height: 100%;
+      width: 100%;
+      list-style: none;
+    }
+
+    nav.sidebar ul li {
+      line-height: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav.sidebar ul li:last-child {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    nav.sidebar ul li a {
+      position: relative;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding-left: 15px;
+      font-weight: 500;
+      display: block;
+      width: 100%;
+      border-left: 3px solid transparent;
+    }
+
+    nav.sidebar ul ul li.active a,
+    nav.sidebar ul li.active a {
+      color: cyan;
+      background: #1e1e1e;
+      border-left-color: cyan;
+    }
+
+    nav.sidebar ul li a:hover {
+      background: #1e1e1e;
+    }
+
+    nav.sidebar ul ul {
+      position: static;
+      display: none;
+    }
+
+    nav.sidebar ul .feat-show.show {
+      display: block;
+    }
+
+    nav.sidebar ul .serv-show.show1 {
+      display: block;
+    }
+
+    nav.sidebar ul ul li {
+      line-height: 32px;
+      border-top: none;
+    }
+
+    nav.sidebar ul ul li a {
+      font-size: 15px;
+      color: #e6e6e6;
+      padding-left: 22px;
+    }
+
+    nav.sidebar ul li.active ul li a {
+      color: #e6e6e6;
+      background: #1b1b1b;
+      border-left-color: transparent;
+    }
+
+    nav.sidebar ul ul li a:hover {
+      color: cyan !important;
+      background: #1e1e1e !important;
+    }
+
+    nav.sidebar ul li a span {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      font-size: 22px;
+      transition: transform 0.4s;
+    }
+
+    nav.sidebar ul li a span.rotate {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+    /*********************************/
+    .wrapper .header {
+      z-index: 1;
+      background: #22242a;
+      position: fixed;
+      width: calc(100% - 0%);
+      height: 70px;
+      display: flex;
+      top: 0;
+    }
+
+    .wrapper .header.header-header {
+      z-index: 1;
+      background: #494c53;
+      position: fixed;
+      width: calc(100% - 0%);
+      height: 55px;
+      display: flex;
+      top: 70px;
+    }
+
+    .wrapper .header .header-menu {
+      width: calc(100% - 0%);
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .wrapper .header .header-menu .header-main-menu ul,
+    .wrapper .header .header-menu .header-main-menu ul .dropdown-mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .wrapper .header .header-menu .header-main-menu ul li a{
+      cursor: pointer;
+      height: auto;
+      padding: 16px 18px;
+      color: #fff;
+      list-style: none;
+    }
+
+    .wrapper .header .header-menu .title {
+      color: #fff;
+      font-size: 25px;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .wrapper .header .header-menu .title span {
+      color: #4ccee8;
+    }
+
+    .mobile-more,
+    #mobile-more {
+      display: none;
+    }
+
+    .dropdown-mobile {
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+    }
+
+    #mobile-more:checked~.dropdown-mobile {
+      max-height: 1000px;
+    }
+
+    .wrapper .header .header-menu ul {
+      display: flex;
+    }
+    .wrapper .header .header-menu ul li a:hover {
+      background: #4ccee8;
+      color: #fff;
+    }
+
+    .main-content {
+      margin-top: 130px;
+      margin-left: 235px;
+    }
+
+    @media (max-width: 768px) {
+
+      /*************/
+      .btn {
+        display: block !important;
+      }
+
+      .sidebar {
+        left: -220px !important;
+      }
+
+      .sidebar.show {
+        left: 0px !important;
+      }
+
+      /*************/
+      .wrapper .header .header-menu .header-main-menu{
+        margin-left: 50px;
+      }
+      .main-content {
+        margin-left: 10px;
+        width: (100% - 220px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .dropdown-mobile {
+        display: none !important;
+        top: 55px;
+        background-color: #4ce866;
+        padding: 5px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        left: 0;
+      }
+
+      .dropdown-mobile li {
+        margin: 10px 0px;
+      }
+
+      .mobile-more {
+        display: inline-flex;
+        height: 100%;
+        color: #fff;
+        padding: 0px 25px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .mobile-more span {
+        font-size: 23px;
+      }
+
+      #mobile-more:checked~.dropdown-mobile {
+        display: inline-block !important;
+        position: absolute;
+        transition: 0.2s ease-in-out;
+      }
+
+      .wrapper .header .header-menu .header-main-menu ul {
+        align-items: center;
+      }
+
+      .wrapper .header .header-menu .header-main-menu ul li {
+        padding: 0px 0px 0px 0px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="header-menu">
+        <div class="title">MH-<span>Style</span></div>
+      </div>
+    </div>
+    <div class="header header-header">
+      <div class="header-menu">
+        <div class="header-main-menu">
+          <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <input type="checkbox" id="mobile-more">
+            <label for="mobile-more" class="mobile-more">More <span>&dtrif;</span></label>
+            <div class="dropdown-mobile">
+              <li><a href="./sidebar2.html">Documentation</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="./sidebar2.html">Documentation</a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="btn">
+    <span class="fas fa-bars"></span>
+  </div>
+  <nav class="sidebar">
+    <ul>
+      <li class="active"><a href="#">Dashboard</a></li>
+      <li>
+        <a href="#" class="feat-btn">Features
+          <span class="fas fa-caret-down first"></span>
+        </a>
+        <ul class="feat-show">
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Elements</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="serv-btn">Services
+          <span class="fas fa-caret-down second"></span>
+        </a>
+        <ul class="serv-show">
+          <li><a href="#">App Design</a></li>
+          <li><a href="#">Web Design</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Overview</a></li>
+      <li><a href="#">Shortcuts</a></li>
+      <li><a href="#">Feedback</a></li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus aliquid pariatur rem, magnam hic rerum! Ducimus sed voluptas, provident aspernatur maxime esse minus similique neque eos corrupti veritatis, ipsa quis recusandae odit facere velit, repudiandae quod in? Ipsum veniam voluptatibus dicta porro in voluptatum numquam facilis! Quibusdam magni eaque maiores!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus aliquid pariatur rem, magnam hic rerum! Ducimus sed voluptas, provident aspernatur maxime esse minus similique neque eos corrupti veritatis, ipsa quis recusandae odit facere velit, repudiandae quod in? Ipsum veniam voluptatibus dicta porro in voluptatum numquam facilis! Quibusdam magni eaque maiores!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus aliquid pariatur rem, magnam hic rerum! Ducimus sed voluptas, provident aspernatur maxime esse minus similique neque eos corrupti veritatis, ipsa quis recusandae odit facere velit, repudiandae quod in? Ipsum veniam voluptatibus dicta porro in voluptatum numquam facilis! Quibusdam magni eaque maiores!</p>
+  </div>
+  <script>
+    $('.btn').click(function () {
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+    $('.feat-btn').click(function () {
+      $('nav.sidebar ul .feat-show').toggleClass("show");
+      $('nav.sidebar ul .first').toggleClass("rotate");
+    });
+    $('.serv-btn').click(function () {
+      $('nav.sidebar ul .serv-show').toggleClass("show1");
+      $('nav.sidebar ul .second').toggleClass("rotate");
+    });
+    $('nav.sidebar ul li').click(function () {
+      $(this).addClass("active").siblings().removeClass("active");
+    });
+    $('nav.sidebar ul ul li').click(function () {
+      $(this).addClass("active").siblings().removeClass("active");
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".sidebar-btn").click(function () {
+        $(".wrapper").toggleClass("collapse");
+      });
+      $(".siderbar-menu li").click(function () {
+        $(".siderbar-menu li").removeClass("active");
+        $(this).addClass("active");
+      });
+    });
+  </script>
+</body>
+
+</html>

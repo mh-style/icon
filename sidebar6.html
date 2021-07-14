@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Side Accordion Navigation Bar</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="css/mh-style.css">
+    <link rel="stylesheet" href="css/mh-style-icon.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+    <div class="mh-sidebar-style-2">
+        <div class="mh-bg-shadow"></div>
+        <div class="mh-sidebar-nav-style-1">
+            <div class="mh-hamburger">
+                <i class="mh mh-menu1"></i>
+            </div>
+            <div class="mh-logo">
+                <a href="#"><img src="./img/logo-1.png" alt=""></a>
+            </div>
+            <nav class="mh-navbar-style-4">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="mh-hamburger-nav">
+                    <i class="mh mh-menu1"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="mh-sidebar-inner">
+            <div class="mh-close">
+                <i class="mh mh-cross"></i>
+            </div>
+
+            <div class="mh-profile-info">
+
+            </div>
+
+            <ul class="mh-sidebar-menu">
+                <li class="active"><a href="#">Favourites
+                    </a>
+                </li>
+                <li><a href="#">Account Details
+                        <div class="arrow"><i class="mh mh-keyboard-arrow-down"></i></div>
+                    </a>
+                    <ul class="mh-sidebar-accordion">
+                        <li><a href="#" class="active">Account_Details_1</a></li>
+                        <li><a href="#">Account_Details_2</a></li>
+                        <li><a href="#">Account_Details_3</a></li>
+                        <li><a href="#">Account_Details_4</a></li>
+                        <li><a href="#">Account_Details_5</a></li>
+                        <li><a href="#">Account_Details_5</a></li>
+                        <li><a href="#">Account_Details_5</a></li>
+                        <li><a href="#">Account_Details_5</a></li>
+                        <li><a href="#">Account_Details_5</a></li>
+                        <li><a href="#">Account_Details_5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Previous Orders
+                        <div class="arrow"><i class="mh mh-keyboard-arrow-down "></i></div>
+                    </a>
+                    <ul class="mh-sidebar-accordion">
+                        <li><a href="#">Previous_Orders_1</a></li>
+                        <li><a href="#" class="active">Previous_Orders_2</a></li>
+                        <li><a href="#">Previous_Orders_3</a></li>
+                        <li><a href="#">Previous_Orders_4</a></li>
+                        <li><a href="#">Previous_Orders_5</a></li>
+                        <li><a href="#">Previous_Orders_3</a></li>
+                        <li><a href="#">Previous_Orders_4</a></li>
+                        <li><a href="#">Previous_Orders_5</a></li>
+                        <li><a href="#">Previous_Orders_3</a></li>
+                        <li><a href="#">Previous_Orders_4</a></li>
+                        <li><a href="#">Previous_Orders_5</a></li>
+                        <li><a href="#">Previous_Orders_3</a></li>
+                        <li><a href="#">Previous_Orders_4</a></li>
+                        <li><a href="#">Previous_Orders_5</a></li>
+                        <li><a href="#">Previous_Orders_3</a></li>
+                        <li><a href="#">Previous_Orders_4</a></li>
+                        <li><a href="#">Previous_Orders_5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Payment Info
+                        <div class="arrow"><i class="mh mh-keyboard-arrow-down "></i></div>
+                    </a>
+                    <ul class="mh-sidebar-accordion">
+                        <li><a href="#">Payment_Info_1</a></li>
+                        <li><a href="#">Payment_Info_2</a></li>
+                        <li><a href="#">Payment_Info_3</a></li>
+                        <li><a href="#">Payment_Info_4</a></li>
+                        <li><a href="#" class="active">Payment_Info_5</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="#">Change Password
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mh-sidebar-main-container">
+        <div class="content">
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nisi ipsum distinctio?
+                Minus
+                similique molestias iusto atque voluptate aut quod excepturi ullam! Deserunt, delectus nam.</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nisi ipsum distinctio?
+                Minus
+                similique molestias iusto atque voluptate aut quod excepturi ullam! Deserunt, delectus nam.</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nisi ipsum distinctio?
+                Minus
+                similique molestias iusto atque voluptate aut quod excepturi ullam! Deserunt, delectus nam.</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nisi ipsum distinctio?
+                Minus
+                similique molestias iusto atque voluptate aut quod excepturi ullam! Deserunt, delectus nam.</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nisi ipsum distinctio?
+                Minus
+                similique molestias iusto atque voluptate aut quod excepturi ullam! Deserunt, delectus nam.</div>
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nisi ipsum distinctio?
+                Minus
+                similique molestias iusto atque voluptate aut quod excepturi ullam! Deserunt, delectus nam.</div>
+        </div>
+    </div>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $(".mh-sidebar-menu li").click(function () {
+                    $(".mh-sidebar-menu li").removeClass("active");
+                    $(this).addClass("active");
+                });
+
+                $(".mh-hamburger").click(function () {
+                    $(".mh-sidebar-style-2").addClass("active");
+                });
+                $(".mh-hamburger-nav").click(function () {
+                    $(".mh-navbar-style-4").toggleClass("active");
+                });
+
+                $(".mh-close, .mh-bg-shadow").click(function () {
+                    $(".mh-sidebar-style-2").removeClass("active");
+                });
+            });
+        }(jQuery));
+    </script>
+</body>
+
+</html>

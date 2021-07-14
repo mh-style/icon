@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy text button</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+<!-- Target -->
+<div id="bar">Mussum ipsum cacilds...</div>
+
+<!-- Trigger -->
+<button class="copybutton" data-mh-copyboard-target="#bar">
+    Cut to clipboard
+</button>
+<br>
+<br>
+<button class="copybutton" data-mh-copyboard-text="hi">copy</button>
+<br>
+<br>
+<input type="text" value="Jihan" id="input">
+<button class="copybutton" data-mh-copyboard-target="#input">Copy</button>
+    <script src="./js/jquery-3.5.1.js"></script>
+<script src="./js/mhstyle-copyboard.js"></script>
+<!-- <script src="./csss/clipboard.js-master/clipboard.js-master/dist/clipboard.min.js"></script> -->
+<script>
+    $(function(){
+        var mh_style = new mhstyle_copyboard('.copybutton');
+        $(".copybutton").click(function(){
+            $(this).html('Copied!!');
+            var that = $(this);
+            var intrvrl = setInterval(function(){
+                that.html('Copy to clipboard');
+                clearInterval(intrvrl);
+            },2000);
+        });
+    });
+</script>
+</body>
+</html>

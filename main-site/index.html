@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MH-Style Css Js</title>
+    <link rel="stylesheet" href="../css/mh-carousel.css">
+    
+</head>
+<body>
+    <div class="mh-carousel mh-theme">
+        <img src="../780-400.png" alt="">
+        <img src="../780-400.png" alt="">
+        <img src="../780-400.png" alt="">
+        <img src="../780-400.png" alt="">
+        <img src="../780-400.png" alt="">
+        <img src="../780-400.png" alt="">
+        <img src="../780-400.png" alt="">
+    </div>
+
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/mh-carousel.js"></script>
+    <script>
+        $('.mh-carousel').mhCarousel({
+        loop:true,
+        autoplay:false,
+        autoplayTimeout: 1000,
+        margin:20,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+    </script>
+</body>
+</html>

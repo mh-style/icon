@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://md-jihan.github.io/MD-JIHAN/css/bootstrap.min.css"> -->
+    
+    <style>
+
+        
+        #content{
+            padding: 15px;
+            border: 2px solid #dddddd;
+            list-style: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="content">
+        <input type="text" id="input">
+        <br><br>
+        <lo id="mylist">
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+            <li>Fourth Item</li>
+            <li>Jihan</li>
+            <li>Monabbor</li>
+            <li>Hossen</li>
+        </lo>
+    </div>
+
+    
+<script src="./js/jquery-3.5.1.js"></script>
+<script>
+        $(document).ready(function() {
+
+            $('#input').on('keyup', function() {
+                var value = $(this).val().toLowerCase();
+
+                $('#mylist li').filter(function(){
+                    $(this).toggle( $(this).text().toLowerCase().indexOf(value) > -1 );
+                });
+            });
+        });
+    </script>
+</body>
+</html>

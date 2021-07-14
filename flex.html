@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="./css/mh-style.css">
+    <style>
+        /* .mh-justify-content-start{
+            justify-content: flex-start !important;
+        }
+        .mh-justify-content-end{
+            justify-content: flex-end !important;
+        }
+        .mh-justify-content-center{
+            justify-content: center !important;
+        }
+        .mh-justify-content-between{
+            justify-content: space-between !important;
+        }
+        .mh-justify-content-around{
+            justify-content: space-around !important;
+        }
+        .mh-align-items-start{
+            align-items: flex-start !important;
+        }
+        .mh-align-items-end{
+            align-items: flex-end !important;
+        }
+        .mh-align-items-center{
+            align-items: center !important;
+        }
+        .mh-align-items-baseline{
+            align-items: baseline !important;
+        }
+        .mh-align-items-stretch{
+            align-items: stretch !important;
+        }
+        .mh-align-self-start{
+            align-self: flex-start !important;
+        }
+        .mh-align-self-end{
+            align-self: flex-end !important;
+        }
+        .mh-align-self-center{
+            align-self: center !important;
+        }
+        .mh-align-self-baseline{
+            align-self: baseline !important;
+        }
+        .mh-align-self-stretch{
+            align-self: stretch !important;
+        }
+        .mh-aling-content-start{
+            align-content: flex-start !important;
+        }
+        .mh-aling-content-end{
+            align-content: flex-end !important;
+        }
+        .mh-aling-content-center{
+            align-content: center !important;
+        }
+        .mh-aling-content-between{
+            align-content: space-between !important;
+        }
+        .mh-aling-content-around{
+            align-content: space-around !important;
+        }
+        .mh-aling-content-stretch{
+            align-content: stretch !important;
+        } */
+    </style>
+</head>
+<body>
+    <div class="mh-container">
+        <div class="mh-df mh-flex-row mh-bd-highlight mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">flex row</div>
+            <div class="mh-p-3 mh-bd-highlight">flex row</div>
+            <div class="mh-p-3 mh-bd-highlight">flex row</div>
+        </div>
+        <div class="mh-df mh-flex-row-reverse mh-bd-highlight mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">flex row reverse</div>
+            <div class="mh-p-3 mh-bd-highlight">flex row reverse</div>
+            <div class="mh-p-3 mh-bd-highlight">flex row reverse</div>
+        </div>
+    </div>
+    <br>
+    <div class="mh-container">
+        <div class="mh-df mh-flex-column mh-bd-highlight mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">flex column</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column</div>
+        </div>
+        <div class="mh-df mh-flex-column-reverse mh-bd-highlight mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+        </div>
+    </div>
+    <br>
+    <div class="mh-container">
+        <div class="mh-df mh-justify-content-start mh-bd-highlight mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">flex column</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column</div>
+        </div>
+        <div class="mh-df mh-justify-content-end mh-bd-highlight mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+        </div>
+        <div class="mh-df mh-justify-content-center mh-bd-highlight mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+        </div>
+        <div class="mh-df mh-justify-content-between mh-bd-highlight mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+        </div>
+        <div class="mh-df mh-justify-content-around mh-bd-highlight mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+            <div class="mh-p-3 mh-bd-highlight">flex column reverse</div>
+        </div>
+        
+    </div>
+    <br>
+    <div class="mh-container">
+        <div class="mh-df mh-bd-highlight mh-mb-2 mh-align-items-start mh-height-100">
+            <div class="mh-p-3 mh-bd-highlight">align items start</div>
+            <div class="mh-p-3 mh-bd-highlight">align items start</div>
+            <div class="mh-p-3 mh-bd-highlight">align items start</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-mb-2 mh-align-items-end mh-height-100">
+            <div class="mh-p-3 mh-bd-highlight">align items end</div>
+            <div class="mh-p-3 mh-bd-highlight">align items end</div>
+            <div class="mh-p-3 mh-bd-highlight">align items end</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-mb-2 mh-align-items-center mh-height-100">
+            <div class="mh-p-3 mh-bd-highlight">align items center</div>
+            <div class="mh-p-3 mh-bd-highlight">align items center</div>
+            <div class="mh-p-3 mh-bd-highlight">align items center</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-mb-2 mh-align-items-baseline mh-height-100">
+            <div class="mh-p-3 mh-bd-highlight">align items baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align items baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align items baseline</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-mb-2 mh-align-items-stretch mh-height-100">
+            <div class="mh-p-3 mh-bd-highlight">align items stretch</div>
+            <div class="mh-p-3 mh-bd-highlight">align items stretch</div>
+            <div class="mh-p-3 mh-bd-highlight">align items stretch</div>
+        </div>
+    </div>
+    <br>
+    <div class="mh-container">
+        <div class="mh-df mh-bd-highlight mh-mb-2 mh-height-100">
+            <div class="mh-p-3 mh-bd-highlight">align self start</div>
+            <div class="mh-p-3 mh-bd-highlight">align self start</div>
+            <div class="mh-p-3 mh-bd-highlight">align self start</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-mb-2 mh-height-100">
+            <div class="mh-p-3 mh-bd-highlight">align self center</div>
+            <div class="mh-p-3 mh-bd-highlight mh-align-self-center">align self center</div>
+            <div class="mh-p-3 mh-bd-highlight">align self center</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-mb-2 mh-height-100">
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight mh-align-self-baseline">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-mb-2 mh-height-100">
+            <div class="mh-p-3 mh-bd-highlight">align self stretch</div>
+            <div class="mh-p-3 mh-bd-highlight mh-align-self-stretch">align self stretch</div>
+            <div class="mh-p-3 mh-bd-highlight">align self stretch</div>
+        </div>
+    </div>
+    <br>
+    <div class="mh-container">
+        <div class="mh-df mh-bd-highlight mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight mh-mr-auto">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-ml-auto mh-p-3 mh-bd-highlight">Flex items</div>
+        </div>
+    </div>
+    <div class="mh-container">
+        <div class="mh-df mh-bd-highlight mh-flex-column mh-align-items-start mh-mb-2 mh-height-200">
+            <div class="mh-mt-auto mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-flex-column mh-align-items-end mh-mb-2 mh-height-200">
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-mb-auto mh-p-3 mh-bd-highlight">align self baseline</div>
+        </div>
+    </div>
+    <div class="mh-container">
+        <div class="mh-df mh-bd-highlight mh-mb-2 mh-flex-nowrap">
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-mb-2 mh-flex-wrap">
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-mb-2 mh-flex-wrap-reverse">
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+            <div class="mh-p-3 mh-bd-highlight">align self baseline</div>
+        </div>
+    </div>
+    <div class="mh-container">
+        <div class="mh-df mh-bd-highlight mh-flex-wrap">
+            <div class="mh-order-7 mh-p-3 mh-bd-highlight">mh-order-1</div>
+            <div class="mh-order-6 mh-p-3 mh-bd-highlight">mh-order-2</div>
+            <div class="mh-order-5 mh-p-3 mh-bd-highlight">mh-order-3</div>
+            <div class="mh-order-4 mh-p-3 mh-bd-highlight">mh-order-4</div>
+            <div class="mh-order-3 mh-p-3 mh-bd-highlight">mh-order-5</div>
+            <div class="mh-order-2 mh-p-3 mh-bd-highlight">mh-order-6</div>
+            <div class="mh-order-1 mh-p-3 mh-bd-highlight">mh-order-7</div>
+        </div>
+    </div>
+    <div class="mh-container">
+        <div class="mh-df mh-bd-highlight mh-aling-content-start mh-flex-wrap mh-height-200 mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-aling-content-end mh-flex-wrap mh-height-200 mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-aling-content-center mh-flex-wrap mh-height-200 mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-aling-content-between mh-flex-wrap mh-height-200 mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-aling-content-around mh-flex-wrap mh-height-200 mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+        </div>
+        <div class="mh-df mh-bd-highlight mh-aling-content-stretch mh-flex-wrap mh-height-200 mh-mb-2">
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+            <div class="mh-p-3 mh-bd-highlight">Flex items</div>
+        </div>
+    </div>
+</body>
+</html>

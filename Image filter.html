@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Image Filtering</title>
+    <link rel="stylesheet" href="./css/mh-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* body{
+            font-family: Arial;
+            background-color: #efefef;
+        }
+        .mh-image-filter-style-1 {
+            text-align: center;
+        }
+        .mh-image-filter-style-1 .mh-image-filter-navigation{
+            padding: 25px 0px;
+        }
+        .mh-image-filter-style-1 .mh-image-filter-navigation a{
+            margin-right: 5px;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            padding: 10px 25px;
+            color: #e74c3c;
+        }
+        .mh-image-filter-style-1 .mh-image-filter-navigation a.active{
+            background-color: #e74c3c;
+            border-color: #e74c3c;
+            color: #fff;
+        }
+        .mh-image-filter-style-1 .mh-image-filter-image-body div{
+            display: inline-block;
+        }
+        .mh-image-filter-style-1 .mh-image-filter-image-body div img{
+            margin: 5px;
+            width: 400px;
+            height: 250px;
+        } */
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="mh-image-filter-style-1">
+        <div class="mh-image-filter-navigation">
+            <a href="#" mh-image-data-filter="all" class="mh-image-filter-button active">All</a>
+            <a href="#" mh-image-data-filter="one" class="mh-image-filter-button">One</a>
+            <a href="#" mh-image-data-filter="two" class="mh-image-filter-button">Two</a>
+            <a href="#" mh-image-data-filter="three" class="mh-image-filter-button">Three</a>
+            <a href="#" mh-image-data-filter="four" class="mh-image-filter-button">four</a>
+        </div>
+        <div class="mh-image-filter-image-body">
+            <div class="mh-image-filter one">
+                <img src="./img/ts12.jpg" alt="">
+            </div>
+            <div class="mh-image-filter one three">
+                <img src="./img/ts17.jpg" alt="">
+            </div>
+            <div class="mh-image-filter two">
+                <img src="./img/ts16.jpg" alt="">
+            </div>
+            <div class="mh-image-filter one">
+                <img src="./img/ts1.jpg" alt="">
+            </div>
+            <div class="mh-image-filter two">
+                <img src="./img/ts2.jpg" alt="">
+            </div>
+            <div class="mh-image-filter two">
+                <img src="./img/ts6.jpg" alt="">
+            </div>
+            <div class="mh-image-filter three one">
+                <img src="./img/ts14.jpg" alt="">
+            </div>
+            <div class="mh-image-filter three">
+                <img src="./img/ts9.jpg" alt="">
+            </div>
+            <div class="mh-image-filter three">
+                <img src="./img/ts8.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        // (function( $ ) {
+        //     $(document).ready(function(){
+        //         $(".mh-image-filter-button").click(function(){
+        //             var image_filter_name = $(this).attr("mh-image-data-filter");
+        //             if(image_filter_name == "all"){
+        //                 $(".mh-image-filter").show("2000");
+        //             }
+        //             else{
+        //                 $(".mh-image-filter").not("."+image_filter_name).hide("2000");
+        //                 $(".mh-image-filter").filter("."+image_filter_name).show("2000");
+        //             }
+        //         });
+        //         $(".mh-image-filter-navigation a").click(function(){
+        //             $(this).addClass("active").siblings().removeClass("active")
+        //         });
+        //     });
+        // }(jQuery));
+    </script>
+</body>
+
+</html>

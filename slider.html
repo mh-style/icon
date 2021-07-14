@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Monabbor hossen</title>
+<meta name="viewport" content="width=device-width,initial-scale=0"/>
+<link rel="stylesheet" href="./css/style.css" />
+	<script src="https://kit.fontawesome.com/eff477408d.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="mh-container mh-bg-dark">
+
+<div class="mh-contenedor">
+		<img class="mh-banner" src="./780-400.png" />
+		<img class="mh-banner" src="./780-400.png" />
+		<img class="mh-banner" src="./780-400.png" />
+		<img class="mh-banner" src="./780-400.png" />
+		<img class="mh-banner" src="./780-400.png" />
+		<img class="mh-banner" src="./780-400.png" />
+		<img class="mh-banner" src="./780-400.png" />
+		<img class="mh-btn mh-btn-left" onclick="left()" src="./arrow-left.png" />
+		<img class="mh-btn mh-btn-right" onclick="right()" src="./arrow-right.png" />
+</div>
+
+<script src="./js/jquery-3.5.1.js"></script>
+<script src="./js/script.js"></script>
+<script >
+var posicion = 0;
+function left() {
+	posicion--;
+	if(posicion < 1 ){
+		posicion = $('.mh-contenedor').children('.mh-banner').length;
+	};
+	$(".mh-contenedor").children(".mh-banner").not('.active').css({
+		'left' : '100%'
+	});
+	$('.mh-contenedor').children('.active').animate({
+		'left' : '-100%'
+	});
+	$(".mh-contenedor").children(".mh-banner").each(function(index, elemento){
+		if(posicion - 1 == index){
+			$(elemento).addClass('active').animate({
+				'left' : 0
+			});
+		}else{
+			$(elemento).removeClass('active');
+		};
+	});
+};
+function right() {
+	posicion++;
+	if(posicion > $('.mh-contenedor').children('.mh-banner').length){
+		posicion = 1;
+	};
+	$(".mh-contenedor").children(".mh-banner").not('.active').css({
+		'left' : '-100%'
+	});
+	$('.mh-contenedor').children('.active').animate({
+		'left' : '100%'
+	});
+	$(".mh-contenedor").children(".mh-banner").each(function(index, elemento){
+		if(posicion - 1 == index){
+			$(elemento).addClass('active').animate({
+				'left' : 0
+			});
+		}else{
+			$(elemento).removeClass('active');
+		};
+	});
+};
+function altoConetendor(){
+	$('.mh-contenedor').css({
+		'height' : $('.mh-contenedor').width() * 0.5
+	});
+};
+$(window).resize(altoConetendor);
+$(document).ready(function() {
+	right();
+	altoConetendor();
+});
+</script>
+</body>
+</html>
+

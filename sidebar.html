@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sider Menu Bar CSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+background: #042331;
+}
+.sidebar {
+  position: fixed;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+	overflow-x: hidden;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 48px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+	width: 100%;
+}
+
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 30px;
+  font-size: 17px;
+  color: white;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+  display: none;
+}
+btn-header{
+	height: 50px;
+	width: 100%;
+	background: #f00;
+	position: relative;
+}
+label #btn{
+  left: 250px;
+  top: 10px;
+  font-size: 25px;
+  color: white;
+  padding: 6px 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: 195px;
+  top: 10px;
+  font-size: 25px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+nav ul{
+	vertical-align: middle;
+}
+nav ul li{
+	display: inline-block;
+	
+}
+#check:checked ~ .sidebar{
+  left: -250px;
+}
+#check:checked ~ label #btn{
+  left: 20px;
+  opacity: 1;
+  pointer-events: auto;
+}
+#check:checked ~ label #cancel{
+  left: -196px;
+}
+#check:checked ~ main{
+  margin-left: 0px;
+}
+main{
+  background: #ff0;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  transition: all .5s;
+  margin-left: 250px;
+  padding-top: 50px;
+	padding-left: 20px;
+}
+nav{
+	height: 50px;
+	background: #f00;
+  display: block;
+  position: fixed;
+  width: 100%;
+}
+nav ul{
+  margin-left: 70px;
+}
+@media (max-width: 768px){
+	label #btn,label #cancel{
+		display: block;
+    position: fixed;
+	}
+	main{
+		margin-left: 250px;
+	}
+	#check:checked ~ main{
+  		margin-left: 0px;
+	}
+	nav{
+    display: block;
+    position: fixed;
+    width: 100%;
+	}
+}
+@media(max-width: 560px){
+ .sidebar {
+   width: 200px;
+	transition: all .3s ease !important;
+ }
+#check:checked ~ label #cancel{
+  left: -156px;
+}
+label #btn{
+  left: 0px;
+  top: 10px;
+}
+label #cancel{
+  left: 155px;
+  top: 10px;
+}
+main{
+	transition: all 0.2s ease !important ;
+	margin-left: 0px;
+}
+
+}
+.dropdown a:after{
+	content: "\2023";
+	color: #fff;
+	display: inline-block;
+	padding-right: 5px;
+	transform: rotate(90deg);
+	transition: 0.5s;
+	float: right;
+}
+.dropdown a:hover:after,
+.dropdown a:focus:after{
+	content: "\2023";
+	transform: rotate(30deg);
+	transition: 0.5s;
+}
+.dropdown ul{
+	display: none;
+	transition: all 0.5s ease;
+	font-size: 22px;
+}
+.dropdown:active > ul{
+	display: block;
+}
+.dropdown ul li a:after{
+	content: "";
+}
+.dropdown ul li a:hover:after,
+.dropdown ul li a:focus:after{
+	content: "";
+}
+.dropdown ul li:hover a,
+.dropdown ul li:focus a{
+  padding-left: 60px;
+}
+.sidebar::-webkit-scrollbar{
+  width: 5px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+  background: #00a8f7;
+}
+	</style>
+  </head>
+  <body>
+<nav>
+<ul>
+    <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+    <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+    <li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+</ul>
+</nav>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+
+<div class="sidebar">
+    <header>My App</header>
+  <ul>
+    <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+    <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+    <li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+    <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+    <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+    <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+    <li class="dropdown"><a href="#"><i class="far fa-envelope"></i>Contact</a>
+		<ul>
+			<li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+    		<li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+  			<li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+		</ul>
+	</li>
+	<li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+    <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+    <li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+    <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+    <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+    <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+    <li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
+	<li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+    <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+    <li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+    <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+    <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+    <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+    <li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
+	<li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+    <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+    <li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+    <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+    <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+    <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+    <li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
+	<li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+    <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+    <li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+    <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+    <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+    <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+    <li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
+	<li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+    <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+    <li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+    <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+    <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+    <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+    <li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
+  </ul>
+</div>
+ <main>
+<h1>Jihan</h1>
+<p>kejeb djnejsje. djdnjdjeieghej eidbe iejebeeir jenjdjene jgwhws eie jve huebe hehebu eueheueb jebdj enddjbr r. djjjh gffh. jffhnn uurrrf huyg uufdf.. bhhjjkhv jhgggbjj hhtrh </p>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<input type="color"/>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+<br></br>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+
+
+
+
+
+</main>
+
+<script src="./js/all.min.js"></script>
+  </body>
+</html>

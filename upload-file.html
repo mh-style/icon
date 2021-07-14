@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mh-style-icon.css"/>
+    <link rel="stylesheet" href="./css/mh-style.css"/>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        /* body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        } */
+        /* .mh-drag-drop{
+            border: 2px dashed #fff;
+            height: 500px;
+            width: 700px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: "Poppins", sans-serif;
+        }
+        .mh-drag-drop.active{
+            border: 2px solid #fff;
+        }
+        .mh-drag-drop .icon{
+            font-size: 100px;
+            color: #fff;
+        }
+        .mh-drag-drop .mh-drag-drop-header{
+            font-size: 30px;
+            color: #fff;
+            font-weight: 500;
+        }
+        .mh-drag-drop span{
+            font-size: 25px;
+            font-weight: 500;
+            color: #fff;
+            margin: 10px 0 15px 0;
+        }
+        .mh-drag-drop .mh-drag-drop-button{
+            padding: 10px 25px;
+            font-size: 20px;
+            font-weight: 500;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: #5256ad;
+            background: #fff;
+            border-radius: 5px;
+        }
+        .mh-drag-drop img{
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+            border-radius: 5px;
+        } */
+    </style>
+</head>
+<body>
+        <div class="mh-drag-drop mh-bg-skyblue">
+            <div class="icon">
+                <i class="mh mh-cloud-upload"></i>
+            </div>
+                <h1 class="mh-drag-drop-header">Drag & Drop to Upload File</h1>
+                <span>OR</span>
+                <button class="mh-drag-drop-button mh-color-red">Browse File</button>
+                <input type="file" class="mh-drag-drop-input" hidden>
+        </div>
+
+        <script src="./js/mh-style.js"></script>
+    <script>
+        // const dropArea = document.querySelector(".mh-drag-drop"),
+        // dragText = dropArea.querySelector(".mh-drag-drop-header"),
+        // dragbutton = dropArea.querySelector(".mh-drag-drop-button"),
+        // draginput = dropArea.querySelector(".mh-drag-drop-input");
+        // let file;
+
+        // dragbutton.onclick = ()=>{
+        //     draginput.click();
+        // }
+        // draginput.addEventListener("change", function(){
+        //     file = this.files[0];
+        //     showFile();
+        //     dropArea.classList.add("active");
+        // });
+        // dropArea.addEventListener("dragover", (event)=>{
+        //     event.preventDefault();
+        //     dropArea.classList.add("active");
+        //     dragText.textContent = "Release to Upload File";
+        // });
+        // dropArea.addEventListener("dragleave", ()=>{
+        //     dropArea.classList.remove("active");
+        //     dragText.textContent = "Drag & Drop to Upload File";
+        // });
+        // dropArea.addEventListener("drop", (event)=>{
+        //     event.preventDefault();
+        //     file = event.dataTransfer.files[0];
+        //     showFile();
+        // });
+        // function showFile(){
+        //     let fileType = file.type;
+        //     let validExtensions = ["image/jpeg", "image/jpg", "image/png"];
+        //     if(validExtensions.includes(fileType)){
+        //         let fileReader = new FileReader();
+        //         fileReader.onload = ()=>{
+        //             let fileURL = fileReader.result;
+        //             let imgTag = `<img src="${fileURL}" alt="">`;
+        //             dropArea.innerHTML = imgTag;
+        //         }
+        //         fileReader.readAsDataURL(file);
+        //     }else{
+        //         dropArea.classList.remove("active");
+        //         alert("It's don't support")
+        //     }
+        // }
+    </script>
+</body>
+</html>

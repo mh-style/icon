@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel="stylesheet" href="./css/mh-style.css" />
+	<link rel="stylesheet" href="./css/mh-style-icon.css" />
+	<style>
+		.task {
+			cursor: pointer;
+		}
+
+		.task input:checked~i {
+			color: red;
+		}
+
+		.task input {
+			position: absolute;
+			visibility: hidden;
+		}
+
+		.task i {
+			display: inline-block;
+			border: 1px solid #000;
+			font-size: 20px;
+			margin-left: 14px;
+			color: transparent;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<form class="mh-checkbox">
+		<input type="checkbox" id="fruit-1" name="fruit-1" />
+		<label for="fruit-1">Apple</label>
+		<input type="checkbox" id="fruit-2" name="fruit-2" />
+		<label for="fruit-2">Apple</label>
+		<input type="checkbox" id="fruit-3" name="fruit-3" disabled />
+		<label for="fruit-3">Apple</label>
+		<input type="checkbox" id="fruit-4" name="fruit-4" checked disabled />
+		<label for="fruit-4">Apple</label>
+	</form>
+	<form class="mh-checkbox-style-1 mh-ml-6">
+		<input type="checkbox" id="check1" name="check" />
+		<label for="check1">Jihan</label>
+	</form>
+	<form class="mh-checkbox-style-2">
+		<label class="task">
+			<input type="checkbox">
+			<i class="mh mh-checkmark1"></i>
+			<span class="checkbox-text">Jihan</span>
+		</label>
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team member card</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mh-style-icon.css">
+    <!-- <style>
+        .mh-team-members-style-2.mh-team-members ,
+        .mh-team-members-style-3.mh-team-members ,
+        .mh-team-members-style-4.mh-team-members ,
+        .mh-team-members-style-5.mh-team-members {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .mh-team-members-style-2 .mh-team-member ,
+        .mh-team-members-style-3 .mh-team-member ,
+        .mh-team-members-style-4 .mh-team-member ,
+        .mh-team-members-style-5 .mh-team-member {
+            text-align: center;
+            padding: 0px;
+            float: left;
+            margin-left: 15px;
+            position: relative;
+            font-family: sans-serif;
+            margin-right: 15px;
+            width: 30.333333%;
+            margin: 0 auto;
+        }
+        .mh-team-members-style-2 .mh-team-member .mh-title ,
+        .mh-team-members-style-3 .mh-team-member .mh-title ,
+        .mh-team-members-style-4 .mh-team-member .mh-title ,
+        .mh-team-members-style-5 .mh-team-member .mh-title {
+            font-size: 25px;
+            padding-top: 10px;
+        }
+
+        .mh-team-members-style-2 .mh-team-member .mh-subtitle ,
+        .mh-team-members-style-3 .mh-team-member .mh-subtitle ,
+        .mh-team-members-style-4 .mh-team-member .mh-subtitle ,
+        .mh-team-members-style-5 .mh-team-member .mh-subtitle {
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+
+        .mh-team-members-style-2 .mh-team-member .mh-social-media ,
+        .mh-team-members-style-3 .mh-team-member .mh-social-media ,
+        .mh-team-members-style-4 .mh-team-member .mh-social-media ,
+        .mh-team-members-style-5 .mh-team-member .mh-social-media {
+            margin: 12px 0px 0px 0px;
+        }
+
+        .mh-team-members-style-2 .mh-team-member .mh-social-media a,
+        .mh-team-members-style-3 .mh-team-member .mh-social-media a,
+        .mh-team-members-style-4 .mh-team-member .mh-social-media a,
+        .mh-team-members-style-5 .mh-team-member .mh-social-media a {
+            margin: 0px 5px 0px 5px;
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+            cursor: pointer;
+        }
+
+        .mh-team-members-style-2 .mh-team-member img,
+        .mh-team-members-style-3 .mh-team-member img,
+        .mh-team-members-style-4 .mh-team-member img,
+        .mh-team-members-style-5 .mh-team-member img{
+            display: block;
+        }
+        .mh-team-members-style-2 .mh-body ,
+        .mh-team-members-style-3 .mh-body {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            background: #ff070745;
+            color: #fff;
+            height: 0;
+            width: 100%;
+            transition: .5s ease;
+        }
+        .mh-team-members-style-2 .mh-body {
+            bottom: 100%;
+        }
+
+        .mh-team-members-style-2 .mh-team-member:hover .mh-body{
+            bottom: 0;
+        }
+        .mh-team-members-style-4 .mh-body,
+        .mh-team-members-style-5 .mh-body {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            background: #ff070745;
+            color: #fff;
+            height: 70%;
+            width: 0;
+            transition: 0.5s ease;
+        }
+        .mh-team-members-style-4 .mh-team-member:hover .mh-body,
+        .mh-team-members-style-5 .mh-team-member:hover .mh-body {
+            width: 100%;
+        }
+        .mh-team-members-style-5 .mh-body{
+            left: 100%;
+        }
+        .mh-team-members-style-5 .mh-team-member:hover .mh-body {
+            left: 0;
+        }
+        .mh-team-members-style-2 .mh-team-member:hover .mh-body ,
+        .mh-team-members-style-3 .mh-team-member:hover .mh-body {
+            height: 70%;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="mh-container">
+        <div class="mh-team-members-style-2 mh-team-members">
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid" alt="">
+                <div class="mh-body">
+                    <h2 class="mh-title">Jihan</h2>
+                    <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                    <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat
+                        commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor
+                        adipisci aliquid soluta at?</p>
+                    <div class="mh-social-media">
+                        <a href="#"><i class="mh mh-facebook2"></i></a>
+                        <a href="#"><i class="mh mh-twitter11"></i></a>
+                        <a href="#"><i class="mh mh-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid" alt="">
+                <div class="mh-body">
+                    <h2 class="mh-title">Jihan</h2>
+                    <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                    <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat
+                        commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor
+                        adipisci aliquid soluta at?</p>
+                    <div class="mh-social-media">
+                        <a href="#"><i class="mh mh-facebook2"></i></a>
+                        <a href="#"><i class="mh mh-twitter11"></i></a>
+                        <a href="#"><i class="mh mh-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid" alt="">
+                <div class="mh-body">
+                    <h2 class="mh-title">Jihan</h2>
+                    <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                    <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat
+                        commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor
+                        adipisci aliquid soluta at?</p>
+                    <div class="mh-social-media">
+                        <a href="#"><i class="mh mh-facebook2"></i></a>
+                        <a href="#"><i class="mh mh-twitter11"></i></a>
+                        <a href="#"><i class="mh mh-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mh-container">
+        <div class="mh-team-members-style-3 mh-team-members">
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid" alt="">
+                <div class="mh-body">
+                    <h2 class="mh-title">Jihan</h2>
+                    <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                    <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat
+                        commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor
+                        adipisci aliquid soluta at?</p>
+                    <div class="mh-social-media">
+                        <a href="#"><i class="mh mh-facebook2"></i></a>
+                        <a href="#"><i class="mh mh-twitter11"></i></a>
+                        <a href="#"><i class="mh mh-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid" alt="">
+                <div class="mh-body">
+                    <h2 class="mh-title">Jihan</h2>
+                    <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                    <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat
+                        commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor
+                        adipisci aliquid soluta at?</p>
+                    <div class="mh-social-media">
+                        <a href="#"><i class="mh mh-facebook2"></i></a>
+                        <a href="#"><i class="mh mh-twitter11"></i></a>
+                        <a href="#"><i class="mh mh-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid" alt="">
+                <div class="mh-body">
+                    <h2 class="mh-title">Jihan</h2>
+                    <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                    <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat
+                        commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor
+                        adipisci aliquid soluta at?</p>
+                    <div class="mh-social-media">
+                        <a href="#"><i class="mh mh-facebook2"></i></a>
+                        <a href="#"><i class="mh mh-twitter11"></i></a>
+                        <a href="#"><i class="mh mh-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mh-container">
+        <div class="mh-team-members-style-4 mh-team-members">
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid" alt="">
+                <div class="mh-body">
+                    <h2 class="mh-title">Jihan</h2>
+                    <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                    <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat
+                        commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor
+                        adipisci aliquid soluta at?</p>
+                    <div class="mh-social-media">
+                        <a href="#"><i class="mh mh-facebook2"></i></a>
+                        <a href="#"><i class="mh mh-twitter11"></i></a>
+                        <a href="#"><i class="mh mh-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid" alt="">
+                <div class="mh-body">
+                    <h2 class="mh-title">Jihan</h2>
+                    <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                    <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat
+                        commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor
+                        adipisci aliquid soluta at?</p>
+                    <div class="mh-social-media">
+                        <a href="#"><i class="mh mh-facebook2"></i></a>
+                        <a href="#"><i class="mh mh-twitter11"></i></a>
+                        <a href="#"><i class="mh mh-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid" alt="">
+                <div class="mh-body">
+                    <h2 class="mh-title">Jihan</h2>
+                    <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                    <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat
+                        commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor
+                        adipisci aliquid soluta at?</p>
+                    <div class="mh-social-media">
+                        <a href="#"><i class="mh mh-facebook2"></i></a>
+                        <a href="#"><i class="mh mh-twitter11"></i></a>
+                        <a href="#"><i class="mh mh-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mh-container">
+        <div class="mh-team-members-style-5 mh-team-members">
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid" alt="">
+                <div class="mh-body">
+                    <h2 class="mh-title">Jihan</h2>
+                    <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                    <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat
+                        commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor
+                        adipisci aliquid soluta at?</p>
+                    <div class="mh-social-media">
+                        <a href="#"><i class="mh mh-facebook2"></i></a>
+                        <a href="#"><i class="mh mh-twitter11"></i></a>
+                        <a href="#"><i class="mh mh-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid" alt="">
+                <div class="mh-body">
+                    <h2 class="mh-title">Jihan</h2>
+                    <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                    <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat
+                        commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor
+                        adipisci aliquid soluta at?</p>
+                    <div class="mh-social-media">
+                        <a href="#"><i class="mh mh-facebook2"></i></a>
+                        <a href="#"><i class="mh mh-twitter11"></i></a>
+                        <a href="#"><i class="mh mh-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid" alt="">
+                <div class="mh-body">
+                    <h2 class="mh-title">Jihan</h2>
+                    <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                    <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat
+                        commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor
+                        adipisci aliquid soluta at?</p>
+                    <div class="mh-social-media">
+                        <a href="#"><i class="mh mh-facebook2"></i></a>
+                        <a href="#"><i class="mh mh-twitter11"></i></a>
+                        <a href="#"><i class="mh mh-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mh-container">
+        <div class="mh-team-members-style-1 mh-team-members">
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid mh-border-radius-rounded" alt="">
+                <h2 class="mh-title">Jihan</h2>
+                <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor adipisci aliquid soluta at?</p>
+                <div class="mh-social-media">
+                    <a href="#"><i class="mh mh-facebook2"></i></a>
+                    <a href="#"><i class="mh mh-twitter11"></i></a>
+                    <a href="#"><i class="mh mh-instagram"></i></a>
+                </div>
+            </div>
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid mh-border-radius-rounded" alt="">
+                <h2 class="mh-title">Jihan</h2>
+                <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor adipisci aliquid soluta at?</p>
+                <div class="mh-social-media">
+                    <a href="#"><i class="mh mh-facebook2"></i></a>
+                    <a href="#"><i class="mh mh-twitter11"></i></a>
+                    <a href="#"><i class="mh mh-instagram"></i></a>
+                </div>
+            </div>
+            <div class="mh-team-member">
+                <img src="./200-200.png" class="mh-img-fluid mh-border-radius-rounded" alt="">
+                <h2 class="mh-title">Jihan</h2>
+                <h4 class="mh-subtitle">CEO at MH-Style</h4>
+                <p class="mh-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab ea saepe fugiat commodi fuga, dolores at eos esse? Optio autem consectetur repellendus facilis. Natus dolor adipisci aliquid soluta at?</p>
+                <div class="mh-social-media">
+                    <a href="#"><i class="mh mh-facebook2"></i></a>
+                    <a href="#"><i class="mh mh-twitter11"></i></a>
+                    <a href="#"><i class="mh mh-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

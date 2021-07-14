@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log In</title>
+    <link rel="stylesheet" href="./css/mh-style.css">
+    <style>
+  /*  *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+ .mh-form-body{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./img/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    font-family: sans-serif;
+}
+.mh-form-style-1 {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+.mh-form-style-1 .mh-form-button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.mh-form-style-1 .mh-form-toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+.mh-form-style-1 #mh-form-btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+.mh-form-style-1 .mh-form-social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+.mh-form-style-1 .mh-form-social-icons img{
+    width: 50px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    background: none;
+    border-radius: 50%;
+}
+.mh-form-style-1 .mh-form-input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.mh-form-style-1 .mh-form-input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.mh-form-style-1 .mh-form-submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.mh-form-style-1 .mh-form-chech-box{
+    margin: 30px 10px 30px 0;
+}
+.mh-form-style-1 .mh-form-chech-box label{
+    color: #777;
+    font-size: 12px;
+    bottom: 65px;
+    position: absolute;
+}
+.mh-form-style-1 #mh-form-login{
+    left: 50px;
+}
+.mh-form-style-1 #mh-form-register{
+    left: 450px;
+} */
+    </style>
+</head>
+<body>
+    <div class="mh-form-body">
+        <div class="mh-form-style-1">
+            <div class="mh-form-button-box">
+                <div id="mh-form-btn"></div>
+                <button type="button" class="mh-form-toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="mh-form-toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="mh-form-social-icons">
+                <a href="#"><img src="./img/facebook.png" alt=""></a>
+                <a href="#"><img src="./img/tw.png" alt=""></a>
+                <a href="#"><img src="./img/ins.png" alt=""></a>
+            </div>
+            <form id="mh-form-login" action="" class="mh-form-input-group">
+                <input type="text" class="mh-form-input-field" placeholder="User Id" required>
+                <input type="text" class="mh-form-input-field" placeholder="Enter Password" required>
+                <input type="checkbox" id="Remember-Password" class="mh-form-chech-box"><label for="Remember-Password">Remember Password</label>
+                <button type="submit" class="mh-form-submit-btn">Log in</button>
+            </form>
+            <form id="mh-form-register" action="" class="mh-form-input-group">
+                <input type="text" class="mh-form-input-field" placeholder="User Id" required>
+                <input type="email" class="mh-form-input-field" placeholder="Email Id" required>
+                <input type="text" class="mh-form-input-field" placeholder="Enter Password" required>
+                <input type="checkbox" id="agree-terms" class="mh-form-chech-box"><label for="agree-terms">I agree to the terms & conditions</label>
+                <button type="submit" class="mh-form-submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./js/mh-style.js"></script>
+
+</body>
+</html>

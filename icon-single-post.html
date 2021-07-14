@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single icon</title>
+    <link rel="stylesheet" href="./css/mh-style-icon.css">
+    <link rel="stylesheet" href="./css/mh-style.css">
+    <style>
+        .mh-icon-span-dot {
+            display: flow-root list-item;
+            color: gray;
+            float: left;
+            margin-left: 15px;
+            font-size: 20px;
+        }
+
+        .mh-icon-size-show:hover {
+            color: skyblue !important;
+            cursor: pointer;
+        }
+        .mh-copybutton:active{
+            transform: scale(0.9);
+        }
+        /* [data-tooltip]{
+            position: relative;
+            cursor: default;
+        } */
+        [data-tooltip]::after{
+            position: absolute;
+            width: 140px;
+            left: calc(50% - 70px);
+            content: attr(data-tooltip);
+            bottom: -150%;
+            text-align: center;
+            box-sizing: border-box;
+            color: #fff;
+            background: black;
+            padding: 8px;
+            border-radius: 10px;
+            font-size: 0.9em;
+            font-weight: bold;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 1s, transform 0.4s;
+        }
+        
+        [data-tooltip]:active::after{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mh-container">
+        <h1 class="mh-fs-40">error</h1>
+        <br><br>
+        <div class="mh-col-md-5 mh-pl-0">
+            <h2 class="mh-fs-20 mh-float-left mh-mr-3">mh</h2><span class="mh-icon-span-dot"></span>
+            <h2 class="mh-fs-20 mh-float-left mh-mr-3 mh-copybutton mh-cursor-pointer" data-tooltip="copy" data-mh-copyboard-text='eefd'>eefd</h2><span class="mh-icon-span-dot"></span>
+            <h2 class="mh-fs-20 mh-fw-100 mh-cursor-pointer mh-copybutton" data-tooltip="copy" data-mh-copyboard-text='<i class="mh mh-error"></i>'>&lt;i class="mh mh-error"&gt;&lt;/i&gt;</h2>
+        </div>
+        <br><br>
+        <div class="mh-row">
+            <div class="mh-col-md-5 mh-text-center mh-border-radius-10 mh-bg-light mh-border mh-border-width5">
+                <i class="mh mh-error mh-color-skyblue" style="font-size: 433px;"></i>
+            </div>
+
+            <div class="mh-col-md-7 mh-df">
+                <i class="mh mh-error mh-icon-size-show mh-color-gray mh-is-1"></i>
+                <i class="mh mh-error mh-icon-size-show mh-color-gray mh-is-2"></i>
+                <i class="mh mh-error mh-icon-size-show mh-color-gray mh-is-3"></i>
+                <i class="mh mh-error mh-icon-size-show mh-color-gray mh-is-4"></i>
+                <i class="mh mh-error mh-icon-size-show mh-color-gray mh-is-5"></i>
+                <i class="mh mh-error mh-icon-size-show mh-color-gray mh-is-6"></i>
+                <i class="mh mh-error mh-icon-size-show mh-color-gray mh-is-7"></i>
+                <i class="mh mh-error mh-icon-size-show mh-color-gray mh-is-8"></i>
+                <i class="mh mh-error mh-icon-size-show mh-color-gray mh-is-9"></i>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/mhstyle-copyboard.js"></script>
+    <script>
+        $(function () {
+            var mh_style = new mhstyle_copyboard('.mh-copybutton');
+        });
+    </script>
+</body>
+
+</html>

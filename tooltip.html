@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .mh-tooltip-style-1 .mh-tooltip {
+        position: relative;
+        display: inline-block;
+        color: #000;
+    }
+
+    .mh-tooltip-style-1 .mh-tooltip .mh-tooltip-content {
+        visibility: hidden;
+    }
+
+    .mh-tooltip-style-1 .mh-tooltip .mh-tooltip-content {
+        visibility: hidden;
+        position: absolute;
+        z-index: 2;
+        width: 150px;
+        max-width: 150px;
+        padding: 10px;
+        font-size: 18px;
+        line-height: 1.4;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+
+    .mh-tooltip-style-1 .mh-tooltip-bottom {
+        top: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-right-width: 0;
+    }
+
+    .mh-tooltip-style-1 .mh-tooltip-top {
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-right-width: 0;
+    }
+
+    .mh-tooltip-style-1 .mh-tooltip-left {
+        top: 50%;
+        right: 100%;
+        transform: translateY(-50%);
+        border-right-width: 0;
+        margin-right: 10px;
+
+    }
+
+    .mh-tooltip-style-1 .mh-tooltip-right {
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+        border-right-width: 0;
+        margin-left: 10px;
+    }
+
+    .mh-tooltip-style-1 .mh-tooltip:hover .mh-tooltip-content:after {
+        position: absolute;
+        z-index: 1;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        content: "";
+    }
+
+    .mh-tooltip-style-1 .mh-tooltip-bottom:after {
+        bottom: 100%;
+        border-top-width: 0;
+        border-bottom-color: rgba(0, 0, 0, 0.8) !important;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    .mh-tooltip-style-1 .mh-tooltip-top:after {
+        top: 100%;
+        border-bottom-width: 0;
+        border-top-color: rgba(0, 0, 0, 0.8) !important;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    .mh-tooltip-style-1 .mh-tooltip-left:after {
+        top: calc(50% - 5px);
+        right: -6%;
+        border-right-width: 0;
+        border-left-color: rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .mh-tooltip-style-1 .mh-tooltip-right:after {
+        top: calc(50% - 5px);
+        left: -6%;
+        border-left-width: 0;
+        border-right-color: rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .mh-tooltip-style-1 .mh-tooltip:hover .mh-tooltip-content {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /********************/
+    .mh-tooltip-style-2 .mh-tooltip {
+        position: relative;
+        display: inline-block;
+        color: #000;
+        line-height: 20px;
+        font-size: 18px;
+    }
+
+    .mh-tooltip-style-2 .mh-tooltip:before {
+        position: absolute;
+        z-index: 2;
+        display: none;
+        width: 150px;
+        max-width: 150px;
+        padding: 10px;
+        font-size: 18px;
+        line-height: 1.4;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        content: attr(content);
+    }
+
+    .mh-tooltip-style-2 .mh-tooltip:after {
+        position: absolute;
+        z-index: 1;
+        display: none;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        content: "";
+    }
+
+    .mh-tooltip-style-2 .mh-tooltip:hover:before,
+    .mh-tooltip-style-2 .mh-tooltip:hover:after {
+        display: inline-block;
+    }
+
+
+    .mh-tooltip-style-2 .mh-tooltip.mh-tooltip-top:before {
+        bottom: calc(100% + 5px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .mh-tooltip-style-2 .mh-tooltip.mh-tooltip-top:after {
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom-width: 0;
+        border-top-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    .mh-tooltip-style-2 .mh-tooltip.mh-tooltip-bottom:before {
+        top: calc(100% + 5px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .mh-tooltip-style-2 .mh-tooltip.mh-tooltip-bottom:after {
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top-width: 0;
+        border-bottom-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    .mh-tooltip-style-2 .mh-tooltip.mh-tooltip-left:before {
+        top: 50%;
+        right: calc(100% + 5px);
+        transform: translateY(-50%);
+    }
+
+    .mh-tooltip-style-2 .mh-tooltip.mh-tooltip-left:after {
+        top: 50%;
+        right: 100%;
+        transform: translateY(-50%);
+        border-right-width: 0;
+        border-left-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    .mh-tooltip-style-2 .mh-tooltip.mh-tooltip-right:before {
+        top: 50%;
+        left: calc(100% + 5px);
+        transform: translateY(-50%);
+    }
+
+    .mh-tooltip-style-2 .mh-tooltip.mh-tooltip-right:after {
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+        border-left-width: 0;
+        border-right-color: rgba(0, 0, 0, 0.8);
+    }
+</style>
+
+<body style="text-align:center;">
+
+    <h2>Tooltip</h2>
+    <p>Move the mouse over the text below:</p>
+    <div class="mh-tooltip-style-1">
+        <div class="mh-tooltip">Hover over me bottom
+            <span class="mh-tooltip-bottom mh-tooltip-content">Tooltip text Move the mouse over the text below</span>
+        </div>
+        <div class="mh-tooltip">Hover over me top
+            <span class="mh-tooltip-top mh-tooltip-content">Tooltip text Move the mouse over the text below</span>
+        </div><br />
+        <div class="mh-tooltip">Hover over me left
+            <span class="mh-tooltip-left mh-tooltip-content">Tooltip text Move the mouse over ooltip text Move the mouse
+                ove the text below</span>
+        </div>
+        <div class="mh-tooltip">Hover over me rihgt
+            <span class="mh-tooltip-right mh-tooltip-content">Tooltip text Move the mouse over ooltip text Move the
+                mouse
+                ove the text below</span>
+        </div>
+    </div>
+    <br>
+    <div class="mh-tooltip-style-2">
+        <div class="mh-tooltip mh-tooltip-top" content="Tooltip on top!">Hover over me</div>
+        <div class="mh-tooltip mh-tooltip-right"
+            content="Tooltip on right Tooltip on right oltip on right Tooltip on right Tooltip on right!">Hover over me
+        </div>
+        <div class="mh-tooltip mh-tooltip-bottom" content="Tooltip on bottom!">Hover over me</div>
+        <div class="mh-tooltip mh-tooltip-left" content="Tooltip on left!">Hover over me</div>
+    </div>
+
+</body>
+
+</html>

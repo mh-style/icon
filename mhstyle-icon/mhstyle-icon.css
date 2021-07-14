@@ -1,0 +1,123 @@
+.mh-fs-26em {
+    font-size: 26em;
+}
+
+.mh-icon {
+    color: black;
+}
+
+.mh-icon:hover {
+    color: #02A1FF;
+}
+
+.mh-icon-name {
+    margin-top: 10px;
+    font-size: 13px;
+    color: grey;
+}
+
+.mh-icon-content-body-left {
+    text-decoration: none;
+    color: #02A1FF;
+}
+
+.mh-icon-html-code:active ,
+.mh-icon-css-code:active {
+    transform: scaleX(0.9);
+    transition: all 0.5s;
+}
+
+.mh-icon-css-code.mh-tooltip:hover:before,
+.mh-icon-css-code.mh-tooltip:hover:after ,
+.mh-icon-html-code.mh-tooltip:hover:before,
+.mh-icon-html-code.mh-tooltip:hover:after {
+    display: none !important;
+}
+
+.mh-icon-css-code.mh-tooltip:active:before,
+.mh-icon-css-code.mh-tooltip:active:after ,
+.mh-icon-html-code.mh-tooltip:active:before,
+.mh-icon-html-code.mh-tooltip:active:after {
+    display: inline-block !important;
+    transition: 0s;
+}
+
+
+.mh-icon-html-code span {
+    font-size: 17px;
+    font-family: monospace;
+}
+
+.nt {
+    color: #d73038;
+}
+
+.na {
+    color: #2f6f9f;
+}
+
+.s {
+    color: #006ee0;
+}
+.mh-icon-font-sizeing {
+    /* text-align: center; */
+    position: relative;
+}
+.mh-icon-font-sizeing:hover h3 {
+    display: block;
+}
+.mh-icon-font-sizeing h3 {
+    bottom: 100%;
+    display: none;
+    position: absolute;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+    background: #02A1FF;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    z-index: 5;
+}
+.mh-icon-font-sizeing h3:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    background: transparent;
+    bottom: -20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #02A1FF transparent transparent transparent;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+/* icon css */
+
+.mhi-10k::before {
+    content: "\e900";
+}
+
+.mhi-10mp::before {
+    content: "\e901";
+}
+
+.mhi-12mp::before {
+    content: "\e902";
+}
+
+.mhi-13mp::before {
+    content: "\e903";
+}
+
+.mhi-14mp::before {
+    content: "\e904";
+}
+
+.mhi-15mp::before {
+    content: "\e905";
+}

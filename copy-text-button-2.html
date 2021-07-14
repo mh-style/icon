@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/eff477408d.js"></script>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        textarea {
+            padding: 10px;
+            font-size: 17px;
+            width: 80% !important;
+            text-align: justify;
+            color: #202020;
+            resize: none;
+            height: 115px !important;
+        }
+        textarea{
+            outline-color: #16a085;
+        }
+        .btn{
+            margin: 5px 0 40px 0;
+        }
+        .btn button{
+            padding: 9px 15px;
+            font-size: 17px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            outline: none;
+            background: linear-gradient(#18b495,#16a085);
+            color: #f2f2f2;
+            font-weight: 500;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .btn .tooltip{
+            margin-left: -10px;
+            font-size: 17px;
+            position: relative;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            background: linear-gradient(#18b495, #16a085);
+            color: #f2f2f2;
+            border-radius: 3px;
+            z-index: -1;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s, margin-left 0.4s;
+        }
+        .btn .tooltip.show{
+            margin-left: 10px;
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .tooltip:before{
+            content: '';
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            background: linear-gradient(#18b495,#16a085);
+            top: 50%;
+            z-index: -1;
+            left: -5px;
+            transform: translateY(-50%) rotate(45deg);
+        }
+    </style>    
+<div class="container">
+    <textarea id="copyText" readonly>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
+    <div class="btn">
+        <button>Copy</button>
+        <span class="tooltip">Copied</span>
+    </div>
+    
+</div>
+
+
+<script>
+    const copyText = document.querySelector("#copyText");
+    const button = document.querySelector("button");
+    const tooltip = document.querySelector(".tooltip");
+    button.addEventListener('click', function(){
+        copyText.select();
+        if(document.execCommand("copy")){
+            tooltip.classList.add("show")
+        }else{
+            alert("Something went wrong!");
+        }
+    });
+</script>
+</body>
+</html>
