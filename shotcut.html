@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 18px;
+            font-family: monospace;
+        }
+
+        input {
+            width: 270px;
+            height: 30px;
+            font-size: 20px;
+            margin: 10px 7px;
+            border: none;
+            box-shadow: 0px 0px 4px 3px #ddd;
+            outline: none;
+            border-radius: 5px;
+            padding-left: 5px;
+        }
+
+        .enter {
+            background: #006ee0;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 22px;
+            width: auto;
+            height: auto;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .nt {
+            color: #d73038;
+        }
+
+        .na {
+            color: #2f6f9f;
+        }
+
+        .s {
+            color: #006ee0;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="name1" placeholder="Enter icon name 1" required />
+        <input type="text" id="code1" placeholder="Enter icon code 1" /><br>
+        <input type="text" id="name2" placeholder="Enter icon name 2" />
+        <input type="text" id="code2" placeholder="Enter icon code 2" /><br>
+        <input type="text" id="name3" placeholder="Enter icon name 3" />
+        <input type="text" id="code3" placeholder="Enter icon code 3" /><br>
+        <input type="text" id="name4" placeholder="Enter icon name 4" />
+        <input type="text" id="code4" placeholder="Enter icon code 4" /><br>
+        <input type="text" id="name5" placeholder="Enter icon name 5" />
+        <input type="text" id="code5" placeholder="Enter icon code 5" /><br>
+        <input type="text" id="name6" placeholder="Enter icon name 6" />
+        <input type="text" id="code6" placeholder="Enter icon code 6" /><br>
+        <input type="button" class="enter" onclick="btn()" value="Enter">
+    </form>
+        <button class="copybutton enter" data-mh-copyboard-target="#copy">
+            Copy
+        </button>
+    <hr>
+
+    <section id="copy">
+        <span class="na">&lt;div</span> <span class="s">class=</span><span class="nt">"mh-icon-line mh-row"</span> <span
+            class="s">data-for=</span><span class="nt">"icon-content"</span><span class="na">&gt;</span><br>
+        &nbsp;&nbsp;<span class="na">&lt;a</span> <span class="s">data-target=</span><span class="nt">"<span
+                class="show-name1"></span>"</span> <span class="s">href=</span><span class="nt">"#"</span> <span
+            class="s">class=</span><span class="nt">"mh-icon mh-col-md-2 mh-text-center"</span><span
+            class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span class="nt">"mh-py-3
+            mh-box-shadow-rg mh-border-radius-5"</span><span class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span class="s">class=</span><span
+            class="nt">"mh mhi-<span class="show-name1"></span> mhi-4x"</span><span class="na">&gt;&lt;/i&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;h3</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-name"</span><span class="na">&gt;</span><span class="show-name1"></span><span
+            class="na">&lt;/h3&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+        &nbsp;&nbsp;<span class="na">&lt;/a&gt;</span><br>
+        &nbsp;&nbsp;<span class="na">&lt;a</span> <span class="s">data-target=</span><span class="nt">"<span
+                class="show-name2"></span>"</span> <span class="s">href=</span><span class="nt">"#"</span> <span
+            class="s">class=</span><span class="nt">"mh-icon mh-col-md-2 mh-text-center"</span><span
+            class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span class="nt">"mh-py-3
+            mh-box-shadow-rg mh-border-radius-5"</span><span class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span class="s">class=</span><span
+            class="nt">"mh mhi-<span class="show-name2"></span> mhi-4x"</span><span class="na">&gt;&lt;/i&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;h3</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-name"</span><span class="na">&gt;</span><span class="show-name2"></span><span
+            class="na">&lt;/h3&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+        &nbsp;&nbsp;<span class="na">&lt;/a&gt;</span><br>
+        &nbsp;&nbsp;<span class="na">&lt;a</span> <span class="s">data-target=</span><span class="nt">"<span
+                class="show-name3"></span>"</span> <span class="s">href=</span><span class="nt">"#"</span> <span
+            class="s">class=</span><span class="nt">"mh-icon mh-col-md-2 mh-text-center"</span><span
+            class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span class="nt">"mh-py-3
+            mh-box-shadow-rg mh-border-radius-5"</span><span class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span class="s">class=</span><span
+            class="nt">"mh mhi-<span class="show-name3"></span> mhi-4x"</span><span class="na">&gt;&lt;/i&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;h3</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-name"</span><span class="na">&gt;</span><span class="show-name3"></span><span
+            class="na">&lt;/h3&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+        &nbsp;&nbsp;<span class="na">&lt;/a&gt;</span><br>
+        &nbsp;&nbsp;<span class="na">&lt;a</span> <span class="s">data-target=</span><span class="nt">"<span
+                class="show-name4"></span>"</span> <span class="s">href=</span><span class="nt">"#"</span> <span
+            class="s">class=</span><span class="nt">"mh-icon mh-col-md-2 mh-text-center"</span><span
+            class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span class="nt">"mh-py-3
+            mh-box-shadow-rg mh-border-radius-5"</span><span class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span class="s">class=</span><span
+            class="nt">"mh mhi-<span class="show-name4"></span> mhi-4x"</span><span class="na">&gt;&lt;/i&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;h3</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-name"</span><span class="na">&gt;</span><span class="show-name4"></span><span
+            class="na">&lt;/h3&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+        &nbsp;&nbsp;<span class="na">&lt;/a&gt;</span><br>
+        &nbsp;&nbsp;<span class="na">&lt;a</span> <span class="s">data-target=</span><span class="nt">"<span
+                class="show-name5"></span>"</span> <span class="s">href=</span><span class="nt">"#"</span> <span
+            class="s">class=</span><span class="nt">"mh-icon mh-col-md-2 mh-text-center"</span><span
+            class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span class="nt">"mh-py-3
+            mh-box-shadow-rg mh-border-radius-5"</span><span class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span class="s">class=</span><span
+            class="nt">"mh mhi-<span class="show-name5"></span> mhi-4x"</span><span class="na">&gt;&lt;/i&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;h3</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-name"</span><span class="na">&gt;</span><span class="show-name5"></span><span
+            class="na">&lt;/h3&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+        &nbsp;&nbsp;<span class="na">&lt;/a&gt;</span><br>
+        &nbsp;&nbsp;<span class="na">&lt;a</span> <span class="s">data-target=</span><span class="nt">"<span
+                class="show-name6"></span>"</span> <span class="s">href=</span><span class="nt">"#"</span> <span
+            class="s">class=</span><span class="nt">"mh-icon mh-col-md-2 mh-text-center"</span><span
+            class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span class="nt">"mh-py-3
+            mh-box-shadow-rg mh-border-radius-5"</span><span class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span class="s">class=</span><span
+            class="nt">"mh mhi-<span class="show-name6"></span> mhi-4x"</span><span class="na">&gt;&lt;/i&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;h3</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-name"</span><span class="na">&gt;</span><span class="show-name6"></span><span
+            class="na">&lt;/h3&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+        &nbsp;&nbsp;<span class="na">&lt;/a&gt;</span><br>
+
+        <span class="na">&lt;/div&gt;</span><br>
+
+
+        <span class="na">&lt;div</span> <span class="s">class=</span><span class="nt">"mh-icon-content mh-my-6
+            mh-col-12"</span> <span class="s">id=</span><span class="nt">"icon-content"</span><span
+            class="na">&gt;</span><br>
+        &nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">data-tab=</span><span class="nt">"<span
+                class="show-name1"></span>"</span> <span class="s">class=</span><span class="nt">"mh-icon-content-body
+            mh-align-items-center mh-row mh-border-radius-10 mh-box-shadow-lg"</span><span class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-content-body-left mh-col-md-6 mh-text-center mh-py-4"</span><span
+            class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span class="s">class=</span><span
+            class="nt">"mh mh-fs-26em mhi-<span class="show-name1"></span>"</span><span
+            class="na">&gt;&lt;/i&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-content-body-right mh-col-md-6"</span><span class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;h1</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-title mh-clearfix mh-my-2"</span><span class="na">&gt;</span><span
+            class="show-name1"></span><span class="na">&lt;/h1&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-code mh-df mh-tooltip-style-2 mh-clearfix mh-my-2"</span><span
+            class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;button</span> <span
+            class="s">content=</span><span class="nt">"copy"</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-html-code mh-tooltip mh-tooltip-bottom mh-mr-2 mh-border-none mh-bg-none mh-outline-none
+            mh-cursor-pointer copybutton"</span> <span class="s">data-mh-copyboard-text=</span><span
+            class="nt"></span>'&amp;lt&semi;i class="mh mhi-<span
+            class="show-name1"></span>"&amp;gt&semi;&amp;lt&semi;/i&amp;gt&semi;'<span class="na">&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&amp;lt&semi;i </span><span
+            class="s">class=</span><span class="nt">"mh mhi-<span class="show-name1"></span>"</span><span
+            class="na">&amp;gt&semi;&amp;lt&semi;/i&amp;gt&semi;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/button&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;button</span> <span
+            class="s">content=</span><span class="nt">"copy"</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-css-code mh-tooltip mh-tooltip-top mh-border-none mh-bg-none mh-outline-none
+            mh-cursor-pointer copybutton"</span> <span class="s">data-mh-copyboard-text=</span><span class="nt">"<span
+                class="show-code1"></span>"</span></span><span class="na">&gt;</span><span
+            class="show-code1"></span><span class="na">&lt;/button&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-font-size mh-row mh-align-items-end mh-justify-content-between mh-clearfix mh-my-2
+            mh-mt-6"<span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name1"></span> mhi-2x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-2x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name1"></span> mhi-3x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-3x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name1"></span> mhi-5x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-5x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name1"></span> mhi-7x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-7x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name1"></span> mhi-10x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-10x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+
+            &nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">data-tab=</span><span class="nt">"<span
+                    class="show-name2"></span>"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body mh-align-items-center mh-row mh-border-radius-10
+                mh-box-shadow-lg"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body-left mh-col-md-6 mh-text-center mh-py-4"</span><span
+                class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span class="s">class=</span><span
+                class="nt">"mh mh-fs-26em mhi-<span class="show-name2"></span>"</span><span
+                class="na">&gt;&lt;/i&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body-right mh-col-md-6"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;h1</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-title mh-clearfix mh-my-2"</span><span class="na">&gt;</span><span
+                class="show-name2"></span><span class="na">&lt;/h1&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-code mh-df mh-tooltip-style-2 mh-clearfix mh-my-2"</span><span
+                class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;button</span> <span
+                class="s">content=</span><span class="nt">"copy"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-html-code mh-tooltip mh-tooltip-bottom mh-mr-2 mh-border-none mh-bg-none
+                mh-outline-none mh-cursor-pointer copybutton"</span> <span class="s">data-mh-copyboard-text=</span><span
+                class="nt"></span>'&amp;lt&semi;i class="mh mhi-<span
+                class="show-name2"></span>"&amp;gt&semi;&amp;lt&semi;/i&amp;gt&semi;'<span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&amp;lt&semi;i </span><span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name2"></span>"</span><span
+                class="na">&amp;gt&semi;&amp;lt&semi;/i&amp;gt&semi;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/button&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;button</span> <span
+                class="s">content=</span><span class="nt">"copy"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-css-code mh-tooltip mh-tooltip-top mh-border-none mh-bg-none mh-outline-none
+                mh-cursor-pointer copybutton"</span> <span class="s">data-mh-copyboard-text=</span><span
+                class="nt">"<span class="show-code2"></span>"</span></span><span class="na">&gt;</span><span
+            class="show-code2"></span><span class="na">&lt;/button&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-font-size mh-row mh-align-items-end mh-justify-content-between mh-clearfix mh-my-2
+            mh-mt-6"<span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name2"></span> mhi-2x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-2x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name2"></span> mhi-3x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-3x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name2"></span> mhi-5x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-5x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name2"></span> mhi-7x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-7x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name2"></span> mhi-10x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-10x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+
+            &nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">data-tab=</span><span class="nt">"<span
+                    class="show-name3"></span>"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body mh-align-items-center mh-row mh-border-radius-10
+                mh-box-shadow-lg"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body-left mh-col-md-6 mh-text-center mh-py-4"</span><span
+                class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span class="s">class=</span><span
+                class="nt">"mh mh-fs-26em mhi-<span class="show-name3"></span>"</span><span
+                class="na">&gt;&lt;/i&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body-right mh-col-md-6"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;h1</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-title mh-clearfix mh-my-2"</span><span class="na">&gt;</span><span
+                class="show-name3"></span><span class="na">&lt;/h1&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-code mh-df mh-tooltip-style-2 mh-clearfix mh-my-2"</span><span
+                class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;button</span> <span
+                class="s">content=</span><span class="nt">"copy"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-html-code mh-tooltip mh-tooltip-bottom mh-mr-2 mh-border-none mh-bg-none
+                mh-outline-none mh-cursor-pointer copybutton"</span> <span class="s">data-mh-copyboard-text=</span><span
+                class="nt"></span>'&amp;lt&semi;i class="mh mhi-<span
+                class="show-name3"></span>"&amp;gt&semi;&amp;lt&semi;/i&amp;gt&semi;'<span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&amp;lt&semi;i </span><span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name3"></span>"</span><span
+                class="na">&amp;gt&semi;&amp;lt&semi;/i&amp;gt&semi;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/button&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;button</span> <span
+                class="s">content=</span><span class="nt">"copy"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-css-code mh-tooltip mh-tooltip-top mh-border-none mh-bg-none mh-outline-none
+                mh-cursor-pointer copybutton"</span> <span class="s">data-mh-copyboard-text=</span><span
+                class="nt">"<span class="show-code3"></span>"</span></span><span class="na">&gt;</span><span
+            class="show-code3"></span><span class="na">&lt;/button&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-font-size mh-row mh-align-items-end mh-justify-content-between mh-clearfix mh-my-2
+            mh-mt-6"<span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name3"></span> mhi-2x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-2x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name3"></span> mhi-3x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-3x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name3"></span> mhi-5x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-5x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name3"></span> mhi-7x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-7x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name3"></span> mhi-10x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-10x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+
+            &nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">data-tab=</span><span class="nt">"<span
+                    class="show-name4"></span>"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body mh-align-items-center mh-row mh-border-radius-10
+                mh-box-shadow-lg"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body-left mh-col-md-6 mh-text-center mh-py-4"</span><span
+                class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span class="s">class=</span><span
+                class="nt">"mh mh-fs-26em mhi-<span class="show-name4"></span>"</span><span
+                class="na">&gt;&lt;/i&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body-right mh-col-md-6"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;h1</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-title mh-clearfix mh-my-2"</span><span class="na">&gt;</span><span
+                class="show-name4"></span><span class="na">&lt;/h1&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-code mh-df mh-tooltip-style-2 mh-clearfix mh-my-2"</span><span
+                class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;button</span> <span
+                class="s">content=</span><span class="nt">"copy"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-html-code mh-tooltip mh-tooltip-bottom mh-mr-2 mh-border-none mh-bg-none
+                mh-outline-none mh-cursor-pointer copybutton"</span> <span class="s">data-mh-copyboard-text=</span><span
+                class="nt"></span>'&amp;lt&semi;i class="mh mhi-<span
+                class="show-name4"></span>"&amp;gt&semi;&amp;lt&semi;/i&amp;gt&semi;'<span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&amp;lt&semi;i </span><span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name4"></span>"</span><span
+                class="na">&amp;gt&semi;&amp;lt&semi;/i&amp;gt&semi;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/button&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;button</span> <span
+                class="s">content=</span><span class="nt">"copy"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-css-code mh-tooltip mh-tooltip-top mh-border-none mh-bg-none mh-outline-none
+                mh-cursor-pointer copybutton"</span> <span class="s">data-mh-copyboard-text=</span><span
+                class="nt">"<span class="show-code4"></span>"</span></span><span class="na">&gt;</span><span
+            class="show-code4"></span><span class="na">&lt;/button&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-font-size mh-row mh-align-items-end mh-justify-content-between mh-clearfix mh-my-2
+            mh-mt-6"<span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name4"></span> mhi-2x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-2x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name4"></span> mhi-3x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-3x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name4"></span> mhi-5x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-5x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name4"></span> mhi-7x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-7x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name4"></span> mhi-10x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-10x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+
+            &nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">data-tab=</span><span class="nt">"<span
+                    class="show-name5"></span>"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body mh-align-items-center mh-row mh-border-radius-10
+                mh-box-shadow-lg"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body-left mh-col-md-6 mh-text-center mh-py-4"</span><span
+                class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span class="s">class=</span><span
+                class="nt">"mh mh-fs-26em mhi-<span class="show-name5"></span>"</span><span
+                class="na">&gt;&lt;/i&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body-right mh-col-md-6"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;h1</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-title mh-clearfix mh-my-2"</span><span class="na">&gt;</span><span
+                class="show-name5"></span><span class="na">&lt;/h1&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-code mh-df mh-tooltip-style-2 mh-clearfix mh-my-2"</span><span
+                class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;button</span> <span
+                class="s">content=</span><span class="nt">"copy"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-html-code mh-tooltip mh-tooltip-bottom mh-mr-2 mh-border-none mh-bg-none
+                mh-outline-none mh-cursor-pointer copybutton"</span> <span class="s">data-mh-copyboard-text=</span><span
+                class="nt"></span>'&amp;lt&semi;i class="mh mhi-<span
+                class="show-name5"></span>"&amp;gt&semi;&amp;lt&semi;/i&amp;gt&semi;'<span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&amp;lt&semi;i </span><span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name5"></span>"</span><span
+                class="na">&amp;gt&semi;&amp;lt&semi;/i&amp;gt&semi;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/button&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;button</span> <span
+                class="s">content=</span><span class="nt">"copy"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-css-code mh-tooltip mh-tooltip-top mh-border-none mh-bg-none mh-outline-none
+                mh-cursor-pointer copybutton"</span> <span class="s">data-mh-copyboard-text=</span><span
+                class="nt">"<span class="show-code5"></span>"</span></span><span class="na">&gt;</span><span
+            class="show-code5"></span><span class="na">&lt;/button&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-font-size mh-row mh-align-items-end mh-justify-content-between mh-clearfix mh-my-2
+            mh-mt-6"<span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name5"></span> mhi-2x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-2x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name5"></span> mhi-3x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-3x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name5"></span> mhi-5x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-5x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name5"></span> mhi-7x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-7x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name5"></span> mhi-10x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-10x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+
+            &nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">data-tab=</span><span class="nt">"<span
+                    class="show-name6"></span>"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body mh-align-items-center mh-row mh-border-radius-10
+                mh-box-shadow-lg"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body-left mh-col-md-6 mh-text-center mh-py-4"</span><span
+                class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span class="s">class=</span><span
+                class="nt">"mh mh-fs-26em mhi-<span class="show-name6"></span>"</span><span
+                class="na">&gt;&lt;/i&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-content-body-right mh-col-md-6"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;h1</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-title mh-clearfix mh-my-2"</span><span class="na">&gt;</span><span
+                class="show-name6"></span><span class="na">&lt;/h1&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-code mh-df mh-tooltip-style-2 mh-clearfix mh-my-2"</span><span
+                class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;button</span> <span
+                class="s">content=</span><span class="nt">"copy"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-html-code mh-tooltip mh-tooltip-bottom mh-mr-2 mh-border-none mh-bg-none
+                mh-outline-none mh-cursor-pointer copybutton"</span> <span class="s">data-mh-copyboard-text=</span><span
+                class="nt"></span>'&amp;lt&semi;i class="mh mhi-<span
+                class="show-name6"></span>"&amp;gt&semi;&amp;lt&semi;/i&amp;gt&semi;'<span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&amp;lt&semi;i </span><span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name6"></span>"</span><span
+                class="na">&amp;gt&semi;&amp;lt&semi;/i&amp;gt&semi;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/button&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;button</span> <span
+                class="s">content=</span><span class="nt">"copy"</span> <span class="s">class=</span><span
+                class="nt">"mh-icon-css-code mh-tooltip mh-tooltip-top mh-border-none mh-bg-none mh-outline-none
+                mh-cursor-pointer copybutton"</span> <span class="s">data-mh-copyboard-text=</span><span
+                class="nt">"<span class="show-code6"></span>"</span></span><span class="na">&gt;</span><span
+            class="show-code6"></span><span class="na">&lt;/button&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span class="s">class=</span><span
+            class="nt">"mh-icon-font-size mh-row mh-align-items-end mh-justify-content-between mh-clearfix mh-my-2
+            mh-mt-6"<span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name6"></span> mhi-2x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-2x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name6"></span> mhi-3x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-3x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name6"></span> mhi-5x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-5x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name6"></span> mhi-7x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-7x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;div</span> <span
+                class="s">class=</span><span class="nt">"mh-icon-font-sizeing"</span><span class="na">&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;i</span> <span
+                class="s">class=</span><span class="nt">"mh mhi-<span class="show-name6"></span> mhi-10x"</span><span
+                class="na">&gt;&lt;/i&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;</span>mhi-10x<span
+                class="na">&lt;/h3&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+            &nbsp;&nbsp;<span class="na">&lt;/div&gt;</span><br>
+
+            <span class="na">&lt;/div&gt;</span><br>
+    </section>
+    
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/mhstyle-copyboard.js"></script>
+    <script>
+        $(function(){
+            var mh_style = new mhstyle_copyboard('.copybutton');
+            $(".copybutton").click(function(){
+                $(this).html('Copied!!');
+                var that = $(this);
+                var intrvrl = setInterval(function(){
+                    that.html('Copy to clipboard');
+                    clearInterval(intrvrl);
+                },2000);
+            });
+        });
+    </script>
+    <script>
+        function btn() {
+            var show_name1 = document.getElementsByClassName("show-name1");
+            var name1 = document.getElementById("name1");
+            var show_code1 = document.getElementsByClassName("show-code1");
+            var code1 = document.getElementById("code1");
+            var show_name2 = document.getElementsByClassName("show-name2");
+            var name2 = document.getElementById("name2");
+            var show_code2 = document.getElementsByClassName("show-code2");
+            var code2 = document.getElementById("code2");
+            var show_name3 = document.getElementsByClassName("show-name3");
+            var name3 = document.getElementById("name3");
+            var show_code3 = document.getElementsByClassName("show-code3");
+            var code3 = document.getElementById("code3");
+            var show_name4 = document.getElementsByClassName("show-name4");
+            var name4 = document.getElementById("name4");
+            var show_code4 = document.getElementsByClassName("show-code4");
+            var code4 = document.getElementById("code4");
+            var show_name5 = document.getElementsByClassName("show-name5");
+            var name5 = document.getElementById("name5");
+            var show_code5 = document.getElementsByClassName("show-code5");
+            var code5 = document.getElementById("code5");
+            var show_name6 = document.getElementsByClassName("show-name6");
+            var name6 = document.getElementById("name6");
+            var show_code6 = document.getElementsByClassName("show-code6");
+            var code6 = document.getElementById("code6");
+            if (name1.value == "") {
+                name1.style.border = "1px solid red";
+            } else {
+                name1.style.border = "1px solid lawngreen";
+                for (var i = 0; i < show_name1.length; i++) {
+                    show_name1[i].innerText = name1.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '').replace(/\;/g, '').replace(/\_/g, '');
+                }}
+                if (code1.value == "" ) {
+                    code1.style.border = "1px solid red";
+            } else {
+                for (var i = 0; i < show_code1.length; i++) {
+                    show_code1[i].innerText = code1.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '').replace(/\;/g, '').replace(/\_/g, '');
+                }}
+                if (name2.value == "") {
+                    name2.style.border = "1px solid red";
+            } else {
+                for (var i = 0; i < show_name2.length; i++) {
+                    show_name2[i].innerText = name2.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '').replace(/\;/g, '').replace(/\_/g, '');
+                }}
+                if (code2.value == "") {
+                    code2.style.border = "1px solid red";
+            } else {
+                for (var i = 0; i < show_code2.length; i++) {
+                    show_code2[i].innerText = code2.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '').replace(/\;/g, '').replace(/\_/g, '');
+                }}
+                if (name3.value == "") {
+                    name3.style.border = "1px solid red";
+            } else {
+                for (var i = 0; i < show_name3.length; i++) {
+                    show_name3[i].innerText = name3.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '').replace(/\;/g, '').replace(/\_/g, '');
+                }}
+                if (code3.value == "") {
+                    code3.style.border = "1px solid red";
+            } else {
+                for (var i = 0; i < show_code3.length; i++) {
+                    show_code3[i].innerText = code3.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '').replace(/\;/g, '').replace(/\_/g, '');
+                }}
+                if (name4.value == ""){
+                    name4.style.border = "1px solid red";
+            } else {
+                for (var i = 0; i < show_name4.length; i++) {
+                    show_name4[i].innerText = name4.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '').replace(/\;/g, '').replace(/\_/g, '');
+                }}
+                if (code4.value == "") {
+                    code4.style.border = "1px solid red";
+            } else {
+                for (var i = 0; i < show_code4.length; i++) {
+                    show_code4[i].innerText = code4.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '').replace(/\;/g, '').replace(/\_/g, '');
+                }}
+                if (name5.value == "") {
+                    name5.style.border = "1px solid red";
+            } else {
+                for (var i = 0; i < show_name5.length; i++) {
+                    show_name5[i].innerText = name5.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '').replace(/\;/g, '').replace(/\_/g, '');
+                }}
+                if (code5.value == "") {
+                    code5.style.border = "1px solid red";
+            } else {
+                for (var i = 0; i < show_code5.length; i++) {
+                    show_code5[i].innerText = code5.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '').replace(/\;/g, '').replace(/\_/g, '');
+                }}
+                if (name6.value == "") {
+                    name6.style.border = "1px solid red";
+            } else {
+                for (var i = 0; i < show_name6.length; i++) {
+                    show_name6[i].innerText = name6.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '').replace(/\;/g, '').replace(/\_/g, '');
+                }}
+                if (code6.value == "") {
+                    code6.style.border = "1px solid red";
+            } else {
+                for (var i = 0; i < show_code6.length; i++) {
+                    show_code6[i].innerText = code6.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '').replace(/\;/g, '').replace(/\_/g, '');
+                }
+            }
+        };
+    </script>
+</body>
+
+</html>
