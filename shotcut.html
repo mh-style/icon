@@ -961,12 +961,10 @@
             var name6 = document.getElementById("name6");
             var show_code6 = document.getElementsByClassName("show-code6");
             var code6 = document.getElementById("code6");
-            if (name1.value == "" || code1.value == "" || name2.value == "" || code2.value == "" || name3.value == "" ||
-                code3.value == "" || name4.value == "" || code4.value == "" || name5.value == "" || code5.value == "" ||
-                name6.value == "" || code6.value == "") {
+            if (name1.value == "" || code1.value == "" || name2.value == "" || name2.value == code2.value || code2.value == "" || name3.value == "" || code3.value == "" || name4.value == "" || code4.value == "" || name5.value == "" || code5.value == "" || name6.value == "" || code6.value == "") {
                 alert("Sorry");
             } 
-                if (name1.value == "") {
+                if (name1.value == "" || name1.value == code1.value || name1.value == code2.value || name1.value == name2.value || name3.value == name1.value || name1.value == code3.value || name4.value == name1.value || name1.value == code4.value || name5.value == name1.value || code5.value == name1.value || name6.value == name1.value || code6.value == name1.value) {
                     name1.style.border = "1px solid red";
                 } else {
                     name1.style.border = "1px solid lawngreen";
@@ -976,7 +974,7 @@
                                 /\;/g, '').replace(/\_/g, '');
                     }
                 }
-                if (code1.value == "") {
+                if (code1.value == "" || code1.value == name1.value || code1.value == code2.value || code1.value == name2.value || name3.value == code1.value || code1.value == code3.value || name4.value == code1.value || code1.value == code4.value || name5.value == code1.value || code5.value == code1.value || name6.value == code1.value || code6.value == code1.value) {
                     code1.style.border = "1px solid red";
                 } else {
                     code1.style.border = "1px solid lawngreen";
@@ -986,7 +984,7 @@
                                 /\;/g, '').replace(/\_/g, '');
                     }
                 }
-                if (name2.value == "") {
+                if (name2.value == "" || name2.value == code1.value || name2.value == code2.value || name2.value == name1.value || name2.value == name3.value || name2.value == code3.value || name2.value == name4.value || name2.value == code4.value || name2.value == name5.value || name2.value == code5.value || name2.value == name6.value || name2.value == code6.value) {
                     name2.style.border = "1px solid red";
                 } else {
                     name2.style.border = "1px solid lawngreen";
@@ -996,7 +994,7 @@
                                 /\;/g, '').replace(/\_/g, '');
                     }
                 }
-                if (code2.value == "") {
+                if (code2.value == "" || code2.value == code1.value || name2.value == code2.value || code2.value == name1.value || code2.value == name3.value || code2.value == code3.value || code2.value == name4.value || code2.value == code4.value || code2.value == name5.value || code2.value == code5.value || code2.value == name6.value || code2.value == code6.value) {
                     code2.style.border = "1px solid red";
                 } else {
                     code2.style.border = "1px solid lawngreen";
@@ -1006,7 +1004,7 @@
                                 /\;/g, '').replace(/\_/g, '');
                     }
                 }
-                if (name3.value == "") {
+                if (name3.value == "" || name3.value == name1.value || name3.value == code1.value || name3.value == name2.value || name3.value == code2.value || code4.value == name3.value || name3.value == code3.value || name4.value == name3.value || name3.value == name5.value || name3.value == code5.value || name3.value == name6.value || name3.value == code6.value) {
                     name3.style.border = "1px solid red";
                 } else {
                     name3.style.border = "1px solid lawngreen";
@@ -1016,7 +1014,7 @@
                                 /\;/g, '').replace(/\_/g, '');
                     }
                 }
-                if (code3.value == "") {
+                if (code3.value == "" || code3.value == name1.value || code3.value == code1.value || code3.value == name2.value || code3.value == code2.value || code3.value == name3.value || code4.value == code3.value || name4.value == code3.value || code3.value == name5.value || code3.value == code5.value || code3.value == name6.value || code3.value == code6.value) {
                     code3.style.border = "1px solid red";
                 } else {
                     code3.style.border = "1px solid lawngreen";
@@ -1026,7 +1024,7 @@
                                 /\;/g, '').replace(/\_/g, '');
                     }
                 }
-                if (name4.value == "") {
+                if (name4.value == "" || name4.value == name1.value || name4.value == code1.value || name4.value == name2.value || name4.value == code2.value || name4.value == name3.value || name4.value == code3.value || name4.value == code4.value || name4.value == name5.value || name4.value == code5.value || name4.value == name6.value || name4.value == code6.value) {
                     name4.style.border = "1px solid red";
                 } else {
                     name4.style.border = "1px solid lawngreen";
@@ -1036,7 +1034,7 @@
                                 /\;/g, '').replace(/\_/g, '');
                     }
                 }
-                if (code4.value == "") {
+                if (code4.value == "" || code4.value == name1.value || code4.value == code1.value || code4.value == name2.value || code4.value == code2.value || code4.value == name3.value || code4.value == code3.value || name4.value == code4.value || code4.value == name5.value || code4.value == code5.value || code4.value == name6.value || code4.value == code6.value) {
                     code4.style.border = "1px solid red";
                 } else {
                     code4.style.border = "1px solid lawngreen";
@@ -1046,7 +1044,7 @@
                                 /\;/g, '').replace(/\_/g, '');
                     }
                 }
-                if (name5.value == "") {
+                if (name5.value == "" || name5.value == name1.value || name5.value == code1.value || name5.value == name2.value || name5.value == code2.value || name5.value == name3.value || name5.value == code3.value || name4.value == name5.value || code4.value == name5.value || name5.value == code5.value || name5.value == name6.value || name5.value == code6.value) {
                     name5.style.border = "1px solid red";
                 } else {
                     name5.style.border = "1px solid lawngreen";
@@ -1056,7 +1054,7 @@
                                 /\;/g, '').replace(/\_/g, '');
                     }
                 }
-                if (code5.value == "") {
+                if (code5.value == "" || code5.value == name1.value || code5.value == code1.value || code5.value == name2.value || code5.value == code2.value || code5.value == name3.value || code5.value == code3.value || name4.value == code5.value || code5.value == name5.value || code4.value == code5.value || code5.value == name6.value || code5.value == code6.value) {
                     code5.style.border = "1px solid red";
                 } else {
                     code5.style.border = "1px solid lawngreen";
@@ -1066,7 +1064,7 @@
                                 /\;/g, '').replace(/\_/g, '');
                     }
                 }
-                if (name6.value == "") {
+                if (name6.value == "" || name6.value == name1.value || name6.value == code1.value || name6.value == name2.value || name6.value == code2.value || name6.value == name3.value || name6.value == code3.value || name4.value == name6.value || name6.value == name5.value || name6.value == code5.value || code4.value == name6.value || name6.value == code6.value) {
                     name6.style.border = "1px solid red";
                 } else {
                     name6.style.border = "1px solid lawngreen";
@@ -1076,7 +1074,7 @@
                                 /\;/g, '').replace(/\_/g, '');
                     }
                 }
-                if (code6.value == "") {
+                if (code6.value == "" || code6.value == name1.value || code6.value == code1.value || code6.value == name2.value || code6.value == code2.value || code6.value == name3.value || code6.value == code3.value || code6.value == code4.value || code6.value == name5.value || code6.value == code5.value || code6.value == name6.value || code4.value == code6.value) {
                     code6.style.border = "1px solid red";
                 } else {
                     code6.style.border = "1px solid lawngreen";
