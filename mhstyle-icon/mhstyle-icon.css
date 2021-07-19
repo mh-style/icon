@@ -47,7 +47,11 @@
     font-size: 17px;
     font-family: monospace;
 }
-
+.mh-icon-css-code {
+    border-left: 5px solid #ababab;
+    padding-left: 12px;
+    border-radius: 50%;
+}
 .nt {
     color: #d73038;
 }
