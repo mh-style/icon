@@ -20,6 +20,7 @@
   font-style: normal;
   font-display: block;
 }
+
 .mh {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'mhstyle' !important;
@@ -182,19 +183,19 @@
 .mhi-9mp:before {
   content: "\e930";
 }
-.mhi-Celsius:before {
+.mhi-celsius:before {
   content: "\e931";
 }
-.mhi-Fahrenheit:before {
+.mhi-fahrenheit:before {
   content: "\e932";
 }
-.mhi-IE:before {
+.mhi-ie:before {
   content: "\e933";
 }
-.mhi-IcoMoon:before {
+.mhi-icomoon:before {
   content: "\e934";
 }
-.mhi-Sajdah:before {
+.mhi-sajdah:before {
   content: "\e935";
 }
 .mhi-abacus:before {
@@ -15074,7 +15075,7 @@
 .mhi-ungroup:before {
   content: "\fc94";
 }
-.mhi-uniE900:before {
+.mhi-unie900:before {
   content: "\fc95";
 }
 .mhi-uninstall:before {
