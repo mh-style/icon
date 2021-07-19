@@ -113,8 +113,8 @@
 }
 
 .mh-icon-font-sizeing {
-    /* text-align: center; */
     position: relative;
+    margin-bottom: 10px;
 }
 
 .mh-icon-font-sizeing:hover h3 {
