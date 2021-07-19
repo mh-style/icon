@@ -969,9 +969,7 @@
                 } else {
                     name1.style.border = "1px solid lawngreen";
                     for (var i = 0; i < show_name1.length; i++) {
-                        show_name1[i].innerText = name1.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '')
-                            .replace(
-                                /\;/g, '').replace(/\_/g, '');
+                        show_name1[i].innerText = name1.value.toLowerCase().replace(/\,|\s|\;|\_|\.|\=|\+|\*/g, '').replace(/\mhi-|\-/y,'');
                     }
                 }
                 if (code1.value == "" || code1.value == name1.value || code1.value == code2.value || code1.value == name2.value || name3.value == code1.value || code1.value == code3.value || name4.value == code1.value || code1.value == code4.value || name5.value == code1.value || code5.value == code1.value || name6.value == code1.value || code6.value == code1.value) {
@@ -979,9 +977,7 @@
                 } else {
                     code1.style.border = "1px solid lawngreen";
                     for (var i = 0; i < show_code1.length; i++) {
-                        show_code1[i].innerText = code1.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '')
-                            .replace(
-                                /\;/g, '').replace(/\_/g, '');
+                        show_code1[i].innerText = code1.value.toLowerCase().replace(/\,|\s|\;|\_|\.|\=|\+|\*/g, '').replace(/\mhi-|\-/y,'');
                     }
                 }
                 if (name2.value == "" || name2.value == code1.value || name2.value == code2.value || name2.value == name1.value || name2.value == name3.value || name2.value == code3.value || name2.value == name4.value || name2.value == code4.value || name2.value == name5.value || name2.value == code5.value || name2.value == name6.value || name2.value == code6.value) {
@@ -989,9 +985,7 @@
                 } else {
                     name2.style.border = "1px solid lawngreen";
                     for (var i = 0; i < show_name2.length; i++) {
-                        show_name2[i].innerText = name2.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '')
-                            .replace(
-                                /\;/g, '').replace(/\_/g, '');
+                        show_name2[i].innerText = name2.value.toLowerCase().replace(/\,|\s|\;|\_|\.|\=|\+|\*/g, '').replace(/\mhi-|\-/y,'');
                     }
                 }
                 if (code2.value == "" || code2.value == code1.value || name2.value == code2.value || code2.value == name1.value || code2.value == name3.value || code2.value == code3.value || code2.value == name4.value || code2.value == code4.value || code2.value == name5.value || code2.value == code5.value || code2.value == name6.value || code2.value == code6.value) {
@@ -999,9 +993,7 @@
                 } else {
                     code2.style.border = "1px solid lawngreen";
                     for (var i = 0; i < show_code2.length; i++) {
-                        show_code2[i].innerText = code2.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '')
-                            .replace(
-                                /\;/g, '').replace(/\_/g, '');
+                        show_code2[i].innerText = code2.value.toLowerCase().replace(/\,|\s|\;|\_|\.|\=|\+|\*/g, '').replace(/\mhi-|\-/y,'');
                     }
                 }
                 if (name3.value == "" || name3.value == name1.value || name3.value == code1.value || name3.value == name2.value || name3.value == code2.value || code4.value == name3.value || name3.value == code3.value || name4.value == name3.value || name3.value == name5.value || name3.value == code5.value || name3.value == name6.value || name3.value == code6.value) {
@@ -1009,9 +1001,7 @@
                 } else {
                     name3.style.border = "1px solid lawngreen";
                     for (var i = 0; i < show_name3.length; i++) {
-                        show_name3[i].innerText = name3.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '')
-                            .replace(
-                                /\;/g, '').replace(/\_/g, '');
+                        show_name3[i].innerText = name3.value.toLowerCase().replace(/\,|\s|\;|\_|\.|\=|\+|\*/g, '').replace(/\mhi-|\-/y,'');
                     }
                 }
                 if (code3.value == "" || code3.value == name1.value || code3.value == code1.value || code3.value == name2.value || code3.value == code2.value || code3.value == name3.value || code4.value == code3.value || name4.value == code3.value || code3.value == name5.value || code3.value == code5.value || code3.value == name6.value || code3.value == code6.value) {
@@ -1019,9 +1009,7 @@
                 } else {
                     code3.style.border = "1px solid lawngreen";
                     for (var i = 0; i < show_code3.length; i++) {
-                        show_code3[i].innerText = code3.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '')
-                            .replace(
-                                /\;/g, '').replace(/\_/g, '');
+                        show_code3[i].innerText = code3.value.toLowerCase().replace(/\,|\s|\;|\_|\.|\=|\+|\*/g, '').replace(/\mhi-|\-/y,'');
                     }
                 }
                 if (name4.value == "" || name4.value == name1.value || name4.value == code1.value || name4.value == name2.value || name4.value == code2.value || name4.value == name3.value || name4.value == code3.value || name4.value == code4.value || name4.value == name5.value || name4.value == code5.value || name4.value == name6.value || name4.value == code6.value) {
@@ -1029,9 +1017,7 @@
                 } else {
                     name4.style.border = "1px solid lawngreen";
                     for (var i = 0; i < show_name4.length; i++) {
-                        show_name4[i].innerText = name4.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '')
-                            .replace(
-                                /\;/g, '').replace(/\_/g, '');
+                        show_name4[i].innerText = name4.value.toLowerCase().replace(/\,|\s|\;|\_|\.|\=|\+|\*/g, '').replace(/\mhi-|\-/y,'');
                     }
                 }
                 if (code4.value == "" || code4.value == name1.value || code4.value == code1.value || code4.value == name2.value || code4.value == code2.value || code4.value == name3.value || code4.value == code3.value || name4.value == code4.value || code4.value == name5.value || code4.value == code5.value || code4.value == name6.value || code4.value == code6.value) {
@@ -1039,9 +1025,7 @@
                 } else {
                     code4.style.border = "1px solid lawngreen";
                     for (var i = 0; i < show_code4.length; i++) {
-                        show_code4[i].innerText = code4.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '')
-                            .replace(
-                                /\;/g, '').replace(/\_/g, '');
+                        show_code4[i].innerText = code4.value.toLowerCase().replace(/\,|\s|\;|\_|\.|\=|\+|\*/g, '').replace(/\mhi-|\-/y,'');
                     }
                 }
                 if (name5.value == "" || name5.value == name1.value || name5.value == code1.value || name5.value == name2.value || name5.value == code2.value || name5.value == name3.value || name5.value == code3.value || name4.value == name5.value || code4.value == name5.value || name5.value == code5.value || name5.value == name6.value || name5.value == code6.value) {
@@ -1049,9 +1033,7 @@
                 } else {
                     name5.style.border = "1px solid lawngreen";
                     for (var i = 0; i < show_name5.length; i++) {
-                        show_name5[i].innerText = name5.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '')
-                            .replace(
-                                /\;/g, '').replace(/\_/g, '');
+                        show_name5[i].innerText = name5.value.toLowerCase().replace(/\,|\s|\;|\_|\.|\=|\+|\*/g, '').replace(/\mhi-|\-/y,'');
                     }
                 }
                 if (code5.value == "" || code5.value == name1.value || code5.value == code1.value || code5.value == name2.value || code5.value == code2.value || code5.value == name3.value || code5.value == code3.value || name4.value == code5.value || code5.value == name5.value || code4.value == code5.value || code5.value == name6.value || code5.value == code6.value) {
@@ -1059,9 +1041,7 @@
                 } else {
                     code5.style.border = "1px solid lawngreen";
                     for (var i = 0; i < show_code5.length; i++) {
-                        show_code5[i].innerText = code5.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '')
-                            .replace(
-                                /\;/g, '').replace(/\_/g, '');
+                        show_code5[i].innerText = code5.value.toLowerCase().replace(/\,|\s|\;|\_|\.|\=|\+|\*/g, '').replace(/\mhi-|\-/y,'');
                     }
                 }
                 if (name6.value == "" || name6.value == name1.value || name6.value == code1.value || name6.value == name2.value || name6.value == code2.value || name6.value == name3.value || name6.value == code3.value || name4.value == name6.value || name6.value == name5.value || name6.value == code5.value || code4.value == name6.value || name6.value == code6.value) {
@@ -1069,9 +1049,7 @@
                 } else {
                     name6.style.border = "1px solid lawngreen";
                     for (var i = 0; i < show_name6.length; i++) {
-                        show_name6[i].innerText = name6.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '')
-                            .replace(
-                                /\;/g, '').replace(/\_/g, '');
+                        show_name6[i].innerText = name6.value.toLowerCase().replace(/\,|\s|\;|\_|\.|\=|\+|\*/g, '').replace(/\mhi-|\-/y,'');
                     }
                 }
                 if (code6.value == "" || code6.value == name1.value || code6.value == code1.value || code6.value == name2.value || code6.value == code2.value || code6.value == name3.value || code6.value == code3.value || code6.value == code4.value || code6.value == name5.value || code6.value == code5.value || code6.value == name6.value || code4.value == code6.value) {
@@ -1079,9 +1057,7 @@
                 } else {
                     code6.style.border = "1px solid lawngreen";
                     for (var i = 0; i < show_code6.length; i++) {
-                        show_code6[i].innerText = code6.value.toLowerCase().replace(/\,/g, '').replace(/\s/g, '')
-                            .replace(
-                                /\;/g, '').replace(/\_/g, '');
+                        show_code6[i].innerText = code6.value.toLowerCase().replace(/\,|\s|\;|\_|\.|\=|\+|\*/g, '').replace(/\mhi-|\-/y,'');
                     }
                 }
             
