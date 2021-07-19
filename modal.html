@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>jQuery Super Modal Examples</title>
+    <link rel="stylesheet" href="https://mh-style.github.io/mh/style.css" />
+
+    <link rel="stylesheet" href="./css/supermodal.css" />
+    <style>
+        html,
+        * {
+            font-family: 'Inter';
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafafa;
+            line-height: 1.6;
+        }
+
+        .lead {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        .container {
+            margin: 80px auto;
+            max-width: 960px;
+        }
+
+        .btn {
+            padding: 1.25rem;
+            border: 0;
+            border-radius: 3px;
+            background-color: #4F46E5;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>jQuery Super Modal Examples</h1>
+        <p class="lead">An easy-to-use jQuery modal plugin that helps developers create responsive and customizable
+            dialog
+            boxes and popup windows on the web application.</p>
+        <div class="jihan">
+            <button class="btn" data-modal="modal_1">Click here!<i class="mh mhi-10k"></i>
+                <h3>JIHan</h3>
+            </button>
+            <button class="btn" data-modal="modal_2" data-modal-title="jQueryScript">Click here!<i
+                    class="mh mhi-10k"></i>
+                <h3>JIHan</h3>
+            </button><br>
+        </div>
+        <div id="modal_2" class="supermodal">
+            <div style="padding: 1rem;">
+                <h1>Example Modal 2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada est sit amet scelerisque
+                    porttitor.
+                    Cras in tempus massa. Donec rhoncus feugiat egestas. Cras id lectus facilisis felis vulputate
+                    facilisis.</p>
+                <button data-modal="modal_2" data-modal-showTitle="false" data-modal-maxWidth="400px"
+                    data-modal-maxHeight="300px" class="btn" data-modal-maxHeight>Another modal</button>
+            </div>
+        </div>
+        <div id="modal_1" class="supermodal">
+            <div style="padding: 1rem;">
+                <h1>Example Modal 1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada est sit amet scelerisque
+                    porttitor.
+                    Cras in tempus massa. Donec rhoncus feugiat egestas. Cras id lectus facilisis felis vulputate
+                    facilisis.</p>
+                <button data-modal="modal_2" data-modal-showTitle="false" data-modal-maxWidth="400px"
+                    data-modal-maxHeight="300px" class="btn" data-modal-maxHeight>Another modal</button>
+            </div>
+        </div>
+
+        <div id="modal_2" class="supermodal">
+            <div style="padding: 1rem;">
+                <h2>Example Modal 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada est sit amet scelerisque
+                    porttitor.
+                    Cras in tempus massa. Donec rhoncus feugiat egestas. Cras id lectus facilisis felis vulputate
+                    facilisis.</p>
+                <button data-modal-close class="btn">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/supermodal.js"></script>
+    <script>
+        $(function ($) {
+            $.supermodal({
+                backButton: true,
+                title: '',
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

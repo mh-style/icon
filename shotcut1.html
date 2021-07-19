@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="input-area">
+    <div id="input-body">
+        <input type="text" name="show_name[]" placeholder="Name">
+        <input type="text" name="code" placeholder="Name">
+        <h1></h1>
+    </div>
+    <div class="add-remove">
+        <a href="#" id="add">Add</a>
+        <a href="#" id="remove">Remove</a>
+    </div>
+</div>
+<input type="text" id="jihan"/>
+<button onclick="f2()">Click</button>
+<script>
+var input_body = document.getElementById("input-body");
+var h1 = document.getElementsByTagName('h1');
+var add = document.getElementById("add");
+var remove = document.getElementById("remove");
+
+add.onclick = function(){
+    
+    var newinput = document.createElement('input');
+    newinput.setAttribute('type','text');
+    newinput.setAttribute('name', 'show_name[]');
+    newinput.setAttribute('placeholder', document.getElementsByTagName('input').length);
+    input_body.appendChild(newinput );
+    var content = document.createElementNS
+}
+
+remove.onclick = function(){
+var input_tag = document.getElementsByTagName('input');
+    if(input_tag.length > 1){
+        input_body.removeChild(input_tag[(input_tag.length) - 1]);
+    }
+}
+
+
+</script>
+</body>
+</html>
