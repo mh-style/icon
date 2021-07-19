@@ -5,26 +5,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>icon page design</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../css/mh-style.css">
-    <link rel="stylesheet" href="./mhstyle-icon.css">
+    <link rel="stylesheet" href="../css/mhstyle-icon.css">
+    <link rel="stylesheet" href="../css/supermodal.css">
+    <style>
+        .mh-search-box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .mh-search-box input {
+            width: 60%;
+            float: right;
+            padding: 10px 0px 10px 20px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px #ddd;
+            outline: none;
+        }
+
+        .mh-icon {
+            color: black;
+            box-shadow: 0px 0px 10px 0px #ddd;
+            padding: 10px 0px;
+            border-radius: 6px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .mh-icons {
+            border: none;
+            background: none;
+        }
+    </style>
 </head>
 
 <body class="mh-bg-light">
+    <div class="mh-search-box mh-my-6">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search 5370 free icons">
+    </div>
     <div class="mh-container">
-        <div class="mh-icon-line mh-row" data-for="icon-content">
+        <div class="mh-icon-line mh-row" id="myUL">
+            <button class="mh-icons mh-col-md-2 mh-text-center" data-modal="10k">
+                <div class="mh-icon">
+                    <i class="mh mhi-10k mhi-4x"></i>
+                    <h3 class="mh-icon-name">10k</h3>
+                </div>
+            </button>
+            <button class="mh-icons mh-col-md-2 mh-text-center" data-modal="10mp">
+                <div class="mh-icon">
+                    <i class="mh mhi-10mp mhi-4x"></i>
+                    <h3 class="mh-icon-name">10mp</h3>
+                </div>
+            </button>
+
+        </div>
+        
+        <div class="supermodal" id="10k">
+            <div data-tab="10k" class="mh-icon-content-body mh-align-items-center mh-row mh-border-radius-10 mh-box-shadow-lg">
+              <div class="mh-icon-content-body-left mh-col-md-6 mh-col-sm-12 mh-text-center mh-py-4">
+                <i class="mh mh-fs-26em mhi-10k"></i>
+              </div>
+              <div class="mh-icon-content-body-right mh-col-md-6 mh-col-sm-12">
+                <h1 class="mh-icon-title mh-clearfix mh-my-2">10k</h1>
+                <div class="mh-icon-code mh-df mh-tooltip-style-2 mh-clearfix mh-my-2">
+                  <button content="copy" class="mh-icon-html-code mh-tooltip mh-tooltip-bottom mh-mr-2 mh-border-none mh-bg-none mh-outline-none mh-cursor-pointer copybutton" data-mh-copyboard-text='&lt;i class="mh mhi-10k"&gt;&lt;/i&gt;'>
+                    <span class="na">&lt;i </span><span class="s">class=</span><span class="nt">"mh mhi-10k"</span><span class="na">&gt;&lt;/i&gt;</span>
+                  </button>
+                  <button content="copy" class="mh-icon-css-code mh-tooltip mh-tooltip-top mh-border-none mh-bg-none mh-outline-none mh-cursor-pointer copybutton" data-mh-copyboard-text="e900">e900</button>
+                </div>
+                <div class="mh-icon-font-size mh-row mh-align-items-end mh-justify-content-between mh-clearfix mh-my-2 mh-mt-6">
+                  <div class="mh-icon-font-sizeing">
+                    <i class="mh mhi-10k mhi-2x"></i>
+                    <h3>mhi-2x</h3>
+                  </div>
+                  <div class="mh-icon-font-sizeing">
+                    <i class="mh mhi-10k mhi-3x"></i>
+                    <h3>mhi-3x</h3>
+                  </div>
+                  <div class="mh-icon-font-sizeing">
+                    <i class="mh mhi-10k mhi-5x"></i>
+                    <h3>mhi-5x</h3>
+                  </div>
+                  <div class="mh-icon-font-sizeing">
+                    <i class="mh mhi-10k mhi-7x"></i>
+                    <h3>mhi-7x</h3>
+                  </div>
+                  <div class="mh-icon-font-sizeing">
+                    <i class="mh mhi-10k mhi-10x"></i>
+                    <h3>mhi-10x</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div id="10mp" class="supermodal">
+            <div class="mh-icon-content-body mh-align-items-center mh-row mh-border-radius-10 mh-box-shadow-lg">
+                <div class="mh-icon-content-body-left mh-col-md-6 mh-text-center mh-py-4">
+                    <i class="mh mh-fs-26em mhi-10mp"></i>
+                </div>
+                <div class="mh-icon-content-body-right mh-col-md-6">
+                    <h1 class="mh-icon-title mh-clearfix mh-my-2">10mp</h1>
+                    <div class="mh-icon-code mh-df mh-tooltip-style-2 mh-clearfix mh-my-2">
+                        <button content="copy"
+                            class="mh-icon-html-code mh-tooltip mh-tooltip-bottom mh-mr-3 mh-border-none mh-bg-none mh-outline-none mh-cursor-pointer copybutton"
+                            data-mh-copyboard-text='&lt;i class="mh mhi-10mp"&gt;&lt;/i&gt;'>
+                            <span class="na">&lt;i </span><span class="s">class=</span><span class="nt">"mh
+                                mhi-10mp"</span><span class="na">&gt;&lt;/i&gt;</span>
+                        </button>
+                        <button content="copy"
+                            class="mh-icon-css-code mh-tooltip mh-tooltip-top mh-border-none mh-bg-none mh-outline-none mh-cursor-pointer copybutton"
+                            data-mh-copyboard-text='e900'>
+                            e900
+                        </button>
+                    </div>
+                    <div
+                        class="mh-icon-font-size mh-row mh-align-items-end mh-justify-content-between mh-clearfix mh-my-2 mh-mt-6">
+                        <div class="mh-icon-font-sizeing"><i class="mh mhi-10mp mhi-2x"></i>
+                            <h3>mhi-2x</h3>
+                        </div>
+                        <div class="mh-icon-font-sizeing"><i class="mh mhi-10mp mhi-3x"></i>
+                            <h3>mhi-3x</h3>
+                        </div>
+                        <div class="mh-icon-font-sizeing"><i class="mh mhi-10mp mhi-5x"></i>
+                            <h3>mhi-5x</h3>
+                        </div>
+                        <div class="mh-icon-font-sizeing"><i class="mh mhi-10mp mhi-7x"></i>
+                            <h3>mhi-7x</h3>
+                        </div>
+                        <div class="mh-icon-font-sizeing"><i class="mh mhi-10mp mhi-10x"></i>
+                            <h3>mhi-10x</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="mh-icon-line mh-row" data-for="icon-content">
+
             <a data-target="10k" href="#" class="mh-icon mh-col-md-2 mh-text-center">
                 <div class="mh-py-3 mh-box-shadow-rg mh-border-radius-5">
                     <i class="mh mhi-10k mhi-4x"></i>
                     <h3 class="mh-icon-name">10k</h3>
                 </div>
             </a>
-            <a data-target="10mp" href="#" class="mh-icon mh-col-md-2 mh-text-center">
+            <a data-target="10mp" href="#" data-for="icon-content" class="mh-icon mh-col-md-2 mh-text-center">
                 <div class="mh-py-3 mh-box-shadow-rg mh-border-radius-5">
                     <i class="mh mhi-10mp mhi-4x"></i>
                     <h3 class="mh-icon-name">10mp</h3>
                 </div>
             </a>
+
             <a data-target="12mp" href="#" class="mh-icon mh-col-md-2 mh-text-center">
                 <div class="mh-py-3 mh-box-shadow-rg mh-border-radius-5">
                     <i class="mh mhi-12mp mhi-4x"></i>
@@ -2182,7 +2314,6 @@
                 </div>
             </a>
         </div>
-<h1 class="jihan"></h1>
         <div class="mh-icon-content mh-my-6 mh-col-12" id="icon-content">
             <div data-tab="ac-unit"
                 class="mh-icon-content-body mh-align-items-center mh-row mh-border-radius-10 mh-box-shadow-lg">
@@ -2221,64 +2352,92 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div data-tab="access-alarms"
+                class="mh-icon-content-body mh-align-items-center mh-row mh-border-radius-10 mh-box-shadow-lg">
+                <div class="mh-icon-content-body-left mh-col-md-6 mh-text-center mh-py-4">
+                    <i class="mh mh-fs-26em mhi-access-alarms"></i>
                 </div>
-                <div data-tab="access-alarms"
-                    class="mh-icon-content-body mh-align-items-center mh-row mh-border-radius-10 mh-box-shadow-lg">
-                    <div class="mh-icon-content-body-left mh-col-md-6 mh-text-center mh-py-4">
-                        <i class="mh mh-fs-26em mhi-access-alarms"></i>
+                <div class="mh-icon-content-body-right mh-col-md-6">
+                    <h1 class="mh-icon-title mh-clearfix mh-my-2">access-alarms</h1>
+                    <div class="mh-icon-code mh-df mh-tooltip-style-2 mh-clearfix mh-my-2">
+                        <button content="copy"
+                            class="mh-icon-html-code mh-tooltip mh-tooltip-bottom mh-mr-3 mh-border-none mh-bg-none mh-outline-none mh-cursor-pointer copybutton"
+                            data-mh-copyboard-text='&lt;i class="mh mhi-access-alarms"&gt;&lt;/i&gt;'>
+                            <span class="na">&lt;i </span><span class="s">class=</span><span class="nt">"mh
+                                mhi-access-alarms"</span><span class="na">&gt;&lt;/i&gt;</span>
+                        </button>
+                        <button content="copy"
+                            class="mh-icon-css-code mh-tooltip mh-tooltip-top mh-border-none mh-bg-none mh-outline-none mh-cursor-pointer copybutton"
+                            data-mh-copyboard-text="e949">e949</button>
                     </div>
-                    <div class="mh-icon-content-body-right mh-col-md-6">
-                        <h1 class="mh-icon-title mh-clearfix mh-my-2">access-alarms</h1>
-                        <div class="mh-icon-code mh-df mh-tooltip-style-2 mh-clearfix mh-my-2">
-                            <button content="copy"
-                                class="mh-icon-html-code mh-tooltip mh-tooltip-bottom mh-mr-3 mh-border-none mh-bg-none mh-outline-none mh-cursor-pointer copybutton"
-                                data-mh-copyboard-text='&lt;i class="mh mhi-access-alarms"&gt;&lt;/i&gt;'>
-                                <span class="na">&lt;i </span><span class="s">class=</span><span class="nt">"mh
-                                    mhi-access-alarms"</span><span class="na">&gt;&lt;/i&gt;</span>
-                            </button>
-                            <button content="copy"
-                                class="mh-icon-css-code mh-tooltip mh-tooltip-top mh-border-none mh-bg-none mh-outline-none mh-cursor-pointer copybutton"
-                                data-mh-copyboard-text="e949">e949</button>
+                    <div
+                        class="mh-icon-font-size mh-row mh-align-items-end mh-justify-content-between mh-clearfix mh-my-2 mh-mt-6">
+                        <div class="mh-icon-font-sizeing"><i class="mh mhi-access-alarms mhi-2x"></i>
+                            <h3>mhi-2x</h3>
                         </div>
-                        <div
-                            class="mh-icon-font-size mh-row mh-align-items-end mh-justify-content-between mh-clearfix mh-my-2 mh-mt-6">
-                            <div class="mh-icon-font-sizeing"><i class="mh mhi-access-alarms mhi-2x"></i>
-                                <h3>mhi-2x</h3>
-                            </div>
-                            <div class="mh-icon-font-sizeing"><i class="mh mhi-access-alarms mhi-3x"></i>
-                                <h3>mhi-3x</h3>
-                            </div>
-                            <div class="mh-icon-font-sizeing"><i class="mh mhi-access-alarms mhi-5x"></i>
-                                <h3>mhi-5x</h3>
-                            </div>
-                            <div class="mh-icon-font-sizeing"><i class="mh mhi-access-alarms mhi-7x"></i>
-                                <h3>mhi-7x</h3>
-                            </div>
-                            <div class="mh-icon-font-sizeing"><i class="mh mhi-access-alarms mhi-10x"></i>
-                                <h3>mhi-10x</h3>
-                            </div>
+                        <div class="mh-icon-font-sizeing"><i class="mh mhi-access-alarms mhi-3x"></i>
+                            <h3>mhi-3x</h3>
+                        </div>
+                        <div class="mh-icon-font-sizeing"><i class="mh mhi-access-alarms mhi-5x"></i>
+                            <h3>mhi-5x</h3>
+                        </div>
+                        <div class="mh-icon-font-sizeing"><i class="mh mhi-access-alarms mhi-7x"></i>
+                            <h3>mhi-7x</h3>
+                        </div>
+                        <div class="mh-icon-font-sizeing"><i class="mh mhi-access-alarms mhi-10x"></i>
+                            <h3>mhi-10x</h3>
                         </div>
                     </div>
                 </div>
             </div>
+        </div> -->
 
 
 
-        </div>
-        <script src="../js/jquery-3.5.1.js">
-        </script>
-        <script src="./jquery.tabby.js"></script>
-        <script src="../js/mh-style.js"></script>
-        <script src="../js/mhstyle-copyboard.js"></script>
-        <script src="./mhstyle-icon.js"></script>
+    </div>
+    <script src="../js/jquery-3.5.1.js"></script>
+    <!-- <script src="./jquery.tabby.js"></script> -->
+    <script src="../js/mh-style.js"></script>
+    <script src="../js/mhstyle-copyboard.js"></script>
+    <!-- <script src="./mhstyle-icon.js"></script> -->
+    <script src="../js/supermodal.js"></script>
+    <script>
+        $(function ($) {
+            $.supermodal({
+                backButton: true,
+                title: '',
+                closeButtonIcon: 'mh mhi-times-circle',
+                showTitle: true,
 
-        <script>
-            var mh_style = new mhstyle_copyboard('.copybutton');
-            $(document).ready(function () {
-                $('.mh-icon-line').tabby();
             });
-        </script>
+        });
+    </script>
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByClassName("mh-icons");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByClassName("mh-icon-name")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 
+    <script>
+        var mh_style = new mhstyle_copyboard('.copybutton');
+        $(document).ready(function () {
+            $('.mh-icon-line').tabby();
+        });
+    </script>
 </body>
 
 </html>
