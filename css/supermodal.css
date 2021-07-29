@@ -51,6 +51,9 @@
 .mh-icon {
     color: black;
 }
+.mh-icons {
+    outline: none;
+}
 
 .mh-icon:hover {
     color: #02A1FF;
