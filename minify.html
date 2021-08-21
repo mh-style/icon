@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <form>
+        <textarea name="JIhan" id="minify-textarea" cols="150" rows="15"> </textarea><br>
+        <input id="minify_button" type="button" onclick="minify()" value="minify" />
+    </form><br>
+    <button class="copybutton" data-mh-copyboard-target="#copy">copy</button>
+    <div id="copy">
+        <p id="jihan"></p>
+    </div>
+
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/mhstyle-copyboard.js"></script>
+    <script>
+         $(function(){
+        var mh_style = new mhstyle_copyboard('.copybutton');
+         });
+    </script>
+    <script>
+        function minify() {
+            var text = document.getElementById("minify-textarea").value;
+            var minify_buttonj = document.getElementById("minify_button");
+            var ptag = document.getElementById("jihan");
+            
+                ptag.innerText = text.toLowerCase().replace(/\s/d, ' ').replace(/\s/g, ' ');
+
+            
+        }
+    </script>
+</body>
+
+</html>
