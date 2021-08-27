@@ -1,0 +1,42 @@
+** mhi-read-more (f852) ** //read-more-alt
+** mhi-pie-chart (f781) ** //pie-chart-alt
+** toggle-off (fbe2) ** //toggle-off-outline
+** toggle-on (fbe3) ** //toggle-on-outline
+** trending-up (fc27) ** //trending-up-alt
+** trending-down(fc26) ** //trending-down-alt
+** sync-alt (fb17) ** //sync1
+** sim-card(f9ad) ** //sim-card-alt
+** arrow-forward-ios (ea27) ** //arrow-right
+** arrow-right (ea0f) ** // arrow-right-alt
+** arrow-up (ea17) ** // arrow-up-alt
+** arrow-down (e9ff) ** // arrow-down-alt
+** arrow-left (ea07) ** // arrow-left-alt
+** bar-chart (ea94) ** // bar-chart-alt
+** battery-full (eabc) ** // battery-full-alt
+** volume-mute (fd3a) ** // volume-mute-alt
+** volume-down (fd35) ** // volume-down-alt
+** volume-up (fd3e) ** // volume-up-alt
+** volume-off (fd3d) ** // volume-off-alt
+** wifi-off (fd8b) ** // wifi-off-outline
+** zoom-in (fdf5) ** // zoom-in-alt
+** zoom-out (fdf6) ** // zoom-out-alt
+** border-all (eb39) ** // border-all-alt
+** border-style (eb42) ** // border-style-alt
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
+**  () ** // 
