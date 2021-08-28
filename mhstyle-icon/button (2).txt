@@ -1,16 +1,16 @@
-** mhi-read-more (f852) ** //read-more-alt~
-** mhi-pie-chart (f781) ** //pie-chart-alt~
-** toggle-off (fbe2) ** //toggle-off-outline~
-** toggle-on (fbe3) ** //toggle-on-outline~
-** trending-up (fc27) ** //trending-up-alt~
-** trending-down(fc26) ** //trending-down-alt~
-** sync-alt (fb17) ** //sync1~
-** sim-card(f9ad) ** //sim-card-alt~
-** arrow-forward-ios (ea27) ** //arrow-right~
-** arrow-right (ea0f) ** // arrow-right-alt~
-** arrow-up (ea17) ** // arrow-up-alt~
-** arrow-down (e9ff) ** // arrow-down-alt~
-** arrow-left (ea07) ** // arrow-left-alt~
+** mhi-read-more (f852) ** //read-more-alt~!
+** mhi-pie-chart (f781) ** //pie-chart-alt~!
+** toggle-off (fbe2) ** //toggle-off-outline~!
+** toggle-on (fbe3) ** //toggle-on-outline~!
+** trending-up (fc27) ** //trending-up-alt~!
+** trending-down(fc26) ** //trending-down-alt~!
+** sync-alt (fb17) ** //sync1~!
+** sim-card(f9ad) ** //sim-card-alt~!
+** arrow-forward-ios (ea27) ** //arrow-right~!
+** arrow-right (ea0f) ** // arrow-right-alt~!
+** arrow-up (ea17) ** // arrow-up-alt~!
+** arrow-down (e9ff) ** // arrow-down-alt~!
+** arrow-left (ea07) ** // arrow-left-alt~!
 ** bar-chart (ea91) ** // bar-chart-alt~
 ** battery-full (eabc) ** // battery-full-alt~
 ** volume-mute (fd3a) ** // volume-mute-alt~
@@ -58,7 +58,7 @@
 ** tablet1 (fb2a) ** // xx~
 ** tab (fb1e) ** // size pro~
 ** user-alt-slash (fcbc) ** // xx~
-** times-circle (fbda) ** // xx~
-** times (fbd9) ** // xx~
+** times-circle (fbda) ** // xx~!
+** times (fbd9) ** // xx~!
 ** cancel1 (ebe0) ** // cancel-circle
 ** cancel3 (ebe2) ** // 
