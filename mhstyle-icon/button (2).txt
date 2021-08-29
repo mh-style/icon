@@ -11,40 +11,40 @@
 ** arrow-up (ea17) ** // arrow-up-alt~!
 ** arrow-down (e9ff) ** // arrow-down-alt~!
 ** arrow-left (ea07) ** // arrow-left-alt~!
-** bar-chart (ea91) ** // bar-chart-alt~
-** battery-full (eabc) ** // battery-full-alt~
-** volume-mute (fd3a) ** // volume-mute-alt~
-** volume-down (fd35) ** // volume-down-alt~
-** volume-up (fd3e) ** // volume-up-alt~
-** volume-off (fd3d) ** // volume-off-alt~
-** wifi-off (fd8b) ** // wifi-off-outline~
-** zoom-in (fdf5) ** // zoom-in-alt~
-** zoom-out (fdf6) ** // zoom-out-alt~
-** border-all (eb36) ** // border-all-alt~
-** border-style (eb38) ** // border-style-alt~
-** view-column (fd07) ** // view-column-outline~
-** view-carousel (fd06) ** // view-carousel-outline~
-** charging-station (ec22) ** // charging-station-alt~
-** check-circle (ec44) ** // check-circle-alt~
-** cloud-off (ed0f) ** // cloud-off-alt~
-** cloud-upload (ed11) ** // cloud-upload4~
-** cloud-download (ed0e) ** // cloud-download4~
-** controller-jump-to-start (ed90) ** // controller-previous~
-** shopping-basket (f982) ** // shopping-basket-alt~
-** credit-card (edc2) ** // credit-card-outline~
-** fast-rewind (f036) ** // fast-rewind2~
-** fast-forward (f033) ** // fast-forward3
-** file-download (f07b) ** // file-download-alt~
-** file-upload (f0e7) ** // file-upload-alt~
-** format-italic (f1af) ** // format-italic-alt~
-** fullscreen-exit (f1e4) ** // fullscreen-exit1~
-** hot-tub (f30b) ** // hot-tub-alt~
-** mail--forbidden (f4dd) ** // mail-forbidden~
-** mail--forbidden1 (f4de) ** // mail-forbidden1~
-** power-off (f7d6) ** // power-off-alt~
-** mic-off (f565) ** // mic-off-outline~
-** shopping-bag (f97f) ** // shopping-bag-alt~
-** rewind (f8a3) ** // fast-rewind1~
+** bar-chart (ea91) ** // bar-chart-alt~!
+** battery-full (eabc) ** // battery-full-alt~!
+** volume-mute (fd3a) ** // volume-mute-alt~!
+** volume-down (fd35) ** // volume-down-alt~!
+** volume-up (fd3e) ** // volume-up-alt~!
+** volume-off (fd3d) ** // volume-off-alt~!
+** wifi-off (fd8b) ** // wifi-off-outline~!
+** zoom-in (fdf5) ** // zoom-in-alt~!
+** zoom-out (fdf6) ** // zoom-out-alt~!
+** border-all (eb36) ** // border-all-alt~!
+** border-style (eb38) ** // border-style-alt~!
+** view-column (fd07) ** // view-column-outline~!
+** view-carousel (fd06) ** // view-carousel-outline~!
+** charging-station (ec22) ** // charging-station-alt~!
+** check-circle (ec44) ** // check-circle-alt~!
+** cloud-off (ed0f) ** // cloud-off-alt~!
+** cloud-upload (ed11) ** // cloud-upload4~!
+** cloud-download (ed0e) ** // cloud-download4~!
+** controller-jump-to-start (ed90) ** // controller-previous~!
+** shopping-basket (f982) ** // shopping-basket-alt~!
+** credit-card (edc2) ** // credit-card-outline~!
+** fast-rewind (f036) ** // fast-rewind2~!
+** fast-forward (f033) ** // fast-forward3~!
+** file-download (f07b) ** // file-download-alt~!
+** file-upload (f0e7) ** // file-upload-alt~!
+** format-italic (f1af) ** // format-italic-alt~!
+** fullscreen-exit (f1e4) ** // fullscreen-exit1~!
+** hot-tub (f30b) ** // hot-tub-alt~!
+** mail--forbidden (f4dd) ** // mail-forbidden~!
+** mail--forbidden1 (f4de) ** // mail-forbidden1~!
+** power-off (f7d6) ** // power-off-alt~!
+** mic-off (f565) ** // mic-off-outline~!
+** shopping-bag (f97f) ** // shopping-bag-alt~!
+** rewind (f8a3) ** // fast-rewind1~!
 **  () ** // 
 **  () ** // 
 **  () ** // 
@@ -54,11 +54,27 @@
 
 
 ** cloud-sun-rain2 (ecee) ** // cloud-sun-rain2*****like ****cloud-sun-rain1***xx
-** wb_cloudy () ** // xx~
-** tablet1 (fb2a) ** // xx~
+** wb-cloudy () ** // xx~!
+** tablet1 (fb2a) ** // xx~!
 ** tab (fb1e) ** // size pro~
-** user-alt-slash (fcbc) ** // xx~
+** user-alt-slash (fcbc) ** // xx~!
 ** times-circle (fbda) ** // xx~!
 ** times (fbd9) ** // xx~!
-** cancel1 (ebe0) ** // cancel-circle
+** cancel1 (ebe0) ** // cancel-circle~!
 ** cancel3 (ebe2) ** // 
+
+
+
+
+
+** angular (e9db) ******
+**  () ******
+**  () ******
+**  () ******
+**  () ******
+**  () ******
+**  () ******
+**  () ******
+**  () ******
+**  () ******
+**  () ******
