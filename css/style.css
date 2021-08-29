@@ -6298,7 +6298,7 @@
 .mhi-fire-alt:before {
   content: "\f127";
 }
-.mhi-fire-extinguisher:before {
+.mhi-fire-extinguisher-alt:before {
   content: "\f128";
 }
 .mhi-fire1:before {
@@ -6574,7 +6574,7 @@
 .mhi-folder-music:before {
   content: "\f183";
 }
-.mhi-folder-open:before {
+.mhi-folder-open-alt:before {
   content: "\f184";
 }
 .mhi-folder-plus:before {
@@ -8791,7 +8791,7 @@
 .mhi-list6:before {
   content: "\f466";
 }
-.mhi-list-alt:before {
+.mhi-list-outline:before {
   content: "\f467";
 }
 .mhi-live-help:before {
@@ -8929,7 +8929,7 @@
 .mhi-lock-closed:before {
   content: "\f494";
 }
-.mhi-lock-open:before {
+.mhi-lock-open-alt:before {
   content: "\f495";
 }
 .mhi-lock-open1:before {
@@ -10192,8 +10192,8 @@
 .mhi-note:before {
   content: "\f639";
 }
-.mhi-note-add:before {
-  content: "\f63a";
+.mhi-note-add-alt:before {
+  content: "\f64a";
 }
 .mhi-note-add1:before {
   content: "\f63b";
@@ -10241,7 +10241,7 @@
   content: "\f649";
 }
 .mhi-note-add:before {
-  content: "\f64a";
+  content: "\f63a";
 }
 .mhi-notebook:before {
   content: "\f64b";
@@ -10687,9 +10687,6 @@
 .mhi-panorama:before {
   content: "\f6de";
 }
-.mhi-panorama-fisheye:before {
-  content: "\f6df";
-}
 .mhi-panorama-horizontal:before {
   content: "\f6e0";
 }
@@ -11014,7 +11011,7 @@
 .mhi-phone-call:before {
   content: "\f74b";
 }
-.mhi-phone-forwarded:before {
+.mhi-phone-forwarded-outline:before {
   content: "\f74c";
 }
 .mhi-phone-hang-up:before {
@@ -11023,7 +11020,7 @@
 .mhi-phone-incoming:before {
   content: "\f74e";
 }
-.mhi-phone-missed:before {
+.mhi-phone-missed-outline:before {
   content: "\f74f";
 }
 .mhi-phone-off:before {
@@ -15064,7 +15061,7 @@
 .mhi-ungroup:before {
   content: "\fc94";
 }
-.mhi-uniE900:before {
+.mhi-unie900:before {
   content: "\fc95";
 }
 .mhi-uninstall:before {
