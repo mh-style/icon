@@ -62,14 +62,14 @@
 ** times (fbd9) ** // xx~!
 ** cancel1 (ebe0) ** // cancel-circle~!
 ** cancel3 (ebe2) ** // 
-
+** panorama_fisheye () **xx~!
 
 
 
 
 ** angular (e9db) ******
-**  () ******
-**  () ******
+** badge2 (ea84) ******
+** batman (eab1) ******
 **  () ******
 **  () ******
 **  () ******
