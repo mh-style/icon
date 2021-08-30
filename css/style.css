@@ -11953,7 +11953,7 @@
 .mhi-reply:before {
   content: "\f885";
 }
-.mhi-reply-all:before {
+.mhi-reply-all-alt:before {
   content: "\f886";
 }
 .mhi-reply-all1:before {
