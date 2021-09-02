@@ -1,15 +1,15 @@
 .mh-search-box {
     width: 50%;
     margin-right: 20px;
-  }
+}
 
-  .mh-icon-page-header {
+.mh-icon-page-header {
     width: 100%;
     display: inline-flex;
     justify-content: center;
-  }
+}
 
-  .mh-search-box input {
+.mh-search-box input {
     width: 100%;
     float: right;
     padding: 10px 0px 10px 20px;
@@ -17,42 +17,45 @@
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px #ddd;
     outline: none;
-  }
+}
 
-  .mh-icon {
+.mh-icon {
     color: black;
     box-shadow: 0px 0px 10px 0px #ddd;
     padding: 10px 0px;
     border-radius: 6px;
     background: white;
     cursor: pointer;
-  }
+}
 
-  .mh-icons {
+.mh-icons {
     border: none;
     background: none;
-  }
+}
 
-  @media (max-width: 520px) {
+@media (max-width: 520px) {
     .mh-fs-26em {
-      font-size: 18em;
+        font-size: 18em;
     }
-  }
-  @media (max-width: 290px) {
-    .mh-grid-body .mh-icon{
+}
+
+@media (max-width: 290px) {
+    .mh-grid-body .mh-icon {
         box-shadow: none;
         background: none;
         flex-direction: column;
     }
+
     .mh-fs-26em {
         font-size: 10em;
     }
+
     .mh-icon-font-sizeing {
         padding: 5px 0px;
     }
-  }
+}
 
-  #scrollbtn {
+#scrollbtn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -67,29 +70,29 @@
     padding: 15px;
     border-radius: 50%;
     transition: .5s;
-  }
+}
 
-  #scrollbtn:hover {
+#scrollbtn:hover {
     background-color: #0089DB;
-  }
+}
 
-  .mh-grid-body {
+.mh-grid-body {
     flex: 0 0 32.66%;
     max-width: 32.66%;
-  }
+}
 
-  .mh-grid-body .mh-icon {
+.mh-grid-body .mh-icon {
     padding: 10px 10px;
     display: flex;
     align-content: center;
     align-items: center;
-  }
+}
 
-  .mh-grid-body .mh-icon i {
+.mh-grid-body .mh-icon i {
     padding-right: 10px
-  }
+}
 
-/* .mh-fs-26em {
+.mh-fs-26em {
     font-size: 26em;
 }
 
@@ -112,37 +115,38 @@
     color: #02A1FF;
 }
 
-.mh-icon-html-code:active ,
+.mh-icon-html-code:active,
 .mh-icon-css-code:active {
     transform: scaleX(0.9);
     transition: all 0.5s;
 }
 
 .mh-icon-css-code.mh-tooltip:hover:before,
-.mh-icon-css-code.mh-tooltip:hover:after ,
+.mh-icon-css-code.mh-tooltip:hover:after,
 .mh-icon-html-code.mh-tooltip:hover:before,
 .mh-icon-html-code.mh-tooltip:hover:after {
     display: none !important;
 }
 
 .mh-icon-css-code.mh-tooltip:active:before,
-.mh-icon-css-code.mh-tooltip:active:after ,
+.mh-icon-css-code.mh-tooltip:active:after,
 .mh-icon-html-code.mh-tooltip:active:before,
 .mh-icon-html-code.mh-tooltip:active:after {
     display: inline-block !important;
     transition: 0s;
 }
 
-
 .mh-icon-html-code span {
     font-size: 17px;
     font-family: monospace;
 }
+
 .mh-icon-css-code {
     border-left: 5px solid #ababab;
     padding-left: 12px;
     border-radius: 50%;
 }
+
 .nt {
     color: #d73038;
 }
@@ -154,13 +158,16 @@
 .s {
     color: #006ee0;
 }
+
 .mh-icon-font-sizeing {
-    /* text-align: center; *
+    /* text-align: center; */
     position: relative;
 }
+
 .mh-icon-font-sizeing:hover h3 {
     display: block;
 }
+
 .mh-icon-font-sizeing h3 {
     bottom: 100%;
     display: none;
@@ -177,6 +184,7 @@
     padding: 5px;
     z-index: 5;
 }
+
 .mh-icon-font-sizeing h3:before {
     content: "";
     width: 0;
@@ -191,28 +199,137 @@
     left: 50%;
 }
 
-/* icon css *
-
-.mhi-10k::before {
-    content: "\e900";
+.mh-supermodal {
+    display: none;
 }
 
-.mhi-10mp::before {
-    content: "\e901";
+.mh-supermodal-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
 }
 
-.mhi-12mp::before {
-    content: "\e902";
+.mh-supermodal-container .mh-supermodal-window {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1;
 }
 
-.mhi-13mp::before {
-    content: "\e903";
+.mh-supermodal-container .mh-supermodal-title {
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-right: calc(2rem + 30px);
 }
 
-.mhi-14mp::before {
-    content: "\e904";
+.mh-supermodal-container .mh-supermodal-title .mh-supermodal-close {
+    position: absolute;
+    right: 1rem;
+    top: 7.5px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    font-size: 24px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
 }
 
-.mhi-15mp::before {
-    content: "\e905";
-} */
+.mh-supermodal-container .mh-supermodal-title .mh-supermodal-close:hover {
+    color: #02A1FF;
+    background: white;
+}
+
+.mh-supermodal-container .mh-supermodal-body {
+    overflow-y: auto;
+}
+
+.mh-supermodal-window.show {
+    opacity: 1;
+    z-index: 2;
+    transform: scale(1);
+    animation: show .3s;
+    -webkit-animation: show .3s;
+}
+
+.mh-supermodal-window.hide {
+    opacity: 0;
+    transform: scale(1);
+    animation: hide .3s;
+    -webkit-animation: hide .3s;
+}
+
+.mh-supermodal-container+.mh-supermodal-container .mh-supermodal-window {
+    top: 1rem;
+    left: 1rem;
+    position: relative;
+}
+
+.mh-supermodal-container+.mh-supermodal-container {
+    padding-right: 2rem;
+}
+
+@keyframes show {
+    from {
+        transform: scale(0);
+        opacity: 0;
+        z-index: -1;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+        z-index: 2;
+    }
+}
+
+@keyframes hide {
+    from {
+        z-index: 2;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        z-index: -1;
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* xs */
+@media (max-width: 575px) {
+    .mh-supermodal-container {
+        padding: .5rem;
+    }
+
+    .mh-supermodal-container+.mh-supermodal-container .mh-supermodal-window {
+        top: .5rem;
+        left: .5rem;
+        position: relative;
+    }
+
+    .mh-supermodal-container+.mh-supermodal-container {
+        padding-right: 1rem;
+    }
+}
