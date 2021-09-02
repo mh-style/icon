@@ -1,9 +1,3 @@
-/**
- * SuperModal (https://github.com/GianlucaChiarani/SuperModal)
- * @version 0.90
- * @author Gianluca Chiarani
- * @license The MIT License (MIT)
- */
 
 (function ($) {
     
@@ -39,10 +33,10 @@
 
     $(window).on('hashchange', function() {
         if (window.location.hash=='') {
-            closeModal($('.supermodal-container'));
+            closeModal($('.mh-supermodal-container'));
         } else {
             var hash = window.location.hash.replace('#','').split('_');
-            $('.supermodal-container').each(function() {
+            $('.mh-supermodal-container').each(function() {
                 var level = $(this).attr('data-modal-level');
                 if (level>hash[0]) {
                     closeModal($(this));
@@ -86,13 +80,13 @@
 
         if (modalHtml) {
 
-            var modalSelector = '.supermodal-container[id="modal_'+id+'"]';
+            var modalSelector = '.mh-supermodal-container[id="modal_'+id+'"]';
             var level = 1;
 
-            if ($('.supermodal-container').length) 
-                level = $('.supermodal-container').length+1;
+            if ($('.mh-supermodal-container').length) 
+                level = $('.mh-supermodal-container').length+1;
 
-            $('body').append('<div id="modal_'+id+'" data-modal-level="'+level+'" class="supermodal-container"><div class="supermodal-window"><div class="supermodal-body">'+modalHtml+'</div></div></div>');
+            $('body').append('<div id="modal_'+id+'" data-modal-level="'+level+'" class="mh-supermodal-container"><div class="mh-supermodal-window"><div class="mh-supermodal-body">'+modalHtml+'</div></div></div>');
 
             if (localSettings.showTitle) {
                 if (localSettings.title)
@@ -100,33 +94,33 @@
                 else
                     title = id;
                 
-                $(modalSelector+' .supermodal-window').prepend('<div class="supermodal-title">'+title+'</div>');
+                $(modalSelector+' .mh-supermodal-window').prepend('<div class="mh-supermodal-title">'+title+'</div>');
             }
 
             if (localSettings.closeButton) {
-                $(modalSelector+' .supermodal-window .supermodal-title').prepend('<div class="supermodal-close"><i class="'+localSettings.closeButtonIcon+'"></i></div>');
+                $(modalSelector+' .mh-supermodal-window .mh-supermodal-title').prepend('<div class="mh-supermodal-close"><i class="'+localSettings.closeButtonIcon+'"></i></div>');
             }
                 
-            $(modalSelector+' .supermodal-window').css('max-height',localSettings.maxHeight);
-            $(modalSelector+' .supermodal-window').css('max-width',localSettings.maxWidth);
-            $(modalSelector+' .supermodal-window').css('background',localSettings.background);
-            $(modalSelector+' .supermodal-window').css('color',localSettings.color);
-            $(modalSelector+' .supermodal-window').css('box-shadow',localSettings.shadow);
+            $(modalSelector+' .mh-supermodal-window').css('max-height',localSettings.maxHeight);
+            $(modalSelector+' .mh-supermodal-window').css('max-width',localSettings.maxWidth);
+            $(modalSelector+' .mh-supermodal-window').css('background',localSettings.background);
+            $(modalSelector+' .mh-supermodal-window').css('color',localSettings.color);
+            $(modalSelector+' .mh-supermodal-window').css('box-shadow',localSettings.shadow);
             $(modalSelector).css('background',localSettings.containerBackground);
             $(modalSelector).css('z-index',localSettings.containerZIndex);
-            $(modalSelector+' .supermodal-window .supermodal-title').css('background',localSettings.titleBackground);
-            $(modalSelector+' .supermodal-window .supermodal-title').css('color',localSettings.titleColor);
+            $(modalSelector+' .mh-supermodal-window .mh-supermodal-title').css('background',localSettings.titleBackground);
+            $(modalSelector+' .mh-supermodal-window .mh-supermodal-title').css('color',localSettings.titleColor);
 
             if (localSettings.containerClass!='') {
                 $(modalSelector).addClass(localSettings.containerClass);
             }
 
-            $(modalSelector+' .supermodal-window').addClass('show');
+            $(modalSelector+' .mh-supermodal-window').addClass('show');
             
             if (localSettings.backButton)
                 window.location.hash = level+'_'+id;
 
-            $(modalSelector+' .supermodal-window .supermodal-close, '+modalSelector+' [data-modal-close]').click(function() {
+            $(modalSelector+' .mh-supermodal-window .mh-supermodal-close, '+modalSelector+' [data-modal-close]').click(function() {
                 closeButton($(modalSelector),localSettings);
             });
 
@@ -155,19 +149,19 @@
         var window = false;
         var container = false;
     
-        if (obj.find('.supermodal-window').length) {
-            window = obj.find('.supermodal-window');
+        if (obj.find('.mh-supermodal-window').length) {
+            window = obj.find('.mh-supermodal-window');
             container = obj;
-        } else if (obj.parents('.supermodal-window:first').length) {
-            window = obj.parents('.supermodal-window:first');
-            container = obj.parents('.supermodal-container:first');
+        } else if (obj.parents('.mh-supermodal-window:first').length) {
+            window = obj.parents('.mh-supermodal-window:first');
+            container = obj.parents('.mh-supermodal-container:first');
         }      
         
         if (window) {
             window.removeClass('show').addClass('hide');
             setTimeout(function() {
                 container.remove();
-                if (!$('.supermodal-container').length) {
+                if (!$('.mh-supermodal-container').length) {
                     $('html').css('overflow','auto');
                 }
             }, 300);
