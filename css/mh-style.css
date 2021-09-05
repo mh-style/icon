@@ -3760,7 +3760,7 @@ nav.mh-corp .mh-menu-btn:checked~.mh-menu-icon .mh-corp-icon:after {
 }
 
 .mh-navbar-style-1 .mh-navbar-nav .mh-nav-link .mh-link:hover {
-  color: rgb(0 220 255) !important;
+  color: rgb(0 220 255);
 }
 
 .mh-navbar-style-1 .mh-navbar-style-1-body .mh-nav-brand {
