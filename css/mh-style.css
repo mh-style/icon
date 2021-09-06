@@ -1418,10 +1418,7 @@ body {
   background-repeat: repeat-y;
 }
 
-.mh-bd-highlight {
-  background-color: #3d6a7c26;
-  border: 1px solid #3d6a7c26;
-}
+
 
 /*===========background-color==============*/
 .mh-before-bg-black::before,
@@ -1562,6 +1559,10 @@ body {
 }
 .mh-outline-none{
   outline: none;
+}
+.mh-bg-highlight {
+  background-color: #3d6a7c26;
+  border: 1px solid #3d6a7c26;
 }
 /*================border==================*/
 .mh-border-radius-rounded {
