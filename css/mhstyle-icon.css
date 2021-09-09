@@ -1,64 +1,56 @@
 @font-face {
   font-family: 'mhstyle';
-  src:  url('fonts/mhstyle.eot?hrhxjo');
-  src:  url('fonts/mhstyle.eot?hrhxjo#iefix') format('embedded-opentype'),
-    url('fonts/mhstyle.ttf?hrhxjo') format('truetype'),
-    url('fonts/mhstyle.woff?hrhxjo') format('woff'),
-    url('fonts/mhstyle.svg?hrhxjo#mhstyle') format('svg');
+  src:  url('fonts/mhstyle.ttf?hrhxjo') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: 'mhstyle';
-  src:  url('../fonts/mhstyle.eot?hrhxjo');
-  src:  url('../fonts/mhstyle.eot?hrhxjo#iefix') format('embedded-opentype'),
-    url('../fonts/mhstyle.ttf?hrhxjo') format('truetype'),
-    url('../fonts/mhstyle.woff?hrhxjo') format('woff'),
-    url('../fonts/mhstyle.svg?hrhxjo#mhstyle') format('svg');
+  src:  url('../fonts/mhstyle.ttf?hrhxjo') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 .mhi-1x {
-  font-size: 1em
+  font-size: 16px;
 }
 
 .mhi-2x {
-  font-size: 2em
+  font-size: 32px;
 }
 
 .mhi-3x {
-  font-size: 3em
+  font-size: 48px;
 }
 
 .mhi-4x {
-  font-size: 4em
+  font-size: 64px;
 }
 
 .mhi-5x {
-  font-size: 5em
+  font-size: 80px;
 }
 
 .mhi-6x {
-  font-size: 6em
+  font-size: 96px;
 }
 
 .mhi-7x {
-  font-size: 7em
+  font-size: 112px;
 }
 
 .mhi-8x {
-  font-size: 8em
+  font-size: 128px;
 }
 
 .mhi-9x {
-  font-size: 9em
+  font-size: 144px;
 }
 
 .mhi-10x {
-  font-size: 10em
+  font-size: 160px;
 }
 .mh {
   /* use !important to prevent issues with browser extensions that change fonts */
