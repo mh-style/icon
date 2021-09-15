@@ -1591,7 +1591,7 @@ body {
 .mh-color-black {
   color: #000 !important;
 }
-
+.mh-table-color-th-white thead,
 .mh-color-white-hover:hover,
 .mh-color-white {
   color: white !important;
@@ -1602,6 +1602,9 @@ body {
   color: #f8f9fa !important;
 }
 
+.mh-table-color-limegreen, 
+.mh-table-color-limegreen-even tbody tr:nth-child(even), 
+.mh-table-color-limegreen-odd tbody tr:nth-child(odd),
 .mh-color-limegreen-hover:hover,
 .mh-color-limegreen {
   color: limegreen !important;
@@ -1612,6 +1615,11 @@ body {
   color: blue !important;
 }
 
+.mh-table-color-orange-hover tr:hover, 
+.mh-table-color-th-orange thead,
+.mh-table-color-orange,
+.mh-table-color-orange-even tbody tr:nth-child(even), 
+.mh-table-color-orange-odd tbody tr:nth-child(odd),
 .mh-color-orange-hover:hover,
 .mh-color-orange {
   color: orange !important;
@@ -1631,17 +1639,25 @@ body {
 .mh-color-darkgreen {
   color: darkgreen !important;
 }
-
+.mh-table-color-red, 
 .mh-color-red-hover:hover,
 .mh-color-red {
   color: red !important;
 }
 
+.mh-table-color-skyblue-hover:hover, 
+.mh-table-color-skyblue, 
+.mh-table-color-skyblue-even tbody tr:nth-child(even), 
+.mh-table-color-skyblue-odd tbody tr:nth-child(odd),
 .mh-color-skyblue-hover:hover,
 .mh-color-skyblue {
   color: skyblue !important;
 }
 
+.mh-table-color-primary-hover:hover, 
+.mh-table-color-primary, 
+.mh-table-color-primary-even tbody tr:nth-child(even), 
+.mh-table-color-primary-odd tbody tr:nth-child(odd),
 .mh-color-primary-hover:hover,
 .mh-color-primary {
   color: rgb(0, 140, 255) !important;
@@ -1808,6 +1824,9 @@ body {
 .mh-table-th-black thead,
 .mh-table-black,
 .mh-table-td-black tbody,
+.mh-table-black-hover tbody tr:hover,
+.mh-table-black-even tr:nth-child(even), 
+.mh-table-black-odd tr:nth-child(odd),
 .mh-bg-black {
   background-color: #000 !important;
 }
@@ -1819,6 +1838,9 @@ body {
 .mh-after-bg-white::after,
 .mh-checked-bg-white:checked,
 .mh-bg-white-hover:hover,
+.mh-table-white-hover tbody tr:hover,
+.mh-table-white-even tr:nth-child(even), 
+.mh-table-white-odd tr:nth-child(odd),
 .mh-bg-white {
   background-color: white !important;
 }
@@ -1830,6 +1852,9 @@ body {
 .mh-checked-bg-light:checked,
 .mh-bg-light-hover:hover,
 .mh-table-th-light th,
+.mh-table-light-hover tbody tr:hover,
+.mh-table-light-even tr:nth-child(even), 
+.mh-table-light-odd tr:nth-child(odd),
 .mh-bg-light {
   background-color: #f8f9fa !important;
 }
@@ -1840,6 +1865,9 @@ body {
 .mh-after-bg-blue::after,
 .mh-bg-blue-hover:hover,
 .mh-checked-bg-blue:checked,
+.mh-table-blue-hover tbody tr:hover,
+.mh-table-blue-even tr:nth-child(even), 
+.mh-table-blue-odd tr:nth-child(odd),
 .mh-bg-blue {
   background-color: blue !important;
 }
@@ -1849,6 +1877,9 @@ body {
 .mh-before-bg-green::before,
 .mh-after-bg-green::after,
 .mh-checked-bg-green:checked,
+.mh-table-green-even tr:nth-child(even), 
+.mh-table-green-odd tr:nth-child(odd),
+.mh-table-green-hover tbody tr:hover,
 .mh-bg-green-hover:hover,
 .mh-bg-green {
   background-color: green !important;
@@ -1860,7 +1891,10 @@ body {
 .mh-after-bg-lightgreen::after,
 .mh-bg-lightgreen-hover:hover,
 .mh-checked-bg-lightgreen:checked,
-.mh-bg-lightgreen {
+.mh-bg-lightgreen,
+.mh-table-lightgreen-even tr:nth-child(even),
+.mh-table-lightgreen-hover tbody tr:hover,
+.mh-table-lightgreen-odd tr:nth-child(odd) {
   background-color: lightgreen !important;
 }
 .mh-table-th-limegreen thead,
@@ -1870,7 +1904,10 @@ body {
 .mh-after-bg-limegreen::after,
 .mh-checked-bg-limegreen:checked,
 .mh-bg-limegreen-hover:hover,
-.mh-bg-limegreen {
+.mh-bg-limegreen,
+.mh-table-limegreen-hover tbody tr:hover,
+.mh-table-limegreen-even tr:nth-child(even), 
+.mh-table-limegreen-odd tr:nth-child(odd) {
   background-color: limegreen !important;
 }
 .mh-table-th-orange thead,
@@ -1880,6 +1917,9 @@ body {
 .mh-after-bg-orange::after,
 .mh-checked-bg-orange:checked,
 .mh-bg-orange-hover:hover,
+.mh-table-orange-hover tbody tr:hover,
+.mh-table-orange-even tr:nth-child(even), 
+.mh-table-orange-odd tr:nth-child(odd),
 .mh-bg-orange {
   background-color: orange !important;
 }
@@ -1890,6 +1930,9 @@ body {
 .mh-after-bg-darkgreen::after,
 .mh-checked-bg-darkgreen:checked,
 .mh-bg-darkgreen-hover:hover,
+.mh-table-darkgreen-hover tbody tr:hover,
+.mh-table-darkgreen-even tr:nth-child(even), 
+.mh-table-darkgreen-odd tr:nth-child(odd),
 .mh-bg-darkgreen {
   background-color: darkgreen !important;
 }
@@ -1900,6 +1943,9 @@ body {
 .mh-after-bg-red::after,
 .mh-bg-red-hover:hover,
 .mh-checked-bg-red:checked,
+.mh-table-red-hover tbody tr:hover,
+.mh-table-red-even tr:nth-child(even), 
+.mh-table-red-odd tr:nth-child(odd),
 .mh-bg-red {
   background-color: red !important;
 }
@@ -1910,6 +1956,9 @@ body {
 .mh-after-bg-skyblue::after,
 .mh-bg-skyblue-hover:hover,
 .mh-checked-bg-skyblue:checked,
+.mh-table-skyblue-hover tbody tr:hover,
+.mh-table-skyblue-even tr:nth-child(even), 
+.mh-table-skyblue-odd tr:nth-child(odd),
 .mh-bg-skyblue {
   background-color: skyblue !important;
 }
@@ -1920,6 +1969,9 @@ body {
 .mh-after-bg-primary::after,
 .mh-checked-bg-primary:checked,
 .mh-bg-primary-hover:hover,
+.mh-table-primary-hover tbody tr:hover,
+.mh-table-primary-even tr:nth-child(even), 
+.mh-table-primary-odd tr:nth-child(odd),
 .mh-bg-primary {
   background-color: rgb(0, 140, 255) !important;
 }
@@ -1930,6 +1982,9 @@ body {
 .mh-after-bg-maroon::after,
 .mh-bg-maroon-hover:hover,
 .mh-checked-bg-maroon:checked,
+.mh-table-maroon-hover tbody tr:hover,
+.mh-table-maroon-even tr:nth-child(even), 
+.mh-table-maroon-odd tr:nth-child(odd),
 .mh-bg-maroon {
   background-color: maroon !important;
 }
@@ -1940,6 +1995,9 @@ body {
 .mh-checked-bg-yellow:checked,
 .mh-after-bg-yellow::after,
 .mh-bg-yellow-hover:hover,
+.mh-table-yellow-hover tbody tr:hover,
+.mh-table-yellow-even tr:nth-child(even), 
+.mh-table-yellow-odd tr:nth-child(odd),
 .mh-bg-yellow {
   background-color: yellow !important;
 }
@@ -1950,6 +2008,9 @@ body {
 .mh-after-bg-lightgray::after,
 .mh-bg-lightgray-hover:hover,
 .mh-checked-bg-lightgray:checked,
+.mh-table-lightgray-hover tbody tr:hover,
+.mh-table-lightgray-even tr:nth-child(even), 
+.mh-table-lightgray-odd tr:nth-child(odd),
 .mh-bg-lightgray {
   background-color: lightgray !important;
 }
@@ -1960,6 +2021,9 @@ body {
 .mh-after-bg-gray::after,
 .mh-bg-gray-hover:hover,
 .mh-checked-bg-gray:checked,
+.mh-table-gray-hover tbody tr:hover,
+.mh-table-gray-even tr:nth-child(even), 
+.mh-table-gray-odd tr:nth-child(odd),
 .mh-bg-gray {
   background-color: gray !important;
 }
@@ -1970,6 +2034,9 @@ body {
 .mh-after-bg-gold::after,
 .mh-checked-bg-gold:checked,
 .mh-bg-gold-hover:hover,
+.mh-table-gold-hover tbody tr:hover,
+.mh-table-gold-even tr:nth-child(even), 
+.mh-table-gold-odd tr:nth-child(odd),
 .mh-bg-gold {
   background-color: gold !important;
 }
@@ -1980,6 +2047,9 @@ body {
 .mh-checked-bg-aqua:checked,
 .mh-after-bg-aqua::after,
 .mh-bg-aqua-hover:hover,
+.mh-table-aqua-hover tbody tr:hover,
+.mh-table-aqua-even tr:nth-child(even), 
+.mh-table-aqua-odd tr:nth-child(odd),
 .mh-bg-aqua {
   background-color: aqua !important;
 }
@@ -1990,6 +2060,9 @@ body {
 .mh-checked-bg-pink:checked,
 .mh-after-bg-pink::after,
 .mh-bg-pink-hover:hover,
+.mh-table-limegreen-hover tbody tr:hover,
+.mh-table-limegreen-even tr:nth-child(even), 
+.mh-table-limegreen-odd tr:nth-child(odd),
 .mh-bg-pink {
   background-color: pink !important;
 }
@@ -2000,6 +2073,9 @@ body {
 .mh-checked-bg-brown:checked,
 .mh-after-bg-brown::after,
 .mh-bg-brown-hover:hover,
+.mh-table-brown-hover tbody tr:hover,
+.mh-table-brown-even tr:nth-child(even), 
+.mh-table-brown-odd tr:nth-child(odd),
 .mh-bg-brown {
   background-color: brown !important;
 }
@@ -2010,6 +2086,9 @@ body {
 .mh-checked-bg-purple:checked,
 .mh-after-bg-purple::after,
 .mh-bg-purple-hover:hover,
+.mh-table-purple-hover tbody tr:hover,
+.mh-table-purple-even tr:nth-child(even), 
+.mh-table-purple-odd tr:nth-child(odd),
 .mh-bg-purple {
   background-color: purple !important;
 }
@@ -2020,6 +2099,9 @@ body {
 .mh-checked-bg-azure:checked,
 .mh-after-bg-azure::after,
 .mh-bg-azure-hover:hover,
+.mh-table-azure-hover tbody tr:hover,
+.mh-table-azure-even tr:nth-child(even), 
+.mh-table-azure-odd tr:nth-child(odd),
 .mh-bg-azure {
   background-color: azure !important;
 }
@@ -2030,6 +2112,9 @@ body {
 .mh-checked-bg-wheat:checked,
 .mh-after-bg-wheat::after,
 .mh-bg-wheat-hover:hover,
+.mh-table-wheat-hover tbody tr:hover,
+.mh-table-wheat-even tr:nth-child(even), 
+.mh-table-wheat-odd tr:nth-child(odd),
 .mh-bg-wheat {
   background-color: wheat !important;
 }
@@ -2040,6 +2125,9 @@ body {
 .mh-checked-bg-goldenrod:checked,
 .mh-after-bg-goldenrod::after,
 .mh-bg-goldenrod-hover:hover,
+.mh-table-goldenrod-hover tbody tr:hover,
+.mh-table-goldenrod-even tr:nth-child(even), 
+.mh-table-goldenrod-odd tr:nth-child(odd),
 .mh-bg-goldenrod {
   background-color: goldenrod !important;
 }
@@ -2050,6 +2138,9 @@ body {
 .mh-checked-bg-salmon:checked,
 .mh-after-bg-salmon::after,
 .mh-bg-salmon-hover:hover,
+.mh-table-salmon-hover tbody tr:hover,
+.mh-table-salmon-even tr:nth-child(even), 
+.mh-table-salmon-odd tr:nth-child(odd),
 .mh-bg-salmon {
   background-color: salmon !important;
 }
@@ -2060,6 +2151,9 @@ body {
 .mh-checked-bg-chocolate:checked,
 .mh-after-bg-chocolate::after,
 .mh-bg-chocolate-hover:hover,
+.mh-table-chocolate-hover tbody tr:hover,
+.mh-table-chocolate-even tr:nth-child(even), 
+.mh-table-chocolate-odd tr:nth-child(odd),
 .mh-bg-chocolate {
   background-color: chocolate !important;
 }
@@ -2070,6 +2164,9 @@ body {
 .mh-checked-bg-darkblue:checked,
 .mh-after-bg-darkblue::after,
 .mh-bg-darkblue-hover:hover,
+.mh-table-darkblue-hover tbody tr:hover,
+.mh-table-darkblue-even tr:nth-child(even), 
+.mh-table-darkblue-odd tr:nth-child(odd),
 .mh-bg-darkblue {
   background-color: darkblue !important;
 }
@@ -2080,6 +2177,9 @@ body {
 .mh-checked-bg-springgreen:checked,
 .mh-after-bg-springgreen::after,
 .mh-bg-springgreen-hover:hover,
+.mh-table-springgreen-hover tbody tr:hover,
+.mh-table-springgreen-even tr:nth-child(even), 
+.mh-table-springgreen-odd tr:nth-child(odd),
 .mh-bg-springgreen {
   background-color: springgreen !important;
 }
@@ -2090,6 +2190,9 @@ body {
 .mh-checked-bg-turquoise:checked,
 .mh-after-bg-turquoise::after,
 .mh-bg-turquoise-hover:hover,
+.mh-table-turquoise-hover tbody tr:hover,
+.mh-table-turquoise-even tr:nth-child(even), 
+.mh-table-turquoise-odd tr:nth-child(odd),
 .mh-bg-turquoise {
   background-color: turquoise !important;
 }
@@ -2100,6 +2203,9 @@ body {
 .mh-checked-bg-crimson:checked,
 .mh-after-bg-crimson::after,
 .mh-bg-crimson-hover:hover,
+.mh-table-crimson-hover tbody tr:hover,
+.mh-table-crimson-even tr:nth-child(even), 
+.mh-table-crimson-odd tr:nth-child(odd),
 .mh-bg-crimson {
   background-color: crimson !important;
 }
@@ -2110,6 +2216,9 @@ body {
 .mh-checked-bg-silver:checked,
 .mh-after-bg-silver::after,
 .mh-bg-silver-hover:hover,
+.mh-table-silver-hover tbody tr:hover,
+.mh-table-silver-even tr:nth-child(even), 
+.mh-table-silver-odd tr:nth-child(odd),
 .mh-bg-silver {
   background-color: silver !important;
 }
@@ -2120,6 +2229,9 @@ body {
 .mh-checked-bg-darkred:checked,
 .mh-after-bg-darkred::after,
 .mh-bg-darkred-hover:hover,
+.mh-table-darkred-hover tbody tr:hover,
+.mh-table-darkred-even tr:nth-child(even), 
+.mh-table-darkred-odd tr:nth-child(odd),
 .mh-bg-darkred {
   background-color: darkred !important;
 }
@@ -2130,6 +2242,9 @@ body {
 .mh-checked-bg-navy:checked,
 .mh-after-bg-navy::after,
 .mh-bg-navy-hover:hover,
+.mh-table-navy-hover tbody tr:hover,
+.mh-table-navy-even tr:nth-child(even), 
+.mh-table-navy-odd tr:nth-child(odd),
 .mh-bg-navy {
   background-color: navy !important;
 }
@@ -2140,6 +2255,9 @@ body {
 .mh-checked-bg-orchid:checked,
 .mh-after-bg-orchid::after,
 .mh-bg-orchid-hover:hover,
+.mh-table-orchid-hover tbody tr:hover,
+.mh-table-orchid-even tr:nth-child(even), 
+.mh-table-orchid-odd tr:nth-child(odd),
 .mh-bg-orchid {
   background-color: orchid !important;
 }
@@ -2150,6 +2268,9 @@ body {
 .mh-checked-bg-teal:checked,
 .mh-after-bg-teal::after,
 .mh-bg-teal-hover:hover,
+.mh-table-teal-hover tbody tr:hover,
+.mh-table-teal-even tr:nth-child(even), 
+.mh-table-teal-odd tr:nth-child(odd),
 .mh-bg-teal {
   background-color: teal !important;
 }
@@ -2160,6 +2281,9 @@ body {
 .mh-after-bg-blank::after,
 .mh-checked-bg-black:checked,
 .mh-bg-blank-hover:hover,
+.mh-table-blank-hover tbody tr:hover,
+.mh-table-blank-even tr:nth-child(even), 
+.mh-table-blank-odd tr:nth-child(odd),
 .mh-bg-blank {
   background: transparent !important;
 }
@@ -4361,7 +4485,19 @@ color: #ddd;
   width: 100%;
   border-collapse: collapse;
 }
-
+.mh-table-bb th, .mh-table-bb td {
+  border-bottom-width: 1px !important;
+  border-top-width: 0 !important;
+  border-left-width: 0 !important;
+  border-right-width: 0 !important;
+}
+.mh-table-bb td, .mh-table-bb th {
+  border-color: #ddd;
+  border-style: solid !important;
+}
+.mh-table-bb th{
+  border-color: #000 !important;
+}
 .mh-table td,
 .mh-table th {
   padding: 12px 15px;
