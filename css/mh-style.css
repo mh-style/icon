@@ -1587,29 +1587,50 @@ body {
 }
 
 /*==============text-color================*/
+
+.mh-table-color-black-hover tr:hover, 
+.mh-table-color-black,
+.mh-table-color-th-black thead,
+.mh-table-color-black-even tbody tr:nth-child(even),
+.mh-table-color-black-odd tbody tr:nth-child(odd),
 .mh-color-black-hover:hover,
 .mh-color-black {
   color: #000 !important;
 }
+.mh-table-color-white-hover tr:hover, 
+.mh-table-color-white,
 .mh-table-color-th-white thead,
+.mh-table-color-white-even tbody tr:nth-child(even),
+.mh-table-color-white-odd tbody tr:nth-child(odd),
 .mh-color-white-hover:hover,
 .mh-color-white {
   color: white !important;
 }
 
+.mh-table-color-light-hover tr:hover, 
+.mh-table-color-light,
+.mh-table-color-th-light thead,
+.mh-table-color-light-even tbody tr:nth-child(even),
+.mh-table-color-light-odd tbody tr:nth-child(odd),
 .mh-color-light-hover:hover,
 .mh-color-light {
   color: #f8f9fa !important;
 }
 
-.mh-table-color-limegreen, 
-.mh-table-color-limegreen-even tbody tr:nth-child(even), 
+.mh-table-color-limegreen-hover tr:hover, 
+.mh-table-color-limegreen,
+.mh-table-color-th-limegreen thead,
+.mh-table-color-limegreen-even tbody tr:nth-child(even),
 .mh-table-color-limegreen-odd tbody tr:nth-child(odd),
 .mh-color-limegreen-hover:hover,
 .mh-color-limegreen {
   color: limegreen !important;
 }
-
+.mh-table-color-blue-hover tr:hover, 
+.mh-table-color-blue,
+.mh-table-color-th-blue thead,
+.mh-table-color-blue-even tbody tr:nth-child(even),
+.mh-table-color-blue-odd tbody tr:nth-child(odd),
 .mh-color-blue-hover:hover,
 .mh-color-blue {
   color: blue !important;
@@ -1625,28 +1646,48 @@ body {
   color: orange !important;
 }
 
+.mh-table-color-green-hover tr:hover, 
+.mh-table-color-th-green thead,
+.mh-table-color-green,
+.mh-table-color-green-even tbody tr:nth-child(even), 
+.mh-table-color-green-odd tbody tr:nth-child(odd),
 .mh-color-green-hover:hover,
 .mh-color-green {
   color: green !important;
 }
 
+.mh-table-color-lightgreen-hover tr:hover, 
+.mh-table-color-th-lightgreen thead,
+.mh-table-color-lightgreen,
+.mh-table-color-lightgreen-even tbody tr:nth-child(even), 
+.mh-table-color-lightgreen-odd tbody tr:nth-child(odd),
 .mh-color-lightgreen-hover:hover,
 .mh-color-lightgreen {
   color: lightgreen !important;
 }
 
+.mh-table-color-darkgreen-hover tr:hover, 
+.mh-table-color-th-darkgreen thead,
+.mh-table-color-darkgreen,
+.mh-table-color-darkgreen-even tbody tr:nth-child(even), 
+.mh-table-color-darkgreen-odd tbody tr:nth-child(odd),
 .mh-color-darkgreen-hover:hover,
 .mh-color-darkgreen {
   color: darkgreen !important;
 }
-.mh-table-color-red, 
+.mh-table-color-red-hover tr:hover, 
+.mh-table-color-th-red thead,
+.mh-table-color-red,
+.mh-table-color-red-even tbody tr:nth-child(even), 
+.mh-table-color-red-odd tbody tr:nth-child(odd),
 .mh-color-red-hover:hover,
 .mh-color-red {
   color: red !important;
 }
 
-.mh-table-color-skyblue-hover:hover, 
-.mh-table-color-skyblue, 
+.mh-table-color-skyblue-hover tr:hover, 
+.mh-table-color-th-skyblue thead,
+.mh-table-color-skyblue,
 .mh-table-color-skyblue-even tbody tr:nth-child(even), 
 .mh-table-color-skyblue-odd tbody tr:nth-child(odd),
 .mh-color-skyblue-hover:hover,
@@ -1654,8 +1695,10 @@ body {
   color: skyblue !important;
 }
 
-.mh-table-color-primary-hover:hover, 
-.mh-table-color-primary, 
+
+.mh-table-color-primary-hover tr:hover, 
+.mh-table-color-th-primary thead,
+.mh-table-color-primary,
 .mh-table-color-primary-even tbody tr:nth-child(even), 
 .mh-table-color-primary-odd tbody tr:nth-child(odd),
 .mh-color-primary-hover:hover,
@@ -1663,99 +1706,216 @@ body {
   color: rgb(0, 140, 255) !important;
 }
 
+.mh-table-color-maroon-hover tr:hover, 
+.mh-table-color-th-maroon thead,
+.mh-table-color-maroon,
+.mh-table-color-maroon-even tbody tr:nth-child(even), 
+.mh-table-color-maroon-odd tbody tr:nth-child(odd),
 .mh-color-maroon-hover:hover,
 .mh-color-maroon {
   color: maroon !important;
 }
 
+.mh-table-color-yellow-hover tr:hover, 
+.mh-table-color-th-yellow thead,
+.mh-table-color-yellow,
+.mh-table-color-yellow-even tbody tr:nth-child(even), 
+.mh-table-color-yellow-odd tbody tr:nth-child(odd),
 .mh-color-yellow-hover:hover,
 .mh-color-yellow {
   color: yellow !important;
 }
 
+.mh-table-color-lightgray-hover tr:hover, 
+.mh-table-color-th-lightgray thead,
+.mh-table-color-lightgray,
+.mh-table-color-lightgray-even tbody tr:nth-child(even), 
+.mh-table-color-lightgray-odd tbody tr:nth-child(odd),
 .mh-color-lightgray-hover:hover,
 .mh-color-lightgray {
   color: lightgray !important;
 }
 
+.mh-table-color-gray-hover tr:hover, 
+.mh-table-color-th-gray thead,
+.mh-table-color-gray,
+.mh-table-color-gray-even tbody tr:nth-child(even), 
+.mh-table-color-gray-odd tbody tr:nth-child(odd),
 .mh-color-gray-hover:hover,
 .mh-color-gray {
   color: gray !important;
 }
 
+.mh-table-color-gold-hover tr:hover, 
+.mh-table-color-th-gold thead,
+.mh-table-color-gold,
+.mh-table-color-gold-even tbody tr:nth-child(even), 
+.mh-table-color-gold-odd tbody tr:nth-child(odd),
 .mh-color-gold-hover:hover,
 .mh-color-gold {
   color: gold !important;
 }
 
+.mh-table-color-aqua-hover tr:hover, 
+.mh-table-color-th-aqua thead,
+.mh-table-color-aqua,
+.mh-table-color-aqua-even tbody tr:nth-child(even), 
+.mh-table-color-aqua-odd tbody tr:nth-child(odd),
 .mh-color-aqua-hover:hover,
 .mh-color-aqua {
   color: aqua !important;
 }
+.mh-table-color-pink-hover tr:hover, 
+.mh-table-color-th-pink thead,
+.mh-table-color-pink,
+.mh-table-color-pink-even tbody tr:nth-child(even), 
+.mh-table-color-pink-odd tbody tr:nth-child(odd),
 .mh-color-pink-hover:hover,
 .mh-color-pink {
   color: pink !important;
 }
+.mh-table-color-brown-hover tr:hover, 
+.mh-table-color-th-brown thead,
+.mh-table-color-brown,
+.mh-table-color-brown-even tbody tr:nth-child(even), 
+.mh-table-color-brown-odd tbody tr:nth-child(odd),
 .mh-color-brown-hover:hover,
 .mh-color-brown {
   color: brown !important;
 }
+.mh-table-color-purple-hover tr:hover, 
+.mh-table-color-th-purple thead,
+.mh-table-color-purple,
+.mh-table-color-purple-even tbody tr:nth-child(even), 
+.mh-table-color-purple-odd tbody tr:nth-child(odd),
 .mh-color-purple-hover:hover,
 .mh-color-purple {
   color: purple !important;
 }
+.mh-table-color-azure-hover tr:hover, 
+.mh-table-color-th-azure thead,
+.mh-table-color-azure,
+.mh-table-color-azure-even tbody tr:nth-child(even), 
+.mh-table-color-azure-odd tbody tr:nth-child(odd),
 .mh-color-azure-hover:hover,
 .mh-color-azure {
   color: azure !important;
 }
+.mh-table-color-wheat-hover tr:hover, 
+.mh-table-color-th-wheat thead,
+.mh-table-color-wheat,
+.mh-table-color-wheat-even tbody tr:nth-child(even), 
+.mh-table-color-wheat-odd tbody tr:nth-child(odd),
 .mh-color-wheat-hover:hover,
 .mh-color-wheat {
   color: wheat !important;
 }
+
+.mh-table-color-goldenrod-hover tr:hover, 
+.mh-table-color-th-goldenrod thead,
+.mh-table-color-goldenrod,
+.mh-table-color-goldenrod-even tbody tr:nth-child(even), 
+.mh-table-color-goldenrod-odd tbody tr:nth-child(odd),
 .mh-color-goldenrod-hover:hover,
 .mh-color-goldenrod {
   color: goldenrod !important;
 }
+.mh-table-color-salmon-hover tr:hover, 
+.mh-table-color-th-salmon thead,
+.mh-table-color-salmon,
+.mh-table-color-salmon-even tbody tr:nth-child(even), 
+.mh-table-color-salmon-odd tbody tr:nth-child(odd),
 .mh-color-salmon-hover:hover,
 .mh-color-salmon {
   color: salmon !important;
 }
+.mh-table-color-chocolate-hover tr:hover, 
+.mh-table-color-th-chocolate thead,
+.mh-table-color-chocolate,
+.mh-table-color-chocolate-even tbody tr:nth-child(even), 
+.mh-table-color-chocolate-odd tbody tr:nth-child(odd),
 .mh-color-chocolate-hover:hover,
 .mh-color-chocolate {
   color: chocolate !important;
 }
+
+.mh-table-color-darkblue-hover tr:hover, 
+.mh-table-color-th-darkblue thead,
+.mh-table-color-darkblue,
+.mh-table-color-darkblue-even tbody tr:nth-child(even), 
+.mh-table-color-darkblue-odd tbody tr:nth-child(odd),
 .mh-color-darkblue-hover:hover,
 .mh-color-darkblue {
   color: darkblue !important;
 }
+.mh-table-color-springgreen-hover tr:hover, 
+.mh-table-color-th-springgreen thead,
+.mh-table-color-springgreen,
+.mh-table-color-springgreen-even tbody tr:nth-child(even), 
+.mh-table-color-springgreen-odd tbody tr:nth-child(odd),
 .mh-color-springgreen-hover:hover,
 .mh-color-springgreen {
   color: springgreen !important;
 }
+.mh-table-color-turquoise-hover tr:hover, 
+.mh-table-color-th-turquoise thead,
+.mh-table-color-turquoise,
+.mh-table-color-turquoise-even tbody tr:nth-child(even), 
+.mh-table-color-turquoise-odd tbody tr:nth-child(odd),
 .mh-color-turquoise-hover:hover,
 .mh-color-turquoise {
   color: turquoise !important;
 }
+.mh-table-color-crimson-hover tr:hover, 
+.mh-table-color-th-crimson thead,
+.mh-table-color-crimson,
+.mh-table-color-crimson-even tbody tr:nth-child(even), 
+.mh-table-color-crimson-odd tbody tr:nth-child(odd),
 .mh-color-crimson-hover:hover,
 .mh-color-crimson {
   color: crimson !important;
 }
+.mh-table-color-silver-hover tr:hover, 
+.mh-table-color-th-silver thead,
+.mh-table-color-silver,
+.mh-table-color-silver-even tbody tr:nth-child(even), 
+.mh-table-color-silver-odd tbody tr:nth-child(odd),
 .mh-color-silver-hover:hover,
 .mh-color-silver {
   color: silver !important;
 }
+.mh-table-color-darkred-hover tr:hover, 
+.mh-table-color-th-darkred thead,
+.mh-table-color-darkred,
+.mh-table-color-darkred-even tbody tr:nth-child(even), 
+.mh-table-color-darkred-odd tbody tr:nth-child(odd),
 .mh-color-darkred-hover:hover,
 .mh-color-darkred {
   color: darkred !important;
 }
+.mh-table-color-navy-hover tr:hover, 
+.mh-table-color-th-navy thead,
+.mh-table-color-navy,
+.mh-table-color-navy-even tbody tr:nth-child(even), 
+.mh-table-color-navy-odd tbody tr:nth-child(odd),
 .mh-color-navy-hover:hover,
 .mh-color-navy {
   color: navy !important;
 }
+.mh-table-color-orchid-hover tr:hover, 
+.mh-table-color-th-orchid thead,
+.mh-table-color-orchid,
+.mh-table-color-orchid-even tbody tr:nth-child(even), 
+.mh-table-color-orchid-odd tbody tr:nth-child(odd),
 .mh-color-orchid-hover:hover,
 .mh-color-orchid {
   color: orchid !important;
 }
+.mh-table-color-teal-hover tr:hover, 
+.mh-table-color-th-teal thead,
+.mh-table-color-teal,
+.mh-table-color-teal-even tbody tr:nth-child(even), 
+.mh-table-color-teal-odd tbody tr:nth-child(odd),
 .mh-color-teal-hover:hover,
 .mh-color-teal {
   color: teal !important;
