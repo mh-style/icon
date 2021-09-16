@@ -1599,6 +1599,7 @@ body {
 }
 .mh-table-color-white-hover tr:hover, 
 .mh-table-color-white,
+.mh-table-dark,
 .mh-table-color-th-white thead,
 .mh-table-color-white-even tbody tr:nth-child(even),
 .mh-table-color-white-odd tbody tr:nth-child(odd),
@@ -1983,6 +1984,7 @@ body {
 .mh-bg-black-hover:hover,
 .mh-table-th-black thead,
 .mh-table-black,
+.mh-table-dark,
 .mh-table-td-black tbody,
 .mh-table-black-hover tbody tr:hover,
 .mh-table-black-even tr:nth-child(even), 
