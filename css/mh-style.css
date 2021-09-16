@@ -4640,11 +4640,6 @@ color: #ddd;
   width: 100%;
   border-collapse: collapse;
 }
-
-.mh-table-4 {
-  width: 100%;
-  border-collapse: collapse;
-}
 .mh-table-bb th, .mh-table-bb td {
   border-bottom-width: 1px !important;
   border-top-width: 0 !important;
@@ -4667,78 +4662,13 @@ color: #ddd;
   font-family: sans-serif;
 }
 
-.mh-table-4 td,
-.mh-table-4 th {
-  padding: 12px 15px;
-  border-bottom: 2px solid #000;
-  text-align: center;
-  font-size: 16px;
-}
 
-.mh-table-1 th {
-  background-color: darkblue;
-  color: #fff;
-}
-
-.mh-table-2 th {
-  background-color: darkred;
-  color: #fff;
-}
-
-.mh-table-3 th {
-  background-color: #000;
-  color: #fff;
-}
-
-.mh-table-5 th {
-  background-color: #f5f5f5;
-  color: #000;
-}
-
-.mh-table-5 tbody tr:nth-child(even) {
-  background-color: #f5f5f5;
-}
-
-.mh-table-3 tbody tr:nth-child(even) {
-  background-color: #000000A7;
-  color: #fff;
-}
-
-.mh-table-4 tbody tr:nth-child(even) {
-  background: none;
-}
-.mh-table-6 td,.mh-table-6 th {
-  border-color: #f1f3f5;
-}
-.mh-table-6 thead{
-  color: #000;
-}
-.mh-table-6 tbody{
-  color: #02A1FF;
-}
-.mh-table-7 {
-  border-radius: 6px;
-  border: 1px solid #CCCCCC;
-}
-
-.mh-table-7 .mh-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  border-style: hidden;
-}
-.mh-table-7 th,
-.mh-table-7 td {
-  padding: 10px;
-  border: 1px solid #CCCCCC;
-}
 @media(max-width: 500px) {
-  .mh-table thead {
-    display: none;
-  }
-
   .mh-table,
   .mh-table tbody,
+  .mh-table thead,
   .mh-table tr,
+  .mh-table th,
   .mh-table td {
     display: block;
     width: 100%;
