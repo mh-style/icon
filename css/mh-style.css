@@ -4655,12 +4655,15 @@ color: #ddd;
 .mh-table-bb th{
   border-color: #000 !important;
 }
+.mh-table-dark.mh-table-bb th{
+  border-color: #000 !important;
+}
 .mh-table-dark tr>* {
-  border-color: inherit;
+  border-color: inherit !important;
 }
 .mh-table-even tbody tr:nth-child(even) ,
 .mh-table-odd tbody tr:nth-child(odd) {
-  background: #2c3034;
+  background: rgb(0, 0, 0, 0.09);
 }
 .mh-table td,
 .mh-table th {
