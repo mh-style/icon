@@ -28,6 +28,12 @@
 *switch
 *checkbox
 */
+:root {
+  --mh-primary-color: #008cff;
+  --mh-border-color: #dee2e6;
+  --mh-border: 1px solid var(--mh-border-color) !important;
+}
+
 *,
 ::before,
 ::after {
@@ -37,7 +43,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: sans-serif,mhstyle;
+  font-family: sans-serif, mhstyle;
   text-decoration: none;
 }
 
@@ -476,6 +482,7 @@ body {
 .mh-mx-6 {
   margin-left: 30px !important;
 }
+
 .mh-mln-1,
 .mh-mxn-1 {
   margin-left: -5px !important;
@@ -870,6 +877,7 @@ body {
 .mh-py-6 {
   padding-bottom: 30px !important;
 }
+
 .mh-pbn-1,
 .mh-pyn-1 {
   padding-bottom: -5px !important;
@@ -1001,6 +1009,7 @@ body {
 .mh-px-6 {
   padding-right: 30px !important;
 }
+
 .mh-prn-1,
 .mh-pxn-1 {
   padding-right: -5px !important;
@@ -1030,6 +1039,7 @@ body {
 .mh-pxn-6 {
   padding-right: -30px !important;
 }
+
 /*=============display============*/
 .mh-db {
   display: block !important;
@@ -1042,15 +1052,19 @@ body {
 .mh-dn {
   display: none !important;
 }
-.mh-dg{
+
+.mh-dg {
   display: grid !important;
 }
-.mh-dif{
+
+.mh-dif {
   display: inline-flex !important;
 }
+
 .mh-df {
   display: flex !important;
 }
+
 .mh-gap-0 {
   gap: 0 !important;
 }
@@ -1546,11 +1560,13 @@ body {
 .mh-text-end {
   text-align: end !important;
 }
+
 .mh-table-text-left td,
 .mh-table-text-left th,
 .mh-text-left {
   text-align: left !important;
 }
+
 .mh-table-text-right td,
 .mh-table-text-right th,
 .mh-text-right {
@@ -1588,7 +1604,7 @@ body {
 
 /*==============text-color================*/
 
-.mh-table-color-black-hover tr:hover, 
+.mh-table-color-black-hover tr:hover,
 .mh-table-color-black,
 .mh-table-color-th-black thead,
 .mh-table-color-black-even tbody tr:nth-child(even),
@@ -1597,7 +1613,8 @@ body {
 .mh-color-black {
   color: #000 !important;
 }
-.mh-table-color-white-hover tr:hover, 
+
+.mh-table-color-white-hover tr:hover,
 .mh-table-color-white,
 .mh-table-dark,
 .mh-table-color-th-white thead,
@@ -1608,7 +1625,7 @@ body {
   color: white !important;
 }
 
-.mh-table-color-light-hover tr:hover, 
+.mh-table-color-light-hover tr:hover,
 .mh-table-color-light,
 .mh-table-color-th-light thead,
 .mh-table-color-light-even tbody tr:nth-child(even),
@@ -1618,7 +1635,7 @@ body {
   color: #f8f9fa !important;
 }
 
-.mh-table-color-limegreen-hover tr:hover, 
+.mh-table-color-limegreen-hover tr:hover,
 .mh-table-color-limegreen,
 .mh-table-color-th-limegreen thead,
 .mh-table-color-limegreen-even tbody tr:nth-child(even),
@@ -1627,7 +1644,8 @@ body {
 .mh-color-limegreen {
   color: limegreen !important;
 }
-.mh-table-color-blue-hover tr:hover, 
+
+.mh-table-color-blue-hover tr:hover,
 .mh-table-color-blue,
 .mh-table-color-th-blue thead,
 .mh-table-color-blue-even tbody tr:nth-child(even),
@@ -1637,59 +1655,60 @@ body {
   color: blue !important;
 }
 
-.mh-table-color-orange-hover tr:hover, 
+.mh-table-color-orange-hover tr:hover,
 .mh-table-color-th-orange thead,
 .mh-table-color-orange,
-.mh-table-color-orange-even tbody tr:nth-child(even), 
+.mh-table-color-orange-even tbody tr:nth-child(even),
 .mh-table-color-orange-odd tbody tr:nth-child(odd),
 .mh-color-orange-hover:hover,
 .mh-color-orange {
   color: orange !important;
 }
 
-.mh-table-color-green-hover tr:hover, 
+.mh-table-color-green-hover tr:hover,
 .mh-table-color-th-green thead,
 .mh-table-color-green,
-.mh-table-color-green-even tbody tr:nth-child(even), 
+.mh-table-color-green-even tbody tr:nth-child(even),
 .mh-table-color-green-odd tbody tr:nth-child(odd),
 .mh-color-green-hover:hover,
 .mh-color-green {
   color: green !important;
 }
 
-.mh-table-color-lightgreen-hover tr:hover, 
+.mh-table-color-lightgreen-hover tr:hover,
 .mh-table-color-th-lightgreen thead,
 .mh-table-color-lightgreen,
-.mh-table-color-lightgreen-even tbody tr:nth-child(even), 
+.mh-table-color-lightgreen-even tbody tr:nth-child(even),
 .mh-table-color-lightgreen-odd tbody tr:nth-child(odd),
 .mh-color-lightgreen-hover:hover,
 .mh-color-lightgreen {
   color: lightgreen !important;
 }
 
-.mh-table-color-darkgreen-hover tr:hover, 
+.mh-table-color-darkgreen-hover tr:hover,
 .mh-table-color-th-darkgreen thead,
 .mh-table-color-darkgreen,
-.mh-table-color-darkgreen-even tbody tr:nth-child(even), 
+.mh-table-color-darkgreen-even tbody tr:nth-child(even),
 .mh-table-color-darkgreen-odd tbody tr:nth-child(odd),
 .mh-color-darkgreen-hover:hover,
 .mh-color-darkgreen {
   color: darkgreen !important;
 }
-.mh-table-color-red-hover tr:hover, 
+
+.mh-table-color-red-hover tr:hover,
 .mh-table-color-th-red thead,
 .mh-table-color-red,
-.mh-table-color-red-even tbody tr:nth-child(even), 
+.mh-table-color-red-even tbody tr:nth-child(even),
 .mh-table-color-red-odd tbody tr:nth-child(odd),
 .mh-color-red-hover:hover,
 .mh-color-red {
   color: red !important;
 }
 
-.mh-table-color-skyblue-hover tr:hover, 
+.mh-table-color-skyblue-hover tr:hover,
 .mh-table-color-th-skyblue thead,
 .mh-table-color-skyblue,
-.mh-table-color-skyblue-even tbody tr:nth-child(even), 
+.mh-table-color-skyblue-even tbody tr:nth-child(even),
 .mh-table-color-skyblue-odd tbody tr:nth-child(odd),
 .mh-color-skyblue-hover:hover,
 .mh-color-skyblue {
@@ -1697,225 +1716,240 @@ body {
 }
 
 
-.mh-table-color-primary-hover tr:hover, 
+.mh-table-color-primary-hover tr:hover,
 .mh-table-color-th-primary thead,
 .mh-table-color-primary,
-.mh-table-color-primary-even tbody tr:nth-child(even), 
+.mh-table-color-primary-even tbody tr:nth-child(even),
 .mh-table-color-primary-odd tbody tr:nth-child(odd),
 .mh-color-primary-hover:hover,
 .mh-color-primary {
-  color: rgb(0, 140, 255) !important;
+  color: var(--mh-primary-color) !important;
 }
 
-.mh-table-color-maroon-hover tr:hover, 
+.mh-table-color-maroon-hover tr:hover,
 .mh-table-color-th-maroon thead,
 .mh-table-color-maroon,
-.mh-table-color-maroon-even tbody tr:nth-child(even), 
+.mh-table-color-maroon-even tbody tr:nth-child(even),
 .mh-table-color-maroon-odd tbody tr:nth-child(odd),
 .mh-color-maroon-hover:hover,
 .mh-color-maroon {
   color: maroon !important;
 }
 
-.mh-table-color-yellow-hover tr:hover, 
+.mh-table-color-yellow-hover tr:hover,
 .mh-table-color-th-yellow thead,
 .mh-table-color-yellow,
-.mh-table-color-yellow-even tbody tr:nth-child(even), 
+.mh-table-color-yellow-even tbody tr:nth-child(even),
 .mh-table-color-yellow-odd tbody tr:nth-child(odd),
 .mh-color-yellow-hover:hover,
 .mh-color-yellow {
   color: yellow !important;
 }
 
-.mh-table-color-lightgray-hover tr:hover, 
+.mh-table-color-lightgray-hover tr:hover,
 .mh-table-color-th-lightgray thead,
 .mh-table-color-lightgray,
-.mh-table-color-lightgray-even tbody tr:nth-child(even), 
+.mh-table-color-lightgray-even tbody tr:nth-child(even),
 .mh-table-color-lightgray-odd tbody tr:nth-child(odd),
 .mh-color-lightgray-hover:hover,
 .mh-color-lightgray {
   color: lightgray !important;
 }
 
-.mh-table-color-gray-hover tr:hover, 
+.mh-table-color-gray-hover tr:hover,
 .mh-table-color-th-gray thead,
 .mh-table-color-gray,
-.mh-table-color-gray-even tbody tr:nth-child(even), 
+.mh-table-color-gray-even tbody tr:nth-child(even),
 .mh-table-color-gray-odd tbody tr:nth-child(odd),
 .mh-color-gray-hover:hover,
 .mh-color-gray {
   color: gray !important;
 }
 
-.mh-table-color-gold-hover tr:hover, 
+.mh-table-color-gold-hover tr:hover,
 .mh-table-color-th-gold thead,
 .mh-table-color-gold,
-.mh-table-color-gold-even tbody tr:nth-child(even), 
+.mh-table-color-gold-even tbody tr:nth-child(even),
 .mh-table-color-gold-odd tbody tr:nth-child(odd),
 .mh-color-gold-hover:hover,
 .mh-color-gold {
   color: gold !important;
 }
 
-.mh-table-color-aqua-hover tr:hover, 
+.mh-table-color-aqua-hover tr:hover,
 .mh-table-color-th-aqua thead,
 .mh-table-color-aqua,
-.mh-table-color-aqua-even tbody tr:nth-child(even), 
+.mh-table-color-aqua-even tbody tr:nth-child(even),
 .mh-table-color-aqua-odd tbody tr:nth-child(odd),
 .mh-color-aqua-hover:hover,
 .mh-color-aqua {
   color: aqua !important;
 }
-.mh-table-color-pink-hover tr:hover, 
+
+.mh-table-color-pink-hover tr:hover,
 .mh-table-color-th-pink thead,
 .mh-table-color-pink,
-.mh-table-color-pink-even tbody tr:nth-child(even), 
+.mh-table-color-pink-even tbody tr:nth-child(even),
 .mh-table-color-pink-odd tbody tr:nth-child(odd),
 .mh-color-pink-hover:hover,
 .mh-color-pink {
   color: pink !important;
 }
-.mh-table-color-brown-hover tr:hover, 
+
+.mh-table-color-brown-hover tr:hover,
 .mh-table-color-th-brown thead,
 .mh-table-color-brown,
-.mh-table-color-brown-even tbody tr:nth-child(even), 
+.mh-table-color-brown-even tbody tr:nth-child(even),
 .mh-table-color-brown-odd tbody tr:nth-child(odd),
 .mh-color-brown-hover:hover,
 .mh-color-brown {
   color: brown !important;
 }
-.mh-table-color-purple-hover tr:hover, 
+
+.mh-table-color-purple-hover tr:hover,
 .mh-table-color-th-purple thead,
 .mh-table-color-purple,
-.mh-table-color-purple-even tbody tr:nth-child(even), 
+.mh-table-color-purple-even tbody tr:nth-child(even),
 .mh-table-color-purple-odd tbody tr:nth-child(odd),
 .mh-color-purple-hover:hover,
 .mh-color-purple {
   color: purple !important;
 }
-.mh-table-color-azure-hover tr:hover, 
+
+.mh-table-color-azure-hover tr:hover,
 .mh-table-color-th-azure thead,
 .mh-table-color-azure,
-.mh-table-color-azure-even tbody tr:nth-child(even), 
+.mh-table-color-azure-even tbody tr:nth-child(even),
 .mh-table-color-azure-odd tbody tr:nth-child(odd),
 .mh-color-azure-hover:hover,
 .mh-color-azure {
   color: azure !important;
 }
-.mh-table-color-wheat-hover tr:hover, 
+
+.mh-table-color-wheat-hover tr:hover,
 .mh-table-color-th-wheat thead,
 .mh-table-color-wheat,
-.mh-table-color-wheat-even tbody tr:nth-child(even), 
+.mh-table-color-wheat-even tbody tr:nth-child(even),
 .mh-table-color-wheat-odd tbody tr:nth-child(odd),
 .mh-color-wheat-hover:hover,
 .mh-color-wheat {
   color: wheat !important;
 }
 
-.mh-table-color-goldenrod-hover tr:hover, 
+.mh-table-color-goldenrod-hover tr:hover,
 .mh-table-color-th-goldenrod thead,
 .mh-table-color-goldenrod,
-.mh-table-color-goldenrod-even tbody tr:nth-child(even), 
+.mh-table-color-goldenrod-even tbody tr:nth-child(even),
 .mh-table-color-goldenrod-odd tbody tr:nth-child(odd),
 .mh-color-goldenrod-hover:hover,
 .mh-color-goldenrod {
   color: goldenrod !important;
 }
-.mh-table-color-salmon-hover tr:hover, 
+
+.mh-table-color-salmon-hover tr:hover,
 .mh-table-color-th-salmon thead,
 .mh-table-color-salmon,
-.mh-table-color-salmon-even tbody tr:nth-child(even), 
+.mh-table-color-salmon-even tbody tr:nth-child(even),
 .mh-table-color-salmon-odd tbody tr:nth-child(odd),
 .mh-color-salmon-hover:hover,
 .mh-color-salmon {
   color: salmon !important;
 }
-.mh-table-color-chocolate-hover tr:hover, 
+
+.mh-table-color-chocolate-hover tr:hover,
 .mh-table-color-th-chocolate thead,
 .mh-table-color-chocolate,
-.mh-table-color-chocolate-even tbody tr:nth-child(even), 
+.mh-table-color-chocolate-even tbody tr:nth-child(even),
 .mh-table-color-chocolate-odd tbody tr:nth-child(odd),
 .mh-color-chocolate-hover:hover,
 .mh-color-chocolate {
   color: chocolate !important;
 }
 
-.mh-table-color-darkblue-hover tr:hover, 
+.mh-table-color-darkblue-hover tr:hover,
 .mh-table-color-th-darkblue thead,
 .mh-table-color-darkblue,
-.mh-table-color-darkblue-even tbody tr:nth-child(even), 
+.mh-table-color-darkblue-even tbody tr:nth-child(even),
 .mh-table-color-darkblue-odd tbody tr:nth-child(odd),
 .mh-color-darkblue-hover:hover,
 .mh-color-darkblue {
   color: darkblue !important;
 }
-.mh-table-color-springgreen-hover tr:hover, 
+
+.mh-table-color-springgreen-hover tr:hover,
 .mh-table-color-th-springgreen thead,
 .mh-table-color-springgreen,
-.mh-table-color-springgreen-even tbody tr:nth-child(even), 
+.mh-table-color-springgreen-even tbody tr:nth-child(even),
 .mh-table-color-springgreen-odd tbody tr:nth-child(odd),
 .mh-color-springgreen-hover:hover,
 .mh-color-springgreen {
   color: springgreen !important;
 }
-.mh-table-color-turquoise-hover tr:hover, 
+
+.mh-table-color-turquoise-hover tr:hover,
 .mh-table-color-th-turquoise thead,
 .mh-table-color-turquoise,
-.mh-table-color-turquoise-even tbody tr:nth-child(even), 
+.mh-table-color-turquoise-even tbody tr:nth-child(even),
 .mh-table-color-turquoise-odd tbody tr:nth-child(odd),
 .mh-color-turquoise-hover:hover,
 .mh-color-turquoise {
   color: turquoise !important;
 }
-.mh-table-color-crimson-hover tr:hover, 
+
+.mh-table-color-crimson-hover tr:hover,
 .mh-table-color-th-crimson thead,
 .mh-table-color-crimson,
-.mh-table-color-crimson-even tbody tr:nth-child(even), 
+.mh-table-color-crimson-even tbody tr:nth-child(even),
 .mh-table-color-crimson-odd tbody tr:nth-child(odd),
 .mh-color-crimson-hover:hover,
 .mh-color-crimson {
   color: crimson !important;
 }
-.mh-table-color-silver-hover tr:hover, 
+
+.mh-table-color-silver-hover tr:hover,
 .mh-table-color-th-silver thead,
 .mh-table-color-silver,
-.mh-table-color-silver-even tbody tr:nth-child(even), 
+.mh-table-color-silver-even tbody tr:nth-child(even),
 .mh-table-color-silver-odd tbody tr:nth-child(odd),
 .mh-color-silver-hover:hover,
 .mh-color-silver {
   color: silver !important;
 }
-.mh-table-color-darkred-hover tr:hover, 
+
+.mh-table-color-darkred-hover tr:hover,
 .mh-table-color-th-darkred thead,
 .mh-table-color-darkred,
-.mh-table-color-darkred-even tbody tr:nth-child(even), 
+.mh-table-color-darkred-even tbody tr:nth-child(even),
 .mh-table-color-darkred-odd tbody tr:nth-child(odd),
 .mh-color-darkred-hover:hover,
 .mh-color-darkred {
   color: darkred !important;
 }
-.mh-table-color-navy-hover tr:hover, 
+
+.mh-table-color-navy-hover tr:hover,
 .mh-table-color-th-navy thead,
 .mh-table-color-navy,
-.mh-table-color-navy-even tbody tr:nth-child(even), 
+.mh-table-color-navy-even tbody tr:nth-child(even),
 .mh-table-color-navy-odd tbody tr:nth-child(odd),
 .mh-color-navy-hover:hover,
 .mh-color-navy {
   color: navy !important;
 }
-.mh-table-color-orchid-hover tr:hover, 
+
+.mh-table-color-orchid-hover tr:hover,
 .mh-table-color-th-orchid thead,
 .mh-table-color-orchid,
-.mh-table-color-orchid-even tbody tr:nth-child(even), 
+.mh-table-color-orchid-even tbody tr:nth-child(even),
 .mh-table-color-orchid-odd tbody tr:nth-child(odd),
 .mh-color-orchid-hover:hover,
 .mh-color-orchid {
   color: orchid !important;
 }
-.mh-table-color-teal-hover tr:hover, 
+
+.mh-table-color-teal-hover tr:hover,
 .mh-table-color-th-teal thead,
 .mh-table-color-teal,
-.mh-table-color-teal-even tbody tr:nth-child(even), 
+.mh-table-color-teal-even tbody tr:nth-child(even),
 .mh-table-color-teal-odd tbody tr:nth-child(odd),
 .mh-color-teal-hover:hover,
 .mh-color-teal {
@@ -1987,7 +2021,7 @@ body {
 .mh-table-dark,
 .mh-table-td-black tbody,
 .mh-table-black-hover tbody tr:hover,
-.mh-table-black-even tr:nth-child(even), 
+.mh-table-black-even tr:nth-child(even),
 .mh-table-black-odd tr:nth-child(odd),
 .mh-bg-black {
   background-color: #000 !important;
@@ -2001,11 +2035,12 @@ body {
 .mh-checked-bg-white:checked,
 .mh-bg-white-hover:hover,
 .mh-table-white-hover tbody tr:hover,
-.mh-table-white-even tr:nth-child(even), 
+.mh-table-white-even tr:nth-child(even),
 .mh-table-white-odd tr:nth-child(odd),
 .mh-bg-white {
   background-color: white !important;
 }
+
 .mh-table-th-light thead,
 .mh-table-light,
 .mh-table-td-light tbody,
@@ -2015,11 +2050,12 @@ body {
 .mh-bg-light-hover:hover,
 .mh-table-th-light th,
 .mh-table-light-hover tbody tr:hover,
-.mh-table-light-even tr:nth-child(even), 
+.mh-table-light-even tr:nth-child(even),
 .mh-table-light-odd tr:nth-child(odd),
 .mh-bg-light {
   background-color: #f8f9fa !important;
 }
+
 .mh-table-th-blue thead,
 .mh-table-blue,
 .mh-table-td-blue tbody,
@@ -2028,24 +2064,26 @@ body {
 .mh-bg-blue-hover:hover,
 .mh-checked-bg-blue:checked,
 .mh-table-blue-hover tbody tr:hover,
-.mh-table-blue-even tr:nth-child(even), 
+.mh-table-blue-even tr:nth-child(even),
 .mh-table-blue-odd tr:nth-child(odd),
 .mh-bg-blue {
   background-color: blue !important;
 }
+
 .mh-table-th-green thead,
 .mh-table-green,
 .mh-table-td-green tbody,
 .mh-before-bg-green::before,
 .mh-after-bg-green::after,
 .mh-checked-bg-green:checked,
-.mh-table-green-even tr:nth-child(even), 
+.mh-table-green-even tr:nth-child(even),
 .mh-table-green-odd tr:nth-child(odd),
 .mh-table-green-hover tbody tr:hover,
 .mh-bg-green-hover:hover,
 .mh-bg-green {
   background-color: green !important;
 }
+
 .mh-table-th-lightgreen thead,
 .mh-table-lightgreen,
 .mh-table-td-lightgreen tbody,
@@ -2059,6 +2097,7 @@ body {
 .mh-table-lightgreen-odd tr:nth-child(odd) {
   background-color: lightgreen !important;
 }
+
 .mh-table-th-limegreen thead,
 .mh-table-limegreen,
 .mh-table-td-limegreen tbody,
@@ -2068,10 +2107,11 @@ body {
 .mh-bg-limegreen-hover:hover,
 .mh-bg-limegreen,
 .mh-table-limegreen-hover tbody tr:hover,
-.mh-table-limegreen-even tr:nth-child(even), 
+.mh-table-limegreen-even tr:nth-child(even),
 .mh-table-limegreen-odd tr:nth-child(odd) {
   background-color: limegreen !important;
 }
+
 .mh-table-th-orange thead,
 .mh-table-orange,
 .mh-table-td-orange tbody,
@@ -2080,11 +2120,12 @@ body {
 .mh-checked-bg-orange:checked,
 .mh-bg-orange-hover:hover,
 .mh-table-orange-hover tbody tr:hover,
-.mh-table-orange-even tr:nth-child(even), 
+.mh-table-orange-even tr:nth-child(even),
 .mh-table-orange-odd tr:nth-child(odd),
 .mh-bg-orange {
   background-color: orange !important;
 }
+
 .mh-table-th-darkgreen thead,
 .mh-table-darkgreen,
 .mh-table-td-darkgreen tbody,
@@ -2093,11 +2134,12 @@ body {
 .mh-checked-bg-darkgreen:checked,
 .mh-bg-darkgreen-hover:hover,
 .mh-table-darkgreen-hover tbody tr:hover,
-.mh-table-darkgreen-even tr:nth-child(even), 
+.mh-table-darkgreen-even tr:nth-child(even),
 .mh-table-darkgreen-odd tr:nth-child(odd),
 .mh-bg-darkgreen {
   background-color: darkgreen !important;
 }
+
 .mh-table-th-red thead,
 .mh-table-red,
 .mh-table-td-red tbody,
@@ -2106,11 +2148,12 @@ body {
 .mh-bg-red-hover:hover,
 .mh-checked-bg-red:checked,
 .mh-table-red-hover tbody tr:hover,
-.mh-table-red-even tr:nth-child(even), 
+.mh-table-red-even tr:nth-child(even),
 .mh-table-red-odd tr:nth-child(odd),
 .mh-bg-red {
   background-color: red !important;
 }
+
 .mh-table-th-skyblue thead,
 .mh-table-skyblue,
 .mh-table-td-skyblue tbody,
@@ -2119,11 +2162,12 @@ body {
 .mh-bg-skyblue-hover:hover,
 .mh-checked-bg-skyblue:checked,
 .mh-table-skyblue-hover tbody tr:hover,
-.mh-table-skyblue-even tr:nth-child(even), 
+.mh-table-skyblue-even tr:nth-child(even),
 .mh-table-skyblue-odd tr:nth-child(odd),
 .mh-bg-skyblue {
   background-color: skyblue !important;
 }
+
 .mh-table-th-primary thead,
 .mh-table-primary,
 .mh-table-td-primary tbody,
@@ -2132,11 +2176,12 @@ body {
 .mh-checked-bg-primary:checked,
 .mh-bg-primary-hover:hover,
 .mh-table-primary-hover tbody tr:hover,
-.mh-table-primary-even tr:nth-child(even), 
+.mh-table-primary-even tr:nth-child(even),
 .mh-table-primary-odd tr:nth-child(odd),
 .mh-bg-primary {
-  background-color: rgb(0, 140, 255) !important;
+  background-color: var(--mh-primary-color) !important;
 }
+
 .mh-table-th-maroon thead,
 .mh-table-maroon,
 .mh-table-td-maroon tbody,
@@ -2145,11 +2190,12 @@ body {
 .mh-bg-maroon-hover:hover,
 .mh-checked-bg-maroon:checked,
 .mh-table-maroon-hover tbody tr:hover,
-.mh-table-maroon-even tr:nth-child(even), 
+.mh-table-maroon-even tr:nth-child(even),
 .mh-table-maroon-odd tr:nth-child(odd),
 .mh-bg-maroon {
   background-color: maroon !important;
 }
+
 .mh-table-th-yellow thead,
 .mh-table-yellow,
 .mh-table-td-yellow tbody,
@@ -2158,11 +2204,12 @@ body {
 .mh-after-bg-yellow::after,
 .mh-bg-yellow-hover:hover,
 .mh-table-yellow-hover tbody tr:hover,
-.mh-table-yellow-even tr:nth-child(even), 
+.mh-table-yellow-even tr:nth-child(even),
 .mh-table-yellow-odd tr:nth-child(odd),
 .mh-bg-yellow {
   background-color: yellow !important;
 }
+
 .mh-table-th-lightgray thead,
 .mh-table-lightgray,
 .mh-table-td-lightgray tbody,
@@ -2171,11 +2218,12 @@ body {
 .mh-bg-lightgray-hover:hover,
 .mh-checked-bg-lightgray:checked,
 .mh-table-lightgray-hover tbody tr:hover,
-.mh-table-lightgray-even tr:nth-child(even), 
+.mh-table-lightgray-even tr:nth-child(even),
 .mh-table-lightgray-odd tr:nth-child(odd),
 .mh-bg-lightgray {
   background-color: lightgray !important;
 }
+
 .mh-table-th-gray thead,
 .mh-table-gray,
 .mh-table-td-gray tbody,
@@ -2184,11 +2232,12 @@ body {
 .mh-bg-gray-hover:hover,
 .mh-checked-bg-gray:checked,
 .mh-table-gray-hover tbody tr:hover,
-.mh-table-gray-even tr:nth-child(even), 
+.mh-table-gray-even tr:nth-child(even),
 .mh-table-gray-odd tr:nth-child(odd),
 .mh-bg-gray {
   background-color: gray !important;
 }
+
 .mh-table-th-gold thead,
 .mh-table-gold,
 .mh-table-td-gold tbody,
@@ -2197,11 +2246,12 @@ body {
 .mh-checked-bg-gold:checked,
 .mh-bg-gold-hover:hover,
 .mh-table-gold-hover tbody tr:hover,
-.mh-table-gold-even tr:nth-child(even), 
+.mh-table-gold-even tr:nth-child(even),
 .mh-table-gold-odd tr:nth-child(odd),
 .mh-bg-gold {
   background-color: gold !important;
 }
+
 .mh-table-th-aqua thead,
 .mh-table-aqua,
 .mh-table-td-aqua tbody,
@@ -2210,11 +2260,12 @@ body {
 .mh-after-bg-aqua::after,
 .mh-bg-aqua-hover:hover,
 .mh-table-aqua-hover tbody tr:hover,
-.mh-table-aqua-even tr:nth-child(even), 
+.mh-table-aqua-even tr:nth-child(even),
 .mh-table-aqua-odd tr:nth-child(odd),
 .mh-bg-aqua {
   background-color: aqua !important;
 }
+
 .mh-table-th-pink thead,
 .mh-table-pink,
 .mh-table-td-pink tbody,
@@ -2223,11 +2274,12 @@ body {
 .mh-after-bg-pink::after,
 .mh-bg-pink-hover:hover,
 .mh-table-limegreen-hover tbody tr:hover,
-.mh-table-limegreen-even tr:nth-child(even), 
+.mh-table-limegreen-even tr:nth-child(even),
 .mh-table-limegreen-odd tr:nth-child(odd),
 .mh-bg-pink {
   background-color: pink !important;
 }
+
 .mh-table-th-brown thead,
 .mh-table-brown,
 .mh-table-td-brown tbody,
@@ -2236,11 +2288,12 @@ body {
 .mh-after-bg-brown::after,
 .mh-bg-brown-hover:hover,
 .mh-table-brown-hover tbody tr:hover,
-.mh-table-brown-even tr:nth-child(even), 
+.mh-table-brown-even tr:nth-child(even),
 .mh-table-brown-odd tr:nth-child(odd),
 .mh-bg-brown {
   background-color: brown !important;
 }
+
 .mh-table-th-purple thead,
 .mh-table-purple,
 .mh-table-td-purple tbody,
@@ -2249,11 +2302,12 @@ body {
 .mh-after-bg-purple::after,
 .mh-bg-purple-hover:hover,
 .mh-table-purple-hover tbody tr:hover,
-.mh-table-purple-even tr:nth-child(even), 
+.mh-table-purple-even tr:nth-child(even),
 .mh-table-purple-odd tr:nth-child(odd),
 .mh-bg-purple {
   background-color: purple !important;
 }
+
 .mh-table-th-azure thead,
 .mh-table-azure,
 .mh-table-td-azure tbody,
@@ -2262,11 +2316,12 @@ body {
 .mh-after-bg-azure::after,
 .mh-bg-azure-hover:hover,
 .mh-table-azure-hover tbody tr:hover,
-.mh-table-azure-even tr:nth-child(even), 
+.mh-table-azure-even tr:nth-child(even),
 .mh-table-azure-odd tr:nth-child(odd),
 .mh-bg-azure {
   background-color: azure !important;
 }
+
 .mh-table-th-wheat thead,
 .mh-table-wheat,
 .mh-table-td-wheat tbody,
@@ -2275,11 +2330,12 @@ body {
 .mh-after-bg-wheat::after,
 .mh-bg-wheat-hover:hover,
 .mh-table-wheat-hover tbody tr:hover,
-.mh-table-wheat-even tr:nth-child(even), 
+.mh-table-wheat-even tr:nth-child(even),
 .mh-table-wheat-odd tr:nth-child(odd),
 .mh-bg-wheat {
   background-color: wheat !important;
 }
+
 .mh-table-th-goldenrod thead,
 .mh-table-goldenrod,
 .mh-table-td-goldenrod tbody,
@@ -2288,11 +2344,12 @@ body {
 .mh-after-bg-goldenrod::after,
 .mh-bg-goldenrod-hover:hover,
 .mh-table-goldenrod-hover tbody tr:hover,
-.mh-table-goldenrod-even tr:nth-child(even), 
+.mh-table-goldenrod-even tr:nth-child(even),
 .mh-table-goldenrod-odd tr:nth-child(odd),
 .mh-bg-goldenrod {
   background-color: goldenrod !important;
 }
+
 .mh-table-th-salmon thead,
 .mh-table-salmon,
 .mh-table-td-salmon tbody,
@@ -2301,11 +2358,12 @@ body {
 .mh-after-bg-salmon::after,
 .mh-bg-salmon-hover:hover,
 .mh-table-salmon-hover tbody tr:hover,
-.mh-table-salmon-even tr:nth-child(even), 
+.mh-table-salmon-even tr:nth-child(even),
 .mh-table-salmon-odd tr:nth-child(odd),
 .mh-bg-salmon {
   background-color: salmon !important;
 }
+
 .mh-table-th-chocolate thead,
 .mh-table-chocolate,
 .mh-table-td-chocolate tbody,
@@ -2314,11 +2372,12 @@ body {
 .mh-after-bg-chocolate::after,
 .mh-bg-chocolate-hover:hover,
 .mh-table-chocolate-hover tbody tr:hover,
-.mh-table-chocolate-even tr:nth-child(even), 
+.mh-table-chocolate-even tr:nth-child(even),
 .mh-table-chocolate-odd tr:nth-child(odd),
 .mh-bg-chocolate {
   background-color: chocolate !important;
 }
+
 .mh-table-th-darkblue thead,
 .mh-table-darkblue,
 .mh-table-td-darkblue tbody,
@@ -2327,11 +2386,12 @@ body {
 .mh-after-bg-darkblue::after,
 .mh-bg-darkblue-hover:hover,
 .mh-table-darkblue-hover tbody tr:hover,
-.mh-table-darkblue-even tr:nth-child(even), 
+.mh-table-darkblue-even tr:nth-child(even),
 .mh-table-darkblue-odd tr:nth-child(odd),
 .mh-bg-darkblue {
   background-color: darkblue !important;
 }
+
 .mh-table-th-springgreen thead,
 .mh-table-springgreen,
 .mh-table-td-springgreen tbody,
@@ -2340,11 +2400,12 @@ body {
 .mh-after-bg-springgreen::after,
 .mh-bg-springgreen-hover:hover,
 .mh-table-springgreen-hover tbody tr:hover,
-.mh-table-springgreen-even tr:nth-child(even), 
+.mh-table-springgreen-even tr:nth-child(even),
 .mh-table-springgreen-odd tr:nth-child(odd),
 .mh-bg-springgreen {
   background-color: springgreen !important;
 }
+
 .mh-table-th-turquoise thead,
 .mh-table-turquoise,
 .mh-table-td-turquoise tbody,
@@ -2353,11 +2414,12 @@ body {
 .mh-after-bg-turquoise::after,
 .mh-bg-turquoise-hover:hover,
 .mh-table-turquoise-hover tbody tr:hover,
-.mh-table-turquoise-even tr:nth-child(even), 
+.mh-table-turquoise-even tr:nth-child(even),
 .mh-table-turquoise-odd tr:nth-child(odd),
 .mh-bg-turquoise {
   background-color: turquoise !important;
 }
+
 .mh-table-th-crimson thead,
 .mh-table-crimson,
 .mh-table-td-crimson tbody,
@@ -2366,11 +2428,12 @@ body {
 .mh-after-bg-crimson::after,
 .mh-bg-crimson-hover:hover,
 .mh-table-crimson-hover tbody tr:hover,
-.mh-table-crimson-even tr:nth-child(even), 
+.mh-table-crimson-even tr:nth-child(even),
 .mh-table-crimson-odd tr:nth-child(odd),
 .mh-bg-crimson {
   background-color: crimson !important;
 }
+
 .mh-table-th-silver thead,
 .mh-table-silver,
 .mh-table-td-silver tbody,
@@ -2379,11 +2442,12 @@ body {
 .mh-after-bg-silver::after,
 .mh-bg-silver-hover:hover,
 .mh-table-silver-hover tbody tr:hover,
-.mh-table-silver-even tr:nth-child(even), 
+.mh-table-silver-even tr:nth-child(even),
 .mh-table-silver-odd tr:nth-child(odd),
 .mh-bg-silver {
   background-color: silver !important;
 }
+
 .mh-table-th-darkred thead,
 .mh-table-darkred,
 .mh-table-td-darkred tbody,
@@ -2392,11 +2456,12 @@ body {
 .mh-after-bg-darkred::after,
 .mh-bg-darkred-hover:hover,
 .mh-table-darkred-hover tbody tr:hover,
-.mh-table-darkred-even tr:nth-child(even), 
+.mh-table-darkred-even tr:nth-child(even),
 .mh-table-darkred-odd tr:nth-child(odd),
 .mh-bg-darkred {
   background-color: darkred !important;
 }
+
 .mh-table-th-navy thead,
 .mh-table-navy,
 .mh-table-td-navy tbody,
@@ -2405,11 +2470,12 @@ body {
 .mh-after-bg-navy::after,
 .mh-bg-navy-hover:hover,
 .mh-table-navy-hover tbody tr:hover,
-.mh-table-navy-even tr:nth-child(even), 
+.mh-table-navy-even tr:nth-child(even),
 .mh-table-navy-odd tr:nth-child(odd),
 .mh-bg-navy {
   background-color: navy !important;
 }
+
 .mh-table-th-orchid thead,
 .mh-table-orchid,
 .mh-table-td-orchid tbody,
@@ -2418,11 +2484,12 @@ body {
 .mh-after-bg-orchid::after,
 .mh-bg-orchid-hover:hover,
 .mh-table-orchid-hover tbody tr:hover,
-.mh-table-orchid-even tr:nth-child(even), 
+.mh-table-orchid-even tr:nth-child(even),
 .mh-table-orchid-odd tr:nth-child(odd),
 .mh-bg-orchid {
   background-color: orchid !important;
 }
+
 .mh-table-th-teal thead,
 .mh-table-teal,
 .mh-table-td-teal tbody,
@@ -2431,11 +2498,12 @@ body {
 .mh-after-bg-teal::after,
 .mh-bg-teal-hover:hover,
 .mh-table-teal-hover tbody tr:hover,
-.mh-table-teal-even tr:nth-child(even), 
+.mh-table-teal-even tr:nth-child(even),
 .mh-table-teal-odd tr:nth-child(odd),
 .mh-bg-teal {
   background-color: teal !important;
 }
+
 .mh-table-th-blank thead,
 .mh-table-blank,
 .mh-table-td-blank tbody,
@@ -2444,21 +2512,25 @@ body {
 .mh-checked-bg-black:checked,
 .mh-bg-blank-hover:hover,
 .mh-table-blank-hover tbody tr:hover,
-.mh-table-blank-even tr:nth-child(even), 
+.mh-table-blank-even tr:nth-child(even),
 .mh-table-blank-odd tr:nth-child(odd),
 .mh-bg-blank {
   background: transparent !important;
 }
-.mh-bg-none{
+
+.mh-bg-none {
   background: none;
 }
-.mh-outline-none{
+
+.mh-outline-none {
   outline: none;
 }
+
 .mh-bg-highlight {
   background-color: #3d6a7c26;
   border: 1px solid #3d6a7c26;
 }
+
 /*================border==================*/
 .mh-border-radius-rounded {
   border-radius: 50% !important;
@@ -2467,27 +2539,29 @@ body {
 .mh-border-rounded-pill {
   border-radius: 50rem !important;
 }
-.mh-border-none{
+
+.mh-border-none {
   border: none;
 }
+
 .mh-border {
-  border: 1px solid #dee2e6 !important;
+  border: var(--mh-border);
 }
 
 .mh-border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: var(--mh-border);
 }
 
 .mh-border-top {
-  border-top: 1px solid #dee2e6 !important;
+  border-top: var(--mh-border);
 }
 
 .mh-border-right {
-  border-right: 1px solid #dee2e6 !important;
+  border-right: var(--mh-border);
 }
 
 .mh-border-left {
-  border-left: 1px solid #dee2e6 !important;
+  border-left: var(--mh-border);
 }
 
 .mh-border-0 {
@@ -2533,6 +2607,7 @@ body {
 .mh-border-gray {
   border-color: gray !important;
 }
+
 .mh-border-blue {
   border-color: blue !important;
 }
@@ -2540,72 +2615,99 @@ body {
 .mh-border-skyblue {
   border-color: skyblue !important;
 }
+
 .mh-border-lime {
   border-color: lime !important;
 }
-.mh-border-pink{
+
+.mh-border-pink {
   border-color: pink !important;
 }
-.mh-border-brown{
+
+.mh-border-brown {
   border-color: brown !important;
 }
-.mh-border-purple{
+
+.mh-border-purple {
   border-color: purple !important;
 }
-.mh-border-orange{
+
+.mh-border-orange {
   border-color: orange !important;
 }
-.mh-border-azure{
+
+.mh-border-azure {
   border-color: azure !important;
 }
-.mh-border-lightgreen{
+
+.mh-border-lightgreen {
   border-color: lightgreen !important;
 }
-.mh-border-maroon{
+
+.mh-border-maroon {
   border-color: maroon !important;
 }
-.mh-border-wheat{
+
+.mh-border-wheat {
   border-color: wheat !important;
 }
-.mh-border-goldenrod{
+
+.mh-border-goldenrod {
   border-color: goldenrod !important;
 }
-.mh-border-salmon{
+
+.mh-border-salmon {
   border-color: salmon !important;
 }
-.mh-border-chocolate{
+
+.mh-border-chocolate {
   border-color: chocolate !important;
 }
-.mh-border-springgreen{
+
+.mh-border-springgreen {
   border-color: springgreen !important;
 }
-.mh-border-darkblue{
+
+.mh-border-darkblue {
   border-color: darkblue !important;
 }
-.mh-border-turquoise{
+
+.mh-border-primary {
+  border-color: var(--mh-primary-color) !important;
+}
+
+.mh-border-turquoise {
   border-color: turquoise !important;
 }
-.mh-border-aqua{
+
+.mh-border-aqua {
   border-color: aqua !important;
 }
-.mh-border-crimson{
+
+.mh-border-crimson {
   border-color: crimson !important;
 }
-.mh-border-silver{
+
+.mh-border-silver {
   border-color: silver !important;
 }
-.mh-border-darkred{
+
+.mh-border-darkred {
   border-color: darkred !important;
 }
-.mh-border-navy{
+
+.mh-border-navy {
   border-color: navy !important;
 }
-.mh-border-teal{
+
+.mh-border-teal {
   border-color: teal !important;
 }
-.mh-border-orchid{
+
+.mh-border-orchid {
   border-color: orchid !important;
 }
+
 .mh-border-width2 {
   border-width: 2px !important;
 }
@@ -2706,426 +2808,511 @@ body {
 .mh-border-radius-20 {
   border-radius: 20px !important;
 }
+
 .mh-border-bl-radius-0,
 .mh-border-bottom-radius-0,
-.mh-border-left-radius-0{
-	border-bottom-left-radius: 0px !important;
+.mh-border-left-radius-0 {
+  border-bottom-left-radius: 0px !important;
 }
+
 .mh-border-br-radius-0,
 .mh-border-bottom-radius-0,
-.mh-border-right-radius-0{
-	border-bottom-right-radius: 0px !important;
+.mh-border-right-radius-0 {
+  border-bottom-right-radius: 0px !important;
 }
+
 .mh-border-tl-radius-0,
 .mh-border-top-radius-0,
-.mh-border-left-radius-0{
-	border-top-left-radius: 0px !important;
+.mh-border-left-radius-0 {
+  border-top-left-radius: 0px !important;
 }
+
 .mh-border-tr-radius-0,
 .mh-border-top-radius-0,
-.mh-border-right-radius-0{
-	border-top-right-radius: 0px !important;
+.mh-border-right-radius-0 {
+  border-top-right-radius: 0px !important;
 }
+
 .mh-border-bl-radius-1,
 .mh-border-bottom-radius-1,
-.mh-border-left-radius-1{
-	border-bottom-left-radius: 1px !important;
+.mh-border-left-radius-1 {
+  border-bottom-left-radius: 1px !important;
 }
+
 .mh-border-br-radius-1,
 .mh-border-bottom-radius-1,
-.mh-border-right-radius-1{
-	border-bottom-right-radius: 1px !important;
+.mh-border-right-radius-1 {
+  border-bottom-right-radius: 1px !important;
 }
+
 .mh-border-tl-radius-1,
 .mh-border-top-radius-1,
-.mh-border-left-radius-1{
-	border-top-left-radius: 1px !important;
+.mh-border-left-radius-1 {
+  border-top-left-radius: 1px !important;
 }
+
 .mh-border-tr-radius-1,
 .mh-border-top-radius-1,
-.mh-border-right-radius-1{
-	border-top-right-radius: 1px !important;
+.mh-border-right-radius-1 {
+  border-top-right-radius: 1px !important;
 }
+
 .mh-border-bl-radius-2,
 .mh-border-bottom-radius-2,
-.mh-border-left-radius-2{
-	border-bottom-left-radius: 2px !important;
+.mh-border-left-radius-2 {
+  border-bottom-left-radius: 2px !important;
 }
+
 .mh-border-br-radius-2,
 .mh-border-bottom-radius-2,
-.mh-border-right-radius-2{
-	border-bottom-right-radius: 2px !important;
+.mh-border-right-radius-2 {
+  border-bottom-right-radius: 2px !important;
 }
+
 .mh-border-tl-radius-2,
 .mh-border-top-radius-2,
-.mh-border-left-radius-2{
-	border-top-left-radius: 2px !important;
+.mh-border-left-radius-2 {
+  border-top-left-radius: 2px !important;
 }
+
 .mh-border-tr-radius-2,
 .mh-border-top-radius-2,
-.mh-border-right-radius-2{
-	border-top-right-radius: 2px !important;
+.mh-border-right-radius-2 {
+  border-top-right-radius: 2px !important;
 }
+
 .mh-border-tr-radius-3,
 .mh-border-top-radius-3,
-.mh-border-right-radius-3{
-	border-top-right-radius: 3px !important;
+.mh-border-right-radius-3 {
+  border-top-right-radius: 3px !important;
 }
+
 .mh-border-tr-radius-4,
 .mh-border-top-radius-4,
-.mh-border-right-radius-4{
-	border-top-right-radius: 4px !important;
+.mh-border-right-radius-4 {
+  border-top-right-radius: 4px !important;
 }
+
 .mh-border-tr-radius-5,
 .mh-border-top-radius-5,
-.mh-border-right-radius-5{
-	border-top-right-radius: 5px !important;
+.mh-border-right-radius-5 {
+  border-top-right-radius: 5px !important;
 }
+
 .mh-border-tr-radius-6,
 .mh-border-top-radius-6,
-.mh-border-right-radius-6{
-	border-top-right-radius: 6px !important;
+.mh-border-right-radius-6 {
+  border-top-right-radius: 6px !important;
 }
+
 .mh-border-tr-radius-7,
 .mh-border-top-radius-7,
-.mh-border-right-radius-7{
-	border-top-right-radius: 7px !important;
+.mh-border-right-radius-7 {
+  border-top-right-radius: 7px !important;
 }
+
 .mh-border-tr-radius-8,
 .mh-border-top-radius-8,
-.mh-border-right-radius-8{
-	border-top-right-radius: 8px !important;
+.mh-border-right-radius-8 {
+  border-top-right-radius: 8px !important;
 }
+
 .mh-border-tr-radius-9,
 .mh-border-top-radius-9,
-.mh-border-right-radius-9{
-	border-top-right-radius: 9px !important;
+.mh-border-right-radius-9 {
+  border-top-right-radius: 9px !important;
 }
+
 .mh-border-tr-radius-10,
 .mh-border-top-radius-10,
-.mh-border-right-radius-10{
-	border-top-right-radius: 10px !important;
+.mh-border-right-radius-10 {
+  border-top-right-radius: 10px !important;
 }
+
 .mh-border-tr-radius-11,
 .mh-border-top-radius-11,
-.mh-border-right-radius-11{
-	border-top-right-radius: 11px !important;
+.mh-border-right-radius-11 {
+  border-top-right-radius: 11px !important;
 }
+
 .mh-border-tr-radius-12,
 .mh-border-top-radius-12,
-.mh-border-right-radius-12{
-	border-top-right-radius: 12px !important;
+.mh-border-right-radius-12 {
+  border-top-right-radius: 12px !important;
 }
+
 .mh-border-tr-radius-13,
 .mh-border-top-radius-13,
-.mh-border-right-radius-13{
-	border-top-right-radius: 13px !important;
+.mh-border-right-radius-13 {
+  border-top-right-radius: 13px !important;
 }
+
 .mh-border-tr-radius-14,
 .mh-border-top-radius-14,
-.mh-border-right-radius-14{
-	border-top-right-radius: 14px !important;
+.mh-border-right-radius-14 {
+  border-top-right-radius: 14px !important;
 }
+
 .mh-border-tr-radius-15,
 .mh-border-top-radius-15,
-.mh-border-right-radius-15{
-	border-top-right-radius: 15px !important;
+.mh-border-right-radius-15 {
+  border-top-right-radius: 15px !important;
 }
+
 .mh-border-tr-radius-16,
 .mh-border-top-radius-16,
-.mh-border-right-radius-16{
-	border-top-right-radius: 16px !important;
+.mh-border-right-radius-16 {
+  border-top-right-radius: 16px !important;
 }
+
 .mh-border-tr-radius-17,
 .mh-border-top-radius-17,
-.mh-border-right-radius-17{
-	border-top-right-radius: 17px !important;
+.mh-border-right-radius-17 {
+  border-top-right-radius: 17px !important;
 }
+
 .mh-border-tr-radius-18,
 .mh-border-top-radius-18,
-.mh-border-right-radius-18{
-	border-top-right-radius: 18px !important;
+.mh-border-right-radius-18 {
+  border-top-right-radius: 18px !important;
 }
+
 .mh-border-tr-radius-19,
 .mh-border-top-radius-19,
-.mh-border-right-radius-19{
-	border-top-right-radius: 19px !important;
+.mh-border-right-radius-19 {
+  border-top-right-radius: 19px !important;
 }
+
 .mh-border-tr-radius-20,
 .mh-border-top-radius-20,
-.mh-border-right-radius-20{
-	border-top-right-radius: 20px !important;
+.mh-border-right-radius-20 {
+  border-top-right-radius: 20px !important;
 }
+
 .mh-border-br-radius-3,
 .mh-border-bottom-radius-3,
-.mh-border-right-radius-3{
-	border-bottom-right-radius: 3px !important;
+.mh-border-right-radius-3 {
+  border-bottom-right-radius: 3px !important;
 }
+
 .mh-border-br-radius-4,
 .mh-border-bottom-radius-4,
-.mh-border-right-radius-4{
-	border-bottom-right-radius: 4px !important;
+.mh-border-right-radius-4 {
+  border-bottom-right-radius: 4px !important;
 }
+
 .mh-border-br-radius-5,
 .mh-border-bottom-radius-5,
-.mh-border-right-radius-5{
-	border-bottom-right-radius: 5px !important;
+.mh-border-right-radius-5 {
+  border-bottom-right-radius: 5px !important;
 }
+
 .mh-border-br-radius-6,
 .mh-border-bottom-radius-6,
-.mh-border-right-radius-6{
-	border-bottom-right-radius: 6px !important;
+.mh-border-right-radius-6 {
+  border-bottom-right-radius: 6px !important;
 }
+
 .mh-border-br-radius-7,
 .mh-border-bottom-radius-7,
-.mh-border-right-radius-7{
-	border-bottom-right-radius: 7px !important;
+.mh-border-right-radius-7 {
+  border-bottom-right-radius: 7px !important;
 }
+
 .mh-border-br-radius-8,
 .mh-border-bottom-radius-8,
-.mh-border-right-radius-8{
-	border-bottom-right-radius: 8px !important;
+.mh-border-right-radius-8 {
+  border-bottom-right-radius: 8px !important;
 }
+
 .mh-border-br-radius-9,
 .mh-border-bottom-radius-9,
-.mh-border-right-radius-9{
-	border-bottom-right-radius: 9px !important;
+.mh-border-right-radius-9 {
+  border-bottom-right-radius: 9px !important;
 }
+
 .mh-border-br-radius-10,
 .mh-border-bottom-radius-10,
-.mh-border-right-radius-10{
-	border-bottom-right-radius: 10px !important;
+.mh-border-right-radius-10 {
+  border-bottom-right-radius: 10px !important;
 }
+
 .mh-border-br-radius-11,
 .mh-border-bottom-radius-11,
-.mh-border-right-radius-11{
-	border-bottom-right-radius: 11px !important;
+.mh-border-right-radius-11 {
+  border-bottom-right-radius: 11px !important;
 }
+
 .mh-border-br-radius-12,
 .mh-border-bottom-radius-12,
-.mh-border-right-radius-12{
-	border-bottom-right-radius: 12px !important;
+.mh-border-right-radius-12 {
+  border-bottom-right-radius: 12px !important;
 }
+
 .mh-border-br-radius-13,
 .mh-border-bottom-radius-13,
-.mh-border-right-radius-13{
-	border-bottom-right-radius: 13px !important;
+.mh-border-right-radius-13 {
+  border-bottom-right-radius: 13px !important;
 }
+
 .mh-border-br-radius-14,
 .mh-border-bottom-radius-14,
-.mh-border-right-radius-14{
-	border-bottom-right-radius: 14px !important;
+.mh-border-right-radius-14 {
+  border-bottom-right-radius: 14px !important;
 }
+
 .mh-border-br-radius-15,
 .mh-border-bottom-radius-15,
-.mh-border-right-radius-15{
-	border-bottom-right-radius: 15px !important;
+.mh-border-right-radius-15 {
+  border-bottom-right-radius: 15px !important;
 }
+
 .mh-border-br-radius-16,
 .mh-border-bottom-radius-16,
-.mh-border-right-radius-16{
-	border-bottom-right-radius: 16px !important;
+.mh-border-right-radius-16 {
+  border-bottom-right-radius: 16px !important;
 }
+
 .mh-border-br-radius-17,
 .mh-border-bottom-radius-17,
-.mh-border-right-radius-17{
-	border-bottom-right-radius: 17px !important;
+.mh-border-right-radius-17 {
+  border-bottom-right-radius: 17px !important;
 }
+
 .mh-border-br-radius-18,
 .mh-border-bottom-radius-18,
-.mh-border-right-radius-18{
-	border-bottom-right-radius: 18px !important;
+.mh-border-right-radius-18 {
+  border-bottom-right-radius: 18px !important;
 }
+
 .mh-border-br-radius-19,
 .mh-border-bottom-radius-19,
-.mh-border-right-radius-19{
-	border-bottom-right-radius: 19px !important;
+.mh-border-right-radius-19 {
+  border-bottom-right-radius: 19px !important;
 }
+
 .mh-border-br-radius-20,
 .mh-border-bottom-radius-20,
-.mh-border-right-radius-20{
-	border-bottom-right-radius: 20px !important;
+.mh-border-right-radius-20 {
+  border-bottom-right-radius: 20px !important;
 }
+
 .mh-border-bl-radius-3,
 .mh-border-bottom-radius-3,
-.mh-border-left-radius-3{
-	border-bottom-left-radius: 3px !important;
+.mh-border-left-radius-3 {
+  border-bottom-left-radius: 3px !important;
 }
+
 .mh-border-bl-radius-4,
 .mh-border-bottom-radius-4,
-.mh-border-left-radius-4{
-	border-bottom-left-radius: 4px !important;
+.mh-border-left-radius-4 {
+  border-bottom-left-radius: 4px !important;
 }
+
 .mh-border-bl-radius-5,
 .mh-border-bottom-radius-5,
-.mh-border-left-radius-5{
-	border-bottom-left-radius: 5px !important;
+.mh-border-left-radius-5 {
+  border-bottom-left-radius: 5px !important;
 }
+
 .mh-border-bl-radius-6,
 .mh-border-bottom-radius-6,
-.mh-border-left-radius-6{
-	border-bottom-left-radius: 6px !important;
+.mh-border-left-radius-6 {
+  border-bottom-left-radius: 6px !important;
 }
+
 .mh-border-bl-radius-7,
 .mh-border-bottom-radius-7,
-.mh-border-left-radius-7{
-	border-bottom-left-radius: 7px !important;
+.mh-border-left-radius-7 {
+  border-bottom-left-radius: 7px !important;
 }
+
 .mh-border-bl-radius-8,
 .mh-border-bottom-radius-8,
-.mh-border-left-radius-8{
-	border-bottom-left-radius: 8px !important;
+.mh-border-left-radius-8 {
+  border-bottom-left-radius: 8px !important;
 }
+
 .mh-border-bl-radius-9,
 .mh-border-bottom-radius-9,
-.mh-border-left-radius-9{
-	border-bottom-left-radius: 9px !important;
+.mh-border-left-radius-9 {
+  border-bottom-left-radius: 9px !important;
 }
+
 .mh-border-bl-radius-10,
 .mh-border-bottom-radius-10,
-.mh-border-left-radius-10{
-	border-bottom-left-radius: 10px !important;
+.mh-border-left-radius-10 {
+  border-bottom-left-radius: 10px !important;
 }
+
 .mh-border-bl-radius-11,
 .mh-border-bottom-radius-11,
-.mh-border-left-radius-11{
-	border-bottom-left-radius: 11px !important;
+.mh-border-left-radius-11 {
+  border-bottom-left-radius: 11px !important;
 }
+
 .mh-border-bl-radius-12,
 .mh-border-bottom-radius-12,
-.mh-border-left-radius-12{
-	border-bottom-left-radius: 12px !important;
+.mh-border-left-radius-12 {
+  border-bottom-left-radius: 12px !important;
 }
+
 .mh-border-bl-radius-13,
 .mh-border-bottom-radius-13,
-.mh-border-left-radius-13{
-	border-bottom-left-radius: 13px !important;
+.mh-border-left-radius-13 {
+  border-bottom-left-radius: 13px !important;
 }
+
 .mh-border-bl-radius-14,
 .mh-border-bottom-radius-14,
-.mh-border-left-radius-14{
-	border-bottom-left-radius: 14px !important;
+.mh-border-left-radius-14 {
+  border-bottom-left-radius: 14px !important;
 }
+
 .mh-border-bl-radius-15,
 .mh-border-bottom-radius-15,
-.mh-border-left-radius-15{
-	border-bottom-left-radius: 15px !important;
+.mh-border-left-radius-15 {
+  border-bottom-left-radius: 15px !important;
 }
+
 .mh-border-bl-radius-16,
 .mh-border-bottom-radius-16,
-.mh-border-left-radius-16{
-	border-bottom-left-radius: 16px !important;
+.mh-border-left-radius-16 {
+  border-bottom-left-radius: 16px !important;
 }
+
 .mh-border-bl-radius-17,
 .mh-border-bottom-radius-17,
-.mh-border-left-radius-17{
-	border-bottom-left-radius: 17px !important;
+.mh-border-left-radius-17 {
+  border-bottom-left-radius: 17px !important;
 }
+
 .mh-border-bl-radius-18,
 .mh-border-bottom-radius-18,
-.mh-border-left-radius-18{
-	border-bottom-left-radius: 18px !important;
+.mh-border-left-radius-18 {
+  border-bottom-left-radius: 18px !important;
 }
+
 .mh-border-bl-radius-19,
 .mh-border-bottom-radius-19,
-.mh-border-left-radius-19{
-	border-bottom-left-radius: 19px !important;
+.mh-border-left-radius-19 {
+  border-bottom-left-radius: 19px !important;
 }
+
 .mh-border-bl-radius-20,
 .mh-border-bottom-radius-20,
-.mh-border-left-radius-20{
-	border-bottom-left-radius: 20px !important;
+.mh-border-left-radius-20 {
+  border-bottom-left-radius: 20px !important;
 }
+
 .mh-border-tl-radius-3,
 .mh-border-top-radius-3,
-.mh-border-left-radius-3{
-	border-top-left-radius: 3px !important;
+.mh-border-left-radius-3 {
+  border-top-left-radius: 3px !important;
 }
+
 .mh-border-tl-radius-4,
 .mh-border-top-radius-4,
-.mh-border-left-radius-4{
-	border-top-left-radius: 4px !important;
+.mh-border-left-radius-4 {
+  border-top-left-radius: 4px !important;
 }
+
 .mh-border-tl-radius-5,
 .mh-border-top-radius-5,
-.mh-border-left-radius-5{
-	border-top-left-radius: 5px !important;
+.mh-border-left-radius-5 {
+  border-top-left-radius: 5px !important;
 }
+
 .mh-border-tl-radius-6,
 .mh-border-top-radius-6,
-.mh-border-left-radius-6{
-	border-top-left-radius: 6px !important;
+.mh-border-left-radius-6 {
+  border-top-left-radius: 6px !important;
 }
+
 .mh-border-tl-radius-7,
 .mh-border-top-radius-7,
-.mh-border-left-radius-7{
-	border-top-left-radius: 7px !important;
+.mh-border-left-radius-7 {
+  border-top-left-radius: 7px !important;
 }
+
 .mh-border-tl-radius-8,
 .mh-border-top-radius-8,
-.mh-border-left-radius-8{
-	border-top-left-radius: 8px !important;
+.mh-border-left-radius-8 {
+  border-top-left-radius: 8px !important;
 }
+
 .mh-border-tl-radius-9,
 .mh-border-top-radius-9,
-.mh-border-left-radius-9{
-	border-top-left-radius: 9px !important;
+.mh-border-left-radius-9 {
+  border-top-left-radius: 9px !important;
 }
+
 .mh-border-tl-radius-10,
 .mh-border-top-radius-10,
-.mh-border-left-radius-10{
-	border-top-left-radius: 10px !important;
+.mh-border-left-radius-10 {
+  border-top-left-radius: 10px !important;
 }
+
 .mh-border-tl-radius-11,
 .mh-border-top-radius-11,
-.mh-border-left-radius-11{
-	border-top-left-radius: 11px !important;
+.mh-border-left-radius-11 {
+  border-top-left-radius: 11px !important;
 }
+
 .mh-border-tl-radius-12,
 .mh-border-top-radius-12,
-.mh-border-left-radius-12{
-	border-top-left-radius: 12px !important;
+.mh-border-left-radius-12 {
+  border-top-left-radius: 12px !important;
 }
+
 .mh-border-tl-radius-13,
 .mh-border-top-radius-13,
-.mh-border-left-radius-13{
-	border-top-left-radius: 13px !important;
+.mh-border-left-radius-13 {
+  border-top-left-radius: 13px !important;
 }
+
 .mh-border-tl-radius-14,
 .mh-border-top-radius-14,
-.mh-border-left-radius-14{
-	border-top-left-radius: 14px !important;
+.mh-border-left-radius-14 {
+  border-top-left-radius: 14px !important;
 }
+
 .mh-border-tl-radius-15,
 .mh-border-top-radius-15,
-.mh-border-left-radius-15{
-	border-top-left-radius: 15px !important;
+.mh-border-left-radius-15 {
+  border-top-left-radius: 15px !important;
 }
+
 .mh-border-tl-radius-16,
 .mh-border-top-radius-16,
-.mh-border-left-radius-16{
-	border-top-left-radius: 16px !important;
+.mh-border-left-radius-16 {
+  border-top-left-radius: 16px !important;
 }
+
 .mh-border-tl-radius-17,
 .mh-border-top-radius-17,
-.mh-border-left-radius-17{
-	border-top-left-radius: 17px !important;
+.mh-border-left-radius-17 {
+  border-top-left-radius: 17px !important;
 }
+
 .mh-border-tl-radius-18,
 .mh-border-top-radius-18,
-.mh-border-left-radius-18{
-	border-top-left-radius: 18px !important;
+.mh-border-left-radius-18 {
+  border-top-left-radius: 18px !important;
 }
+
 .mh-border-tl-radius-19,
 .mh-border-top-radius-19,
-.mh-border-left-radius-19{
-	border-top-left-radius: 19px !important;
+.mh-border-left-radius-19 {
+  border-top-left-radius: 19px !important;
 }
+
 .mh-border-tl-radius-20,
 .mh-border-top-radius-20,
-.mh-border-left-radius-20{
-	border-top-left-radius: 20px !important;
+.mh-border-left-radius-20 {
+  border-top-left-radius: 20px !important;
 }
+
 /*==============grid==============*/
 .mh-row {
   display: -ms-flexbox;
@@ -3709,8 +3896,9 @@ body {
   cursor: pointer;
 }
 
-.mh-btn-primary {
-  background-color: #0999e0;
+.mh-btn-primary,
+.mh-btn-primary-outline:hover {
+  background-color: var(--mh-primary-color);
   color: #fff;
 }
 
@@ -3718,7 +3906,8 @@ body {
   background-color: #0a86c4;
 }
 
-.mh-btn-red {
+.mh-btn-red,
+.mh-btn-red-outline:hover {
   background-color: red;
   color: #fff;
 }
@@ -3727,7 +3916,8 @@ body {
   background-color: #d40808;
 }
 
-.mh-btn-dark {
+.mh-btn-dark,
+.mh-btn-dark-outline:hover {
   background-color: #000;
   color: #fff;
 }
@@ -3736,7 +3926,8 @@ body {
   background-color: #363636;
 }
 
-.mh-btn-light {
+.mh-btn-light,
+.mh-btn-light-outline:hover {
   background-color: #fff;
   color: #000;
 }
@@ -3745,7 +3936,8 @@ body {
   background-color: #e0e0e0;
 }
 
-.mh-btn-green {
+.mh-btn-green,
+.mh-btn-green-outline:hover {
   background-color: green;
   color: #fff;
 }
@@ -3754,7 +3946,8 @@ body {
   background-color: #32CD32;
 }
 
-.mh-btn-yellow {
+.mh-btn-yellow,
+.mh-btn-yellow-outline:hover {
   background-color: yellow;
   color: #000;
 }
@@ -3764,7 +3957,8 @@ body {
   color: #fff;
 }
 
-.mh-btn-secondary {
+.mh-btn-secondary,
+.mh-btn-secondary-outline:hover {
   background-color: #666;
   color: #fff;
 }
@@ -3775,13 +3969,8 @@ body {
 
 /*==============button outline===========*/
 .mh-btn-primary-outline {
-  border: 2px solid #0999e0;
+  border: 2px solid var(--mh-primary-color);
   background: transparent;
-}
-
-.mh-btn-primary-outline:hover {
-  background: #0999e0;
-  color: #fff;
 }
 
 .mh-btn-red-outline {
@@ -3789,19 +3978,9 @@ body {
   border: 2px solid red;
 }
 
-.mh-btn-red-outline:hover {
-  color: #fff;
-  background-color: red;
-}
-
 .mh-btn-dark-outline {
   background: transparent;
   border: 2px solid #000;
-}
-
-.mh-btn-dark-outline:hover {
-  color: #fff;
-  background-color: #000;
 }
 
 .mh-btn-light-outline {
@@ -3809,19 +3988,9 @@ body {
   border: 2px solid #fff;
 }
 
-.mh-btn-light-outline:hover {
-  color: #000;
-  background-color: #fff;
-}
-
 .mh-btn-green-outline {
   background: transparent;
   border: 2px solid green;
-}
-
-.mh-btn-green-outline:hover {
-  color: #fff;
-  background-color: green;
 }
 
 .mh-btn-yellow-outline {
@@ -3829,19 +3998,9 @@ body {
   border: 2px solid yellow;
 }
 
-.mh-btn-yellow-outline:hover {
-  color: #000;
-  background-color: yellow;
-}
-
-.mh-btn-Secondary-outline {
+.mh-btn-secondary-outline {
   background: transparent;
   border: 2px solid #666;
-}
-
-.mh-btn-Secondary-outline:hover {
-  color: #fff;
-  background-color: #666;
 }
 
 /*===============img=================*/
@@ -4642,7 +4801,9 @@ color: #ddd;
   width: 100%;
   border-collapse: collapse;
 }
-.mh-table-bb th, .mh-table-bb td {
+
+.mh-table-bb th,
+.mh-table-bb td {
   border-bottom-width: 1px !important;
   border-top-width: 0 !important;
   border-left-width: 0 !important;
@@ -4650,19 +4811,24 @@ color: #ddd;
   border-color: #ddd;
   border-style: solid !important;
 }
-.mh-table-bb th{
+
+.mh-table-bb th {
   border-color: #000 !important;
 }
-.mh-table-dark.mh-table-bb th{
+
+.mh-table-dark.mh-table-bb th {
   border-color: #fff !important;
 }
+
 .mh-table-dark tr>* {
   border-color: inherit !important;
 }
-.mh-table-even tbody tr:nth-child(even) ,
+
+.mh-table-even tbody tr:nth-child(even),
 .mh-table-odd tbody tr:nth-child(odd) {
   background: rgb(0, 0, 0, 0.09);
 }
+
 .mh-table td,
 .mh-table th {
   padding: 12px 15px;
@@ -4674,6 +4840,7 @@ color: #ddd;
 
 
 @media(max-width: 500px) {
+
   .mh-table,
   .mh-table tbody,
   .mh-table thead,
