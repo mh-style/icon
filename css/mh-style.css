@@ -37,7 +37,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: sans-serif,mhstyle;
   text-decoration: none;
 }
 
@@ -4647,8 +4647,6 @@ color: #ddd;
   border-top-width: 0 !important;
   border-left-width: 0 !important;
   border-right-width: 0 !important;
-}
-.mh-table-bb td, .mh-table-bb th {
   border-color: #ddd;
   border-style: solid !important;
 }
@@ -4656,7 +4654,7 @@ color: #ddd;
   border-color: #000 !important;
 }
 .mh-table-dark.mh-table-bb th{
-  border-color: #000 !important;
+  border-color: #fff !important;
 }
 .mh-table-dark tr>* {
   border-color: inherit !important;
