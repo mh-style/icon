@@ -1606,7 +1606,7 @@ body {
 
 .mh-table-color-black-hover tr:hover,
 .mh-table-color-black,
-.mh-table-color-th-black thead,
+.mh-table-color-th-black thead tr,
 .mh-table-color-black-even tbody tr:nth-child(even),
 .mh-table-color-black-odd tbody tr:nth-child(odd),
 .mh-color-black-hover:hover,
@@ -1617,7 +1617,7 @@ body {
 .mh-table-color-white-hover tr:hover,
 .mh-table-color-white,
 .mh-table-dark,
-.mh-table-color-th-white thead,
+.mh-table-color-th-white thead tr,
 .mh-table-color-white-even tbody tr:nth-child(even),
 .mh-table-color-white-odd tbody tr:nth-child(odd),
 .mh-color-white-hover:hover,
@@ -1627,7 +1627,7 @@ body {
 
 .mh-table-color-light-hover tr:hover,
 .mh-table-color-light,
-.mh-table-color-th-light thead,
+.mh-table-color-th-light thead tr,
 .mh-table-color-light-even tbody tr:nth-child(even),
 .mh-table-color-light-odd tbody tr:nth-child(odd),
 .mh-color-light-hover:hover,
@@ -1637,7 +1637,7 @@ body {
 
 .mh-table-color-limegreen-hover tr:hover,
 .mh-table-color-limegreen,
-.mh-table-color-th-limegreen thead,
+.mh-table-color-th-limegreen thead tr,
 .mh-table-color-limegreen-even tbody tr:nth-child(even),
 .mh-table-color-limegreen-odd tbody tr:nth-child(odd),
 .mh-color-limegreen-hover:hover,
@@ -1647,7 +1647,7 @@ body {
 
 .mh-table-color-blue-hover tr:hover,
 .mh-table-color-blue,
-.mh-table-color-th-blue thead,
+.mh-table-color-th-blue thead tr,
 .mh-table-color-blue-even tbody tr:nth-child(even),
 .mh-table-color-blue-odd tbody tr:nth-child(odd),
 .mh-color-blue-hover:hover,
@@ -1656,7 +1656,7 @@ body {
 }
 
 .mh-table-color-orange-hover tr:hover,
-.mh-table-color-th-orange thead,
+.mh-table-color-th-orange thead tr,
 .mh-table-color-orange,
 .mh-table-color-orange-even tbody tr:nth-child(even),
 .mh-table-color-orange-odd tbody tr:nth-child(odd),
@@ -1666,7 +1666,7 @@ body {
 }
 
 .mh-table-color-green-hover tr:hover,
-.mh-table-color-th-green thead,
+.mh-table-color-th-green thead tr,
 .mh-table-color-green,
 .mh-table-color-green-even tbody tr:nth-child(even),
 .mh-table-color-green-odd tbody tr:nth-child(odd),
@@ -1676,7 +1676,7 @@ body {
 }
 
 .mh-table-color-lightgreen-hover tr:hover,
-.mh-table-color-th-lightgreen thead,
+.mh-table-color-th-lightgreen thead tr,
 .mh-table-color-lightgreen,
 .mh-table-color-lightgreen-even tbody tr:nth-child(even),
 .mh-table-color-lightgreen-odd tbody tr:nth-child(odd),
@@ -1686,7 +1686,7 @@ body {
 }
 
 .mh-table-color-darkgreen-hover tr:hover,
-.mh-table-color-th-darkgreen thead,
+.mh-table-color-th-darkgreen thead tr,
 .mh-table-color-darkgreen,
 .mh-table-color-darkgreen-even tbody tr:nth-child(even),
 .mh-table-color-darkgreen-odd tbody tr:nth-child(odd),
@@ -1696,7 +1696,7 @@ body {
 }
 
 .mh-table-color-red-hover tr:hover,
-.mh-table-color-th-red thead,
+.mh-table-color-th-red thead tr,
 .mh-table-color-red,
 .mh-table-color-red-even tbody tr:nth-child(even),
 .mh-table-color-red-odd tbody tr:nth-child(odd),
@@ -1706,7 +1706,7 @@ body {
 }
 
 .mh-table-color-skyblue-hover tr:hover,
-.mh-table-color-th-skyblue thead,
+.mh-table-color-th-skyblue thead tr,
 .mh-table-color-skyblue,
 .mh-table-color-skyblue-even tbody tr:nth-child(even),
 .mh-table-color-skyblue-odd tbody tr:nth-child(odd),
@@ -1717,7 +1717,7 @@ body {
 
 
 .mh-table-color-primary-hover tr:hover,
-.mh-table-color-th-primary thead,
+.mh-table-color-th-primary thead tr,
 .mh-table-color-primary,
 .mh-table-color-primary-even tbody tr:nth-child(even),
 .mh-table-color-primary-odd tbody tr:nth-child(odd),
@@ -1727,7 +1727,7 @@ body {
 }
 
 .mh-table-color-maroon-hover tr:hover,
-.mh-table-color-th-maroon thead,
+.mh-table-color-th-maroon thead tr,
 .mh-table-color-maroon,
 .mh-table-color-maroon-even tbody tr:nth-child(even),
 .mh-table-color-maroon-odd tbody tr:nth-child(odd),
@@ -1737,7 +1737,7 @@ body {
 }
 
 .mh-table-color-yellow-hover tr:hover,
-.mh-table-color-th-yellow thead,
+.mh-table-color-th-yellow thead tr,
 .mh-table-color-yellow,
 .mh-table-color-yellow-even tbody tr:nth-child(even),
 .mh-table-color-yellow-odd tbody tr:nth-child(odd),
@@ -1747,7 +1747,7 @@ body {
 }
 
 .mh-table-color-lightgray-hover tr:hover,
-.mh-table-color-th-lightgray thead,
+.mh-table-color-th-lightgray thead tr,
 .mh-table-color-lightgray,
 .mh-table-color-lightgray-even tbody tr:nth-child(even),
 .mh-table-color-lightgray-odd tbody tr:nth-child(odd),
@@ -1757,7 +1757,7 @@ body {
 }
 
 .mh-table-color-gray-hover tr:hover,
-.mh-table-color-th-gray thead,
+.mh-table-color-th-gray thead tr,
 .mh-table-color-gray,
 .mh-table-color-gray-even tbody tr:nth-child(even),
 .mh-table-color-gray-odd tbody tr:nth-child(odd),
@@ -1767,7 +1767,7 @@ body {
 }
 
 .mh-table-color-gold-hover tr:hover,
-.mh-table-color-th-gold thead,
+.mh-table-color-th-gold thead tr,
 .mh-table-color-gold,
 .mh-table-color-gold-even tbody tr:nth-child(even),
 .mh-table-color-gold-odd tbody tr:nth-child(odd),
@@ -1777,7 +1777,7 @@ body {
 }
 
 .mh-table-color-aqua-hover tr:hover,
-.mh-table-color-th-aqua thead,
+.mh-table-color-th-aqua thead tr,
 .mh-table-color-aqua,
 .mh-table-color-aqua-even tbody tr:nth-child(even),
 .mh-table-color-aqua-odd tbody tr:nth-child(odd),
@@ -1787,7 +1787,7 @@ body {
 }
 
 .mh-table-color-pink-hover tr:hover,
-.mh-table-color-th-pink thead,
+.mh-table-color-th-pink thead tr,
 .mh-table-color-pink,
 .mh-table-color-pink-even tbody tr:nth-child(even),
 .mh-table-color-pink-odd tbody tr:nth-child(odd),
@@ -1797,7 +1797,7 @@ body {
 }
 
 .mh-table-color-brown-hover tr:hover,
-.mh-table-color-th-brown thead,
+.mh-table-color-th-brown thead tr,
 .mh-table-color-brown,
 .mh-table-color-brown-even tbody tr:nth-child(even),
 .mh-table-color-brown-odd tbody tr:nth-child(odd),
@@ -1807,7 +1807,7 @@ body {
 }
 
 .mh-table-color-purple-hover tr:hover,
-.mh-table-color-th-purple thead,
+.mh-table-color-th-purple thead tr,
 .mh-table-color-purple,
 .mh-table-color-purple-even tbody tr:nth-child(even),
 .mh-table-color-purple-odd tbody tr:nth-child(odd),
@@ -1817,7 +1817,7 @@ body {
 }
 
 .mh-table-color-azure-hover tr:hover,
-.mh-table-color-th-azure thead,
+.mh-table-color-th-azure thead tr,
 .mh-table-color-azure,
 .mh-table-color-azure-even tbody tr:nth-child(even),
 .mh-table-color-azure-odd tbody tr:nth-child(odd),
@@ -1827,7 +1827,7 @@ body {
 }
 
 .mh-table-color-wheat-hover tr:hover,
-.mh-table-color-th-wheat thead,
+.mh-table-color-th-wheat thead tr,
 .mh-table-color-wheat,
 .mh-table-color-wheat-even tbody tr:nth-child(even),
 .mh-table-color-wheat-odd tbody tr:nth-child(odd),
@@ -1837,7 +1837,7 @@ body {
 }
 
 .mh-table-color-goldenrod-hover tr:hover,
-.mh-table-color-th-goldenrod thead,
+.mh-table-color-th-goldenrod thead tr,
 .mh-table-color-goldenrod,
 .mh-table-color-goldenrod-even tbody tr:nth-child(even),
 .mh-table-color-goldenrod-odd tbody tr:nth-child(odd),
@@ -1847,7 +1847,7 @@ body {
 }
 
 .mh-table-color-salmon-hover tr:hover,
-.mh-table-color-th-salmon thead,
+.mh-table-color-th-salmon thead tr,
 .mh-table-color-salmon,
 .mh-table-color-salmon-even tbody tr:nth-child(even),
 .mh-table-color-salmon-odd tbody tr:nth-child(odd),
@@ -1857,7 +1857,7 @@ body {
 }
 
 .mh-table-color-chocolate-hover tr:hover,
-.mh-table-color-th-chocolate thead,
+.mh-table-color-th-chocolate thead tr,
 .mh-table-color-chocolate,
 .mh-table-color-chocolate-even tbody tr:nth-child(even),
 .mh-table-color-chocolate-odd tbody tr:nth-child(odd),
@@ -1867,7 +1867,7 @@ body {
 }
 
 .mh-table-color-darkblue-hover tr:hover,
-.mh-table-color-th-darkblue thead,
+.mh-table-color-th-darkblue thead tr,
 .mh-table-color-darkblue,
 .mh-table-color-darkblue-even tbody tr:nth-child(even),
 .mh-table-color-darkblue-odd tbody tr:nth-child(odd),
@@ -1877,7 +1877,7 @@ body {
 }
 
 .mh-table-color-springgreen-hover tr:hover,
-.mh-table-color-th-springgreen thead,
+.mh-table-color-th-springgreen thead tr,
 .mh-table-color-springgreen,
 .mh-table-color-springgreen-even tbody tr:nth-child(even),
 .mh-table-color-springgreen-odd tbody tr:nth-child(odd),
@@ -1887,7 +1887,7 @@ body {
 }
 
 .mh-table-color-turquoise-hover tr:hover,
-.mh-table-color-th-turquoise thead,
+.mh-table-color-th-turquoise thead tr,
 .mh-table-color-turquoise,
 .mh-table-color-turquoise-even tbody tr:nth-child(even),
 .mh-table-color-turquoise-odd tbody tr:nth-child(odd),
@@ -1897,7 +1897,7 @@ body {
 }
 
 .mh-table-color-crimson-hover tr:hover,
-.mh-table-color-th-crimson thead,
+.mh-table-color-th-crimson thead tr,
 .mh-table-color-crimson,
 .mh-table-color-crimson-even tbody tr:nth-child(even),
 .mh-table-color-crimson-odd tbody tr:nth-child(odd),
@@ -1907,7 +1907,7 @@ body {
 }
 
 .mh-table-color-silver-hover tr:hover,
-.mh-table-color-th-silver thead,
+.mh-table-color-th-silver thead tr,
 .mh-table-color-silver,
 .mh-table-color-silver-even tbody tr:nth-child(even),
 .mh-table-color-silver-odd tbody tr:nth-child(odd),
@@ -1917,7 +1917,7 @@ body {
 }
 
 .mh-table-color-darkred-hover tr:hover,
-.mh-table-color-th-darkred thead,
+.mh-table-color-th-darkred thead tr,
 .mh-table-color-darkred,
 .mh-table-color-darkred-even tbody tr:nth-child(even),
 .mh-table-color-darkred-odd tbody tr:nth-child(odd),
@@ -1927,7 +1927,7 @@ body {
 }
 
 .mh-table-color-navy-hover tr:hover,
-.mh-table-color-th-navy thead,
+.mh-table-color-th-navy thead tr,
 .mh-table-color-navy,
 .mh-table-color-navy-even tbody tr:nth-child(even),
 .mh-table-color-navy-odd tbody tr:nth-child(odd),
@@ -1937,7 +1937,7 @@ body {
 }
 
 .mh-table-color-orchid-hover tr:hover,
-.mh-table-color-th-orchid thead,
+.mh-table-color-th-orchid thead tr,
 .mh-table-color-orchid,
 .mh-table-color-orchid-even tbody tr:nth-child(even),
 .mh-table-color-orchid-odd tbody tr:nth-child(odd),
@@ -1947,7 +1947,7 @@ body {
 }
 
 .mh-table-color-teal-hover tr:hover,
-.mh-table-color-th-teal thead,
+.mh-table-color-th-teal thead tr,
 .mh-table-color-teal,
 .mh-table-color-teal-even tbody tr:nth-child(even),
 .mh-table-color-teal-odd tbody tr:nth-child(odd),
@@ -2016,10 +2016,10 @@ body {
 .mh-after-bg-black::after,
 .mh-checked-bg-black:checked,
 .mh-bg-black-hover:hover,
-.mh-table-th-black thead,
+.mh-table-th-black thead tr,
 .mh-table-black,
 .mh-table-dark,
-.mh-table-td-black tbody,
+.mh-table-td-black tbody tr,
 .mh-table-black-hover tbody tr:hover,
 .mh-table-black-even tr:nth-child(even),
 .mh-table-black-odd tr:nth-child(odd),
@@ -2027,9 +2027,9 @@ body {
   background-color: #000 !important;
 }
 
-.mh-table-th-white thead,
+.mh-table-th-white thead tr,
 .mh-table-white,
-.mh-table-td-white tbody,
+.mh-table-td-white tbody tr,
 .mh-before-bg-white::before,
 .mh-after-bg-white::after,
 .mh-checked-bg-white:checked,
@@ -2041,9 +2041,9 @@ body {
   background-color: white !important;
 }
 
-.mh-table-th-light thead,
+.mh-table-th-light thead tr,
 .mh-table-light,
-.mh-table-td-light tbody,
+.mh-table-td-light tbody tr,
 .mh-before-bg-light::before,
 .mh-after-bg-light::after,
 .mh-checked-bg-light:checked,
@@ -2056,9 +2056,9 @@ body {
   background-color: #f8f9fa !important;
 }
 
-.mh-table-th-blue thead,
+.mh-table-th-blue thead tr,
 .mh-table-blue,
-.mh-table-td-blue tbody,
+.mh-table-td-blue tbody tr,
 .mh-before-bg-blue::before,
 .mh-after-bg-blue::after,
 .mh-bg-blue-hover:hover,
@@ -2070,9 +2070,9 @@ body {
   background-color: blue !important;
 }
 
-.mh-table-th-green thead,
+.mh-table-th-green thead tr,
 .mh-table-green,
-.mh-table-td-green tbody,
+.mh-table-td-green tbody tr,
 .mh-before-bg-green::before,
 .mh-after-bg-green::after,
 .mh-checked-bg-green:checked,
@@ -2084,9 +2084,9 @@ body {
   background-color: green !important;
 }
 
-.mh-table-th-lightgreen thead,
+.mh-table-th-lightgreen thead tr,
 .mh-table-lightgreen,
-.mh-table-td-lightgreen tbody,
+.mh-table-td-lightgreen tbody tr,
 .mh-before-bg-lightgreen::before,
 .mh-after-bg-lightgreen::after,
 .mh-bg-lightgreen-hover:hover,
@@ -2098,9 +2098,9 @@ body {
   background-color: lightgreen !important;
 }
 
-.mh-table-th-limegreen thead,
+.mh-table-th-limegreen thead tr,
 .mh-table-limegreen,
-.mh-table-td-limegreen tbody,
+.mh-table-td-limegreen tbody tr,
 .mh-before-bg-limegreen::before,
 .mh-after-bg-limegreen::after,
 .mh-checked-bg-limegreen:checked,
@@ -2112,9 +2112,9 @@ body {
   background-color: limegreen !important;
 }
 
-.mh-table-th-orange thead,
+.mh-table-th-orange thead tr,
 .mh-table-orange,
-.mh-table-td-orange tbody,
+.mh-table-td-orange tbody tr,
 .mh-before-bg-orange::before,
 .mh-after-bg-orange::after,
 .mh-checked-bg-orange:checked,
@@ -2126,9 +2126,9 @@ body {
   background-color: orange !important;
 }
 
-.mh-table-th-darkgreen thead,
+.mh-table-th-darkgreen thead tr,
 .mh-table-darkgreen,
-.mh-table-td-darkgreen tbody,
+.mh-table-td-darkgreen tbody tr,
 .mh-before-bg-darkgreen::before,
 .mh-after-bg-darkgreen::after,
 .mh-checked-bg-darkgreen:checked,
@@ -2140,9 +2140,9 @@ body {
   background-color: darkgreen !important;
 }
 
-.mh-table-th-red thead,
+.mh-table-th-red thead tr,
 .mh-table-red,
-.mh-table-td-red tbody,
+.mh-table-td-red tbody tr,
 .mh-before-bg-red::before,
 .mh-after-bg-red::after,
 .mh-bg-red-hover:hover,
@@ -2154,9 +2154,9 @@ body {
   background-color: red !important;
 }
 
-.mh-table-th-skyblue thead,
+.mh-table-th-skyblue thead tr,
 .mh-table-skyblue,
-.mh-table-td-skyblue tbody,
+.mh-table-td-skyblue tbody tr,
 .mh-before-bg-skyblue::before,
 .mh-after-bg-skyblue::after,
 .mh-bg-skyblue-hover:hover,
@@ -2168,9 +2168,9 @@ body {
   background-color: skyblue !important;
 }
 
-.mh-table-th-primary thead,
+.mh-table-th-primary thead tr,
 .mh-table-primary,
-.mh-table-td-primary tbody,
+.mh-table-td-primary tbody tr,
 .mh-before-bg-primary::before,
 .mh-after-bg-primary::after,
 .mh-checked-bg-primary:checked,
@@ -2182,9 +2182,9 @@ body {
   background-color: var(--mh-primary-color) !important;
 }
 
-.mh-table-th-maroon thead,
+.mh-table-th-maroon thead tr,
 .mh-table-maroon,
-.mh-table-td-maroon tbody,
+.mh-table-td-maroon tbody tr,
 .mh-before-bg-maroon::before,
 .mh-after-bg-maroon::after,
 .mh-bg-maroon-hover:hover,
@@ -2196,9 +2196,9 @@ body {
   background-color: maroon !important;
 }
 
-.mh-table-th-yellow thead,
+.mh-table-th-yellow thead tr,
 .mh-table-yellow,
-.mh-table-td-yellow tbody,
+.mh-table-td-yellow tbody tr,
 .mh-before-bg-yellow::before,
 .mh-checked-bg-yellow:checked,
 .mh-after-bg-yellow::after,
@@ -2210,9 +2210,9 @@ body {
   background-color: yellow !important;
 }
 
-.mh-table-th-lightgray thead,
+.mh-table-th-lightgray thead tr,
 .mh-table-lightgray,
-.mh-table-td-lightgray tbody,
+.mh-table-td-lightgray tbody tr,
 .mh-before-bg-lightgray::before,
 .mh-after-bg-lightgray::after,
 .mh-bg-lightgray-hover:hover,
@@ -2224,9 +2224,9 @@ body {
   background-color: lightgray !important;
 }
 
-.mh-table-th-gray thead,
+.mh-table-th-gray thead tr,
 .mh-table-gray,
-.mh-table-td-gray tbody,
+.mh-table-td-gray tbody tr,
 .mh-before-bg-gray::before,
 .mh-after-bg-gray::after,
 .mh-bg-gray-hover:hover,
@@ -2238,9 +2238,9 @@ body {
   background-color: gray !important;
 }
 
-.mh-table-th-gold thead,
+.mh-table-th-gold thead tr,
 .mh-table-gold,
-.mh-table-td-gold tbody,
+.mh-table-td-gold tbody tr,
 .mh-before-bg-gold::before,
 .mh-after-bg-gold::after,
 .mh-checked-bg-gold:checked,
@@ -2252,9 +2252,9 @@ body {
   background-color: gold !important;
 }
 
-.mh-table-th-aqua thead,
+.mh-table-th-aqua thead tr,
 .mh-table-aqua,
-.mh-table-td-aqua tbody,
+.mh-table-td-aqua tbody tr,
 .mh-before-bg-aqua::before,
 .mh-checked-bg-aqua:checked,
 .mh-after-bg-aqua::after,
@@ -2266,9 +2266,9 @@ body {
   background-color: aqua !important;
 }
 
-.mh-table-th-pink thead,
+.mh-table-th-pink thead tr,
 .mh-table-pink,
-.mh-table-td-pink tbody,
+.mh-table-td-pink tbody tr,
 .mh-before-bg-pink::before,
 .mh-checked-bg-pink:checked,
 .mh-after-bg-pink::after,
@@ -2280,9 +2280,9 @@ body {
   background-color: pink !important;
 }
 
-.mh-table-th-brown thead,
+.mh-table-th-brown thead tr,
 .mh-table-brown,
-.mh-table-td-brown tbody,
+.mh-table-td-brown tbody tr,
 .mh-before-bg-brown::before,
 .mh-checked-bg-brown:checked,
 .mh-after-bg-brown::after,
@@ -2294,9 +2294,9 @@ body {
   background-color: brown !important;
 }
 
-.mh-table-th-purple thead,
+.mh-table-th-purple thead tr,
 .mh-table-purple,
-.mh-table-td-purple tbody,
+.mh-table-td-purple tbody tr,
 .mh-before-bg-purple::before,
 .mh-checked-bg-purple:checked,
 .mh-after-bg-purple::after,
@@ -2308,9 +2308,9 @@ body {
   background-color: purple !important;
 }
 
-.mh-table-th-azure thead,
+.mh-table-th-azure thead tr,
 .mh-table-azure,
-.mh-table-td-azure tbody,
+.mh-table-td-azure tbody tr,
 .mh-before-bg-azure::before,
 .mh-checked-bg-azure:checked,
 .mh-after-bg-azure::after,
@@ -2322,9 +2322,9 @@ body {
   background-color: azure !important;
 }
 
-.mh-table-th-wheat thead,
+.mh-table-th-wheat thead tr,
 .mh-table-wheat,
-.mh-table-td-wheat tbody,
+.mh-table-td-wheat tbody tr,
 .mh-before-bg-wheat::before,
 .mh-checked-bg-wheat:checked,
 .mh-after-bg-wheat::after,
@@ -2336,9 +2336,9 @@ body {
   background-color: wheat !important;
 }
 
-.mh-table-th-goldenrod thead,
+.mh-table-th-goldenrod thead tr,
 .mh-table-goldenrod,
-.mh-table-td-goldenrod tbody,
+.mh-table-td-goldenrod tbody tr,
 .mh-before-bg-goldenrod::before,
 .mh-checked-bg-goldenrod:checked,
 .mh-after-bg-goldenrod::after,
@@ -2350,9 +2350,9 @@ body {
   background-color: goldenrod !important;
 }
 
-.mh-table-th-salmon thead,
+.mh-table-th-salmon thead tr,
 .mh-table-salmon,
-.mh-table-td-salmon tbody,
+.mh-table-td-salmon tbody tr,
 .mh-before-bg-salmon::before,
 .mh-checked-bg-salmon:checked,
 .mh-after-bg-salmon::after,
@@ -2364,9 +2364,9 @@ body {
   background-color: salmon !important;
 }
 
-.mh-table-th-chocolate thead,
+.mh-table-th-chocolate thead tr,
 .mh-table-chocolate,
-.mh-table-td-chocolate tbody,
+.mh-table-td-chocolate tbody tr,
 .mh-before-bg-chocolate::before,
 .mh-checked-bg-chocolate:checked,
 .mh-after-bg-chocolate::after,
@@ -2378,9 +2378,9 @@ body {
   background-color: chocolate !important;
 }
 
-.mh-table-th-darkblue thead,
+.mh-table-th-darkblue thead tr,
 .mh-table-darkblue,
-.mh-table-td-darkblue tbody,
+.mh-table-td-darkblue tbody tr,
 .mh-before-bg-darkblue::before,
 .mh-checked-bg-darkblue:checked,
 .mh-after-bg-darkblue::after,
@@ -2392,9 +2392,9 @@ body {
   background-color: darkblue !important;
 }
 
-.mh-table-th-springgreen thead,
+.mh-table-th-springgreen thead tr,
 .mh-table-springgreen,
-.mh-table-td-springgreen tbody,
+.mh-table-td-springgreen tbody tr,
 .mh-before-bg-springgreen::before,
 .mh-checked-bg-springgreen:checked,
 .mh-after-bg-springgreen::after,
@@ -2406,9 +2406,9 @@ body {
   background-color: springgreen !important;
 }
 
-.mh-table-th-turquoise thead,
+.mh-table-th-turquoise thead tr,
 .mh-table-turquoise,
-.mh-table-td-turquoise tbody,
+.mh-table-td-turquoise tbody tr,
 .mh-before-bg-turquoise::before,
 .mh-checked-bg-turquoise:checked,
 .mh-after-bg-turquoise::after,
@@ -2420,9 +2420,9 @@ body {
   background-color: turquoise !important;
 }
 
-.mh-table-th-crimson thead,
+.mh-table-th-crimson thead tr,
 .mh-table-crimson,
-.mh-table-td-crimson tbody,
+.mh-table-td-crimson tbody tr,
 .mh-before-bg-crimson::before,
 .mh-checked-bg-crimson:checked,
 .mh-after-bg-crimson::after,
@@ -2434,9 +2434,9 @@ body {
   background-color: crimson !important;
 }
 
-.mh-table-th-silver thead,
+.mh-table-th-silver thead tr,
 .mh-table-silver,
-.mh-table-td-silver tbody,
+.mh-table-td-silver tbody tr,
 .mh-before-bg-silver::before,
 .mh-checked-bg-silver:checked,
 .mh-after-bg-silver::after,
@@ -2448,9 +2448,9 @@ body {
   background-color: silver !important;
 }
 
-.mh-table-th-darkred thead,
+.mh-table-th-darkred thead tr,
 .mh-table-darkred,
-.mh-table-td-darkred tbody,
+.mh-table-td-darkred tbody tr,
 .mh-before-bg-darkred::before,
 .mh-checked-bg-darkred:checked,
 .mh-after-bg-darkred::after,
@@ -2462,9 +2462,9 @@ body {
   background-color: darkred !important;
 }
 
-.mh-table-th-navy thead,
+.mh-table-th-navy thead tr,
 .mh-table-navy,
-.mh-table-td-navy tbody,
+.mh-table-td-navy tbody tr,
 .mh-before-bg-navy::before,
 .mh-checked-bg-navy:checked,
 .mh-after-bg-navy::after,
@@ -2476,9 +2476,9 @@ body {
   background-color: navy !important;
 }
 
-.mh-table-th-orchid thead,
+.mh-table-th-orchid thead tr,
 .mh-table-orchid,
-.mh-table-td-orchid tbody,
+.mh-table-td-orchid tbody tr,
 .mh-before-bg-orchid::before,
 .mh-checked-bg-orchid:checked,
 .mh-after-bg-orchid::after,
@@ -2490,9 +2490,9 @@ body {
   background-color: orchid !important;
 }
 
-.mh-table-th-teal thead,
+.mh-table-th-teal thead tr,
 .mh-table-teal,
-.mh-table-td-teal tbody,
+.mh-table-td-teal tbody tr,
 .mh-before-bg-teal::before,
 .mh-checked-bg-teal:checked,
 .mh-after-bg-teal::after,
@@ -2504,9 +2504,9 @@ body {
   background-color: teal !important;
 }
 
-.mh-table-th-blank thead,
+.mh-table-th-blank thead tr,
 .mh-table-blank,
-.mh-table-td-blank tbody,
+.mh-table-td-blank tbody tr,
 .mh-before-bg-blank::before,
 .mh-after-bg-blank::after,
 .mh-checked-bg-black:checked,
@@ -5183,8 +5183,7 @@ color: #ddd;
 .mh-switch-2{
 	position: absolute;
 } */
-.mh-switch-1 input[type="checkbox"],
-.mh-switch-2 input[type="checkbox"] {
+.mh-switch input[type="checkbox"]{
   position: relative;
   width: 80px;
   height: 40px;
@@ -5205,13 +5204,22 @@ color: #ddd;
   border-radius: 0px !important;
 }
 
-.mh-switch-1 input:checked[type="checkbox"],
-.mh-switch-2 input:checked[type="checkbox"] {
-  background-color: #03a9f4;
+.mh-switch-3 input[type="checkbox"] {
+  border-radius: 50% !important;
+  transition: 0.7s !important;
 }
 
-.mh-switch-1 input[type="checkbox"]:before,
-.mh-switch-2 input[type="checkbox"]:before {
+.mh-switch input:checked[type="checkbox"]{
+  background-color: #03a9f4;
+}
+.mh-switch-4 input[type="checkbox"] {
+  transform: translateY(15px);
+  height: 10px;
+}
+.mh-switch-4 input[type="checkbox"]:before {
+  top: -15px !important;
+}
+.mh-switch input[type="checkbox"]:before {
   content: '';
   position: absolute;
   width: 40px;
@@ -5225,11 +5233,10 @@ color: #ddd;
   transition: .5s;
 }
 
-.mh-switch-1 input:checked[type="checkbox"]:before,
-.mh-switch-2 input:checked[type="checkbox"]:before {
+.mh-switch input:checked[type="checkbox"]:before {
   left: 40px;
 }
-
+/*Switch 3*/
 /*===============checkbox===============*/
 .mh-checkbox input[type=checkbox]+label {
   display: block;
