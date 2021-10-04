@@ -1,157 +1,1165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>animation</title>
     <link rel="stylesheet" href="./css/mh-style.css">
+    <link rel="stylesheet" href="./css/mhstyle-icon.css">
+    <style>
+        /* .mh-animate-btn-area button {
+            display: block;
+            margin: 0px 0px;
+            font-size: 18px;
+            width: 250px;
+            text-align: left;
+        }
+
+        .mh-animate-btn-area {
+            height: 100vh;
+            overflow: auto;
+        }
+        .mh-animate-image {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            justify-content: center;
+        }
+        .mh-animate-body {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        } */
+        .mh-animate-body {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .mh-animate-btn-area button {
+            display: inline-flex;
+            margin: 10px 8px;
+            font-size: 18px;
+            width: 23%;
+            height: 80px;
+            text-align: left;
+            border: none;
+            background-color: var(--mh-primary-color);
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+        }
+        .mh-animate-btn-area button a{
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
-    
-    <div class="mh-container">
-        <div class="mh-row mh-my-6" style="justify-content: space-between;">
-            <div class="mh-animated mh-bounce mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-flash mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-pulse mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-rubberBand mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-        </div>
-        <!-- <div class="mh-row mh-my-6" style="justify-content: space-between;">
-            <div class="mh-animated mh-shakeX mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-shakeY mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-headShake mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-swing mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-        </div>
-        <div class="mh-row mh-my-6" style="justify-content: space-between;">
-            <div class="mh-animated mh-tada mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-wobble mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-jello mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-heartBeat mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-        </div>
-        <div class="mh-row mh-my-6" style="justify-content: space-between;">
-            <div class="mh-animated mh-backInDown mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-backInLeft mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-backInRight mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-backInUp mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
+
+    <div class="mh-animate-body">
+        <!-- <div class="mh-animate-image">
+            <div id="jihan" class="mh-animate ">
+                <img src="http://placehold.jp/22/99ccff/003366/200x200.png?text=mhstyle" alt=""> 
+
             </div>
         </div> -->
-        <!-- <div class="mh-row mh-my-6" style="justify-content: space-between;">
-            <div class="mh-animated mh-backOutDown mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-backOutLeft mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-backOutRight mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-backOutUp mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-        </div> -->
-        <!-- <div class="mh-row mh-my-6" style="justify-content: space-between;">
-            <div class="mh-animated mh-bounceIn mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-bounceInDown mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-bounceInLeft mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-bounceInRight mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
+        <div class="mh-animate-btn-area mh-float-right">
+            <button id="bounce" onclick="bounce()" class="mh-animate mh-py-1 mh-px-5">bounce <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-bounce"><i class="mh mhi-copy2"></i></a></button>
+            <button id="flash" onclick="flash()" class="mh-animate mh-py-1 mh-px-5">flash <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-flash"><i class="mh mhi-copy2"></i></a></button>
+            <button id="pulse" onclick="pulse()" class="mh-animate mh-py-1 mh-px-5">pulse <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-pulse"><i class="mh mhi-copy2"></i></a></button>
+            <button id="rubberBand" onclick="rubberBand()" class="mh-animate mh-py-1 mh-px-5">rubberBand <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-rubberBand"><i class="mh mhi-copy2"></i></a></button>
+            <button id="shakeX" onclick="shakeX()" class="mh-animate mh-py-1 mh-px-5">shakeX <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-shakeX"><i class="mh mhi-copy2"></i></a></button>
+            <button id="shakeY" onclick="shakeY()" class="mh-animate mh-py-1 mh-px-5">shakeY <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-shakeY"><i class="mh mhi-copy2"></i></a></button>
+            <button id="headShake" onclick="headShake()" class="mh-animate mh-py-1 mh-px-5">headShake <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-headShake"><i class="mh mhi-copy2"></i></a></button>
+            <button id="swing" onclick="swing()" class="mh-animate mh-py-1 mh-px-5">swing <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-swing"><i class="mh mhi-copy2"></i></a></button>
+            <button id="tada" onclick="tada()" class="mh-animate mh-py-1 mh-px-5">tada <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-tada"><i class="mh mhi-copy2"></i></a></button>
+            <button id="wobble" onclick="wobble()" class="mh-animate mh-py-1 mh-px-5">wobble <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-wobble"><i class="mh mhi-copy2"></i></a></button>
+            <button id="jello" onclick="jello()" class="mh-animate mh-py-1 mh-px-5">jello <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-jello"><i class="mh mhi-copy2"></i></a></button>
+            <button id="heartBeat" onclick="heartBeat()" class="mh-animate mh-py-1 mh-px-5">heartBeat <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-heartBeat"><i class="mh mhi-copy2"></i></a></button>
+            <button id="backInDown" onclick="backInDown()" class="mh-animate mh-py-1 mh-px-5">backInDown <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-backInDown"><i class="mh mhi-copy2"></i></a></button>
+            <button id="backInLeft" onclick="backInLeft()" class="mh-animate mh-py-1 mh-px-5">backInLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-backInLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="backInRight" onclick="backInRight()" class="mh-animate mh-py-1 mh-px-5">backInRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-backInRight"><i class="mh mhi-copy2"></i></a></button>
+            <button id="backInUp" onclick="backInUp()" class="mh-animate mh-py-1 mh-px-5">backInUp <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-backInUp"><i class="mh mhi-copy2"></i></a></button>
+            <button id="backOutDown" onclick="backOutDown()" class="mh-animate mh-animate mh-py-1 mh-px-5">backOutDown
+                <a href="#" class="copybutton" data-mh-copyboard-text="mh-backOutDown"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="backOutLeft" onclick="backOutLeft()" class="mh-animate mh-py-1 mh-px-5">backOutLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-backOutLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="backOutRight" onclick="backOutRight()" class="mh-animate mh-py-1 mh-px-5">backOutRight <a
+                    href="#" class="copybutton" data-mh-copyboard-text="mh-backOutRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="backOutUp" onclick="backOutUp()" class="mh-animate mh-py-1 mh-px-5">backOutUp <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-backOutUp"><i class="mh mhi-copy2"></i></a></button>
+            <button id="bounceIn" onclick="bounceIn()" class="mh-animate mh-py-1 mh-px-5">bounceIn <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-bounceIn"><i class="mh mhi-copy2"></i></a></button>
+            <button id="bounceInDown" onclick="bounceInDown()"
+                class="mh-animate mh-animate mh-animate mh-py-1 mh-px-5">bounceInDown <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-bounceInDown"><i class="mh mhi-copy2"></i></a></button>
+            <button id="bounceInLeft" onclick="bounceInLeft()" class="mh-animate mh-py-1 mh-animate mh-px-5">bounceInLeft <a
+                    href="#" class="copybutton" data-mh-copyboard-text="mh-bounceInLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="bounceInRight" onclick="bounceInRight()" class="mh-animate mh-py-1 mh-animate mh-px-5">bounceInRight <a
+                    href="#" class="copybutton" data-mh-copyboard-text="mh-bounceInRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="bounceInUp" onclick="bounceInUp()" class="mh-animate mh-py-1 mh-px-5">bounceInUp <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-bounceInUp"><i class="mh mhi-copy2"></i></a></button>
+            <button id="bounceOut" onclick="bounceOut()" class="mh-animate mh-py-1 mh-px-5">bounceOut <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-bounceOut"><i class="mh mhi-copy2"></i></a></button>
+            <button id="bounceOutDown" onclick="bounceOutDown()" class="mh-animate mh-py-1 mh-px-5">bounceOutDown <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-bounceOutDown"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="bounceOutLeft" onclick="bounceOutLeft()" class="mh-animate mh-py-1 mh-px-5">bounceOutLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-bounceOutLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="bounceOutRight" onclick="bounceOutRight()" class="mh-animate mh-py-1 mh-px-5">bounceOutRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-bounceOutRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="bounceOutUp" onclick="bounceOutUp()" class="mh-animate mh-py-1 mh-px-5">bounceOutUp <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-bounceOutUp"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeIn" onclick="fadeIn()" class="mh-animate mh-py-1 mh-px-5">fadeIn <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-fadeIn"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInDown" onclick="fadeInDown()" class="mh-animate mh-py-1 mh-px-5">fadeInDown <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeInDown"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInDownBig" onclick="fadeInDownBig()" class="mh-animate mh-py-1 mh-px-5">fadeInDownBig <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeInDownBig"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInLeft" onclick="fadeInLeft()" class="mh-animate mh-py-1 mh-px-5">fadeInLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeInLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInLeftBig" onclick="fadeInLeftBig()" class="mh-animate mh-py-1 mh-px-5">fadeInLeftBig <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeInLeftBig"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInRight" onclick="fadeInRight()" class="mh-animate mh-py-1 mh-px-5">fadeInRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeInRight"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInRightBig" onclick="fadeInRightBig()" class="mh-animate mh-py-1 mh-px-5">fadeInRightBig <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeInRightBig"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInUp" onclick="fadeInUp()" class="mh-animate mh-py-1 mh-px-5">fadeInUp <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeInUp"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInUpBig" onclick="fadeInUpBig()" class="mh-animate mh-py-1 mh-px-5">fadeInUpBig <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeInUpBig"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInTopLeft" onclick="fadeInTopLeft()" class="mh-animate mh-py-1 mh-px-5">fadeInTopLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeInTopLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInTopRight" onclick="fadeInTopRight()" class="mh-animate mh-py-1 mh-px-5">fadeInTopRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeInTopRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInBottomLeft" onclick="fadeInBottomLeft()" class="mh-animate mh-py-1 mh-px-5">fadeInBottomLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeInBottomLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInBottomRight" onclick="fadeInBottomRight()" class="mh-animate mh-py-1 mh-px-5">fadeInBottomRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeInBottomRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOut" onclick="fadeOut()" class="mh-animate mh-py-1 mh-px-5">fadeOut <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-fadeOut"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutDownBig" onclick="fadeOutDownBig()" class="mh-animate mh-py-1 mh-px-5">fadeOutDownBig <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeOutDownBig"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutDown" onclick="fadeOutDown()" class="mh-animate mh-py-1 mh-px-5">fadeOutDown <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeOutDown"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutLeft" onclick="fadeOutLeft()" class="mh-animate mh-py-1 mh-px-5">fadeOutLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeOutLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutLeftBig" onclick="fadeOutLeftBig()" class="mh-animate mh-py-1 mh-px-5">fadeOutLeftBig <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeOutLeftBig"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutRight" onclick="fadeOutRight()" class="mh-animate mh-py-1 mh-px-5">fadeOutRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeOutRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutRightBig" onclick="fadeOutRightBig()" class="mh-animate mh-py-1 mh-px-5">fadeOutRightBig <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeOutRightBig"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutUp" onclick="fadeOutUp()" class="mh-animate mh-py-1 mh-px-5">fadeOutUp <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeOutUp"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutUpBig" onclick="fadeOutUpBig()" class="mh-animate mh-py-1 mh-px-5">fadeOutUpBig <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeOutUpBig"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutTopLeft" onclick="fadeOutTopLeft()" class="mh-animate mh-py-1 mh-px-5">fadeOutTopLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeOutTopLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutTopRight" onclick="fadeOutTopRight()" class="mh-animate mh-py-1 mh-px-5">fadeOutTopRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeOutTopRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutBottomRight" onclick="fadeOutBottomRight()" class="mh-animate mh-py-1 mh-px-5">fadeOutBottomRight <a
+                    href="#" class="copybutton" data-mh-copyboard-text="mh-fadeOutBottomRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutBottomLeft" onclick="fadeOutBottomLeft()" class="mh-animate mh-py-1 mh-px-5">fadeOutBottomLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeOutBottomLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="flip" onclick="flip()" class="mh-animate mh-py-1 mh-px-5">flip <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-flip"><i class="mh mhi-copy2"></i></a></button>
+            <button id="flipInX" onclick="flipInX()" class="mh-animate mh-py-1 mh-px-5">flipInX <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-flipInX"><i class="mh mhi-copy2"></i></a></button>
+            <button id="flipInY" onclick="flipInY()" class="mh-animate mh-py-1 mh-px-5">flipInY <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-flipInY"><i class="mh mhi-copy2"></i></a></button>
+            <button id="flipOutX" onclick="flipOutX()" class="mh-animate mh-py-1 mh-px-5">flipOutX <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-flipOutX"><i class="mh mhi-copy2"></i></a></button>
+            <button id="flipOutY" onclick="flipOutY()" class="mh-animate mh-py-1 mh-px-5">flipOutY <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-flipOutY"><i class="mh mhi-copy2"></i></a></button>
+            <button id="lightSpeedInRight" onclick="lightSpeedInRight()" class="mh-animate mh-py-1 mh-px-5">lightSpeedInRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-lightSpeedInRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="lightSpeedInLeft" onclick="lightSpeedInLeft()" class="mh-animate mh-py-1 mh-px-5">lightSpeedInLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-lightSpeedInLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="lightSpeedOutRight" onclick="lightSpeedOutRight()" class="mh-animate mh-py-1 mh-px-5">lightSpeedOutRight <a
+                    href="#" class="copybutton" data-mh-copyboard-text="mh-lightSpeedOutRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="lightSpeedOutLeft" onclick="lightSpeedOutLeft()" class="mh-animate mh-py-1 mh-px-5">lightSpeedOutLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-lightSpeedOutLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="rotateIn" onclick="rotateIn()" class="mh-animate mh-py-1 mh-px-5">rotateIn <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-rotateIn"><i class="mh mhi-copy2"></i></a></button>
+            <button id="rotateInDownLeft" onclick="rotateInDownLeft()" class="mh-animate mh-py-1 mh-px-5">rotateInDownLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-rotateInDownLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="rotateInDownRight" onclick="rotateInDownRight()" class="mh-animate mh-py-1 mh-px-5">rotateInDownRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-rotateInDownRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="rotateInUpLeft" onclick="rotateInUpLeft()" class="mh-animate mh-py-1 mh-px-5">rotateInUpLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-rotateInUpLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="rotateInUpRight" onclick="rotateInUpRight()" class="mh-animate mh-py-1 mh-px-5">rotateInUpRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-rotateInUpRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="rotateOut" onclick="rotateOut()" class="mh-animate mh-py-1 mh-px-5">rotateOut <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-rotateOut"><i class="mh mhi-copy2"></i></a></button>
+            <button id="rotateOutDownLeft" onclick="rotateOutDownLeft()" class="mh-animate mh-py-1 mh-px-5">rotateOutDownLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-rotateOutDownLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="rotateOutDownRight" onclick="rotateOutDownRight()" class="mh-animate mh-py-1 mh-px-5">rotateOutDownRight <a
+                    href="#" class="copybutton" data-mh-copyboard-text="mh-rotateOutDownRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="rotateOutUpLeft" onclick="rotateOutUpLeft()" class="mh-animate mh-py-1 mh-px-5">rotateOutUpLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-rotateOutUpLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="rotateOutUpRight" onclick="rotateOutUpRight()" class="mh-animate mh-py-1 mh-px-5">rotateOutUpRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-rotateOutUpRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="hinge" onclick="hinge()" class="mh-animate mh-py-1 mh-px-5">hinge <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-hinge"><i class="mh mhi-copy2"></i></a></button>
+            <button id="jackInTheBox" onclick="jackInTheBox()" class="mh-animate mh-py-1 mh-px-5">jackInTheBox <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-jackInTheBox"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="rollIn" onclick="rollIn()" class="mh-animate mh-py-1 mh-px-5">rollIn <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-rollIn"><i class="mh mhi-copy2"></i></a></button>
+            <button id="rollOut" onclick="rollOut()" class="mh-animate mh-py-1 mh-px-5">rollOut <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-rollOut"><i class="mh mhi-copy2"></i></a></button>
+            <button id="zoomIn" onclick="zoomIn()" class="mh-animate mh-py-1 mh-px-5">zoomIn <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-zoomIn"><i class="mh mhi-copy2"></i></a></button>
+            <button id="zoomInDown" onclick="zoomInDown()" class="mh-animate mh-py-1 mh-px-5">zoomInDown <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-zoomInDown"><i class="mh mhi-copy2"></i></a></button>
+            <button id="zoomInLeft" onclick="zoomInLeft()" class="mh-animate mh-py-1 mh-px-5">zoomInLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-zoomInLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="zoomInRight" onclick="zoomInRight()" class="mh-animate mh-py-1 mh-px-5">zoomInRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-zoomInRight"><i class="mh mhi-copy2"></i></a></button>
+            <button id="zoomInUp" onclick="zoomInUp()" class="mh-animate mh-py-1 mh-px-5">zoomInUp <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-zoomInUp"><i class="mh mhi-copy2"></i></a></button>
+            <button id="zoomOut" onclick="zoomOut()" class="mh-animate mh-py-1 mh-px-5">zoomOut <a href="#" class="copybutton"
+                    data-mh-copyboard-text="mh-zoomOut"><i class="mh mhi-copy2"></i></a></button>
+            <button id="zoomOutDown" onclick="zoomOutDown()" class="mh-animate mh-py-1 mh-px-5">zoomOutDown <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-zoomOutDown"><i class="mh mhi-copy2"></i></a></button>
+            <button id="zoomOutLeft" onclick="zoomOutLeft()" class="mh-animate mh-py-1 mh-px-5">zoomOutLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-zoomOutLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="zoomOutRight" onclick="zoomOutRight()" class="mh-animate mh-py-1 mh-px-5">zoomOutRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-zoomOutRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="zoomOutUp" onclick="zoomOutUp()" class="mh-animate mh-py-1 mh-px-5">zoomOutUp <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-zoomOutUp"><i class="mh mhi-copy2"></i></a></button>
+            <button id="slideInDown" onclick="slideInDown()" class="mh-animate mh-py-1 mh-px-5">slideInDown <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-slideInDown"><i class="mh mhi-copy2"></i></a></button>
+            <button id="slideInLeft" onclick="slideInLeft()" class="mh-animate mh-py-1 mh-px-5">slideInLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-slideInLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="slideInRight" onclick="slideInRight()" class="mh-animate mh-py-1 mh-px-5">slideInRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-slideInRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="slideInUp" onclick="slideInUp()" class="mh-animate mh-py-1 mh-px-5">slideInUp <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-slideInUp"><i class="mh mhi-copy2"></i></a></button>
+            <button id="slideOutDown" onclick="slideOutDown()" class="mh-animate mh-py-1 mh-px-5">slideOutDown <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-slideOutDown"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="slideOutLeft" onclick="slideOutLeft()" class="mh-animate mh-py-1 mh-px-5">slideOutLeft <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-slideOutLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="slideOutRight" onclick="slideOutRight()" class="mh-animate mh-py-1 mh-px-5">slideOutRight <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-slideOutRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="slideOutUp" onclick="slideOutUp()" class="mh-animate mh-py-1 mh-px-5">slideOutUp <a href="#"
+                    class="copybutton" data-mh-copyboard-text="mh-slideOutUp"><i class="mh mhi-copy2"></i></a></button>
+
         </div>
-        <div class="mh-row mh-my-6" style="justify-content: space-between;">
-            <div class="mh-animated mh-bounceInUp mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-bounceOut mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-bounceOutDown mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-bounceOutLeft mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-        </div> -->
-        <!-- <div class="mh-row mh-my-6" style="justify-content: space-between;">
-            <div class="mh-animated mh-bounceOutRight mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-bounceOut mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-bounceOutDown mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-            <div class="mh-animated mh-bounceOutLeft mh-col-md-2 mh-bg-skyblue mh-height-200">
-                <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-            </div>
-        </div> -->
     </div>
-    <div id="jihan" class="mh-animated mh-col-md-2 mh-bg-skyblue mh-height-200">
-        <h2 class="mh-color-black mh-text-center mh-middle">Jihan</h2>
-    </div>
-    <button onclick="add1()" class="mh-py-1 mh-px-5">Add1</button>
-    <button onclick="add2()" class="mh-py-1 mh-px-5">Add2</button>
-    <button onclick="add3()" class="mh-py-1 mh-px-5">Add3</button>
-    <button onclick="add4()" class="mh-py-1 mh-px-5">Add4</button>
-    <button onclick="add5()" class="mh-py-1 mh-px-5">Add5</button>
-    <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/mhstyle.js"></script>
+    <script src="./js/mhstyle-copyboard.js"></script>
     <script>
         new mhstyle_animate().init();
-        
+        $(function () {
+            var mh_style = new mhstyle_copyboard('.copybutton');
+        });
     </script>
     <script>
-       let mainId = document.getElementById('jihan');
-       function add1(){
-           mainId.classList.replace('mh-bounce');
-       }
-       function add2(){
-           mainId.classList.replace('mh-flash');
-       }
-       function add3(){
-           mainId.classList.replace('mh-pulse');
-       }
-       function add4(){
-           mainId.classList.replace('mh-rubberBand');
-       }
-       function add5(){
-           mainId.classList.replace('mh-shakeX');
-       }
+        var element = document.getElementById("jihan");
+
+        function bounce() {
+            var element = document.getElementById("bounce");
+            element.classList.add("mh-bounce");
+            setTimeout(function () {
+                element.classList.remove("mh-bounce");
+            }, 2000);
+        }
+
+        function flash() {
+            var element = document.getElementById("flash");
+            element.classList.add("mh-flash");
+            setTimeout(function () {
+                element.classList.remove("mh-flash");
+            }, 2000);
+        }
+
+        function pulse() {
+            var element = document.getElementById("pulse");
+            element.classList.add("mh-pulse");
+            setTimeout(function () {
+                element.classList.remove("mh-pulse");
+            }, 2000);
+        }
+
+        function rubberBand() {
+            var element = document.getElementById("rubberBand");
+            element.classList.add("mh-rubberBand");
+            setTimeout(function () {
+                element.classList.remove("mh-rubberBand");
+            }, 2000);
+        }
+
+        function shakeX() {
+            var element = document.getElementById("shakeX");
+            element.classList.add("mh-shakeX");
+            setTimeout(function () {
+                element.classList.remove("mh-shakeX");
+            }, 2000);
+        }
+
+        function shakeY() {
+            var element = document.getElementById("shakeY");
+            element.classList.add("mh-shakeY");
+            setTimeout(function () {
+                element.classList.remove("mh-shakeY");
+            }, 2000);
+        }
+
+        function headShake() {
+            var element = document.getElementById("headShake");
+            element.classList.add("mh-headShake");
+            setTimeout(function () {
+                element.classList.remove("mh-headShake");
+            }, 2000);
+        }
+
+        function swing() {
+            var element = document.getElementById("swing");
+            element.classList.add("mh-swing");
+            setTimeout(function () {
+                element.classList.remove("mh-swing");
+            }, 2000);
+
+        }
+
+        function tada() {
+            var element = document.getElementById("tada");
+            element.classList.add("mh-tada");
+            setTimeout(function () {
+                element.classList.remove("mh-tada");
+            }, 2000);
+        }
+
+        function wobble() {
+            var element = document.getElementById("wobble");
+            element.classList.add("mh-wobble");
+            setTimeout(function () {
+                element.classList.remove("mh-wobble");
+            }, 2000);
+        }
+
+        function jello() {
+            var element = document.getElementById("jello");
+            element.classList.add("mh-jello");
+            setTimeout(function () {
+                element.classList.remove("mh-jello");
+            }, 2000);
+        }
+
+        function heartBeat() {
+            var element = document.getElementById("heartBeat");
+            element.classList.add("mh-heartBeat");
+            setTimeout(function () {
+                element.classList.remove("mh-heartBeat");
+            }, 2000);
+        }
+
+        function backInDown() {
+            var element = document.getElementById("backInDown");
+            element.classList.add("mh-backInDown");
+            setTimeout(function () {
+                element.classList.remove("mh-backInDown");
+            }, 2000);
+
+        }
+
+        function backInLeft() {
+            var element = document.getElementById("backInLeft");
+            element.classList.add("mh-backInLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-backInLeft");
+            }, 2000);
+
+        }
+
+        function backInRight() {
+            var element = document.getElementById("backInRight");
+            element.classList.add("mh-backInRight");
+            setTimeout(function () {
+                element.classList.remove("mh-backInRight");
+            }, 2000);
+
+        }
+
+        function backInUp() {
+            var element = document.getElementById("backInUp");
+            element.classList.add("mh-backInUp");
+            setTimeout(function () {
+                element.classList.remove("mh-backInUp");
+            }, 2000);
+
+        }
+
+        function backOutDown() {
+            var element = document.getElementById("backOutDown");
+            element.classList.add("mh-backOutDown");
+            setTimeout(function () {
+                element.classList.remove("mh-backOutDown");
+            }, 2000);
+
+        }
+
+        function backOutLeft() {
+            var element = document.getElementById("backOutLeft");
+            element.classList.add("mh-backOutLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-backOutLeft");
+            }, 2000);
+
+        }
+
+        function backOutRight() {
+            var element = document.getElementById("backOutRight");
+            element.classList.add("mh-backOutRight");
+            setTimeout(function () {
+                element.classList.remove("mh-backOutRight");
+            }, 2000);
+
+        }
+
+        function backOutUp() {
+            var element = document.getElementById("backOutUp");
+            element.classList.add("mh-backOutUp");
+            setTimeout(function () {
+                element.classList.remove("mh-backOutUp");
+            }, 2000);
+
+        }
+
+        function bounceIn() {
+            var element = document.getElementById("bounceIn");
+            element.classList.add("mh-bounceIn");
+            setTimeout(function () {
+                element.classList.remove("mh-bounceIn");
+            }, 2000);
+
+        }
+
+        function bounceInDown() {
+            var element = document.getElementById("bounceInDown");
+            element.classList.add("mh-bounceInDown");
+            setTimeout(function () {
+                element.classList.remove("mh-bounceInDown");
+            }, 2000);
+
+        }
+
+        function bounceInLeft() {
+            var element = document.getElementById("bounceInLeft");
+            element.classList.add("mh-bounceInLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-bounceInLeft");
+            }, 2000);
+
+        }
+
+        function bounceInRight() {
+            var element = document.getElementById("bounceInRight");
+            element.classList.add("mh-bounceInRight");
+            setTimeout(function () {
+                element.classList.remove("mh-bounceInRight");
+            }, 2000);
+
+        }
+
+        function bounceInUp() {
+            var element = document.getElementById("bounceInUp");
+            element.classList.add("mh-bounceInUp");
+            setTimeout(function () {
+                element.classList.remove("mh-bounceInUp");
+            }, 2000);
+
+        }
+
+        function bounceOut() {
+            var element = document.getElementById("bounceOut");
+            element.classList.add("mh-bounceOut");
+            setTimeout(function () {
+                element.classList.remove("mh-bounceOut");
+            }, 2000);
+
+        }
+
+        function bounceOutDown() {
+            var element = document.getElementById("bounceOutDown");
+            element.classList.add("mh-bounceOutDown");
+            setTimeout(function () {
+                element.classList.remove("mh-bounceOutDown");
+            }, 2000);
+
+        }
+
+        function bounceOutLeft() {
+            var element = document.getElementById("bounceOutLeft");
+            element.classList.add("mh-bounceOutLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-bounceOutLeft");
+            }, 2000);
+
+        }
+
+        function bounceOutRight() {
+            var element = document.getElementById("bounceOutRight");
+            element.classList.add("mh-bounceOutRight");
+            setTimeout(function () {
+                element.classList.remove("mh-bounceOutRight");
+            }, 2000);
+
+        }
+
+        function bounceOutUp() {
+            var element = document.getElementById("bounceOutUp");
+            element.classList.add("mh-bounceOutUp");
+            setTimeout(function () {
+                element.classList.remove("mh-bounceOutUp");
+            }, 2000);
+
+        }
+
+        function fadeIn() {
+            var element = document.getElementById("fadeIn");
+            element.classList.add("mh-fadeIn");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeIn");
+            }, 2000);
+
+        }
+
+        function fadeInDown() {
+            var element = document.getElementById("fadeInDown");
+            element.classList.add("mh-fadeInDown");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeInDown");
+            }, 2000);
+
+        }
+
+        function fadeInDownBig() {
+            var element = document.getElementById("fadeInDownBig");
+            element.classList.add("mh-fadeInDownBig");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeInDownBig");
+            }, 2000);
+
+        }
+
+        function fadeInLeft() {
+            var element = document.getElementById("fadeInLeft");
+            element.classList.add("mh-fadeInLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeInLeft");
+            }, 2000);
+
+        }
+
+        function fadeInLeftBig() {
+            var element = document.getElementById("fadeInLeftBig");
+            element.classList.add("mh-fadeInLeftBig");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeInLeftBig");
+            }, 2000);
+
+        }
+
+        function fadeInRight() {
+            var element = document.getElementById("fadeInRight");
+            element.classList.add("mh-fadeInRight");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeInRight");
+            }, 2000);
+
+        }
+
+        function fadeInRightBig() {
+            var element = document.getElementById("fadeInRightBig");
+            element.classList.add("mh-fadeInRightBig");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeInRightBig");
+            }, 2000);
+
+        }
+
+        function fadeInUp() {
+            var element = document.getElementById("fadeInUp");
+            element.classList.add("mh-fadeInUp");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeInUp");
+            }, 2000);
+
+        }
+
+        function fadeInUpBig() {
+            var element = document.getElementById("fadeInUpBig");
+            element.classList.add("mh-fadeInUpBig");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeInUpBig");
+            }, 2000);
+
+        }
+
+        function fadeInTopLeft() {
+            var element = document.getElementById("fadeInTopLeft");
+            element.classList.add("mh-fadeInTopLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeInTopLeft");
+            }, 2000);
+
+        }
+
+        function fadeInTopRight() {
+            var element = document.getElementById("fadeInTopRight");
+            element.classList.add("mh-fadeInTopRight");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeInTopRight");
+            }, 2000);
+
+        }
+
+        function fadeInBottomLeft() {
+            var element = document.getElementById("fadeInBottomLeft");
+            element.classList.add("mh-fadeInBottomLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeInBottomLeft");
+            }, 2000);
+
+        }
+
+        function fadeInBottomRight() {
+            var element = document.getElementById("fadeInBottomRight");
+            element.classList.add("mh-fadeInBottomRight");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeInBottomRight");
+            }, 2000);
+
+        }
+
+        function fadeOut() {
+            var element = document.getElementById("fadeOut");
+            element.classList.add("mh-fadeOut");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeOut");
+            }, 2000);
+
+        }
+
+        function fadeOutDown() {
+            var element = document.getElementById("fadeOutDown");
+            element.classList.add("mh-fadeOutDown");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeOutDown");
+            }, 2000);
+        }
+
+        function fadeOutDownBig() {
+            var element = document.getElementById("fadeOutDownBig");
+            element.classList.add("mh-fadeOutDownBig");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeOutDownBig");
+            }, 2000);
+        }
+
+        function fadeOutLeft() {
+            var element = document.getElementById("fadeOutLeft");
+            element.classList.add("mh-fadeOutLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeOutLeft");
+            }, 2000);
+
+        }
+
+        function fadeOutLeftBig() {
+            var element = document.getElementById("fadeOutLeftBig");
+            element.classList.add("mh-fadeOutLeftBig");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeOutLeftBig");
+            }, 2000);
+
+        }
+
+        function fadeOutRight() {
+            var element = document.getElementById("fadeOutRight");
+            element.classList.add("mh-fadeOutRight");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeOutRight");
+            }, 2000);
+
+        }
+
+        function fadeOutRightBig() {
+            var element = document.getElementById("fadeOutRightBig");
+            element.classList.add("mh-fadeOutRightBig");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeOutRightBig");
+            }, 2000);
+
+        }
+
+        function fadeOutUp() {
+            var element = document.getElementById("fadeOutUp");
+            element.classList.add("mh-fadeOutUp");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeOutUp");
+            }, 2000);
+
+        }
+
+        function fadeOutUpBig() {
+            var element = document.getElementById("fadeOutUpBig");
+            element.classList.add("mh-fadeOutUpBig");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeOutUpBig");
+            }, 2000);
+
+        }
+
+        function fadeOutTopLeft() {
+            var element = document.getElementById("fadeOutTopLeft");
+            element.classList.add("mh-fadeOutTopLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeOutTopLeft");
+            }, 2000);
+
+        }
+
+        function fadeOutTopRight() {
+            var element = document.getElementById("fadeOutTopRight");
+            element.classList.add("mh-fadeOutTopRight");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeOutTopRight");
+            }, 2000);
+
+        }
+
+        function fadeOutBottomRight() {
+            var element = document.getElementById("fadeOutBottomRight");
+            element.classList.add("mh-fadeOutBottomRight");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeOutBottomRight");
+            }, 2000);
+
+        }
+
+        function fadeOutBottomLeft() {
+            var element = document.getElementById("fadeOutBottomLeft");
+            element.classList.add("mh-fadeOutBottomLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-fadeOutBottomLeft");
+            }, 2000);
+
+        }
+
+        function flip() {
+            var element = document.getElementById("flip");
+            element.classList.add("mh-flip");
+            setTimeout(function () {
+                element.classList.remove("mh-flip");
+            }, 2000);
+
+        }
+
+        function flipInX() {
+            var element = document.getElementById("flipInX");
+            element.classList.add("mh-flipInX");
+            setTimeout(function () {
+                element.classList.remove("mh-flipInX");
+            }, 2000);
+
+        }
+
+        function flipInY() {
+            var element = document.getElementById("flipInY");
+            element.classList.add("mh-flipInY");
+            setTimeout(function () {
+                element.classList.remove("mh-flipInY");
+            }, 2000);
+
+        }
+
+        function flipOutX() {
+            var element = document.getElementById("flipOutX");
+            element.classList.add("mh-flipOutX");
+            setTimeout(function () {
+                element.classList.remove("mh-flipOutX");
+            }, 2000);
+
+        }
+
+        function flipOutY() {
+            var element = document.getElementById("flipOutY");
+            element.classList.add("mh-flipOutY");
+            setTimeout(function () {
+                element.classList.remove("mh-flipOutY");
+            }, 2000);
+
+        }
+
+        function lightSpeedInRight() {
+            var element = document.getElementById("lightSpeedInRight");
+            element.classList.add("mh-lightSpeedInRight");
+            setTimeout(function () {
+                element.classList.remove("mh-lightSpeedInRight");
+            }, 2000);
+
+        }
+
+        function lightSpeedInLeft() {
+            var element = document.getElementById("lightSpeedInLeft");
+            element.classList.add("mh-lightSpeedInLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-lightSpeedInLeft");
+            }, 2000);
+
+        }
+
+        function lightSpeedOutRight() {
+            var element = document.getElementById("lightSpeedOutRight");
+            element.classList.add("mh-lightSpeedOutRight");
+            setTimeout(function () {
+                element.classList.remove("mh-lightSpeedOutRight");
+            }, 2000);
+
+        }
+
+        function lightSpeedOutLeft() {
+            var element = document.getElementById("lightSpeedOutLeft");
+            element.classList.add("mh-lightSpeedOutLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-lightSpeedOutLeft");
+            }, 2000);
+
+        }
+
+        function rotateIn() {
+            var element = document.getElementById("rotateIn");
+            element.classList.add("mh-rotateIn");
+            setTimeout(function () {
+                element.classList.remove("mh-rotateIn");
+            }, 2000);
+
+        }
+
+        function rotateInDownLeft() {
+            var element = document.getElementById("rotateInDownLeft");
+            element.classList.add("mh-rotateInDownLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-rotateInDownLeft");
+            }, 2000);
+
+        }
+
+        function rotateInDownRight() {
+            var element = document.getElementById("rotateInDownRight");
+            element.classList.add("mh-rotateInDownRight");
+            setTimeout(function () {
+                element.classList.remove("mh-rotateInDownRight");
+            }, 2000);
+
+        }
+
+        function rotateInUpLeft() {
+            var element = document.getElementById("rotateInUpLeft");
+            element.classList.add("mh-rotateInUpLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-rotateInUpLeft");
+            }, 2000);
+
+        }
+
+        function rotateInUpRight() {
+            var element = document.getElementById("rotateInUpRight");
+            element.classList.add("mh-rotateInUpRight");
+            setTimeout(function () {
+                element.classList.remove("mh-rotateInUpRight");
+            }, 2000);
+
+        }
+
+        function rotateOut() {
+            var element = document.getElementById("rotateOut");
+            element.classList.add("mh-rotateOut");
+            setTimeout(function () {
+                element.classList.remove("mh-rotateOut");
+            }, 2000);
+
+        }
+
+        function rotateOutDownLeft() {
+            var element = document.getElementById("rotateOutDownLeft");
+            element.classList.add("mh-rotateOutDownLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-rotateOutDownLeft");
+            }, 2000);
+        }
+
+        function rotateOutDownRight() {
+            var element = document.getElementById("rotateOutDownRight");
+            element.classList.add("mh-rotateOutDownRight");
+            setTimeout(function () {
+                element.classList.remove("mh-rotateOutDownRight");
+            }, 2000);
+        }
+
+        function rotateOutUpLeft() {
+            var element = document.getElementById("rotateOutUpLeft");
+            element.classList.add("mh-rotateOutUpLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-rotateOutUpLeft");
+            }, 2000);
+
+        }
+
+        function rotateOutUpRight() {
+            var element = document.getElementById("rotateOutUpRight");
+            element.classList.add("mh-rotateOutUpRight");
+            setTimeout(function () {
+                element.classList.remove("mh-rotateOutUpRight");
+            }, 2000);
+
+        }
+
+        function hinge() {
+            var element = document.getElementById("hinge");
+            element.classList.add("mh-hinge");
+            setTimeout(function () {
+                element.classList.remove("mh-hinge");
+            }, 2000);
+
+        }
+
+        function jackInTheBox() {
+            var element = document.getElementById("jackInTheBox");
+            element.classList.add("mh-jackInTheBox");
+            setTimeout(function () {
+                element.classList.remove("mh-jackInTheBox");
+            }, 2000);
+
+        }
+
+        function rollIn() {
+            var element = document.getElementById("rollIn");
+            element.classList.add("mh-rollIn");
+            setTimeout(function () {
+                element.classList.remove("mh-rollIn");
+            }, 2000);
+
+        }
+
+        function rollOut() {
+            var element = document.getElementById("rollOut");
+            element.classList.add("mh-rollOut");
+            setTimeout(function () {
+                element.classList.remove("mh-rollOut");
+            }, 2000);
+
+        }
+
+        function zoomIn() {
+            var element = document.getElementById("zoomIn");
+            element.classList.add("mh-zoomIn");
+            setTimeout(function () {
+                element.classList.remove("mh-zoomIn");
+            }, 2000);
+
+        }
+
+        function zoomInDown() {
+            var element = document.getElementById("zoomInDown");
+            element.classList.add("mh-zoomInDown");
+            setTimeout(function () {
+                element.classList.remove("mh-zoomInDown");
+            }, 2000);
+        }
+
+        function zoomInLeft() {
+            var element = document.getElementById("zoomInLeft");
+            element.classList.add("mh-zoomInLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-zoomInLeft");
+            }, 2000);
+        }
+
+        function zoomInRight() {
+            var element = document.getElementById("zoomInRight");
+            element.classList.add("mh-zoomInRight");
+            setTimeout(function () {
+                element.classList.remove("mh-zoomInRight");
+            }, 2000);
+        }
+
+        function zoomInUp() {
+            var element = document.getElementById("zoomInUp");
+            element.classList.add("mh-zoomInUp");
+            setTimeout(function () {
+                element.classList.remove("mh-zoomInUp");
+            }, 2000);
+        }
+
+        function zoomOut() {
+            var element = document.getElementById("zoomOut");
+            element.classList.add("mh-zoomOut");
+            setTimeout(function () {
+                element.classList.remove("mh-zoomOut");
+            }, 2000);
+        }
+
+        function zoomOutDown() {
+            var element = document.getElementById("zoomOutDown");
+            element.classList.add("mh-zoomOutDown");
+            setTimeout(function () {
+                element.classList.remove("mh-zoomOutDown");
+            }, 2000);
+        }
+
+        function zoomOutLeft() {
+            var element = document.getElementById("zoomOutLeft");
+            element.classList.add("mh-zoomOutLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-zoomOutLeft");
+            }, 2000);
+        }
+
+        function zoomOutRight() {
+            var element = document.getElementById("zoomOutRight");
+            element.classList.add("mh-zoomOutRight");
+            setTimeout(function () {
+                element.classList.remove("mh-zoomOutRight");
+            }, 2000);
+        }
+
+        function zoomOutUp() {
+            var element = document.getElementById("zoomOutUp");
+            element.classList.add("mh-zoomOutUp");
+            setTimeout(function () {
+                element.classList.remove("mh-zoomOutUp");
+            }, 2000);
+        }
+
+        function slideInDown() {
+            var element = document.getElementById("slideInDown");
+            element.classList.add("mh-slideInDown");
+            setTimeout(function () {
+                element.classList.remove("mh-slideInDown");
+            }, 2000);
+        }
+
+        function slideInLeft() {
+            var element = document.getElementById("slideInLeft");
+            element.classList.add("mh-slideInLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-slideInLeft");
+            }, 2000);
+        }
+
+        function slideInRight() {
+            var element = document.getElementById("slideInRight");
+            element.classList.add("mh-slideInRight");
+            setTimeout(function () {
+                element.classList.remove("mh-slideInRight");
+            }, 2000);
+        }
+
+        function slideInUp() {
+            var element = document.getElementById("slideInUp");
+            element.classList.add("mh-slideInUp");
+            setTimeout(function () {
+                element.classList.remove("mh-slideInUp");
+            }, 2000);
+        }
+
+        function slideOutDown() {
+            var element = document.getElementById("slideOutDown");
+            element.classList.add("mh-slideOutDown");
+            setTimeout(function () {
+                element.classList.remove("mh-slideOutDown");
+            }, 2000);
+        }
+
+        function slideOutLeft() {
+            var element = document.getElementById("slideOutLeft");
+            element.classList.add("mh-slideOutLeft");
+            setTimeout(function () {
+                element.classList.remove("mh-slideOutLeft");
+            }, 2000);
+        }
+
+        function slideOutRight() {
+            var element = document.getElementById("slideOutRight");
+            element.classList.add("mh-slideOutRight");
+            setTimeout(function () {
+                element.classList.remove("mh-slideOutRight");
+            }, 2000);
+        }
+
+        function slideOutUp() {
+            var element = document.getElementById("slideOutUp");
+            element.classList.add("mh-slideOutUp");
+            setTimeout(function () {
+                element.classList.remove("mh-slideOutUp");
+            }, 2000);
+        }
     </script>
 </body>
+
 </html>
