@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://mh-style.github.io/mh-style/mhstyle-icon.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/mh-style.css">
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> -->
+    <style>
+        .navbar {
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 9%;
+            background: #fff;
+        }
+
+        .navbar .logo {
+            font-size: 2rem;
+            font-weight: bolder;
+            color: black;
+            width: 13%;
+            text-decoration: none;
+        }
+
+        .navbar .logo i {
+            color: #008cff;
+        }
+
+        .navbar .nav a {
+            font-size: 1.2rem;
+            margin: 0 1rem;
+            color: black;
+            text-decoration: none;
+        }
+
+        .navbar .nav a:hover {
+            color: #008cff;
+        }
+
+        .navbar .icons {
+            display: flex;
+        }
+
+        .navbar .icons div {
+            height: 3.5rem;
+            width: 3.5rem;
+            line-height: 3.5rem;
+            border-radius: .5rem;
+            background: #eee;
+            color: black;
+            font-size: 1.7rem;
+            margin-left: .3rem;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .navbar .icons div:hover {
+            background: #008cff;
+            color: #fff;
+        }
+
+        #menu-btn {
+            display: none;
+        }
+
+        .navbar .search-form {
+            position: absolute;
+            top: 110%;
+            width: 40%;
+            height: 3rem;
+            background: #fff;
+            border-radius: .5rem;
+            overflow: hidden;
+            display: none;
+            align-items: center;
+            box-shadow: 0 0.5rem 1.5rem #ddd;
+        }
+
+        .navbar .search-form.active {
+            right: 2rem;
+            transition: .4s linear;
+            display: flex;
+        }
+
+        .navbar .search-form input {
+            height: 100%;
+            width: 100%;
+            background: none;
+            text-transform: none;
+            font-size: 1.4rem;
+            color: black;
+            padding: 0 1.5rem;
+            border: none;
+            outline: none;
+        }
+
+        .navbar .search-form label {
+            font-size: 1.5rem;
+            padding-right: 1.5rem;
+            color: black;
+            cursor: pointer;
+        }
+
+        .navbar .search-form label:hover {
+            color: #008cff;
+        }
+
+        @media (max-width: 768px) {
+            #menu-btn {
+                display: inline-block;
+            }
+
+            .navbar .logo {
+                width: 33%;
+            }
+
+            .navbar .nav {
+                position: absolute;
+                top: 110%;
+                right: -110%;
+                width: 80%;
+                box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+                border-radius: .5rem;
+                background: #fff;
+            }
+
+            .navbar .nav.active {
+                right: 2rem;
+                transition: .4s linear;
+            }
+
+            .navbar .search-form {
+                width: 90%;
+            }
+
+            .navbar .nav a {
+                font-size: 1.5rem;
+                margin: 1rem 1.5rem;
+                display: block;
+            }
+        }
+        .navbar.mh-p-fi .search-form{
+
+        }
+    </style>
+</head>
+<!-- nav -->
+<nav class="navbar mh-p-fi">
+    <!-- logo -->
+    <a href="#" class="logo"><img src="./img/mhstyle-black.svg" alt="mh-style" class="mh-img-fluid"></a>
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#review">Review</a>
+        <a href="#blogs">blogs</a>
+    </div>
+    <!-- icons -->
+    <div class="icons">
+        <div class="mh mhi-bars" id="menu-btn"></div>
+        <div class="mh mhi-search" id="search-btn"></div>
+    </div>
+    <!-- search form -->
+    <form action="" class="search-form mh-animate">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="mh mhi-search"></label>
+    </form>
+</nav>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab dolorem dolorum adipisci eius! Sequi, officia eveniet enim odit aliquid voluptate maxime in voluptatum aspernatur doloribus voluptas recusandae. Quae eos ab nam at totam, a sapiente amet saepe dolorem hic dolor dolore! Consequatur pariatur iste veniam perferendis sit voluptatum esse autem quae sequi. Ullam animi similique expedita incidunt maiores? Quam et veniam a! Illum ea odit dolorem officiis asperiores obcaecati provident expedita, repellendus earum, totam nisi temporibus illo at. Nam maiores provident, facilis exercitationem laudantium, explicabo, accusamus debitis veritatis possimus praesentium expedita repellat. Obcaecati quisquam facilis, inventore expedita voluptates hic necessitatibus impedit! Soluta numquam deleniti sit accusantium harum molestiae suscipit vitae officiis ea corrupti quod, asperiores quidem ipsum, distinctio provident rem. Aut aliquam cum corporis inventore quos maiores excepturi aperiam assumenda iste libero soluta dolor quaerat ea, dolorum labore quia officiis earum quasi nihil? Sapiente repellendus aliquid explicabo eius et excepturi incidunt voluptatum dolor facilis beatae, suscipit numquam veniam quas, dicta temporibus ipsum modi tempora ipsa commodi voluptatem perspiciatis? Soluta deserunt doloribus animi repellendus delectus labore ut illum nam quae laudantium, eos ducimus enim exercitationem aliquam nisi aspernatur excepturi nihil minus modi, quis laboriosam quidem adipisci voluptatem reiciendis. Obcaecati nisi voluptas veritatis exercitationem et. Velit id, numquam voluptatum ab eum, nesciunt repellat sed quae adipisci doloribus voluptates? Numquam aliquid mollitia natus architecto, libero quis temporibus nulla quod vero consequuntur itaque omnis sapiente soluta molestiae commodi rem a accusantium ab nihil cum dolorum, repudiandae cumque laboriosam! Ratione saepe atque laborum quam dolor minus odit corrupti consectetur dolore, nesciunt mollitia optio esse hic, voluptates incidunt dignissimos quibusdam ea. Facilis blanditiis tempora similique vero, necessitatibus, eum natus delectus, nulla non unde porro facere voluptate nostrum quibusdam. Sed, quibusdam. Mollitia at ratione culpa magni nihil inventore cupiditate harum facilis repellat, neque dolorum commodi laboriosam quod porro enim veniam qui recusandae ex. Enim minima voluptate dolore aliquid animi possimus expedita iure, consequatur excepturi saepe blanditiis, cupiditate cum labore quidem odio praesentium omnis atque doloremque architecto exercitationem officia veritatis iusto perferendis asperiores! Molestiae impedit nobis iure optio odit quod quas quis natus explicabo atque. Odio quasi earum perspiciatis molestiae voluptate excepturi eum itaque placeat reprehenderit, sequi explicabo dolore nulla libero quod, minima officia consectetur unde quisquam, ea vero nesciunt doloremque illum tenetur fugit! Eligendi totam dolorum delectus, amet saepe dolores molestiae dicta odio eaque voluptatibus quia ratione similique iusto voluptatem sint quidem praesentium omnis! Accusantium nihil deserunt maiores, soluta, iure tempore tenetur iusto ratione deleniti sint animi reiciendis provident rem voluptas illum, aspernatur minima atque repudiandae totam consequuntur officiis molestias cum consequatur! Impedit corporis eius eligendi qui fuga quos soluta ratione tenetur, voluptates odio. Minima sunt at eum vero sed maiores tempora deleniti earum, quo veniam odio atque velit, nobis laborum iste consectetur suscipit repellendus debitis expedita ea ad, autem eaque? Magnam facilis blanditiis, laboriosam dolor sed eum praesentium molestias ipsum placeat? Omnis, dignissimos. Nisi, sint non alias dolore eos veniam magni atque odit assumenda debitis minima! Temporibus quibusdam repellat nulla eaque neque voluptatem soluta dolor aliquam.</p>
+<script src="./js/jquery-3.5.1.js"></script>
+<script src="./js/wow.js"></script>
+<script>
+    new mhstyle_animate().init();
+    let searchForm = document.querySelector('.search-form');
+
+    document.querySelector('#search-btn').onclick = () => {
+        menuBtn.classList.remove('active');
+        if(searchForm.className === "mh-animate"){
+            searchForm.classList.toggle("mh-fadeOutRight");
+            searchForm.classList.remove("mh-fadeInRight");
+
+        }else{
+            searchForm.classList.toggle("mh-fadeInRight");
+            searchForm.classList.toggle("active");
+        }
+    }
+    let menuBtn = document.querySelector('.navbar .nav');
+
+    document.querySelector('#menu-btn').onclick = () => {
+        menuBtn.classList.toggle('active');
+        searchForm.classList.remove('active');
+    }
+</script>
+</body>
+
+</html>

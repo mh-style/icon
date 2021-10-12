@@ -33,34 +33,49 @@
             height: 100vh;
             overflow: hidden;
         } */
-        .mh-animate-body {
+        .mh-animate-btn-area {
             display: flex;
-            justify-content: space-between;
             width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex: 0 0 25%;
+            max-width: 100%;
+            gap: 10px;
         }
 
         .mh-animate-btn-area button {
             display: inline-flex;
-            margin: 10px 8px;
+            margin: 0;
             font-size: 18px;
-            width: 23%;
+            max-width: 24%;
+            flex: 0 0 25%;
             height: 80px;
             text-align: left;
             border: none;
             background-color: var(--mh-primary-color);
             align-items: center;
             justify-content: space-between;
+            cursor: pointer;
             color: #fff;
         }
-        .mh-animate-btn-area button a{
+
+        .mh-animate-btn-area button a {
             color: #fff;
         }
+
+        @media (max-width: 540px) {
+            .mh-animate-btn-area button {
+                width: 46%;
+                font-size: 15px;
+            }
+        }
+
     </style>
 </head>
 
 <body>
 
-    <div class="mh-animate-body">
+    <div class="mh-animate-body mh-container">
         <!-- <div class="mh-animate-image">
             <div id="jihan" class="mh-animate ">
                 <img src="http://placehold.jp/22/99ccff/003366/200x200.png?text=mhstyle" alt=""> 
@@ -68,242 +83,272 @@
             </div>
         </div> -->
         <div class="mh-animate-btn-area mh-float-right">
-            <button id="bounce" onclick="bounce()" class="mh-animate mh-py-1 mh-px-5">bounce <a href="#"
+            <button id="bounce" onclick="bounce()" class="mh-animate mh-slow mh-py-1 mh-px-5">bounce <a href="#copyed!!"
                     class="copybutton" data-mh-copyboard-text="mh-bounce"><i class="mh mhi-copy2"></i></a></button>
-            <button id="flash" onclick="flash()" class="mh-animate mh-py-1 mh-px-5">flash <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-flash"><i class="mh mhi-copy2"></i></a></button>
-            <button id="pulse" onclick="pulse()" class="mh-animate mh-py-1 mh-px-5">pulse <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-pulse"><i class="mh mhi-copy2"></i></a></button>
-            <button id="rubberBand" onclick="rubberBand()" class="mh-animate mh-py-1 mh-px-5">rubberBand <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-rubberBand"><i class="mh mhi-copy2"></i></a></button>
-            <button id="shakeX" onclick="shakeX()" class="mh-animate mh-py-1 mh-px-5">shakeX <a href="#"
+            <button id="flash" onclick="flash()" class="mh-animate mh-py-1 mh-px-5">flash <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-flash"><i class="mh mhi-copy2"></i></a></button>
+            <button id="pulse" onclick="pulse()" class="mh-animate mh-py-1 mh-px-5">pulse <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-pulse"><i class="mh mhi-copy2"></i></a></button>
+            <button id="rubberBand" onclick="rubberBand()" class="mh-animate mh-py-1 mh-px-5">rubberBand <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-rubberBand"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="shakeX" onclick="shakeX()" class="mh-animate mh-py-1 mh-px-5">shakeX <a href="#copyed!!"
                     class="copybutton" data-mh-copyboard-text="mh-shakeX"><i class="mh mhi-copy2"></i></a></button>
-            <button id="shakeY" onclick="shakeY()" class="mh-animate mh-py-1 mh-px-5">shakeY <a href="#"
+            <button id="shakeY" onclick="shakeY()" class="mh-animate mh-py-1 mh-px-5">shakeY <a href="#copyed!!"
                     class="copybutton" data-mh-copyboard-text="mh-shakeY"><i class="mh mhi-copy2"></i></a></button>
-            <button id="headShake" onclick="headShake()" class="mh-animate mh-py-1 mh-px-5">headShake <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-headShake"><i class="mh mhi-copy2"></i></a></button>
-            <button id="swing" onclick="swing()" class="mh-animate mh-py-1 mh-px-5">swing <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-swing"><i class="mh mhi-copy2"></i></a></button>
-            <button id="tada" onclick="tada()" class="mh-animate mh-py-1 mh-px-5">tada <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-tada"><i class="mh mhi-copy2"></i></a></button>
-            <button id="wobble" onclick="wobble()" class="mh-animate mh-py-1 mh-px-5">wobble <a href="#"
+            <button id="headShake" onclick="headShake()" class="mh-animate mh-py-1 mh-px-5">headShake <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-headShake"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="swing" onclick="swing()" class="mh-animate mh-py-1 mh-px-5">swing <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-swing"><i class="mh mhi-copy2"></i></a></button>
+            <button id="tada" onclick="tada()" class="mh-animate mh-py-1 mh-px-5">tada <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-tada"><i class="mh mhi-copy2"></i></a></button>
+            <button id="wobble" onclick="wobble()" class="mh-animate mh-py-1 mh-px-5">wobble <a href="#copyed!!"
                     class="copybutton" data-mh-copyboard-text="mh-wobble"><i class="mh mhi-copy2"></i></a></button>
-            <button id="jello" onclick="jello()" class="mh-animate mh-py-1 mh-px-5">jello <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-jello"><i class="mh mhi-copy2"></i></a></button>
-            <button id="heartBeat" onclick="heartBeat()" class="mh-animate mh-py-1 mh-px-5">heartBeat <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-heartBeat"><i class="mh mhi-copy2"></i></a></button>
-            <button id="backInDown" onclick="backInDown()" class="mh-animate mh-py-1 mh-px-5">backInDown <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-backInDown"><i class="mh mhi-copy2"></i></a></button>
-            <button id="backInLeft" onclick="backInLeft()" class="mh-animate mh-py-1 mh-px-5">backInLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-backInLeft"><i class="mh mhi-copy2"></i></a></button>
-            <button id="backInRight" onclick="backInRight()" class="mh-animate mh-py-1 mh-px-5">backInRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-backInRight"><i class="mh mhi-copy2"></i></a></button>
-            <button id="backInUp" onclick="backInUp()" class="mh-animate mh-py-1 mh-px-5">backInUp <a href="#"
+            <button id="jello" onclick="jello()" class="mh-animate mh-py-1 mh-px-5">jello <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-jello"><i class="mh mhi-copy2"></i></a></button>
+            <button id="heartBeat" onclick="heartBeat()" class="mh-animate mh-py-1 mh-px-5">heartBeat <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-heartBeat"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="backInDown" onclick="backInDown()" class="mh-animate mh-py-1 mh-px-5">backInDown <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-backInDown"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="backInLeft" onclick="backInLeft()" class="mh-animate mh-py-1 mh-px-5">backInLeft <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-backInLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="backInRight" onclick="backInRight()" class="mh-animate mh-py-1 mh-px-5">backInRight <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-backInRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="backInUp" onclick="backInUp()" class="mh-animate mh-py-1 mh-px-5">backInUp <a href="#copyed!!"
                     class="copybutton" data-mh-copyboard-text="mh-backInUp"><i class="mh mhi-copy2"></i></a></button>
             <button id="backOutDown" onclick="backOutDown()" class="mh-animate mh-animate mh-py-1 mh-px-5">backOutDown
-                <a href="#" class="copybutton" data-mh-copyboard-text="mh-backOutDown"><i
+                <a href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-backOutDown"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="backOutLeft" onclick="backOutLeft()" class="mh-animate mh-py-1 mh-px-5">backOutLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-backOutLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="backOutLeft" onclick="backOutLeft()" class="mh-animate mh-py-1 mh-px-5">backOutLeft <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-backOutLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
             <button id="backOutRight" onclick="backOutRight()" class="mh-animate mh-py-1 mh-px-5">backOutRight <a
-                    href="#" class="copybutton" data-mh-copyboard-text="mh-backOutRight"><i
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-backOutRight"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="backOutUp" onclick="backOutUp()" class="mh-animate mh-py-1 mh-px-5">backOutUp <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-backOutUp"><i class="mh mhi-copy2"></i></a></button>
-            <button id="bounceIn" onclick="bounceIn()" class="mh-animate mh-py-1 mh-px-5">bounceIn <a href="#"
+            <button id="backOutUp" onclick="backOutUp()" class="mh-animate mh-py-1 mh-px-5">backOutUp <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-backOutUp"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="bounceIn" onclick="bounceIn()" class="mh-animate mh-py-1 mh-px-5">bounceIn <a href="#copyed!!"
                     class="copybutton" data-mh-copyboard-text="mh-bounceIn"><i class="mh mhi-copy2"></i></a></button>
             <button id="bounceInDown" onclick="bounceInDown()"
-                class="mh-animate mh-animate mh-animate mh-py-1 mh-px-5">bounceInDown <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-bounceInDown"><i class="mh mhi-copy2"></i></a></button>
-            <button id="bounceInLeft" onclick="bounceInLeft()" class="mh-animate mh-py-1 mh-animate mh-px-5">bounceInLeft <a
-                    href="#" class="copybutton" data-mh-copyboard-text="mh-bounceInLeft"><i
+                class="mh-animate mh-animate mh-animate mh-py-1 mh-px-5">bounceInDown <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-bounceInDown"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="bounceInRight" onclick="bounceInRight()" class="mh-animate mh-py-1 mh-animate mh-px-5">bounceInRight <a
-                    href="#" class="copybutton" data-mh-copyboard-text="mh-bounceInRight"><i
+            <button id="bounceInLeft" onclick="bounceInLeft()"
+                class="mh-animate mh-py-1 mh-animate mh-px-5">bounceInLeft <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-bounceInLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="bounceInRight" onclick="bounceInRight()"
+                class="mh-animate mh-py-1 mh-animate mh-px-5">bounceInRight <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-bounceInRight"><i class="mh mhi-copy2"></i></a></button>
+            <button id="bounceInUp" onclick="bounceInUp()" class="mh-animate mh-py-1 mh-px-5">bounceInUp <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-bounceInUp"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="bounceInUp" onclick="bounceInUp()" class="mh-animate mh-py-1 mh-px-5">bounceInUp <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-bounceInUp"><i class="mh mhi-copy2"></i></a></button>
-            <button id="bounceOut" onclick="bounceOut()" class="mh-animate mh-py-1 mh-px-5">bounceOut <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-bounceOut"><i class="mh mhi-copy2"></i></a></button>
-            <button id="bounceOutDown" onclick="bounceOutDown()" class="mh-animate mh-py-1 mh-px-5">bounceOutDown <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-bounceOutDown"><i
+            <button id="bounceOut" onclick="bounceOut()" class="mh-animate mh-py-1 mh-px-5">bounceOut <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-bounceOut"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="bounceOutLeft" onclick="bounceOutLeft()" class="mh-animate mh-py-1 mh-px-5">bounceOutLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-bounceOutLeft"><i
+            <button id="bounceOutDown" onclick="bounceOutDown()" class="mh-animate mh-py-1 mh-px-5">bounceOutDown <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-bounceOutDown"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="bounceOutRight" onclick="bounceOutRight()" class="mh-animate mh-py-1 mh-px-5">bounceOutRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-bounceOutRight"><i
+            <button id="bounceOutLeft" onclick="bounceOutLeft()" class="mh-animate mh-py-1 mh-px-5">bounceOutLeft <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-bounceOutLeft"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="bounceOutUp" onclick="bounceOutUp()" class="mh-animate mh-py-1 mh-px-5">bounceOutUp <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-bounceOutUp"><i class="mh mhi-copy2"></i></a></button>
-            <button id="fadeIn" onclick="fadeIn()" class="mh-animate mh-py-1 mh-px-5">fadeIn <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-fadeIn"><i class="mh mhi-copy2"></i></a></button>
-            <button id="fadeInDown" onclick="fadeInDown()" class="mh-animate mh-py-1 mh-px-5">fadeInDown <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeInDown"><i class="mh mhi-copy2"></i></a></button>
-            <button id="fadeInDownBig" onclick="fadeInDownBig()" class="mh-animate mh-py-1 mh-px-5">fadeInDownBig <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeInDownBig"><i
+            <button id="bounceOutRight" onclick="bounceOutRight()" class="mh-animate mh-py-1 mh-px-5">bounceOutRight <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-bounceOutRight"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeInLeft" onclick="fadeInLeft()" class="mh-animate mh-py-1 mh-px-5">fadeInLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeInLeft"><i class="mh mhi-copy2"></i></a></button>
-            <button id="fadeInLeftBig" onclick="fadeInLeftBig()" class="mh-animate mh-py-1 mh-px-5">fadeInLeftBig <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeInLeftBig"><i
+            <button id="bounceOutUp" onclick="bounceOutUp()" class="mh-animate mh-py-1 mh-px-5">bounceOutUp <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-bounceOutUp"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeInRight" onclick="fadeInRight()" class="mh-animate mh-py-1 mh-px-5">fadeInRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeInRight"><i class="mh mhi-copy2"></i></a></button>
-            <button id="fadeInRightBig" onclick="fadeInRightBig()" class="mh-animate mh-py-1 mh-px-5">fadeInRightBig <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeInRightBig"><i
+            <button id="fadeIn" onclick="fadeIn()" class="mh-animate mh-py-1 mh-px-5">fadeIn <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeIn"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInDown" onclick="fadeInDown()" class="mh-animate mh-py-1 mh-px-5">fadeInDown <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeInDown"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeInUp" onclick="fadeInUp()" class="mh-animate mh-py-1 mh-px-5">fadeInUp <a href="#"
+            <button id="fadeInDownBig" onclick="fadeInDownBig()" class="mh-animate mh-py-1 mh-px-5">fadeInDownBig <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeInDownBig"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInLeft" onclick="fadeInLeft()" class="mh-animate mh-py-1 mh-px-5">fadeInLeft <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeInLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInLeftBig" onclick="fadeInLeftBig()" class="mh-animate mh-py-1 mh-px-5">fadeInLeftBig <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeInLeftBig"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInRight" onclick="fadeInRight()" class="mh-animate mh-py-1 mh-px-5">fadeInRight <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeInRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInRightBig" onclick="fadeInRightBig()" class="mh-animate mh-py-1 mh-px-5">fadeInRightBig <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeInRightBig"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInUp" onclick="fadeInUp()" class="mh-animate mh-py-1 mh-px-5">fadeInUp <a href="#copyed!!"
                     class="copybutton" data-mh-copyboard-text="mh-fadeInUp"><i class="mh mhi-copy2"></i></a></button>
-            <button id="fadeInUpBig" onclick="fadeInUpBig()" class="mh-animate mh-py-1 mh-px-5">fadeInUpBig <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeInUpBig"><i class="mh mhi-copy2"></i></a></button>
-            <button id="fadeInTopLeft" onclick="fadeInTopLeft()" class="mh-animate mh-py-1 mh-px-5">fadeInTopLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeInTopLeft"><i
+            <button id="fadeInUpBig" onclick="fadeInUpBig()" class="mh-animate mh-py-1 mh-px-5">fadeInUpBig <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeInUpBig"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeInTopRight" onclick="fadeInTopRight()" class="mh-animate mh-py-1 mh-px-5">fadeInTopRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeInTopRight"><i
+            <button id="fadeInTopLeft" onclick="fadeInTopLeft()" class="mh-animate mh-py-1 mh-px-5">fadeInTopLeft <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeInTopLeft"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeInBottomLeft" onclick="fadeInBottomLeft()" class="mh-animate mh-py-1 mh-px-5">fadeInBottomLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeInBottomLeft"><i
+            <button id="fadeInTopRight" onclick="fadeInTopRight()" class="mh-animate mh-py-1 mh-px-5">fadeInTopRight <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeInTopRight"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeInBottomRight" onclick="fadeInBottomRight()" class="mh-animate mh-py-1 mh-px-5">fadeInBottomRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeInBottomRight"><i
+            <button id="fadeInBottomLeft" onclick="fadeInBottomLeft()"
+                class="mh-animate mh-py-1 mh-px-5">fadeInBottomLeft <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-fadeInBottomLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeInBottomRight" onclick="fadeInBottomRight()"
+                class="mh-animate mh-py-1 mh-px-5">fadeInBottomRight <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-fadeInBottomRight"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOut" onclick="fadeOut()" class="mh-animate mh-py-1 mh-px-5">fadeOut <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-fadeOut"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutDownBig" onclick="fadeOutDownBig()" class="mh-animate mh-py-1 mh-px-5">fadeOutDownBig <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeOutDownBig"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeOut" onclick="fadeOut()" class="mh-animate mh-py-1 mh-px-5">fadeOut <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-fadeOut"><i class="mh mhi-copy2"></i></a></button>
-            <button id="fadeOutDownBig" onclick="fadeOutDownBig()" class="mh-animate mh-py-1 mh-px-5">fadeOutDownBig <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeOutDownBig"><i
+            <button id="fadeOutDown" onclick="fadeOutDown()" class="mh-animate mh-py-1 mh-px-5">fadeOutDown <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeOutDown"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeOutDown" onclick="fadeOutDown()" class="mh-animate mh-py-1 mh-px-5">fadeOutDown <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeOutDown"><i class="mh mhi-copy2"></i></a></button>
-            <button id="fadeOutLeft" onclick="fadeOutLeft()" class="mh-animate mh-py-1 mh-px-5">fadeOutLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeOutLeft"><i class="mh mhi-copy2"></i></a></button>
-            <button id="fadeOutLeftBig" onclick="fadeOutLeftBig()" class="mh-animate mh-py-1 mh-px-5">fadeOutLeftBig <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeOutLeftBig"><i
+            <button id="fadeOutLeft" onclick="fadeOutLeft()" class="mh-animate mh-py-1 mh-px-5">fadeOutLeft <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeOutLeft"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeOutRight" onclick="fadeOutRight()" class="mh-animate mh-py-1 mh-px-5">fadeOutRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeOutRight"><i
+            <button id="fadeOutLeftBig" onclick="fadeOutLeftBig()" class="mh-animate mh-py-1 mh-px-5">fadeOutLeftBig <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeOutLeftBig"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeOutRightBig" onclick="fadeOutRightBig()" class="mh-animate mh-py-1 mh-px-5">fadeOutRightBig <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeOutRightBig"><i
+            <button id="fadeOutRight" onclick="fadeOutRight()" class="mh-animate mh-py-1 mh-px-5">fadeOutRight <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeOutRight"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeOutUp" onclick="fadeOutUp()" class="mh-animate mh-py-1 mh-px-5">fadeOutUp <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeOutUp"><i class="mh mhi-copy2"></i></a></button>
-            <button id="fadeOutUpBig" onclick="fadeOutUpBig()" class="mh-animate mh-py-1 mh-px-5">fadeOutUpBig <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeOutUpBig"><i
+            <button id="fadeOutRightBig" onclick="fadeOutRightBig()" class="mh-animate mh-py-1 mh-px-5">fadeOutRightBig
+                <a href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeOutRightBig"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeOutTopLeft" onclick="fadeOutTopLeft()" class="mh-animate mh-py-1 mh-px-5">fadeOutTopLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeOutTopLeft"><i
+            <button id="fadeOutUp" onclick="fadeOutUp()" class="mh-animate mh-py-1 mh-px-5">fadeOutUp <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeOutUp"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeOutTopRight" onclick="fadeOutTopRight()" class="mh-animate mh-py-1 mh-px-5">fadeOutTopRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeOutTopRight"><i
+            <button id="fadeOutUpBig" onclick="fadeOutUpBig()" class="mh-animate mh-py-1 mh-px-5">fadeOutUpBig <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeOutUpBig"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeOutBottomRight" onclick="fadeOutBottomRight()" class="mh-animate mh-py-1 mh-px-5">fadeOutBottomRight <a
-                    href="#" class="copybutton" data-mh-copyboard-text="mh-fadeOutBottomRight"><i
+            <button id="fadeOutTopLeft" onclick="fadeOutTopLeft()" class="mh-animate mh-py-1 mh-px-5">fadeOutTopLeft <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeOutTopLeft"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="fadeOutBottomLeft" onclick="fadeOutBottomLeft()" class="mh-animate mh-py-1 mh-px-5">fadeOutBottomLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-fadeOutBottomLeft"><i
+            <button id="fadeOutTopRight" onclick="fadeOutTopRight()" class="mh-animate mh-py-1 mh-px-5">fadeOutTopRight
+                <a href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-fadeOutTopRight"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="flip" onclick="flip()" class="mh-animate mh-py-1 mh-px-5">flip <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-flip"><i class="mh mhi-copy2"></i></a></button>
-            <button id="flipInX" onclick="flipInX()" class="mh-animate mh-py-1 mh-px-5">flipInX <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-flipInX"><i class="mh mhi-copy2"></i></a></button>
-            <button id="flipInY" onclick="flipInY()" class="mh-animate mh-py-1 mh-px-5">flipInY <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-flipInY"><i class="mh mhi-copy2"></i></a></button>
-            <button id="flipOutX" onclick="flipOutX()" class="mh-animate mh-py-1 mh-px-5">flipOutX <a href="#"
+            <button id="fadeOutBottomRight" onclick="fadeOutBottomRight()"
+                class="mh-animate mh-py-1 mh-px-5">fadeOutBottomRight <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-fadeOutBottomRight"><i class="mh mhi-copy2"></i></a></button>
+            <button id="fadeOutBottomLeft" onclick="fadeOutBottomLeft()"
+                class="mh-animate mh-py-1 mh-px-5">fadeOutBottomLeft <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-fadeOutBottomLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="flip" onclick="flip()" class="mh-animate mh-py-1 mh-px-5">flip <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-flip"><i class="mh mhi-copy2"></i></a></button>
+            <button id="flipInX" onclick="flipInX()" class="mh-animate mh-py-1 mh-px-5">flipInX <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-flipInX"><i class="mh mhi-copy2"></i></a></button>
+            <button id="flipInY" onclick="flipInY()" class="mh-animate mh-py-1 mh-px-5">flipInY <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-flipInY"><i class="mh mhi-copy2"></i></a></button>
+            <button id="flipOutX" onclick="flipOutX()" class="mh-animate mh-py-1 mh-px-5">flipOutX <a href="#copyed!!"
                     class="copybutton" data-mh-copyboard-text="mh-flipOutX"><i class="mh mhi-copy2"></i></a></button>
-            <button id="flipOutY" onclick="flipOutY()" class="mh-animate mh-py-1 mh-px-5">flipOutY <a href="#"
+            <button id="flipOutY" onclick="flipOutY()" class="mh-animate mh-py-1 mh-px-5">flipOutY <a href="#copyed!!"
                     class="copybutton" data-mh-copyboard-text="mh-flipOutY"><i class="mh mhi-copy2"></i></a></button>
-            <button id="lightSpeedInRight" onclick="lightSpeedInRight()" class="mh-animate mh-py-1 mh-px-5">lightSpeedInRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-lightSpeedInRight"><i
-                        class="mh mhi-copy2"></i></a></button>
-            <button id="lightSpeedInLeft" onclick="lightSpeedInLeft()" class="mh-animate mh-py-1 mh-px-5">lightSpeedInLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-lightSpeedInLeft"><i
-                        class="mh mhi-copy2"></i></a></button>
-            <button id="lightSpeedOutRight" onclick="lightSpeedOutRight()" class="mh-animate mh-py-1 mh-px-5">lightSpeedOutRight <a
-                    href="#" class="copybutton" data-mh-copyboard-text="mh-lightSpeedOutRight"><i
-                        class="mh mhi-copy2"></i></a></button>
-            <button id="lightSpeedOutLeft" onclick="lightSpeedOutLeft()" class="mh-animate mh-py-1 mh-px-5">lightSpeedOutLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-lightSpeedOutLeft"><i
-                        class="mh mhi-copy2"></i></a></button>
-            <button id="rotateIn" onclick="rotateIn()" class="mh-animate mh-py-1 mh-px-5">rotateIn <a href="#"
+            <button id="lightSpeedInRight" onclick="lightSpeedInRight()"
+                class="mh-animate mh-py-1 mh-px-5">lightSpeedInRight <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-lightSpeedInRight"><i class="mh mhi-copy2"></i></a></button>
+            <button id="lightSpeedInLeft" onclick="lightSpeedInLeft()"
+                class="mh-animate mh-py-1 mh-px-5">lightSpeedInLeft <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-lightSpeedInLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="lightSpeedOutRight" onclick="lightSpeedOutRight()"
+                class="mh-animate mh-py-1 mh-px-5">lightSpeedOutRight <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-lightSpeedOutRight"><i class="mh mhi-copy2"></i></a></button>
+            <button id="lightSpeedOutLeft" onclick="lightSpeedOutLeft()"
+                class="mh-animate mh-py-1 mh-px-5">lightSpeedOutLeft <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-lightSpeedOutLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="rotateIn" onclick="rotateIn()" class="mh-animate mh-py-1 mh-px-5">rotateIn <a href="#copyed!!"
                     class="copybutton" data-mh-copyboard-text="mh-rotateIn"><i class="mh mhi-copy2"></i></a></button>
-            <button id="rotateInDownLeft" onclick="rotateInDownLeft()" class="mh-animate mh-py-1 mh-px-5">rotateInDownLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-rotateInDownLeft"><i
+            <button id="rotateInDownLeft" onclick="rotateInDownLeft()"
+                class="mh-animate mh-py-1 mh-px-5">rotateInDownLeft <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-rotateInDownLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="rotateInDownRight" onclick="rotateInDownRight()"
+                class="mh-animate mh-py-1 mh-px-5">rotateInDownRight <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-rotateInDownRight"><i class="mh mhi-copy2"></i></a></button>
+            <button id="rotateInUpLeft" onclick="rotateInUpLeft()" class="mh-animate mh-py-1 mh-px-5">rotateInUpLeft <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-rotateInUpLeft"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="rotateInDownRight" onclick="rotateInDownRight()" class="mh-animate mh-py-1 mh-px-5">rotateInDownRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-rotateInDownRight"><i
+            <button id="rotateInUpRight" onclick="rotateInUpRight()" class="mh-animate mh-py-1 mh-px-5">rotateInUpRight
+                <a href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-rotateInUpRight"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="rotateInUpLeft" onclick="rotateInUpLeft()" class="mh-animate mh-py-1 mh-px-5">rotateInUpLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-rotateInUpLeft"><i
+            <button id="rotateOut" onclick="rotateOut()" class="mh-animate mh-py-1 mh-px-5">rotateOut <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-rotateOut"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="rotateInUpRight" onclick="rotateInUpRight()" class="mh-animate mh-py-1 mh-px-5">rotateInUpRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-rotateInUpRight"><i
+            <button id="rotateOutDownLeft" onclick="rotateOutDownLeft()"
+                class="mh-animate mh-py-1 mh-px-5">rotateOutDownLeft <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-rotateOutDownLeft"><i class="mh mhi-copy2"></i></a></button>
+            <button id="rotateOutDownRight" onclick="rotateOutDownRight()"
+                class="mh-animate mh-py-1 mh-px-5">rotateOutDownRight <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-rotateOutDownRight"><i class="mh mhi-copy2"></i></a></button>
+            <button id="rotateOutUpLeft" onclick="rotateOutUpLeft()" class="mh-animate mh-py-1 mh-px-5">rotateOutUpLeft
+                <a href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-rotateOutUpLeft"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="rotateOut" onclick="rotateOut()" class="mh-animate mh-py-1 mh-px-5">rotateOut <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-rotateOut"><i class="mh mhi-copy2"></i></a></button>
-            <button id="rotateOutDownLeft" onclick="rotateOutDownLeft()" class="mh-animate mh-py-1 mh-px-5">rotateOutDownLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-rotateOutDownLeft"><i
+            <button id="rotateOutUpRight" onclick="rotateOutUpRight()"
+                class="mh-animate mh-py-1 mh-px-5">rotateOutUpRight <a href="#copyed!!" class="copybutton"
+                    data-mh-copyboard-text="mh-rotateOutUpRight"><i class="mh mhi-copy2"></i></a></button>
+            <button id="hinge" onclick="hinge()" class="mh-animate mh-py-1 mh-px-5">hinge <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-hinge"><i class="mh mhi-copy2"></i></a></button>
+            <button id="jackInTheBox" onclick="jackInTheBox()" class="mh-animate mh-py-1 mh-px-5">jackInTheBox <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-jackInTheBox"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="rotateOutDownRight" onclick="rotateOutDownRight()" class="mh-animate mh-py-1 mh-px-5">rotateOutDownRight <a
-                    href="#" class="copybutton" data-mh-copyboard-text="mh-rotateOutDownRight"><i
+            <button id="rollIn" onclick="rollIn()" class="mh-animate mh-py-1 mh-px-5">rollIn <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-rollIn"><i class="mh mhi-copy2"></i></a></button>
+            <button id="rollOut" onclick="rollOut()" class="mh-animate mh-py-1 mh-px-5">rollOut <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-rollOut"><i class="mh mhi-copy2"></i></a></button>
+            <button id="zoomIn" onclick="zoomIn()" class="mh-animate mh-py-1 mh-px-5">zoomIn <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-zoomIn"><i class="mh mhi-copy2"></i></a></button>
+            <button id="zoomInDown" onclick="zoomInDown()" class="mh-animate mh-py-1 mh-px-5">zoomInDown <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-zoomInDown"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="rotateOutUpLeft" onclick="rotateOutUpLeft()" class="mh-animate mh-py-1 mh-px-5">rotateOutUpLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-rotateOutUpLeft"><i
+            <button id="zoomInLeft" onclick="zoomInLeft()" class="mh-animate mh-py-1 mh-px-5">zoomInLeft <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-zoomInLeft"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="rotateOutUpRight" onclick="rotateOutUpRight()" class="mh-animate mh-py-1 mh-px-5">rotateOutUpRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-rotateOutUpRight"><i
+            <button id="zoomInRight" onclick="zoomInRight()" class="mh-animate mh-py-1 mh-px-5">zoomInRight <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-zoomInRight"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="hinge" onclick="hinge()" class="mh-animate mh-py-1 mh-px-5">hinge <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-hinge"><i class="mh mhi-copy2"></i></a></button>
-            <button id="jackInTheBox" onclick="jackInTheBox()" class="mh-animate mh-py-1 mh-px-5">jackInTheBox <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-jackInTheBox"><i
-                        class="mh mhi-copy2"></i></a></button>
-            <button id="rollIn" onclick="rollIn()" class="mh-animate mh-py-1 mh-px-5">rollIn <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-rollIn"><i class="mh mhi-copy2"></i></a></button>
-            <button id="rollOut" onclick="rollOut()" class="mh-animate mh-py-1 mh-px-5">rollOut <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-rollOut"><i class="mh mhi-copy2"></i></a></button>
-            <button id="zoomIn" onclick="zoomIn()" class="mh-animate mh-py-1 mh-px-5">zoomIn <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-zoomIn"><i class="mh mhi-copy2"></i></a></button>
-            <button id="zoomInDown" onclick="zoomInDown()" class="mh-animate mh-py-1 mh-px-5">zoomInDown <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-zoomInDown"><i class="mh mhi-copy2"></i></a></button>
-            <button id="zoomInLeft" onclick="zoomInLeft()" class="mh-animate mh-py-1 mh-px-5">zoomInLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-zoomInLeft"><i class="mh mhi-copy2"></i></a></button>
-            <button id="zoomInRight" onclick="zoomInRight()" class="mh-animate mh-py-1 mh-px-5">zoomInRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-zoomInRight"><i class="mh mhi-copy2"></i></a></button>
-            <button id="zoomInUp" onclick="zoomInUp()" class="mh-animate mh-py-1 mh-px-5">zoomInUp <a href="#"
+            <button id="zoomInUp" onclick="zoomInUp()" class="mh-animate mh-py-1 mh-px-5">zoomInUp <a href="#copyed!!"
                     class="copybutton" data-mh-copyboard-text="mh-zoomInUp"><i class="mh mhi-copy2"></i></a></button>
-            <button id="zoomOut" onclick="zoomOut()" class="mh-animate mh-py-1 mh-px-5">zoomOut <a href="#" class="copybutton"
-                    data-mh-copyboard-text="mh-zoomOut"><i class="mh mhi-copy2"></i></a></button>
-            <button id="zoomOutDown" onclick="zoomOutDown()" class="mh-animate mh-py-1 mh-px-5">zoomOutDown <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-zoomOutDown"><i class="mh mhi-copy2"></i></a></button>
-            <button id="zoomOutLeft" onclick="zoomOutLeft()" class="mh-animate mh-py-1 mh-px-5">zoomOutLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-zoomOutLeft"><i class="mh mhi-copy2"></i></a></button>
-            <button id="zoomOutRight" onclick="zoomOutRight()" class="mh-animate mh-py-1 mh-px-5">zoomOutRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-zoomOutRight"><i
+            <button id="zoomOut" onclick="zoomOut()" class="mh-animate mh-py-1 mh-px-5">zoomOut <a href="#copyed!!"
+                    class="copybutton" data-mh-copyboard-text="mh-zoomOut"><i class="mh mhi-copy2"></i></a></button>
+            <button id="zoomOutDown" onclick="zoomOutDown()" class="mh-animate mh-py-1 mh-px-5">zoomOutDown <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-zoomOutDown"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="zoomOutUp" onclick="zoomOutUp()" class="mh-animate mh-py-1 mh-px-5">zoomOutUp <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-zoomOutUp"><i class="mh mhi-copy2"></i></a></button>
-            <button id="slideInDown" onclick="slideInDown()" class="mh-animate mh-py-1 mh-px-5">slideInDown <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-slideInDown"><i class="mh mhi-copy2"></i></a></button>
-            <button id="slideInLeft" onclick="slideInLeft()" class="mh-animate mh-py-1 mh-px-5">slideInLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-slideInLeft"><i class="mh mhi-copy2"></i></a></button>
-            <button id="slideInRight" onclick="slideInRight()" class="mh-animate mh-py-1 mh-px-5">slideInRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-slideInRight"><i
+            <button id="zoomOutLeft" onclick="zoomOutLeft()" class="mh-animate mh-py-1 mh-px-5">zoomOutLeft <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-zoomOutLeft"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="slideInUp" onclick="slideInUp()" class="mh-animate mh-py-1 mh-px-5">slideInUp <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-slideInUp"><i class="mh mhi-copy2"></i></a></button>
-            <button id="slideOutDown" onclick="slideOutDown()" class="mh-animate mh-py-1 mh-px-5">slideOutDown <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-slideOutDown"><i
+            <button id="zoomOutRight" onclick="zoomOutRight()" class="mh-animate mh-py-1 mh-px-5">zoomOutRight <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-zoomOutRight"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="slideOutLeft" onclick="slideOutLeft()" class="mh-animate mh-py-1 mh-px-5">slideOutLeft <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-slideOutLeft"><i
+            <button id="zoomOutUp" onclick="zoomOutUp()" class="mh-animate mh-py-1 mh-px-5">zoomOutUp <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-zoomOutUp"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="slideOutRight" onclick="slideOutRight()" class="mh-animate mh-py-1 mh-px-5">slideOutRight <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-slideOutRight"><i
+            <button id="slideInDown" onclick="slideInDown()" class="mh-animate mh-py-1 mh-px-5">slideInDown <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-slideInDown"><i
                         class="mh mhi-copy2"></i></a></button>
-            <button id="slideOutUp" onclick="slideOutUp()" class="mh-animate mh-py-1 mh-px-5">slideOutUp <a href="#"
-                    class="copybutton" data-mh-copyboard-text="mh-slideOutUp"><i class="mh mhi-copy2"></i></a></button>
+            <button id="slideInLeft" onclick="slideInLeft()" class="mh-animate mh-py-1 mh-px-5">slideInLeft <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-slideInLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="slideInRight" onclick="slideInRight()" class="mh-animate mh-py-1 mh-px-5">slideInRight <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-slideInRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="slideInUp" onclick="slideInUp()" class="mh-animate mh-py-1 mh-px-5">slideInUp <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-slideInUp"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="slideOutDown" onclick="slideOutDown()" class="mh-animate mh-py-1 mh-px-5">slideOutDown <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-slideOutDown"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="slideOutLeft" onclick="slideOutLeft()" class="mh-animate mh-py-1 mh-px-5">slideOutLeft <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-slideOutLeft"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="slideOutRight" onclick="slideOutRight()" class="mh-animate mh-py-1 mh-px-5">slideOutRight <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-slideOutRight"><i
+                        class="mh mhi-copy2"></i></a></button>
+            <button id="slideOutUp" onclick="slideOutUp()" class="mh-animate mh-py-1 mh-px-5">slideOutUp <a
+                    href="#copyed!!" class="copybutton" data-mh-copyboard-text="mh-slideOutUp"><i
+                        class="mh mhi-copy2"></i></a></button>
 
         </div>
     </div>

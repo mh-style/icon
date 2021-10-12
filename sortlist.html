@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort list</title>
+</head>
+<body>
+    
+<button onclick="sortlist()">sort</button>
+<ul id="mylist">
+    <li class="mh">
+        <a href="#"> aaaa </a>
+    </li>
+    <li class="mh">
+        <a href="#"> cccccc </a>
+    </li>
+    <li class="mh">
+        <a href="#"> ddddd </a>
+    </li>
+    <li class="mh">
+        <a href="#"> gggggg </a>
+    </li>
+    <li class="mh">
+        <a href="#"> bbbbbbb </a>
+    </li>
+</ul>
+
+
+<script>
+    function sortlist(){
+      var list,i,switching,listitems,shouldSwitch;
+      list = document.getElementById('mylist');
+      switching = true;
+      while(switching){
+        switching = false;
+        listitems = list.getElementsByClassName('mh');
+        for(i = 0; i < (listitems.length-1);i++){
+          shouldSwitch = false;
+          if(listitems[i].innerHTML.toLowerCase() > listitems[i+1].innerHTML.toLowerCase()){
+            shouldSwitch = true;
+            break;
+          }
+        }
+        listitems[i].parentNode.insertBefore(listitems[i+1],listitems[i]);
+        switching = true;
+      }
+    }
+  </script>
+</body>
+</html>

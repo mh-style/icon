@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mh-style.css">
+    <link rel="stylesheet" href="./css/mhstyle-icon.min.css">
+    <link rel="stylesheet" href="./css/mh-slider.css">
+    <style>
+        .mh-theme .mh-nav button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .mh-carousel .mh-dots {
+            position: absolute;
+            overflow: hidden;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .mh-theme .mh-nav .mh-prev {
+            left: 0;
+        }
+        .mh-theme .mh-nav .mh-next {
+            left: auto;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mh-slider mh-theme mh-p-re">
+        <img src="https://via.placeholder.com/780x530/FFFF00/000000?text=jihan" class="mh-img-fluid" alt="">
+        <img src="https://via.placeholder.com/780x530/FFFF00/000000?text=jihan" class="mh-img-fluid" alt="">
+        <img src="https://via.placeholder.com/780x530/FFFF00/000000?text=jihan" class="mh-img-fluid" alt="">
+        <img src="https://via.placeholder.com/780x530/FF000/000000?text=jihan" class="mh-img-fluid" alt="">
+        <img src="https://via.placeholder.com/780x530/FF0F00/000000?text=jihan" class="mh-img-fluid" alt="">
+        <img src="https://via.placeholder.com/780x530/FFF500/000000?text=jihan" class="mh-img-fluid" alt="">
+        <img src="https://via.placeholder.com/780x530/FF6F00/000000?text=jihan" class="mh-img-fluid" alt="">
+        <img src="https://via.placeholder.com/780x530/FFFF00/000000?text=jihan" class="mh-img-fluid" alt="">
+    </div>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/mh-slider.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".mh-slider").mhSlider({
+                nav: true,
+                loop: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 3,
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

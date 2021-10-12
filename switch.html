@@ -7,11 +7,11 @@
 	<link rel="stylesheet" href="./css/mh-style.css" />
 
 	<style>
-		input[type="checkbox"].toggle {
+		.mh-switch-text .mh-switch-input {
 			display: none;
 		}
 
-		input[type="checkbox"].toggle+label {
+		.mh-switch-text .mh-switch-input+label {
 			display: inline-block;
 			height: 60px;
 			width: 200px;
@@ -22,10 +22,10 @@
 			margin: 0;
 			cursor: pointer;
 			box-sizing: border-box;
-			transition: all 0.3s eases;
+			transition: all 0.3s ease;
 		}
 
-		input[type="checkbox"].toggle+label::before {
+		.mh-switch-text .mh-switch-input+label::before {
 			position: absolute;
 			top: 4px;
 			height: 44px;
@@ -35,7 +35,7 @@
 			z-index: 3;
 		}
 
-		input[type="checkbox"].toggle+label::after {
+		.mh-switch-text .mh-switch-input+label::after {
 			position: absolute;
 			z-index: 2;
 			width: 140px;
@@ -47,15 +47,15 @@
 			overflow: hidden;
 		}
 
-		input[type="checkbox"].toggle+label.rounded {
+		.mh-switch-text .mh-switch-input+label.mh-rounded {
 			border-radius: 30px;
 		}
 
-		input[type="checkbox"].toggle+label.rounded::before {
+		.mh-switch-text .mh-switch-input+label.mh-rounded::before {
 			border-radius: 50%;
 		}
 
-		input[type="checkbox"].toggle+label.android {
+		.mh-switch-text .mh-switch-input+label.android {
 			border-radius: 30px;
 			height: 20px;
 			width: 150px;
@@ -64,7 +64,7 @@
 			margin-bottom: 20px;
 		}
 
-		input[type="checkbox"].toggle+label.android::before {
+		.mh-switch-text .mh-switch-input+label.android::before {
 			border-radius: 50%;
 			top: -20px;
 			height: 60px;
@@ -74,60 +74,68 @@
 
 		}
 
-		input[type="checkbox"].toggle+label.android::after {
+		.mh-switch-text .mh-switch-input+label.android::after {
 			display: none;
 		}
 
-		input[type="checkbox"].toggle+label.android:active:after {
+		.mh-switch-text .mh-switch-input+label.android:active:after {
 			box-shadow: 0 0 2px 15px rgba(48, 48, 48, 0.7);
 			transition: all 0.1s ease;
 		}
 
-		input[type="checkbox"].toggle:not(:checked)+label {
+		.mh-switch-text .mh-switch-input:not(:checked)+label {
 			background-color: transparent;
 			text-align: right;
 		}
 
-		input[type="checkbox"].toggle:not(:checked)+label::after {
+		.mh-switch-text .mh-switch-input:not(:checked)+label::after {
 			content: attr(data-unchecked);
 			right: 0;
 			left: auto;
 			opacity: 1;
 			color: var(--mh-primary-color);
 		}
-		input[type="checkbox"].toggle:not(:checked)+label::before {
+
+		.mh-switch-text .mh-switch-input:not(:checked)+label::before {
 			left: 4px;
 			background-color: #ddd;
 		}
-		input[type="checkbox"].toggle:not(:checked)+label.android {
+
+		.mh-switch-text .mh-switch-input:not(:checked)+label.android {
 			background-color: #ddd;
 			border-color: #ddd;
 
 		}
-		input[type="checkbox"].toggle:not(:checked)+label.android::before {
+
+		.mh-switch-text .mh-switch-input:not(:checked)+label.android::before {
 			left: 0;
-			background-color:white;
+			background-color: white;
 		}
-		input[type="checkbox"].toggle:checked+label {
+
+		.mh-switch-text .mh-switch-input:checked+label {
 			text-align: left;
 			border-color: var(--mh-primary-color);
 		}
-		input[type="checkbox"].toggle:checked+label::after {
+
+		.mh-switch-text .mh-switch-input:checked+label::after {
 			content: attr(data-checked);
 			left: 4px;
 			right: auto;
 			opacity: 1;
 			color: #ddd;
 		}
-		input[type="checkbox"].toggle:checked+label::before {
+
+		.mh-switch-text .mh-switch-input:checked+label::before {
 			left: 144px;
 			background-color: white;
 		}
-		input[type="checkbox"].toggle:checked+label.android {
+
+		.mh-switch-text .mh-switch-input:checked+label.android {
 			background-color: var(--mh-primary-color);
 			border-color: var(--mh-primary-color);
 		}
-		input[type="checkbox"].toggle:checked+label.android::before {
+
+		.mh-switch-text .mh-switch-input:checked+label.android::before {
 			left: 110px;
 			right: auto;
 		}
@@ -136,32 +144,28 @@
 
 <body class="mh-container">
 	<div class="mh-switch mh-switch-1">
-		<input type="checkbox" name="" />
+		<input class="mh-switch-input" type="checkbox" name="" />
 	</div>
 	<div class="mh-switch mh-switch-2">
-		<input type="checkbox" value="Switch" name="" />
+		<input class="mh-switch-input" type="checkbox" value="Switch" name="" />
 	</div>
 	<div class="mh-switch mh-switch-3">
-		<input type="checkbox" name="" />
+		<input class="mh-switch-input" type="checkbox" name="" />
 	</div>
 	<div class="mh-switch mh-switch-4">
-		<input type="checkbox" name="" />
+		<input class="mh-checked-red mh-switch-input" type="checkbox" name="" />
 	</div>
 	<br><br><br>
-	<div class="mh-bg-black mh-p-6">
-		<div class="mh-switch">
-			<input type="checkbox" class="toggle" id="default">
-			<label for="default" data-checked="Checked" data-unchecked="UncheckedUnchecked"></label>
-		</div>
-		<div class="mh-switch">
-			<input type="checkbox" class="toggle" id="rounded">
-			<label for="rounded" data-checked="Checked" class="rounded" data-unchecked="Unchecked"></label>
-		</div>
-		<div class="mh-switch">
-			<input type="checkbox" class="toggle" id="android">
-			<label for="android" class="android"></label>
-		</div>
+	<div class="mh-switch-text">
+		<input type="checkbox" class="mh-switch-input" id="default">
+		<label for="default" data-checked="Checked" class="mh-border-red mh-before-bg-primary" data-unchecked="Unchecked"></label>
 	</div>
+	<div class="mh-switch-text">
+		<input type="checkbox" class="mh-switch-input" id="rounded">
+		<label for="rounded" data-checked="Checked" class="mh-rounded mh-before-bg-primary"
+			data-unchecked="Unchecked"></label>
+	</div>
+
 </body>
 
 </html>

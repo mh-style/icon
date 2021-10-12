@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="./css/mhstyle-icon.css">
+    <link rel="stylesheet" href="./css/mh-style.css">
+    <style>
+        /* nav.mh-navbar {
+            display: flex;
+            position: relative;
+            height: 80px;
+            padding: 10px 5%;
+            width: 100%;
+            align-items: center;
+        }
+
+        button.mh-toggle-button {
+            display: none;
+        }
+
+        nav.mh-navbar .mh-logo {
+            width: 170px;
+            font-size: 32px;
+        }
+
+        nav.mh-navbar .mh-nav li.mh-nav-item {
+            list-style: none;
+            margin: 0 10px;
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .mh-navbar-start {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .mh-navbar .mh-search-form {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            background: #ddd;
+        }
+
+        .mh-navbar .mh-search-form input {
+            width: 100%;
+            padding: 8px;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+
+        .mh-navbar .mh-search-form label {
+            padding: 7px;
+            background: #008cff;
+            font-size: 17px;
+        }
+
+        li.mh-dropdown a.mh-nav-item:after {
+            content: "\fc2c";
+            padding-left: 5px;
+            font-size: 15px;
+        }
+
+        nav.mh-navbar .mh-nav .mh-nav-item:hover a {
+            color: red;
+        }
+
+        nav.mh-navbar .mh-nav .mh-dropdown .mh-dropdown-menu {
+            flex-direction: column;
+            position: absolute;
+            display: none;
+        }
+
+        .nav li.mh-dropdown:hover .mh-dropdown-menu {
+            display: block !important;
+            overflow: hidden;
+        }
+
+        nav.mh-navbar .mh-nav .mh-nav-item a {
+            color: #fff;
+        }
+
+        @media(max-width: 576px) {
+            .mh-nav {
+                display: none;
+                position: absolute;
+                left: 0;
+            }
+
+            nav.mh-navbar .mh-nav.active .mh-nav-item:hover {
+                background: gold;
+            }
+
+            .mh-nav.active {
+                display: flex;
+                top: 100%;
+                flex-direction: column;
+                background: goldenrod;
+                width: 100%;
+            }
+
+            .mh-toggle-button {
+                display: block !important;
+                border: none;
+                padding: 5px 8px;
+                font-size: 20px;
+                border-radius: 5px;
+                order: 1;
+                margin: 0 0 0 5px;
+            }
+
+            .mh-signin {
+                order: 0;
+            }
+
+            nav.mh-navbar .mh-nav.active .mh-nav-item {
+                display: block !important;
+                padding: 7px 10px;
+                margin: 0;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+
+    <nav class="mh-navbar mh-bg-gold">
+
+        <div class="mh-logo mh-mr-auto mh-color-white">
+            MH-Style
+        </div>
+        <button class="mh-toggle-button" id="mh-menu-toggle-button">
+            <span class="mh mhi-bars"></span>
+        </button>
+        <ul id="nav" class="mh-nav">
+            <li class="mh-nav-item"><a href="#" class="mh-nav-item">Home</a></li>
+            <li class="mh-nav-item"><a href="#" class="mh-nav-item">About</a></li>
+            <li class="mh-nav-item"><a href="#" class="mh-nav-item">Blog</a>
+                <!-- <ul class="mh-dropdown-menu" mh-dropdown>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#">item item</a></li>
+                    <li><a href="#">item</a></li>
+                </ul> -->
+            </li>
+            <li class="mh-nav-item"><a href="#" class="mh-nav-item">review</a></li>
+            <li class="mh-nav-item"><a href="#" class="mh-nav-item">Contact</a></li>
+        </ul>
+        <div class="mh-signin">
+            <button class="mh-btn mh-btn-primary">log in</button>
+        </div>
+        <!-- <form id="nav" class="mh-search-form">
+            <input type="search" placeholder="Search" id="navSearchform">
+            <label for="navSearchform"><i class="mh mhi-search"></i></label>
+        </form> -->
+    </nav>
+
+    <!-- <script>
+        var menuToggle = document.getElementById("mh-menu-toggle-button");
+        var nav = document.querySelector("#nav");
+        menuToggle.addEventListener("click", function () {
+            nav.classList.toggle("active");
+        });
+    </script> -->
+
+</body>
+
+</html>

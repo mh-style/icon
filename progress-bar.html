@@ -82,60 +82,17 @@
 </head>
 <body>
 	<div id="demo">
-		<div class="mh-circlechart" data-percentage="65">jQuery</div>
-		<div class="mh-circlechart" data-percentage="30">Script</div>
-		<div class="mh-circlechart" data-percentage="-85">.Net</div>
+		<div class="mh-circlechart" data-percentage="65">Html</div>
+		<div class="mh-circlechart" data-percentage="30">Css</div>
+		<div class="mh-circlechart" data-percentage="-85">Js</div>
 	  </div>
 
 <script src="./js/jquery-3.5.1.js"></script>
 
-<script src="./js/script.js"></script>
-<!-- <script>
-	function makesvg(percentage, inner_text=""){
+<script src="./js/mhstyle.js"></script>
 
-var abs_percentage = Math.abs(percentage).toString();
-var percentage_str = percentage.toString();
-var classes = "";
-
-if(percentage < 0){
-  classes = "mh-danger-stroke mh-circle-chart__circle--negative";
-} else if(percentage > 0 && percentage <= 30){
-  classes = "mh-warning-stroke";
-} else{
-  classes = "mh-success-stroke";
-};
-
-var svg = '<svg class="mh-circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">'
-   + '<circle class="mh-circle-chart__background" cx="16.9" cy="16.9" r="15.9" />'
-   + '<circle class="mh-circle-chart__circle '+classes+'"'
-   + 'stroke-dasharray="'+ abs_percentage+',100"    cx="16.9" cy="16.9" r="15.9" />'
-   + '<g class="mh-circle-chart__info">'
-   + '   <text class="mh-circle-chart__percent" x="17.9" y="15.5">'+percentage_str+'%</text>';
-
-if(inner_text){
-  svg += '<text class="mh-circle-chart__subline" x="16.91549431" y="22">'+inner_text+'</text>'
-};
-
-svg += ' </g></svg>';
-
-return svg
-};
-
-(function( $ ) {
-
-  $.fn.circlechart = function() {
-	  this.each(function() {
-		  var percentage = $(this).data("percentage");
-		  var inner_text = $(this).text();
-		  $(this).html(makesvg(percentage, inner_text));
-	  });
-	  return this;
-  };
-
-}( jQuery ));
-</script> -->
 <script>
-	$('.mh-circlechart').circlechart();
+	$('.mh-circlechart').mh_circlechart();
 </script>
 </body>
 </html>
