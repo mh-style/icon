@@ -1,0 +1,105 @@
+section.mh-about-1-light:before {
+    content: '';
+    background: gold;
+    width: 60%;
+    height: 100%;
+    position: fixed;
+    clip-path: polygon(100% 50%, 85% 100%, 100% 100%, 0% 100%, 0% 0%, 0% 0%);
+}
+section.mh-about-1-light {
+    padding: 0;
+}
+.mh-col-md-6.mh-about-1-section img{
+    height: 540px;
+}
+@media(max-width: 576px){
+    section.mh-about-1-light:before {
+        width: 80% !important;
+    }
+    .mh-about-1-section{
+        align-items: center !important;
+        padding-top: 20px;
+    }
+    .mh-about-1-section.mh-about-img{
+        order: 2;
+    }
+}
+.mh-portfolio-about-data span {
+    color: rgb(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+.mh-col-md-6.mh-portfolio-about-p p {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 20px;
+    font-family: revert;
+}
+.mh-portfolio-contact-form form>* {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 4px;
+}
+
+
+
+
+form.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.mh-col input[type="text"],.mh-col input[type="email"], form textarea.form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+    padding: 0.4rem 1rem;
+    width: 100%;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+.mh-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.mh-portfolio-content-form {
+    top: 50%;
+    position: relative;
+    transform: translateY(-100%);
+}
+
+
+
+
+
+
+
+
+
+
+
