@@ -275,14 +275,14 @@ nav.mh-navbar .mh-nav .mh-nav-item a {
     }
 
     nav.mh-navbar .mh-nav.active .mh-nav-item:hover {
-        background: rgb(26, 168, 224);
+        background: rgb(26, 168, 224) !important;
     }
 
     .mh-nav.active {
         display: flex;
         top: 100%;
         flex-direction: column;
-        background: skyblue;
+        background: skyblue !important;
         width: 100%;
         z-index: 1000;
     }
