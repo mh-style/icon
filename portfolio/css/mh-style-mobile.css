@@ -2,19 +2,90 @@
     line-height: 10px;
 }
 
-.mh-line-height-20 {
-    line-height: 20px;
+.mh-line-height-5 {
+    line-height: 5px;
 }
 
 .mh-line-height-15 {
     line-height: 15px;
 }
 
+.mh-line-height-20 {
+    line-height: 20px;
+}
+
 .mh-line-height-25 {
     line-height: 25px;
 }
 
+.mh-line-height-30 {
+    line-height: 30px;
+}
+
+.mh-line-height-35 {
+    line-height: 35px;
+}
+
+.mh-line-height-40 {
+    line-height: 40px;
+}
+
 @media (min-width: 576px) {
+    .mh-overflow-hidden-sm {
+        overflow: hidden;
+    }
+
+    .mh-overflow-auto-sm {
+        overflow: auto;
+    }
+
+    .mh-overflow-scroll-sm {
+        overflow: scroll;
+    }
+
+    .mh-overflow-visible-sm {
+        overflow: visible;
+    }
+
+    .mh-overflow-inherit-sm {
+        overflow: inherit;
+    }
+
+    .mh-overflow-initial-sm {
+        overflow: initial;
+    }
+
+    .mh-line-height-10-sm {
+        line-height: 10px;
+    }
+
+    .mh-line-height-5-sm {
+        line-height: 5px;
+    }
+
+    .mh-line-height-15-sm {
+        line-height: 15px;
+    }
+
+    .mh-line-height-20-sm {
+        line-height: 20px;
+    }
+
+    .mh-line-height-25-sm {
+        line-height: 25px;
+    }
+
+    .mh-line-height-30-sm {
+        line-height: 30px;
+    }
+
+    .mh-line-height-35-sm {
+        line-height: 35px;
+    }
+
+    .mh-line-height-40-sm {
+        line-height: 40px;
+    }
 
     /*=============Width============*/
     .mh-w-auto-sm {
@@ -210,11 +281,11 @@
         flex-direction: row-reverse !important;
     }
 
-    .mh-flex-column-reverse-sm {
+    .mh-flex-column-sm {
         flex-direction: column !important;
     }
 
-    .mh-flex-column-sm {
+    .mh-flex-column-reverse-sm {
         flex-direction: column-reverse !important;
     }
 
@@ -731,6 +802,61 @@
 }
 
 @media (min-width: 768px) {
+    .mh-overflow-hidden-md {
+        overflow: hidden;
+    }
+
+    .mh-overflow-auto-md {
+        overflow: auto;
+    }
+
+    .mh-overflow-scroll-md {
+        overflow: scroll;
+    }
+
+    .mh-overflow-visible-md {
+        overflow: visible;
+    }
+
+    .mh-overflow-inherit-md {
+        overflow: inherit;
+    }
+
+    .mh-overflow-initial-md {
+        overflow: initial;
+    }
+
+    .mh-line-height-10-md {
+        line-height: 10px;
+    }
+
+    .mh-line-height-5-md {
+        line-height: 5px;
+    }
+
+    .mh-line-height-15-md {
+        line-height: 15px;
+    }
+
+    .mh-line-height-20-md {
+        line-height: 20px;
+    }
+
+    .mh-line-height-25-md {
+        line-height: 25px;
+    }
+
+    .mh-line-height-30-md {
+        line-height: 30px;
+    }
+
+    .mh-line-height-35-md {
+        line-height: 35px;
+    }
+
+    .mh-line-height-40-md {
+        line-height: 40px;
+    }
 
     /*=============Width============*/
     .mh-w-auto-md {
@@ -926,11 +1052,11 @@
         flex-direction: row-reverse !important;
     }
 
-    .mh-flex-column-reverse-md {
+    .mh-flex-column-md {
         flex-direction: column !important;
     }
 
-    .mh-flex-column-md {
+    .mh-flex-column-reverse-md {
         flex-direction: column-reverse !important;
     }
 
@@ -1448,6 +1574,60 @@
 }
 
 @media (min-width: 992px) {
+    .mh-overflow-hidden-lg {
+        overflow: hidden;
+    }
+
+    .mh-overflow-auto-lg {
+        overflow: auto;
+    }
+
+    .mh-overflow-scroll-lg {
+        overflow: scroll;
+    }
+
+    .mh-overflow-visible-lg {
+        overflow: visible;
+    }
+
+    .mh-overflow-inherit-lg {
+        overflow: inherit;
+    }
+
+    .mh-overflow-initial-lg {
+        overflow: initial;
+    }
+    .mh-line-height-10-lg {
+        line-height: 10px;
+    }
+
+    .mh-line-height-5-lg {
+        line-height: 5px;
+    }
+
+    .mh-line-height-15-lg {
+        line-height: 15px;
+    }
+
+    .mh-line-height-20-lg {
+        line-height: 20px;
+    }
+
+    .mh-line-height-25-lg {
+        line-height: 25px;
+    }
+
+    .mh-line-height-30-lg {
+        line-height: 30px;
+    }
+
+    .mh-line-height-35-lg {
+        line-height: 35px;
+    }
+
+    .mh-line-height-40-lg {
+        line-height: 40px;
+    }
 
     /*=============Width============*/
     .mh-w-auto-lg {
@@ -1643,11 +1823,11 @@
         flex-direction: row-reverse !important;
     }
 
-    .mh-flex-column-reverse-lg {
+    .mh-flex-column-lg {
         flex-direction: column !important;
     }
 
-    .mh-flex-column-lg {
+    .mh-flex-column-reverse-lg {
         flex-direction: column-reverse !important;
     }
 
@@ -2163,8 +2343,61 @@
     }
 }
 
-
 @media (min-width: 1200px) {
+    .mh-overflow-hidden-xl {
+        overflow: hidden;
+    }
+
+    .mh-overflow-auto-xl {
+        overflow: auto;
+    }
+
+    .mh-overflow-scroll-xl {
+        overflow: scroll;
+    }
+
+    .mh-overflow-visible-xl {
+        overflow: visible;
+    }
+
+    .mh-overflow-inherit-xl {
+        overflow: inherit;
+    }
+
+    .mh-overflow-initial-xl {
+        overflow: initial;
+    }
+    .mh-line-height-10-xl {
+        line-height: 10px;
+    }
+
+    .mh-line-height-5-xl {
+        line-height: 5px;
+    }
+
+    .mh-line-height-15-xl {
+        line-height: 15px;
+    }
+
+    .mh-line-height-20-xl {
+        line-height: 20px;
+    }
+
+    .mh-line-height-25-xl {
+        line-height: 25px;
+    }
+
+    .mh-line-height-30-xl {
+        line-height: 30px;
+    }
+
+    .mh-line-height-35-xl {
+        line-height: 35px;
+    }
+
+    .mh-line-height-40-xl {
+        line-height: 40px;
+    }
 
     /*=============Width============*/
     .mh-w-auto-xl {
@@ -2360,11 +2593,11 @@
         flex-direction: row-reverse !important;
     }
 
-    .mh-flex-column-reverse-xl {
+    .mh-flex-column-xl {
         flex-direction: column !important;
     }
 
-    .mh-flex-column-xl {
+    .mh-flex-column-reverse-xl {
         flex-direction: column-reverse !important;
     }
 
