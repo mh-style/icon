@@ -27,6 +27,7 @@
 *table
 *switch
 *checkbox
+*jihan
 */
 :root {
   --mh-primary-color: #008cff;
@@ -4879,7 +4880,7 @@ color: #ddd;
     padding-right: 0;
   }
 }
-/*==========*/
+/*==========
 nav.mh-navbar {
   display: flex;
   position: relative;
