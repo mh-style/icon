@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/mhstyle-icon.css">
     <link rel="stylesheet" href="./css/mh-style.css">
     <style>
-        /* nav.mh-navbar {
+        nav.mh-navbar {
             display: flex;
             position: relative;
             height: 80px;
@@ -29,7 +29,8 @@
 
         nav.mh-navbar .mh-nav li.mh-nav-item {
             list-style: none;
-            margin: 0 10px;
+            margin: 0;
+            padding: 12px 6px;
             font-size: 20px;
             display: inline-block;
         }
@@ -62,7 +63,7 @@
             font-size: 17px;
         }
 
-        li.mh-dropdown a.mh-nav-item:after {
+        .mh-dropdown a.mh-dropdown-nav-item:after {
             content: "\fc2c";
             padding-left: 5px;
             font-size: 15px;
@@ -76,10 +77,15 @@
             flex-direction: column;
             position: absolute;
             display: none;
+            margin-top: 12px;
         }
 
-        .nav li.mh-dropdown:hover .mh-dropdown-menu {
-            display: block !important;
+        ul.mh-dropdown-menu li {
+            padding: 7px 5px !important;
+        }
+
+        .mh-nav .mh-dropdown:hover .mh-dropdown-menu {
+            display: flex !important;
             overflow: hidden;
         }
 
@@ -125,7 +131,7 @@
                 padding: 7px 10px;
                 margin: 0;
             }
-        } */
+        }
     </style>
 </head>
 
@@ -142,12 +148,12 @@
         <ul id="nav" class="mh-nav">
             <li class="mh-nav-item"><a href="#" class="mh-nav-item">Home</a></li>
             <li class="mh-nav-item"><a href="#" class="mh-nav-item">About</a></li>
-            <li class="mh-nav-item"><a href="#" class="mh-nav-item">Blog</a>
-                <!-- <ul class="mh-dropdown-menu" mh-dropdown>
-                    <li><a href="#">item</a></li>
-                    <li><a href="#">item item</a></li>
-                    <li><a href="#">item</a></li>
-                </ul> -->
+            <li class="mh-nav-item mh-dropdown"><a href="#" class="mh-nav-item mh-dropdown-nav-item">Blog</a>
+                <ul class="mh-dropdown-menu">
+                    <li class="mh-nav-item"><a href="#" class="mh-nav-item">item</a></li>
+                    <li class="mh-nav-item"><a href="#" class="mh-nav-item">item item</a></li>
+                    <li class="mh-nav-item"><a href="#" class="mh-nav-item">item</a></li>
+                </ul>
             </li>
             <li class="mh-nav-item"><a href="#" class="mh-nav-item">review</a></li>
             <li class="mh-nav-item"><a href="#" class="mh-nav-item">Contact</a></li>
@@ -161,13 +167,13 @@
         </form> -->
     </nav>
 
-    <!-- <script>
+    <script>
         var menuToggle = document.getElementById("mh-menu-toggle-button");
         var nav = document.querySelector("#nav");
         menuToggle.addEventListener("click", function () {
             nav.classList.toggle("active");
         });
-    </script> -->
+    </script>
 
 </body>
 
