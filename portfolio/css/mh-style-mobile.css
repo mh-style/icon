@@ -31,6 +31,13 @@
 }
 
 @media (min-width: 576px) {
+    .mh-middle-sm {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .mh-overflow-hidden-sm {
         overflow: hidden;
     }
@@ -802,6 +809,13 @@
 }
 
 @media (min-width: 768px) {
+    .mh-middle-md {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .mh-overflow-hidden-md {
         overflow: hidden;
     }
@@ -1574,6 +1588,13 @@
 }
 
 @media (min-width: 992px) {
+    .mh-middle-lg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .mh-overflow-hidden-lg {
         overflow: hidden;
     }
@@ -1597,6 +1618,7 @@
     .mh-overflow-initial-lg {
         overflow: initial;
     }
+
     .mh-line-height-10-lg {
         line-height: 10px;
     }
@@ -2344,6 +2366,13 @@
 }
 
 @media (min-width: 1200px) {
+    .mh-middle-xl {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .mh-overflow-hidden-xl {
         overflow: hidden;
     }
@@ -2367,6 +2396,7 @@
     .mh-overflow-initial-xl {
         overflow: initial;
     }
+
     .mh-line-height-10-xl {
         line-height: 10px;
     }
