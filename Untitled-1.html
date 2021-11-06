@@ -1,16 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link rel="stylesheet" href="./css/mh-style.css">
+    <link rel="stylesheet" href="./css/mh-style.css">
+    <link rel="stylesheet" href="./css/mhstyle-icon.min.css">
+    <!-- <style>
+        .mh-navbar {
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
 
+        .mh-navbar .mh-container,
+        .mh-navbar .mh-container-fluid,
+        .mh-navbar .mh-container-lg,
+        .mh-navbar .mh-container-md,
+        .mh-navbar .mh-container-sm,
+        .mh-navbar .mh-container-xl {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        .mh-navbar-light .mh-dropdown-button:after{
+            content: "";
+            display: inline-block;
+            margin-left: 8px;
+            border-color: black;
+            border-top: 8px solid;
+            border-bottom: 0px;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+        }
+        .mh-navbar-dark .mh-dropdown-button:after {
+            content: "";
+            display: inline-block;
+            margin-left: 8px;
+            border-top: 8px solid;
+            border-color: white;
+            border-bottom: 0px;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+        }
+
+        .mh-navbar-collapse {
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: center
+        }
+
+        .mh-navbar-dark .mh-navbar-toggle {
+            color: #fff;
+        }
+
+        .mh-navbar-toggle {
+            padding: 4px 12px;
+            font-size: 20px;
+            line-height: 1;
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            transition: box-shadow .15s ease-in-out;
+        }
+
+        .mh-navbar-logo {
+            width: 12%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-right: 16px;
+            font-size: 20px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .mh-navbar-nav {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 10px;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .mh-navbar-search-form {
+            display: block;
+            width: 100%;
+            padding: 7px 7px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            appearance: none;
+            outline: none;
+            border-radius: 5px;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        .mh-navbar-nav .mh-link {
+            display: block;
+            padding: 5px 10px;
+        }
+
+        .mh-navbar-light .mh-navbar-nav .mh-link {
+            color: rgba(0, 0, 0, .55);
+        }
+
+        .mh-navbar-dark .mh-navbar-nav .mh-link,
+        .mh-navbar-dark .mh-navbar-logo {
+            color: #fff;
+        }
+
+        .mh-collapse {
+            display: none;
+        }
+
+        .mh-dropdown-menu li {
+            list-style: none;
+        }
+
+        .mh-navbar-collapse {
+            margin-top: 15px;
+        }
+
+        .mh-navbar-nav .mh-link:hover {
+            background: var(--mh-primary-color);
+            color: white;
+        }
+
+        .mh-navbar-nav .mh-item {
+            font-size: larger;
+        }
+
+        .mh-dropdown-menu.mh-dropdown-menu-show {
+            display: block;
+        }
+
+        .mh-dropdown-menu {
+            position: absolute;
+            display: none;
+            margin-top: 2px;
+            padding: 8px 0;
+            min-width: 150px;
+            background: white;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        .mh-dropdown:hover .mh-dropdown-menu {
+            display: block;
+        }
+
+        .mh-dropdown-item {
+            padding: 4px 16px;
+            width: 100%;
+            display: block;
+            color: #000;
+        }
+
+        .mh-dropdown-item:hover {
+            background: var(--mh-primary-color);
+            color: white;
+        }
+
+        .mh-navbar-nav .mh-dropdown-menu {
+            position: static;
+        }
+
+        @media(min-width: 576px) {
+            .mh-navbar-expand-sm .mh-navbar-toggle {
+                display: none;
+            }
+            .mh-navbar-expand-sm .mh-navbar-collapse {
+                margin: 0px;
+            }
+
+            .mh-navbar-expand-sm .mh-navbar-nav .mh-dropdown-menu {
+                position: absolute;
+            }
+
+            .mh-navbar-expand-sm .mh-navbar-logo {
+                width: 15%;
+            }
+
+            .mh-navbar-expand-sm {
+                flex-wrap: nowrap;
+                justify-content: flex-start
+            }
+
+            .mh-navbar-expand-sm .mh-navbar-collapse {
+                display: flex !important;
+                flex-basis: auto;
+            }
+
+            .mh-navbar-expand-sm .mh-navbar-nav {
+                flex-direction: row;
+            }
+
+            .mh-navbar-expand-sm .mh-navbar-nav .mh-link {
+                padding: 8px;
+                display: block;
+            }
+        }
+
+        @media(min-width: 768px) {
+            .mh-navbar-expand-md .mh-navbar-toggle {
+                display: none;
+            }
+
+            .mh-navbar-expand-md .mh-navbar-collapse {
+                margin: 0px;
+            }
+
+            .mh-navbar-nav .mh-item {
+                font-size: larger;
+            }
+
+            .mh-navbar-expand-md .mh-navbar-logo {
+                width: 6%;
+            }
+
+            .mh-navbar-expand-md {
+                flex-wrap: nowrap;
+                justify-content: flex-start
+            }
+
+            .mh-navbar-expand-md .mh-navbar-collapse {
+                display: flex !important;
+                flex-basis: auto;
+            }
+
+            .mh-navbar-expand-md .mh-navbar-nav {
+                flex-direction: row;
+            }
+
+            .mh-navbar-expand-md .mh-navbar-nav .mh-link {
+                padding: 8px;
+            }
+
+            .mh-navbar-expand-md .mh-navbar-nav .mh-dropdown-menu {
+                position: absolute;
+            }
+        }
+
+        @media(min-width: 992px) {
+            .mh-navbar-expand-lg .mh-navbar-toggle {
+                display: none;
+            }
+
+            .mh-navbar-expand-lg .mh-navbar-logo {
+                width: 6%;
+            }
+
+            .mh-navbar-expand-lg {
+                flex-wrap: nowrap;
+                justify-content: flex-start
+            }
+
+            .mh-navbar-expand-lg .mh-navbar-collapse {
+                display: flex !important;
+                flex-basis: auto;
+            }
+
+            .mh-navbar-expand-lg .mh-navbar-nav {
+                flex-direction: row;
+            }
+
+            .mh-navbar-expand-lg .mh-navbar-nav .mh-link {
+                padding: 8px;
+            }
+
+            .mh-navbar-expand-lg .mh-navbar-collapse {
+                margin-top: 0px;
+            }
+
+            .mh-navbar-expand-lg .mh-navbar-nav {
+                margin-bottom: 0;
+            }
+
+            .mh-navbar-expand-lg .mh-navbar-nav .mh-dropdown-menu {
+                position: absolute;
+            }
+        }
+
+        @media(min-width: 1200px) {
+            .mh-navbar-expand-xl .mh-navbar-toggle {
+                display: none;
+            }
+
+            .mh-navbar-expand-xl .mh-navbar-logo {
+                width: 8%;
+            }
+
+            .mh-navbar-expand-xl {
+                flex-wrap: nowrap;
+                justify-content: flex-start
+            }
+
+            .mh-navbar-expand-xl .mh-navbar-collapse {
+                display: flex !important;
+                flex-basis: auto;
+            }
+
+            .mh-navbar-expand-xl .mh-navbar-nav {
+                flex-direction: row;
+            }
+
+            .mh-navbar-expand-xl .mh-navbar-nav .mh-link {
+                padding: 8px;
+            }
+
+            .mh-navbar-expand-xl .mh-navbar-collapse {
+                margin-top: 0px;
+            }
+
+            .mh-navbar-expand-xl .mh-navbar-nav {
+                margin-bottom: 0;
+            }
+
+            .mh-navbar-expand-xl .mh-dropdown-menu {
+                position: absolute;
+            }
+        }
+    </style> -->
 </head>
+
 <body>
-    
-    
-    
+
+    <nav class="mh-navbar mh-navbar-expand-lg mh-navbar-light mh-bg-light">
+        <div class="mh-container-fluid">
+            <a href="#" class="mh-navbar-logo"><img src="./img/mhstyle-black.svg" alt="" class="mh-img-fluid"></a>
+            <button class="mh-navbar-toggle">
+                <i class="mh mhi-bars"></i>
+            </button>
+            <div class="mh-navbar-collapse mh-collapse">
+                <ul class="mh-navbar-nav mh-ml-auto">
+                    <li class="mh-item">
+                        <a href="#" class="mh-link">Home</a>
+                    </li>
+                    <li class="mh-item">
+                        <a href="#" class="mh-link">about</a>
+                    </li>
+                    <li class="mh-item mh-dropdown">
+                        <a href="#" class="mh-link mh-dropdown-button">blog</a>
+                        <ul class="mh-dropdown-menu">
+                            <li><a class="mh-dropdown-item" href="#">Item</a></li>
+                            <li>
+                                <a class="mh-dropdown-item" href="#">Item</a>
+                            </li>
+                            <li><a class="mh-dropdown-item" href="#">Item</a></li>
+                        </ul>
+                    </li>
+                    <li class="mh-item">
+                        <a href="#" class="mh-link">service</a>
+                    </li>
+                    <li class="mh-item">
+                        <a href="#" class="mh-link">contact</a>
+                    </li>
+                </ul>
+                <form class="mh-df mh-ml-2-lg">
+                    <input type="search" name="Search" placeholder="Search" class="mh-navbar-search-form mh-mr-2">
+                    <!-- <button class="mh-btn mh-btn-primary-outline">Search</button> -->
+                </form>
+                <!-- <div class="mh-df mh-mt-2 mh-mt-0-lg">
+                    <button class="mh-btn mh-btn-primary mh-ml-2-lg">log in</button>
+                    <button class="mh-btn mh-btn-green mh-ml-2">sign in</button>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+
+    <script src="./js/mhstyle.js"></script>
+    <!-- <script>
+        var mh_navbar_toggle_button = document.querySelector(".mh-navbar .mh-navbar-toggle");
+        var mh_navbar_collapse = document.querySelector(".mh-navbar .mh-navbar-collapse");
+        mh_navbar_toggle_button.onclick = function () {
+            mh_navbar_collapse.classList.toggle("mh-collapse")
+        }
+    </script> -->
+
 </body>
+
 </html>
