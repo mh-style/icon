@@ -4951,11 +4951,12 @@ color: #ddd;
 .mh-dropdown-menu {
   position: absolute;
   display: none;
-  margin-top: 2px;
+  margin-top: 0px;
   padding: 8px 0;
   min-width: 150px;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  z-index: 9999;
 }
 
 .mh-dropdown:hover .mh-dropdown-menu {
