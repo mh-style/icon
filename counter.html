@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+
+<body>
+
+
+    <span class="mh-counter" data-counter-target="75">0</span>
+    <span class="mh-counter" data-counter-target="65">0</span>
+    <span class="mh-counter" data-counter-target="5">0</span>
+
+
+    <script>
+        let counters = document.querySelectorAll('.mh-counter');
+        let counterTime = 300;
+        counters.forEach(counter => {
+            let updateCount = () => {
+                let counterTarget = +counter.getAttribute('data-counter-target');
+                let counterCount = +counter.innerText;
+                let counterIncrement = counterTarget / counterTime;
+                if(counterCount < counterTarget){
+                    counter.innerText = Math.ceil(counterCount + counterIncrement);
+                    setTimeout(updateCount,1);
+                }else{
+                    counter.innerText = counterTarget;
+                }
+            };
+            updateCount();
+        });
+    </script>
+</body>
+
+</html>
