@@ -341,10 +341,10 @@
     <nav class="mh-navbar mh-navbar-expand-lg mh-navbar-light mh-bg-light">
         <div class="mh-container-fluid">
             <a href="#" class="mh-navbar-logo"><img src="./img/mhstyle-black.svg" alt="" class="mh-img-fluid"></a>
-            <button class="mh-navbar-toggle">
+            <button class="mh-navbar-toggle" data-mh="jihan1">
                 <i class="mh mhi-bars"></i>
             </button>
-            <div class="mh-navbar-collapse mh-collapse">
+            <div class="mh-navbar-collapse mh-collapse" id="jihan1">
                 <ul class="mh-navbar-nav mh-ml-auto">
                     <li class="mh-item">
                         <a href="#" class="mh-link">Home</a>
@@ -380,14 +380,77 @@
             </div>
         </div>
     </nav>
+    <br>
+    <nav class="mh-navbar mh-navbar-expand-lg mh-navbar-dark mh-bg-gold">
+        <div class="mh-container-fluid">
+            <a href="#" class="mh-navbar-logo"><img src="./img/mhstyle-black.svg" alt="" class="mh-img-fluid"></a>
+            <button class="mh-navbar-toggle" data-mh="jihan">
+                <i class="mh mhi-bars"></i>
+            </button>
+            <div class="mh-navbar-collapse mh-collapse" id="jihan">
+                <ul class="mh-navbar-nav mh-ml-auto">
+                    <li class="mh-item">
+                        <a href="#" class="mh-link">Home</a>
+                    </li>
+                    <li class="mh-item">
+                        <a href="#" class="mh-link">about</a>
+                    </li>
+                    <li class="mh-item mh-dropdown">
+                        <a href="#" class="mh-link mh-dropdown-button">blog</a>
+                        <ul class="mh-dropdown-menu">
+                            <li><a class="mh-dropdown-item" href="#">Item</a></li>
+                            <li>
+                                <a class="mh-dropdown-item" href="#">Item</a>
+                            </li>
+                            <li><a class="mh-dropdown-item" href="#">Item</a></li>
+                        </ul>
+                    </li>
+                    <li class="mh-item">
+                        <a href="#" class="mh-link">service</a>
+                    </li>
+                    <li class="mh-item">
+                        <a href="#" class="mh-link">contact</a>
+                    </li>
+                </ul>
+                <form class="mh-df mh-ml-2-lg">
+                    <input type="search" name="Search" placeholder="Search" class="mh-navbar-search-form mh-mr-2">
+                    <button class="mh-btn mh-btn-primary-outline">Search</button>
+                </form>
+                <div class="mh-df mh-mt-2 mh-mt-0-lg">
+                    <button class="mh-btn mh-btn-primary mh-ml-2-lg">log in</button>
+                    <button class="mh-btn mh-btn-green mh-ml-2">sign in</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        let x = document.querySelectorAll(".mh-navbar-collapse"); // This variable is to get Attribute of "data-mh"
+        let y = document.querySelectorAll(".mh-navbar-toggle"); // Button selection. By clicking this button I will get print my Attribute
 
-    <script src="./js/mhstyle.js"></script>
-    <!-- <script>
-        var mh_navbar_toggle_button = document.querySelector(".mh-navbar .mh-navbar-toggle");
-        var mh_navbar_collapse = document.querySelector(".mh-navbar .mh-navbar-collapse");
-        mh_navbar_toggle_button.onclick = function () {
-            mh_navbar_collapse.classList.toggle("mh-collapse")
+        // function text(e){
+        //     for (let i = 0; i < x.length; i++) {
+        //         if(x[i].getAttribute('id') === e.getAttribute('data-mh')){
+        //             x[i].classList.toggle('mh-collapse');
+        //         }
+
+        //     }
+        // }
+        y.onclick = (event) => {
+            console.log(x.id);
+            for (let i = 0; i < x.length; i++) {
+                if (x[i].getAttribute('id') === event.target.getAttribute('data-mh')) {
+                    x[i].classList.toggle('mh-collapse');
+                    //document.getElementById("demo").innerHTML = x[i].getAttribute('data-mh') +" "+event.target.id; // This line of code will print my Attribute on P tag
+                }
+            }
         }
+    </script>
+    <!-- <script>
+        var jihanj =new Array(document.querySelectorAll(".mh-navbar-nav li a").length);
+        var jihan =document.querySelectorAll(".mh-navbar-nav li a");
+
+        jihan.sort();
+        jihan.innerHTML = jihan;
     </script> -->
 
 </body>
