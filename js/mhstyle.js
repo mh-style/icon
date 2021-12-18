@@ -55,10 +55,10 @@ try {
 } catch {}
 /*===================*/
 try {
-	let mh_navbar_style_1_toggle_button = document.querySelector(".mh-navbar-style-1-body .mh-toggle-button");
-	let mh_navbar_style_1 = document.querySelector("nav.mh-navbar-style-1");
-	mh_navbar_style_1_toggle_button.onclick = function (e) {
-		mh_navbar_style_1.classList.toggle("mh-nav-collapse");
+	var mh_navbar_toggle_button = document.querySelector(".mh-navbar .mh-navbar-toggle");
+	var mh_navbar_collapse = document.querySelector(".mh-navbar .mh-navbar-collapse");
+	mh_navbar_toggle_button.onclick = function () {
+		mh_navbar_collapse.classList.toggle("mh-collapse")
 	}
 } catch {}
 /*====================*/
@@ -727,7 +727,7 @@ try {
 
 	function showFile() {
 		let fileType = file.type;
-		let validExtensions = ["image/jpeg", "image/jpg", "image/png"];
+		let validExtensions = ["image/jpeg", "image/jpg", "image/png", "image/svg"];
 		if (validExtensions.includes(fileType)) {
 			let fileReader = new FileReader();
 			fileReader.onload = () => {
@@ -738,7 +738,7 @@ try {
 			fileReader.readAsDataURL(file);
 		} else {
 			dropArea.classList.remove("active");
-			alert("It's don't support")
+			alert("It's don't support");
 		}
 	}
 } catch {}
@@ -763,6 +763,7 @@ try {
 		});
 	}(jQuery));
 } catch {}
+
 try {
 	(function ($) {
 
